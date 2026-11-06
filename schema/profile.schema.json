@@ -1,0 +1,418 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/ryoku-dev/ryostore-revamped/main/schema/profile.schema.json",
+  "title": "Ryoku installable profile",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "id",
+    "version",
+    "name",
+    "requires",
+    "account",
+    "repos",
+    "components",
+    "capabilities",
+    "wordlists",
+    "hosts",
+    "env",
+    "path",
+    "launcher",
+    "expand",
+    "seedOnce",
+    "userData",
+    "rice",
+    "firstRun"
+  ],
+  "properties": {
+    "schema": {
+      "const": 1
+    },
+    "id": {
+      "$ref": "#/$defs/id"
+    },
+    "version": {
+      "$ref": "#/$defs/semver"
+    },
+    "name": {
+      "$ref": "#/$defs/nonEmpty"
+    },
+    "requires": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "profileApi",
+        "packageManagers",
+        "capabilities"
+      ],
+      "properties": {
+        "profileApi": {
+          "const": 1
+        },
+        "packageManagers": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "pacman",
+              "dnf",
+              "xbps"
+            ]
+          }
+        },
+        "capabilities": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/nonEmpty"
+          }
+        }
+      }
+    },
+    "account": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "suggestedName",
+        "fullName",
+        "role",
+        "permissions",
+        "groups",
+        "shell"
+      ],
+      "properties": {
+        "suggestedName": {
+          "$ref": "#/$defs/nonEmpty"
+        },
+        "fullName": {
+          "$ref": "#/$defs/nonEmpty"
+        },
+        "role": {
+          "const": "standard"
+        },
+        "permissions": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "audio",
+              "devices",
+              "virtualization",
+              "containers"
+            ]
+          }
+        },
+        "groups": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "wireshark"
+            ]
+          }
+        },
+        "shell": {
+          "type": "string",
+          "pattern": "^/[^\\r\\n]+$"
+        }
+      }
+    },
+    "repos": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "blackarch"
+        ]
+      }
+    },
+    "components": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/component"
+      }
+    },
+    "capabilities": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/capability"
+      }
+    },
+    "wordlists": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "links",
+        "extract"
+      ],
+      "properties": {
+        "links": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/wordlistLink"
+          }
+        },
+        "extract": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/wordlistExtract"
+          }
+        }
+      }
+    },
+    "hosts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "suffixes"
+      ],
+      "properties": {
+        "suffixes": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "htb",
+              "thm",
+              "vl"
+            ]
+          }
+        }
+      }
+    },
+    "env": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/env"
+      }
+    },
+    "path": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^(?!.*(?:^|/)\\.\\.(?:/|$))(?!.*//)(?!.*:)(?:/[^\\r\\n]*|@HOME@(?:/[^\\r\\n]*)?|@PROFILE_BIN@(?:/[^\\r\\n]*)?)$"
+      }
+    },
+    "launcher": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "allow"
+      ],
+      "properties": {
+        "allow": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/desktopEntry"
+          }
+        }
+      }
+    },
+    "expand": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/relativePath"
+      }
+    },
+    "seedOnce": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/relativePath"
+      }
+    },
+    "userData": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/relativePath"
+      }
+    },
+    "rice": {
+      "$ref": "#/$defs/id"
+    },
+    "firstRun": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "command",
+        "message"
+      ],
+      "properties": {
+        "command": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[^\\r\\n]+$"
+          }
+        },
+        "message": {
+          "type": "string",
+          "pattern": "^[^\\r\\n]+$"
+        }
+      }
+    }
+  },
+  "$defs": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9-]{1,30}$"
+    },
+    "semver": {
+      "type": "string",
+      "pattern": "^(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)(?:-[0-9A-Za-z-]+(?:\\.[0-9A-Za-z-]+)*)?(?:\\+[0-9A-Za-z-]+(?:\\.[0-9A-Za-z-]+)*)?$"
+    },
+    "nonEmpty": {
+      "type": "string",
+      "minLength": 1
+    },
+    "relativePath": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^(?!/)(?!\\.$)(?!.*(?:^|/)\\.\\.(?:/|$))(?!.*//)[^\\\\\\u0000\\r\\n]+$"
+    },
+    "desktopEntry": {
+      "type": "string",
+      "pattern": "^[^/\\\\\\u0000\\r\\n]+\\.desktop$"
+    },
+    "packageName": {
+      "type": "string",
+      "pattern": "^[a-z0-9@._+][a-z0-9@._+-]*$"
+    },
+    "component": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "type",
+        "name",
+        "detect",
+        "tier",
+        "group",
+        "summary",
+        "desktopEntries"
+      ],
+      "properties": {
+        "type": {
+          "const": "package"
+        },
+        "name": {
+          "$ref": "#/$defs/packageName"
+        },
+        "detect": {
+          "type": "string",
+          "pattern": "^(?:[A-Za-z0-9._+-]+|/(?!.*(?:^|/)\\.\\.(?:/|$))(?!.*//)[^\\u0000\\r\\n]+)$"
+        },
+        "tier": {
+          "enum": [
+            "core",
+            "optional"
+          ]
+        },
+        "group": {
+          "$ref": "#/$defs/nonEmpty"
+        },
+        "summary": {
+          "$ref": "#/$defs/nonEmpty"
+        },
+        "desktopEntries": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/desktopEntry"
+          }
+        }
+      }
+    },
+    "capability": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tool",
+        "caps"
+      ],
+      "properties": {
+        "tool": {
+          "enum": [
+            "nmap"
+          ]
+        },
+        "caps": {
+          "enum": [
+            "cap_net_raw,cap_net_admin,cap_net_bind_service=eip"
+          ]
+        }
+      }
+    },
+    "sharePath": {
+      "type": "string",
+      "pattern": "^/usr/share/(?!.*(?:^|/)\\.\\.(?:/|$))(?!.*//)[^\\u0000\\r\\n]+$"
+    },
+    "wordlistName": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^(?!/)(?!\\.$)(?!.*(?:^|/)\\.\\.(?:/|$))(?!.*//)[^\\\\\\u0000\\r\\n]+$"
+    },
+    "wordlistLink": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "target"
+      ],
+      "properties": {
+        "name": {
+          "$ref": "#/$defs/wordlistName"
+        },
+        "target": {
+          "$ref": "#/$defs/sharePath"
+        }
+      }
+    },
+    "wordlistExtract": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "archive",
+        "member",
+        "name"
+      ],
+      "properties": {
+        "archive": {
+          "$ref": "#/$defs/sharePath"
+        },
+        "member": {
+          "type": "string",
+          "pattern": "^(?!\\.{1,2}$)[^/\\\\\\u0000\\r\\n]+$"
+        },
+        "name": {
+          "$ref": "#/$defs/wordlistName"
+        }
+      }
+    },
+    "env": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "key",
+        "value"
+      ],
+      "properties": {
+        "key": {
+          "type": "string",
+          "pattern": "^[A-Z_][A-Z0-9_]*$"
+        },
+        "value": {
+          "type": "string",
+          "pattern": "^[^\\r\\n]*$"
+        }
+      }
+    }
+  }
+}
