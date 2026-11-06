@@ -1,0 +1,42 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+usage() {
+  cat <<'EOF'
+Usage: burp-ca
+
+Fetch Burp Suite's current CA and trust it in the Firefox burp profile.
+Burp must be listening on 127.0.0.1:8080.
+EOF
+}
+
+if (( $# > 0 )); then
+  case "$1" in
+    --help|-h|help)
+      usage
+      exit 0
+      ;;
+    *)
+      usage >&2
+      exit 2
+      ;;
+  esac
+fi
+
+profile="${XDG_CONFIG_HOME:-$HOME/.config}/mozilla/firefox/burp"
+certificate=$(mktemp)
+trap 'rm -f "$certificate"' EXIT
+
+if ! curl --fail --silent --show-error --connect-timeout 2 --max-time 5 \
+  http://127.0.0.1:8080/cert -o "$certificate" 2>/dev/null; then
+  echo "Burp Suite is not running at 127.0.0.1:8080. Start Burp Suite and try again." >&2
+  exit 1
+fi
+
+mkdir -p "$profile"
+if [[ ! -f "$profile/cert9.db" ]]; then
+  certutil -N --empty-password -d "sql:$profile"
+fi
+certutil -D -d "sql:$profile" -n "Burp Suite CA" >/dev/null 2>&1 || true
+certutil -A -d "sql:$profile" -n "Burp Suite CA" -t "C,," -i "$certificate"
+echo "Burp Suite CA trusted in Firefox profile burp."

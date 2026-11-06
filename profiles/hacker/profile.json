@@ -1,0 +1,618 @@
+{
+  "schema": 1,
+  "id": "hacker",
+  "version": "1.0.0",
+  "name": "Hacker",
+  "requires": {
+    "profileApi": 1,
+    "packageManagers": [
+      "pacman"
+    ],
+    "capabilities": []
+  },
+  "account": {
+    "suggestedName": "hacker",
+    "fullName": "Hacker",
+    "role": "standard",
+    "permissions": [
+      "audio",
+      "devices"
+    ],
+    "groups": [
+      "wireshark"
+    ],
+    "shell": "/bin/bash"
+  },
+  "repos": [
+    "blackarch"
+  ],
+  "components": [
+    {
+      "type": "package",
+      "name": "nmap",
+      "detect": "nmap",
+      "tier": "core",
+      "group": "Recon",
+      "summary": "Scans hosts, ports and services.",
+      "desktopEntries": []
+    },
+    {
+      "type": "package",
+      "name": "rustscan",
+      "detect": "rustscan",
+      "tier": "core",
+      "group": "Recon",
+      "summary": "Scans ports quickly and passes results to Nmap.",
+      "desktopEntries": []
+    },
+    {
+      "type": "package",
+      "name": "whatweb",
+      "detect": "whatweb",
+      "tier": "core",
+      "group": "Recon",
+      "summary": "Identifies web technologies and server details.",
+      "desktopEntries": []
+    },
+    {
+      "type": "package",
+      "name": "bind",
+      "detect": "dig",
+      "tier": "core",
+      "group": "Recon",
+      "summary": "Provides dig, host and other DNS tools.",
+      "desktopEntries": []
+    },
+    {
+      "type": "package",
+      "name": "masscan",
+      "detect": "masscan",
+      "tier": "optional",
+      "group": "Recon",
+      "summary": "Scans large address ranges at high speed.",
+      "desktopEntries": []
+    },
+    {
+      "type": "package",
+      "name": "nuclei",
+      "detect": "nuclei",
+      "tier": "optional",
+      "group": "Recon",
+      "summary": "Runs template-based checks for exposed services and flaws.",
+      "desktopEntries": []
+    },
+    {
+      "type": "package",
+      "name": "burpsuite",
+      "detect": "burpsuite",
+      "tier": "core",
+      "group": "Web",
+      "summary": "Intercepts and tests web application traffic.",
+      "desktopEntries": [
+        "burpsuite.desktop"
+      ]
+    },
+    {
+      "type": "package",
+      "name": "ffuf",
+      "detect": "ffuf",
+      "tier": "core",
+      "group": "Web",
+      "summary": "Fuzzes web paths, parameters and virtual hosts.",
+      "desktopEntries": []
+    },
+    {
+      "type": "package",
+      "name": "feroxbuster",
+      "detect": "feroxbuster",
+      "tier": "core",
+      "group": "Web",
+      "summary": "Recursively discovers web content.",
+      "desktopEntries": []
+    },
+    {
+      "type": "package",
+      "name": "gobuster",
+      "detect": "gobuster",
+      "tier": "core",
+      "group": "Web",
+      "summary": "Discovers web paths, DNS names and virtual hosts.",
+      "desktopEntries": []
+    },
+    {
+      "type": "package",
+      "name": "sqlmap",
+      "detect": "sqlmap",
+      "tier": "core",
+      "group": "Web",
+      "summary": "Tests and exploits SQL injection flaws.",
+      "desktopEntries": []
+    },
+    {
+      "type": "package",
+      "name": "nikto",
+      "detect": "nikto",
+      "tier": "core",
+      "group": "Web",
+      "summary": "Checks web servers for unsafe files and configuration.",
+      "desktopEntries": []
+    },
+    {
+      "type": "package",
+      "name": "wpscan",
+      "detect": "wpscan",
+      "tier": "optional",
+      "group": "Web",
+      "summary": "Checks WordPress sites, plugins and themes.",
+      "desktopEntries": []
+    },
+    {
+      "type": "package",
+      "name": "zaproxy",
+      "detect": "zaproxy",
+      "tier": "optional",
+      "group": "Web",
+      "summary": "Provides an intercepting proxy and web scanner.",
+      "desktopEntries": [
+        "zaproxy.desktop"
+      ]
+    },
+    {
+      "type": "package",
+      "name": "seclists",
+      "detect": "/usr/share/seclists",
+      "tier": "core",
+      "group": "Wordlists",
+      "summary": "Provides community wordlists for common security tests.",
+      "desktopEntries": []
+    },
+    {
+      "type": "package",
+      "name": "dirb",
+      "detect": "dirb",
+      "tier": "core",
+      "group": "Wordlists",
+      "summary": "Provides DIRB and its web content wordlists.",
+      "desktopEntries": []
+    },
+    {
+      "type": "package",
+      "name": "impacket",
+      "detect": "psexec.py",
+      "tier": "core",
+      "group": "AD and Windows",
+      "summary": "Provides Python tools for Windows network protocols.",
+      "desktopEntries": []
+    },
+    {
+      "type": "package",
+      "name": "netexec",
+      "detect": "nxc",
+      "tier": "core",
+      "group": "AD and Windows",
+      "summary": "Assesses and operates across Windows networks.",
+      "desktopEntries": []
+    },
+    {
+      "type": "package",
+      "name": "evil-winrm",
+      "detect": "evil-winrm",
+      "tier": "core",
+      "group": "AD and Windows",
+      "summary": "Opens WinRM shells on Windows hosts.",
+      "desktopEntries": []
+    },
+    {
+      "type": "package",
+      "name": "smbclient",
+      "detect": "smbclient",
+      "tier": "core",
+      "group": "AD and Windows",
+      "summary": "Browses and transfers files over SMB.",
+      "desktopEntries": []
+    },
+    {
+      "type": "package",
+      "name": "enum4linux-ng",
+      "detect": "enum4linux-ng",
+      "tier": "core",
+      "group": "AD and Windows",
+      "summary": "Enumerates Windows and Samba services.",
+      "desktopEntries": []
+    },
+    {
+      "type": "package",
+      "name": "kerbrute",
+      "detect": "kerbrute",
+      "tier": "core",
+      "group": "AD and Windows",
+      "summary": "Enumerates and tests Kerberos accounts.",
+      "desktopEntries": []
+    },
+    {
+      "type": "package",
+      "name": "responder",
+      "detect": "responder",
+      "tier": "optional",
+      "group": "AD and Windows",
+      "summary": "Captures credentials from local name-resolution traffic. Needs an administrator password to run and pulls in the MinGW cross-compiler (about 1.8 GB).",
+      "desktopEntries": []
+    },
+    {
+      "type": "package",
+      "name": "bloodhound-python",
+      "detect": "bloodhound-python",
+      "tier": "optional",
+      "group": "AD and Windows",
+      "summary": "Collects Active Directory relationships for BloodHound.",
+      "desktopEntries": []
+    },
+    {
+      "type": "package",
+      "name": "certipy",
+      "detect": "certipy",
+      "tier": "optional",
+      "group": "AD and Windows",
+      "summary": "Finds and tests Active Directory certificate services.",
+      "desktopEntries": []
+    },
+    {
+      "type": "package",
+      "name": "hashcat",
+      "detect": "hashcat",
+      "tier": "core",
+      "group": "Passwords",
+      "summary": "Recovers passwords with CPU and GPU cracking.",
+      "desktopEntries": []
+    },
+    {
+      "type": "package",
+      "name": "john",
+      "detect": "john",
+      "tier": "core",
+      "group": "Passwords",
+      "summary": "Recovers passwords and converts many hash formats.",
+      "desktopEntries": []
+    },
+    {
+      "type": "package",
+      "name": "hydra",
+      "detect": "hydra",
+      "tier": "core",
+      "group": "Passwords",
+      "summary": "Tests credentials against network services.",
+      "desktopEntries": []
+    },
+    {
+      "type": "package",
+      "name": "python-name-that-hash",
+      "detect": "name-that-hash",
+      "tier": "core",
+      "group": "Passwords",
+      "summary": "Identifies common hash formats.",
+      "desktopEntries": []
+    },
+    {
+      "type": "package",
+      "name": "metasploit",
+      "detect": "msfconsole",
+      "tier": "core",
+      "group": "Exploitation",
+      "summary": "Develops, tests and runs exploit modules.",
+      "desktopEntries": []
+    },
+    {
+      "type": "package",
+      "name": "exploitdb",
+      "detect": "searchsploit",
+      "tier": "core",
+      "group": "Exploitation",
+      "summary": "Searches a local archive of public exploits.",
+      "desktopEntries": []
+    },
+    {
+      "type": "package",
+      "name": "python-pwntools",
+      "detect": "pwn",
+      "tier": "optional",
+      "group": "Exploitation",
+      "summary": "Provides Python helpers for exploit development.",
+      "desktopEntries": []
+    },
+    {
+      "type": "package",
+      "name": "ghidra",
+      "detect": "ghidra",
+      "tier": "optional",
+      "group": "Exploitation",
+      "summary": "Analyzes and decompiles compiled programs.",
+      "desktopEntries": [
+        "ghidra.desktop"
+      ]
+    },
+    {
+      "type": "package",
+      "name": "gdb",
+      "detect": "gdb",
+      "tier": "optional",
+      "group": "Exploitation",
+      "summary": "Debugs native programs and inspects process state.",
+      "desktopEntries": []
+    },
+    {
+      "type": "package",
+      "name": "binwalk",
+      "detect": "binwalk",
+      "tier": "optional",
+      "group": "Exploitation",
+      "summary": "Finds embedded files and data in binary images.",
+      "desktopEntries": []
+    },
+    {
+      "type": "package",
+      "name": "chisel",
+      "detect": "chisel",
+      "tier": "core",
+      "group": "Pivoting and shells",
+      "summary": "Tunnels TCP connections over HTTP.",
+      "desktopEntries": []
+    },
+    {
+      "type": "package",
+      "name": "ligolo-ng",
+      "detect": "ligolo-ng-proxy",
+      "tier": "core",
+      "group": "Pivoting and shells",
+      "summary": "Routes traffic through agent-based tunnels.",
+      "desktopEntries": []
+    },
+    {
+      "type": "package",
+      "name": "proxychains-ng",
+      "detect": "proxychains4",
+      "tier": "core",
+      "group": "Pivoting and shells",
+      "summary": "Routes command traffic through configured proxies.",
+      "desktopEntries": []
+    },
+    {
+      "type": "package",
+      "name": "socat",
+      "detect": "socat",
+      "tier": "core",
+      "group": "Pivoting and shells",
+      "summary": "Relays data between sockets, files and processes.",
+      "desktopEntries": []
+    },
+    {
+      "type": "package",
+      "name": "rlwrap",
+      "detect": "rlwrap",
+      "tier": "core",
+      "group": "Pivoting and shells",
+      "summary": "Adds line editing and history to interactive shells.",
+      "desktopEntries": []
+    },
+    {
+      "type": "package",
+      "name": "openbsd-netcat",
+      "detect": "nc.openbsd",
+      "tier": "core",
+      "group": "Pivoting and shells",
+      "summary": "Reads and writes raw TCP and UDP connections.",
+      "desktopEntries": []
+    },
+    {
+      "type": "package",
+      "name": "sshuttle",
+      "detect": "sshuttle",
+      "tier": "optional",
+      "group": "Pivoting and shells",
+      "summary": "Routes networks through an SSH connection.",
+      "desktopEntries": []
+    },
+    {
+      "type": "package",
+      "name": "peass",
+      "detect": "linpeas",
+      "tier": "core",
+      "group": "Post-exploitation",
+      "summary": "Checks Linux hosts for privilege-escalation paths.",
+      "desktopEntries": []
+    },
+    {
+      "type": "package",
+      "name": "pspy",
+      "detect": "pspy",
+      "tier": "core",
+      "group": "Post-exploitation",
+      "summary": "Observes processes without requiring root.",
+      "desktopEntries": []
+    },
+    {
+      "type": "package",
+      "name": "openvpn",
+      "detect": "openvpn",
+      "tier": "core",
+      "group": "Network",
+      "summary": "Connects to OpenVPN lab networks.",
+      "desktopEntries": []
+    },
+    {
+      "type": "package",
+      "name": "networkmanager-openvpn",
+      "detect": "/usr/lib/nm-openvpn-service",
+      "tier": "core",
+      "group": "Network",
+      "summary": "Adds OpenVPN connections to NetworkManager.",
+      "desktopEntries": []
+    },
+    {
+      "type": "package",
+      "name": "wireshark-qt",
+      "detect": "wireshark",
+      "tier": "core",
+      "group": "Network",
+      "summary": "Captures and inspects network packets graphically.",
+      "desktopEntries": [
+        "org.wireshark.Wireshark.desktop"
+      ]
+    },
+    {
+      "type": "package",
+      "name": "tcpdump",
+      "detect": "tcpdump",
+      "tier": "core",
+      "group": "Network",
+      "summary": "Captures and filters packets from the terminal.",
+      "desktopEntries": []
+    },
+    {
+      "type": "package",
+      "name": "obsidian",
+      "detect": "obsidian",
+      "tier": "core",
+      "group": "Study",
+      "summary": "Organizes notes in a local Markdown vault.",
+      "desktopEntries": [
+        "obsidian.desktop"
+      ]
+    },
+    {
+      "type": "package",
+      "name": "firefox",
+      "detect": "firefox",
+      "tier": "core",
+      "group": "Study",
+      "summary": "Browses lab sites with dedicated profiles.",
+      "desktopEntries": [
+        "firefox.desktop"
+      ]
+    },
+    {
+      "type": "package",
+      "name": "nss",
+      "detect": "certutil",
+      "tier": "core",
+      "group": "Study",
+      "summary": "Provides certificate tools for the Burp browser profile.",
+      "desktopEntries": []
+    }
+  ],
+  "capabilities": [
+    {
+      "tool": "nmap",
+      "caps": "cap_net_raw,cap_net_admin,cap_net_bind_service=eip"
+    }
+  ],
+  "wordlists": {
+    "links": [
+      {
+        "name": "seclists",
+        "target": "/usr/share/seclists"
+      },
+      {
+        "name": "dirb",
+        "target": "/usr/share/dirb/wordlists"
+      },
+      {
+        "name": "dirbuster/directory-list-2.3-big.txt",
+        "target": "/usr/share/seclists/Discovery/Web-Content/DirBuster-2007_directory-list-2.3-big.txt"
+      },
+      {
+        "name": "dirbuster/directory-list-2.3-medium.txt",
+        "target": "/usr/share/seclists/Discovery/Web-Content/DirBuster-2007_directory-list-2.3-medium.txt"
+      },
+      {
+        "name": "dirbuster/directory-list-2.3-small.txt",
+        "target": "/usr/share/seclists/Discovery/Web-Content/DirBuster-2007_directory-list-2.3-small.txt"
+      },
+      {
+        "name": "dirbuster/directory-list-lowercase-2.3-big.txt",
+        "target": "/usr/share/seclists/Discovery/Web-Content/DirBuster-2007_directory-list-lowercase-2.3-big.txt"
+      },
+      {
+        "name": "dirbuster/directory-list-lowercase-2.3-medium.txt",
+        "target": "/usr/share/seclists/Discovery/Web-Content/DirBuster-2007_directory-list-lowercase-2.3-medium.txt"
+      },
+      {
+        "name": "dirbuster/directory-list-lowercase-2.3-small.txt",
+        "target": "/usr/share/seclists/Discovery/Web-Content/DirBuster-2007_directory-list-lowercase-2.3-small.txt"
+      }
+    ],
+    "extract": [
+      {
+        "archive": "/usr/share/seclists/Passwords/Leaked-Databases/rockyou.txt.tar.gz",
+        "member": "rockyou.txt",
+        "name": "rockyou.txt"
+      }
+    ]
+  },
+  "hosts": {
+    "suffixes": [
+      "htb",
+      "thm",
+      "vl"
+    ]
+  },
+  "env": [
+    {
+      "key": "WORDLISTS",
+      "value": "/usr/share/wordlists"
+    },
+    {
+      "key": "SECLISTS",
+      "value": "/usr/share/seclists"
+    },
+    {
+      "key": "NMAP_PRIVILEGED",
+      "value": "1"
+    },
+    {
+      "key": "MOZ_LEGACY_PROFILES",
+      "value": "1"
+    },
+    {
+      "key": "RYOSTORE_PLUGINS_DIR",
+      "value": "@HOME@/.local/share/ryoku/profile-plugins"
+    }
+  ],
+  "path": [
+    "@PROFILE_BIN@",
+    "@HOME@/go/bin"
+  ],
+  "launcher": {
+    "allow": [
+      "firefox-burp.desktop",
+      "kitty.desktop"
+    ]
+  },
+  "expand": [
+    ".config/obsidian/obsidian.json"
+  ],
+  "seedOnce": [
+    ".config/ryoku/plugins.json",
+    ".config/obsidian/obsidian.json",
+    ".config/mimeapps.list",
+    "notes/.obsidian/app.json",
+    "notes/.obsidian/core-plugins.json",
+    "notes/.obsidian/templates.json",
+    "notes/Start here.md",
+    "engagements/README.md",
+    "vpn/README.md"
+  ],
+  "userData": [
+    "notes",
+    "engagements",
+    "vpn",
+    ".BurpSuite"
+  ],
+  "rice": "hacker",
+  "firstRun": {
+    "command": [
+      "obsidian",
+      "obsidian://open?vault=notes&file=Start%20here"
+    ],
+    "message": "Hacker is ready. Start here is open in Obsidian."
+  }
+}

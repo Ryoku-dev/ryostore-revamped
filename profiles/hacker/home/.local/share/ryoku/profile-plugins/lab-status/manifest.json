@@ -1,0 +1,50 @@
+{
+  "id": "lab-status",
+  "name": "Lab status",
+  "version": "1.0.0",
+  "author": "Ryoku Team <hello@ryoku.dev>",
+  "description": "Shows the tun0 address and current lab target on the QS Bar.",
+  "license": "MIT",
+  "official": false,
+  "tags": [
+    "ctf",
+    "vpn",
+    "bar-widget"
+  ],
+  "hosts": [
+    "topbarGlyph"
+  ],
+  "entryPoints": {
+    "main": "service/Main.qml",
+    "content": "content/Widget.qml",
+    "panel": "content/Panel.qml"
+  },
+  "panel": {
+    "width": 360
+  },
+  "files": [
+    "assets/preview-widget.png"
+  ],
+  "capabilities": {
+    "densities": [
+      "glyph",
+      "compact"
+    ]
+  },
+  "defaults": {
+    "host": "topbarGlyph",
+    "label": "Lab status",
+    "bar": {
+      "section": "right"
+    }
+  },
+  "dependencies": {
+    "commands": [
+      "ip",
+      "wl-copy"
+    ]
+  },
+  "metadata": {
+    "settings": []
+  }
+}

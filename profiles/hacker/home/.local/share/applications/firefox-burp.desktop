@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Firefox (Burp proxy)
+Comment=Browse through Burp Suite on 127.0.0.1:8080
+Exec=firefox --new-instance -P burp %u
+Icon=firefox
+Terminal=false
+Categories=Network;WebBrowser;Security;
+MimeType=x-scheme-handler/http;x-scheme-handler/https;

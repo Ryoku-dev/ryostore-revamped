@@ -1,0 +1,82 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+state_dir="${XDG_STATE_HOME:-$HOME/.local/state}/ryoku/lab"
+target_file="$state_dir/target"
+name_file="$state_dir/target.name"
+
+usage() {
+  cat <<'EOF'
+Usage:
+  target set <ip> [name]
+  target show
+  target clear
+  target hosts <name>...
+
+Save the current lab target or add names for it to the managed hosts file.
+EOF
+}
+
+show_target() {
+  if [[ ! -s "$target_file" ]]; then
+    echo "No target is set."
+    return 1
+  fi
+
+  local ip name
+  ip=$(<"$target_file")
+  if [[ -s "$name_file" ]]; then
+    name=$(<"$name_file")
+    printf 'Target: %s (%s)\n' "$ip" "$name"
+  else
+    printf 'Target: %s\n' "$ip"
+  fi
+}
+
+case "${1:-}" in
+  --help|-h|help)
+    usage
+    ;;
+  set)
+    if (( $# < 2 || $# > 3 )); then
+      usage >&2
+      exit 2
+    fi
+    ip=$2
+    [[ "$ip" != *$'\n'* ]] || { echo "The target IP must be one line." >&2; exit 2; }
+    if (( $# == 3 )); then
+      name=$3
+      [[ "$name" != *$'\n'* ]] || { echo "The target name must be one line." >&2; exit 2; }
+    fi
+    mkdir -p "$state_dir"
+    printf '%s\n' "$ip" > "$target_file.tmp"
+    mv "$target_file.tmp" "$target_file"
+    if (( $# == 3 )); then
+      printf '%s\n' "$name" > "$name_file.tmp"
+      mv "$name_file.tmp" "$name_file"
+    else
+      rm -f "$name_file"
+    fi
+    show_target
+    ;;
+  show)
+    (( $# == 1 )) || { usage >&2; exit 2; }
+    show_target
+    ;;
+  clear)
+    (( $# == 1 )) || { usage >&2; exit 2; }
+    rm -f "$target_file" "$name_file" "$target_file.tmp" "$name_file.tmp"
+    echo "Target cleared."
+    ;;
+  hosts)
+    (( $# >= 2 )) || { usage >&2; exit 2; }
+    [[ -s "$target_file" ]] || { echo "Set a target IP first." >&2; exit 1; }
+    ip=$(<"$target_file")
+    pkexec ryoku-host hosts add "$ip" "${@:2}"
+    echo "Lab names added for $ip."
+    ;;
+  *)
+    usage >&2
+    exit 2
+    ;;
+esac

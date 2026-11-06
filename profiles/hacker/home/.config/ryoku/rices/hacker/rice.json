@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "slug": "hacker",
+  "name": "Hacker",
+  "author": "Ryoku Team",
+  "blurb": "A quiet workspace for labs, notes and packet work.",
+  "tags": [
+    "htb",
+    "tryhackme",
+    "ctf"
+  ],
+  "color": {
+    "mode": "wallpaper",
+    "themeApps": true
+  },
+  "assets": {
+    "wallpaper": "wall.webp"
+  },
+  "look": {
+    "shell": {
+      "barStyle": "qsbar",
+      "qsbar": {
+        "barPosition": "top",
+        "barShellStyle": "full",
+        "layout": {
+          "version": 1,
+          "left": [
+            "launcher",
+            "workspaces"
+          ],
+          "center": [],
+          "right": [
+            "clock",
+            "lab-status",
+            "status",
+            "cpu",
+            "volume",
+            "memory",
+            "ai",
+            "media",
+            "quick",
+            "network",
+            "power",
+            "battery",
+            "brightness",
+            "cputemp",
+            "storage",
+            "gpu",
+            "bluetooth",
+            "layout"
+          ]
+        },
+        "widgets": {
+          "status": false,
+          "cpu": false,
+          "volume": true,
+          "memory": false,
+          "claude": false,
+          "mpris": false,
+          "quick": false,
+          "network": true,
+          "power": false,
+          "battery": true,
+          "brightness": false,
+          "cpuTemperature": false,
+          "storage": false,
+          "gpu": false,
+          "bluetooth": false,
+          "layout": true
+        }
+      },
+      "dock": {
+        "autohide": false,
+        "edge": "auto",
+        "enabled": true,
+        "frost": true,
+        "labels": true,
+        "magnify": true,
+        "media": false,
+        "pinned": [
+          "kitty.desktop",
+          "firefox.desktop",
+          "firefox-burp.desktop",
+          "burpsuite.desktop",
+          "obsidian.desktop",
+          "org.wireshark.Wireshark.desktop"
+        ],
+        "shadow": true,
+        "style": "ledger"
+      }
+    },
+    "plugins": {
+      "lab-status": {
+        "enabled": true,
+        "host": "topbarGlyph",
+        "settings": {}
+      }
+    }
+  }
+}

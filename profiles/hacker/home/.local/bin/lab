@@ -1,0 +1,143 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+state_dir="${XDG_STATE_HOME:-$HOME/.local/state}/ryoku/lab"
+vpn_state="$state_dir/vpn"
+
+usage() {
+  cat <<'EOF'
+Usage:
+  lab vpn import <file.ovpn>
+  lab vpn up [name]
+  lab vpn down [name]
+  lab vpn list
+  lab ip
+  lab status
+
+Import and control NetworkManager lab VPN connections.
+EOF
+}
+
+vpn_help() {
+  cat <<'EOF'
+Usage:
+  lab vpn import <file.ovpn>
+  lab vpn up [name]
+  lab vpn down [name]
+  lab vpn list
+EOF
+}
+
+saved_vpn() {
+  if [[ -s "$vpn_state" ]]; then
+    cat "$vpn_state"
+  fi
+}
+
+vpn_name() {
+  local requested=${1:-}
+  if [[ -n "$requested" ]]; then
+    printf '%s\n' "$requested"
+    return
+  fi
+  requested=$(saved_vpn)
+  [[ -n "$requested" ]] || { echo "Give a VPN name or import one first." >&2; return 1; }
+  printf '%s\n' "$requested"
+}
+
+vpn_list() {
+  local found=0
+  while IFS=: read -r name type device; do
+    [[ "$type" == "vpn" ]] || continue
+    if [[ -n "$device" ]]; then
+      printf '%s (active on %s)\n' "$name" "$device"
+    else
+      printf '%s\n' "$name"
+    fi
+    found=1
+  done < <(nmcli -t --escape no -f NAME,TYPE,DEVICE connection show)
+  (( found == 1 )) || echo "No lab VPN connections found."
+}
+
+tun_ip() {
+  local line cidr
+  line=$(ip -4 -o addr show dev tun0 scope global 2>/dev/null || true)
+  [[ -n "$line" ]] || { echo "tun0 has no IPv4 address."; return 1; }
+  read -r _ _ _ cidr _ <<< "$line"
+  printf '%s\n' "${cidr%%/*}"
+}
+
+case "${1:-}" in
+  --help|-h|help)
+    usage
+    ;;
+  vpn)
+    case "${2:-}" in
+      --help|-h|help)
+        vpn_help
+        ;;
+      import)
+        (( $# == 3 )) || { vpn_help >&2; exit 2; }
+        source_file=$3
+        [[ -f "$source_file" ]] || { echo "VPN file not found: $source_file" >&2; exit 1; }
+        mkdir -p "$HOME/vpn" "$state_dir"
+        destination="$HOME/vpn/$(basename -- "$source_file")"
+        source_real=$(readlink -f -- "$source_file")
+        destination_real=$(readlink -m -- "$destination")
+        if [[ "$source_real" != "$destination_real" ]]; then
+          install -m 600 -- "$source_file" "$destination"
+        else
+          chmod 600 "$destination"
+        fi
+        echo "NetworkManager may ask for an administrator password once to import this VPN."
+        output=$(LC_ALL=C nmcli connection import type openvpn file "$destination")
+        printf '%s\n' "$output"
+        if [[ "$output" =~ \(([0-9A-Fa-f-]{36})\) ]]; then
+          uuid=${BASH_REMATCH[1]}
+        else
+          echo "The VPN was imported, but its connection ID could not be read." >&2
+          exit 1
+        fi
+        name=$(nmcli -g connection.id connection show "$uuid")
+        nmcli connection modify "$name" connection.permissions "user:$USER" connection.autoconnect no
+        printf '%s\n' "$name" > "$vpn_state.tmp"
+        mv "$vpn_state.tmp" "$vpn_state"
+        printf 'Imported VPN: %s\n' "$name"
+        ;;
+      up)
+        (( $# <= 3 )) || { vpn_help >&2; exit 2; }
+        name=$(vpn_name "${3:-}")
+        nmcli connection up "$name"
+        ;;
+      down)
+        (( $# <= 3 )) || { vpn_help >&2; exit 2; }
+        name=$(vpn_name "${3:-}")
+        nmcli connection down "$name"
+        ;;
+      list)
+        (( $# == 2 )) || { vpn_help >&2; exit 2; }
+        vpn_list
+        ;;
+      *)
+        vpn_help >&2
+        exit 2
+        ;;
+    esac
+    ;;
+  ip)
+    (( $# == 1 )) || { usage >&2; exit 2; }
+    tun_ip
+    ;;
+  status)
+    (( $# == 1 )) || { usage >&2; exit 2; }
+    target show || true
+    echo "VPN connections:"
+    vpn_list
+    printf 'tun0: '
+    tun_ip || true
+    ;;
+  *)
+    usage >&2
+    exit 2
+    ;;
+esac

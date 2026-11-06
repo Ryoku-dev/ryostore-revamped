@@ -1,0 +1,78 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+engagements="$HOME/engagements"
+boxes="$HOME/notes/Boxes"
+template="$HOME/notes/Templates/Box.md"
+
+usage() {
+  cat <<'EOF'
+Usage:
+  box new <name> [ip]
+  box list
+  box path <name>
+
+Create and find lab engagement folders and notes.
+EOF
+}
+
+valid_name() {
+  local name=$1
+  [[ "$name" =~ ^[A-Za-z0-9][A-Za-z0-9._-]*$ ]]
+}
+
+case "${1:-}" in
+  --help|-h|help)
+    usage
+    ;;
+  new)
+    if (( $# < 2 || $# > 3 )); then
+      usage >&2
+      exit 2
+    fi
+    name=$2
+    valid_name "$name" || { echo "Use letters, numbers, dots, underscores or hyphens." >&2; exit 2; }
+    ip=${3:-Unassigned}
+    [[ "$ip" != *$'\n'* ]] || { echo "The target IP must be one line." >&2; exit 2; }
+    dir="$engagements/$name"
+    note="$boxes/$name.md"
+    [[ ! -e "$dir" ]] || { echo "Engagement already exists: $dir" >&2; exit 1; }
+    [[ ! -e "$note" ]] || { echo "Box note already exists: $note" >&2; exit 1; }
+    [[ -f "$template" ]] || { echo "Box template is missing: $template" >&2; exit 1; }
+
+    mkdir -p "$dir"/{nmap,loot,exploits,www} "$boxes"
+    content=$(<"$template")
+    content=${content//@BOX@/$name}
+    content=${content//@IP@/$ip}
+    printf '%s\n' "$content" > "$note"
+    if (( $# == 3 )); then
+      target set "$ip" "$name"
+    fi
+    printf 'Created %s\n' "$dir"
+    printf 'Notes: %s\n' "$note"
+    ;;
+  list)
+    (( $# == 1 )) || { usage >&2; exit 2; }
+    shopt -s nullglob
+    entries=("$engagements"/*)
+    found=0
+    for entry in "${entries[@]}"; do
+      [[ -d "$entry" ]] || continue
+      printf '%s\n' "${entry##*/}"
+      found=1
+    done
+    (( found == 1 )) || echo "No engagements yet."
+    ;;
+  path)
+    (( $# == 2 )) || { usage >&2; exit 2; }
+    name=$2
+    valid_name "$name" || { echo "Use letters, numbers, dots, underscores or hyphens." >&2; exit 2; }
+    dir="$engagements/$name"
+    [[ -d "$dir" ]] || { echo "No engagement named $name." >&2; exit 1; }
+    printf '%s\n' "$dir"
+    ;;
+  *)
+    usage >&2
+    exit 2
+    ;;
+esac
