@@ -1,0 +1,20 @@
+#:schema ../../schema/item.schema.json
+
+id = "hacker"
+name = "Hacker"
+version = "1.0.0"
+summary = "a separate account for Hack The Box, TryHackMe and OverTheWire"
+description = "A second account on this computer for studying offensive security. It comes with the usual tools from Arch and BlackArch, SecLists and rockyou where writeups expect them, a Firefox that goes through Burp, an Obsidian vault with box templates, VPN import for lab networks and checkpoints you can roll back to. Burp Suite, Wireshark and Obsidian also show up in the other accounts on this computer."
+license = "GPL-3.0-or-later"
+authors = ["Ryoku Team"]
+tags = ["htb", "tryhackme", "ctf"]
+upstream = "https://github.com/ryoku-dev/ryostore-revamped/tree/main/profiles/hacker"
+accent = "#66735B"
+surface = "#101010"
+preview = "preview.webp"
+screenshots = []
+official = true
+
+[requires]
+packageManagers = ["pacman"]
+reason = "Profiles need Arch or CachyOS."

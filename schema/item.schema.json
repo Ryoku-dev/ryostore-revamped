@@ -1,0 +1,413 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/ryoku-dev/ryostore-revamped/main/schema/item.schema.json",
+  "title": "Ryostore catalogue item",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "name",
+    "version",
+    "summary",
+    "description",
+    "license",
+    "authors",
+    "tags"
+  ],
+  "properties": {
+    "id": {
+      "$ref": "#/$defs/id"
+    },
+    "name": {
+      "$ref": "#/$defs/nonEmpty"
+    },
+    "version": {
+      "$ref": "#/$defs/semver"
+    },
+    "summary": {
+      "$ref": "#/$defs/nonEmpty"
+    },
+    "description": {
+      "$ref": "#/$defs/nonEmpty"
+    },
+    "license": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9.+-]*(?: (?:AND|OR|WITH) [A-Za-z0-9][A-Za-z0-9.+-]*)*$"
+    },
+    "authors": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/nonEmpty"
+      }
+    },
+    "tags": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/nonEmpty"
+      }
+    },
+    "upstream": {
+      "type": "string",
+      "pattern": "^https://"
+    },
+    "accent": {
+      "$ref": "#/$defs/colour"
+    },
+    "surface": {
+      "$ref": "#/$defs/colour"
+    },
+    "preview": {
+      "$ref": "#/$defs/path"
+    },
+    "screenshots": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^screenshots/[^\\\\\\u0000\\r\\n]+$"
+      }
+    },
+    "official": {
+      "type": "boolean"
+    },
+    "listed": {
+      "type": "boolean",
+      "default": true,
+      "description": "false keeps the item in the repo while it waits for review: it gets a manifest but no registry row"
+    },
+    "downloadPaused": {
+      "type": "boolean",
+      "default": false,
+      "description": "true keeps the item visible in the Store but not installable; existing installs stay removable"
+    },
+    "downloadPauseReason": {
+      "type": "string",
+      "minLength": 1,
+      "description": "shown in the Store while downloadPaused is true"
+    },
+    "requires": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "packageManagers": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "pacman",
+              "dnf",
+              "xbps"
+            ]
+          }
+        },
+        "windowManager": {
+          "type": "string"
+        },
+        "reason": {
+          "type": "string"
+        },
+        "qmlModules": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Za-z_][A-Za-z0-9_.]*$",
+            "not": {
+              "pattern": "^qs(?:\\.|$)"
+            }
+          }
+        }
+      }
+    },
+    "shell": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "entry",
+        "frameHost",
+        "owns",
+        "modules"
+      ],
+      "properties": {
+        "entry": {
+          "$ref": "#/$defs/qmlPath"
+        },
+        "frameHost": {
+          "enum": [
+            "each",
+            "primary"
+          ]
+        },
+        "owns": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "notifications",
+              "notificationSound",
+              "osd",
+              "polkit",
+              "dock",
+              "widgets",
+              "cheatsheet",
+              "windowClose"
+            ]
+          }
+        },
+        "ownsSetting": {
+          "type": "object",
+          "description": "owned surface -> dotted shell.json key; ownership lapses while the key is false",
+          "propertyNames": {
+            "enum": [
+              "notifications",
+              "notificationSound",
+              "osd",
+              "polkit",
+              "dock",
+              "widgets",
+              "cheatsheet",
+              "windowClose"
+            ]
+          },
+          "additionalProperties": {
+            "type": "string",
+            "pattern": "^[A-Za-z][A-Za-z0-9_]*(\\.[A-Za-z][A-Za-z0-9_]*)+$"
+          }
+        },
+        "env": {
+          "type": "object",
+          "description": "environment the daemon sets on the shell and the item's hooks while the item is active; only $HOME, $XDG_DATA_HOME, $XDG_STATE_HOME, $XDG_CONFIG_HOME, $XDG_CACHE_HOME and $RYOKU_ITEM_DIR are expanded",
+          "propertyNames": {
+            "pattern": "^[A-Z][A-Z0-9_]*$",
+            "not": {
+              "pattern": "^(?:PATH|HOME|USER|SHELL|LANG|DISPLAY)$|^(?:LC_|LD_|XDG_|QT_|QML|WAYLAND_|DBUS_|RYOKU_|MALLOC_)"
+            }
+          },
+          "additionalProperties": {
+            "type": "string",
+            "pattern": "^(?:[^$]|\\$(?:HOME|XDG_DATA_HOME|XDG_STATE_HOME|XDG_CONFIG_HOME|XDG_CACHE_HOME|RYOKU_ITEM_DIR)(?![A-Za-z0-9_]))*$"
+          }
+        },
+        "modules": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "allOf": [
+              {
+                "$ref": "#/$defs/path"
+              },
+              {
+                "not": {
+                  "pattern": "^qs(?:/|$)"
+                }
+              }
+            ]
+          }
+        },
+        "settings": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "ipc": {
+              "type": "string"
+            },
+            "call": {
+              "type": "string"
+            },
+            "args": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "hubEditor": {
+              "enum": [
+                "",
+                "frame-rails",
+                "nacre",
+                "obi"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "provides": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "dock": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/dock"
+          }
+        },
+        "launcher": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/launcher"
+          }
+        },
+        "desktopWidgets": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/desktopWidgets"
+          }
+        }
+      }
+    },
+    "lifecycle": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "activate": {
+          "$ref": "#/$defs/binPath"
+        },
+        "deactivate": {
+          "$ref": "#/$defs/binPath"
+        },
+        "palette": {
+          "$ref": "#/$defs/binPath"
+        }
+      }
+    },
+    "runtime": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "check": {
+          "$ref": "#/$defs/binPath"
+        },
+        "install": {
+          "$ref": "#/$defs/binPath"
+        },
+        "start": {
+          "$ref": "#/$defs/binPath"
+        }
+      }
+    }
+  },
+  "$defs": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9-]{1,30}$"
+    },
+    "semver": {
+      "type": "string",
+      "pattern": "^(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)(?:-[0-9A-Za-z-]+(?:\\.[0-9A-Za-z-]+)*)?(?:\\+[0-9A-Za-z-]+(?:\\.[0-9A-Za-z-]+)*)?$"
+    },
+    "nonEmpty": {
+      "type": "string",
+      "minLength": 1
+    },
+    "path": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^(?!/)(?!\\.$)(?!.*(?:^|/)\\.\\.(?:/|$))(?!.*//)[^\\\\\\u0000\\r\\n]+$"
+    },
+    "colour": {
+      "type": "string",
+      "pattern": "^#[0-9A-Fa-f]{6}$"
+    },
+    "dock": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "name",
+        "entry"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "name": {
+          "$ref": "#/$defs/nonEmpty"
+        },
+        "entry": {
+          "$ref": "#/$defs/qmlPath"
+        }
+      }
+    },
+    "launcher": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "name",
+        "entry"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "name": {
+          "$ref": "#/$defs/nonEmpty"
+        },
+        "description": {
+          "type": "string"
+        },
+        "entry": {
+          "$ref": "#/$defs/qmlPath"
+        },
+        "preview": {
+          "$ref": "#/$defs/qmlPath"
+        }
+      }
+    },
+    "desktopWidgets": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "roster",
+        "widget"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "roster": {
+          "$ref": "#/$defs/path"
+        },
+        "widget": {
+          "$ref": "#/$defs/qmlPath"
+        },
+        "options": {
+          "$ref": "#/$defs/qmlPath"
+        }
+      }
+    },
+    "qmlPath": {
+      "type": "string",
+      "pattern": "^qml/(?!.*(?:^|/)\\.\\.(?:/|$))(?!.*//)[^\\\\\\u0000\\r\\n]+$"
+    },
+    "binPath": {
+      "type": "string",
+      "pattern": "^bin/(?!.*(?:^|/)\\.\\.(?:/|$))(?!.*//)[^\\\\\\u0000\\r\\n]+$"
+    }
+  },
+  "dependentRequired": {
+    "downloadPauseReason": [
+      "downloadPaused"
+    ]
+  },
+  "if": {
+    "properties": {
+      "downloadPaused": {
+        "const": true
+      }
+    },
+    "required": [
+      "downloadPaused"
+    ]
+  },
+  "then": {
+    "required": [
+      "downloadPauseReason"
+    ]
+  }
+}

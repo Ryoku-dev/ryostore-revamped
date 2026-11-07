@@ -1,0 +1,18 @@
+#:schema ../../schema/item.schema.json
+
+id = "example-barstyle"
+name = "Example Barstyle"
+version = "0.1.0"
+summary = "A minimal Ryoku bar style"
+description = "A starting point for a bar hosted by Ryoku."
+license = "GPL-3.0-or-later"
+authors = ["Your Name"]
+tags = ["bar"]
+preview = "preview.webp"
+screenshots = []
+
+[shell]
+entry = "qml/Scene.qml"
+frameHost = "each"
+owns = []
+modules = []

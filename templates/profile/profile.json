@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "example-profile",
+  "version": "0.1.0",
+  "name": "Example Profile",
+  "requires": {
+    "profileApi": 1,
+    "packageManagers": [
+      "pacman"
+    ],
+    "capabilities": []
+  },
+  "account": {
+    "suggestedName": "example",
+    "fullName": "Example",
+    "role": "standard",
+    "permissions": [],
+    "groups": [],
+    "shell": "/bin/bash"
+  },
+  "repos": [],
+  "components": [
+    {
+      "type": "package",
+      "name": "bash",
+      "detect": "bash",
+      "tier": "core",
+      "group": "Base",
+      "summary": "Command shell",
+      "desktopEntries": []
+    }
+  ],
+  "capabilities": [],
+  "wordlists": {
+    "links": [],
+    "extract": []
+  },
+  "hosts": {
+    "suffixes": []
+  },
+  "env": [],
+  "path": [],
+  "launcher": {
+    "allow": []
+  },
+  "expand": [],
+  "seedOnce": [],
+  "userData": [],
+  "rice": "starter",
+  "firstRun": {
+    "command": [
+      "true"
+    ],
+    "message": "Profile ready."
+  }
+}

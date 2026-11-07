@@ -1,361 +1,369 @@
 {
-  "schema": 1,
-  "id": "hacker",
   "category": "profiles",
-  "version": "1.0.0",
   "destination": "ryoku/profiles/hacker",
   "files": [
     {
-      "source": "assets/preview.webp",
-      "destination": "assets/preview.webp",
-      "sha256": "a2e90cd62ca23c1b2a846711e30677df0aea6547bb2a4e086b5d44f45f42414f",
-      "mode": "0644",
-      "size": 99256,
-      "install": true
-    },
-    {
-      "source": "home/.bash_profile",
       "destination": "home/.bash_profile",
+      "install": true,
+      "mode": "0644",
       "sha256": "3428f5fdf7bc639e61e865e182f4e5ae158492d43c48586502340d2d3b7eee65",
-      "mode": "0644",
       "size": 261,
-      "install": true
+      "source": "home/.bash_profile"
     },
     {
-      "source": "home/.bashrc",
       "destination": "home/.bashrc",
+      "install": true,
+      "mode": "0644",
       "sha256": "7a73d891c59569e7e1ed72b8db5035477f8f66d037df7ead0984a2ba8618b4a5",
-      "mode": "0644",
       "size": 873,
-      "install": true
+      "source": "home/.bashrc"
     },
     {
-      "source": "home/.config/mimeapps.list",
       "destination": "home/.config/mimeapps.list",
+      "install": true,
+      "mode": "0644",
       "sha256": "1bf598ff0d8043adaf7a3409cfc477873e0e5e67a680a308b63cc1c9e6840d96",
-      "mode": "0644",
       "size": 317,
-      "install": true
+      "source": "home/.config/mimeapps.list"
     },
     {
-      "source": "home/.config/mozilla/firefox/burp/user.js",
       "destination": "home/.config/mozilla/firefox/burp/user.js",
+      "install": true,
+      "mode": "0644",
       "sha256": "d31cb9fdbcd2e12a7aabf258629962989c6cf614e173a2a4d39b8f2c2190fded",
-      "mode": "0644",
       "size": 1528,
-      "install": true
+      "source": "home/.config/mozilla/firefox/burp/user.js"
     },
     {
-      "source": "home/.config/mozilla/firefox/hacker/user.js",
       "destination": "home/.config/mozilla/firefox/hacker/user.js",
+      "install": true,
+      "mode": "0644",
       "sha256": "1825a6c4a2b7ca386f3f49dfb969d8ec73620dd0006c9359dab33d1ed6d481fb",
-      "mode": "0644",
       "size": 973,
-      "install": true
+      "source": "home/.config/mozilla/firefox/hacker/user.js"
     },
     {
-      "source": "home/.config/mozilla/firefox/profiles.ini",
       "destination": "home/.config/mozilla/firefox/profiles.ini",
+      "install": true,
+      "mode": "0644",
       "sha256": "dfeb094c351b51afa19978e6330f1fa81b35548d3d75aae523b22291854121ed",
-      "mode": "0644",
       "size": 147,
-      "install": true
+      "source": "home/.config/mozilla/firefox/profiles.ini"
     },
     {
-      "source": "home/.config/obsidian/obsidian.json",
       "destination": "home/.config/obsidian/obsidian.json",
+      "install": true,
+      "mode": "0644",
       "sha256": "5c5bb2bf62d78e18f664c5eec0e26240875c1c0b80d337ab782227b9ea89fa42",
-      "mode": "0644",
       "size": 130,
-      "install": true
+      "source": "home/.config/obsidian/obsidian.json"
     },
     {
-      "source": "home/.config/ryoku/plugins.json",
       "destination": "home/.config/ryoku/plugins.json",
+      "install": true,
+      "mode": "0644",
       "sha256": "ec120afd0d75017df691d654e42a95dc7151664f292a5863704edcf370d17f41",
-      "mode": "0644",
       "size": 93,
-      "install": true
+      "source": "home/.config/ryoku/plugins.json"
     },
     {
-      "source": "home/.config/ryoku/rices/hacker/rice.json",
       "destination": "home/.config/ryoku/rices/hacker/rice.json",
+      "install": true,
+      "mode": "0644",
       "sha256": "a737c5cd9580df46a57284b016d356daf7056e598b673a8595a7c2570a5323ee",
-      "mode": "0644",
       "size": 2133,
-      "install": true
+      "source": "home/.config/ryoku/rices/hacker/rice.json"
     },
     {
-      "source": "home/.config/ryoku/rices/hacker/wall.webp",
       "destination": "home/.config/ryoku/rices/hacker/wall.webp",
+      "install": true,
+      "mode": "0644",
       "sha256": "f9000242db3619c14c852ecc5986107e634ce07faeecdb307b5eeb88d3abb28b",
-      "mode": "0644",
       "size": 500092,
-      "install": true
+      "source": "home/.config/ryoku/rices/hacker/wall.webp"
     },
     {
-      "source": "home/.local/bin/box",
       "destination": "home/.local/bin/box",
+      "install": true,
+      "mode": "0755",
       "sha256": "a0b972cf49522cd4a305985b73b9b4e9c932ec37ce83a30381d80f8acaeff629",
-      "mode": "0755",
       "size": 1998,
-      "install": true
+      "source": "home/.local/bin/box"
     },
     {
-      "source": "home/.local/bin/burp-ca",
       "destination": "home/.local/bin/burp-ca",
+      "install": true,
+      "mode": "0755",
       "sha256": "f14ba909f009a1f77c01be86bc09bbb6e9d1a34155d8b1c15929c110085dbe2a",
-      "mode": "0755",
       "size": 1025,
-      "install": true
+      "source": "home/.local/bin/burp-ca"
     },
     {
-      "source": "home/.local/bin/lab",
       "destination": "home/.local/bin/lab",
+      "install": true,
+      "mode": "0755",
       "sha256": "a52808b83fabb98ee20b10295d67ea4e23882ee94378c429aac614540e5c4db7",
-      "mode": "0755",
       "size": 3584,
-      "install": true
+      "source": "home/.local/bin/lab"
     },
     {
-      "source": "home/.local/bin/target",
       "destination": "home/.local/bin/target",
-      "sha256": "95641e433e5657dc6eb8f7f773f0c97dc8c542ddf996457510966511541794a5",
+      "install": true,
       "mode": "0755",
+      "sha256": "95641e433e5657dc6eb8f7f773f0c97dc8c542ddf996457510966511541794a5",
       "size": 1833,
-      "install": true
+      "source": "home/.local/bin/target"
     },
     {
-      "source": "home/.local/share/applications/firefox-burp.desktop",
       "destination": "home/.local/share/applications/firefox-burp.desktop",
+      "install": true,
+      "mode": "0644",
       "sha256": "9f74f3e764056cf5843a0af2db7017dccc34aba67058519b748c79d47c6cd153",
-      "mode": "0644",
       "size": 273,
-      "install": true
+      "source": "home/.local/share/applications/firefox-burp.desktop"
     },
     {
-      "source": "home/.local/share/ryoku/profile-plugins/lab-status/.gitignore",
       "destination": "home/.local/share/ryoku/profile-plugins/lab-status/.gitignore",
+      "install": true,
+      "mode": "0644",
       "sha256": "379dfa9273952c08fa44042de676ed4addc26a7c4d4c90235d6ff2c73dffb810",
-      "mode": "0644",
       "size": 22,
-      "install": true
+      "source": "home/.local/share/ryoku/profile-plugins/lab-status/.gitignore"
     },
     {
-      "source": "home/.local/share/ryoku/profile-plugins/lab-status/AGENTS.md",
       "destination": "home/.local/share/ryoku/profile-plugins/lab-status/AGENTS.md",
+      "install": true,
+      "mode": "0644",
       "sha256": "151e070bffb09bcaad4670b0fefc942e0ae58463814cc0eaa57ebce58dd082ce",
-      "mode": "0644",
       "size": 993,
-      "install": true
+      "source": "home/.local/share/ryoku/profile-plugins/lab-status/AGENTS.md"
     },
     {
-      "source": "home/.local/share/ryoku/profile-plugins/lab-status/LICENSE",
       "destination": "home/.local/share/ryoku/profile-plugins/lab-status/LICENSE",
+      "install": true,
+      "mode": "0644",
       "sha256": "8e509a2f3762489f218a01653db63956d69945b265dfae997b757e9ef0e3678b",
-      "mode": "0644",
       "size": 1067,
-      "install": true
+      "source": "home/.local/share/ryoku/profile-plugins/lab-status/LICENSE"
     },
     {
-      "source": "home/.local/share/ryoku/profile-plugins/lab-status/README.md",
       "destination": "home/.local/share/ryoku/profile-plugins/lab-status/README.md",
+      "install": true,
+      "mode": "0644",
       "sha256": "6f50ccd86c8f4548135e7a1b0599609c40895e03f4a068fb1137091821cbbb86",
-      "mode": "0644",
       "size": 1411,
-      "install": true
+      "source": "home/.local/share/ryoku/profile-plugins/lab-status/README.md"
     },
     {
-      "source": "home/.local/share/ryoku/profile-plugins/lab-status/assets/preview-widget.png",
       "destination": "home/.local/share/ryoku/profile-plugins/lab-status/assets/preview-widget.png",
+      "install": true,
+      "mode": "0644",
       "sha256": "62a6ee6fed128c9976936665e0ff52af5514b1c96e8ebb65f57e2eac40e46c3c",
-      "mode": "0644",
       "size": 2041,
-      "install": true
+      "source": "home/.local/share/ryoku/profile-plugins/lab-status/assets/preview-widget.png"
     },
     {
-      "source": "home/.local/share/ryoku/profile-plugins/lab-status/content/Panel.qml",
       "destination": "home/.local/share/ryoku/profile-plugins/lab-status/content/Panel.qml",
+      "install": true,
+      "mode": "0644",
       "sha256": "428a0acb20d345b7a818af9d9cc4aa4c85bada7920caa3141388e6e2c31da4d6",
-      "mode": "0644",
       "size": 5768,
-      "install": true
+      "source": "home/.local/share/ryoku/profile-plugins/lab-status/content/Panel.qml"
     },
     {
-      "source": "home/.local/share/ryoku/profile-plugins/lab-status/content/Widget.qml",
       "destination": "home/.local/share/ryoku/profile-plugins/lab-status/content/Widget.qml",
+      "install": true,
+      "mode": "0644",
       "sha256": "ee888812b6c51624c89b641d0d524815a4fd294666de904203461fcd46ef9ce1",
-      "mode": "0644",
       "size": 1920,
-      "install": true
+      "source": "home/.local/share/ryoku/profile-plugins/lab-status/content/Widget.qml"
     },
     {
-      "source": "home/.local/share/ryoku/profile-plugins/lab-status/manifest.json",
       "destination": "home/.local/share/ryoku/profile-plugins/lab-status/manifest.json",
+      "install": true,
+      "mode": "0644",
       "sha256": "f130efb0682f80018b732550b5cd14f7576ddf8dc877b09fbdcba3c3c2cf6898",
-      "mode": "0644",
       "size": 857,
-      "install": true
+      "source": "home/.local/share/ryoku/profile-plugins/lab-status/manifest.json"
     },
     {
-      "source": "home/.local/share/ryoku/profile-plugins/lab-status/service/Main.qml",
       "destination": "home/.local/share/ryoku/profile-plugins/lab-status/service/Main.qml",
+      "install": true,
+      "mode": "0644",
       "sha256": "763345642c94a5ab0698f223ca98f44cd8a558ea0f09e67589dc4c4a6db09ca8",
-      "mode": "0644",
       "size": 3840,
-      "install": true
+      "source": "home/.local/share/ryoku/profile-plugins/lab-status/service/Main.qml"
     },
     {
-      "source": "home/engagements/README.md",
       "destination": "home/engagements/README.md",
+      "install": true,
+      "mode": "0644",
       "sha256": "3c7e5c534ad69d3af2c054cdaa6eaeddb6e4ca76c56d42f0a84604fccc76b4f2",
-      "mode": "0644",
       "size": 336,
-      "install": true
+      "source": "home/engagements/README.md"
     },
     {
-      "source": "home/notes/.obsidian/app.json",
       "destination": "home/notes/.obsidian/app.json",
+      "install": true,
+      "mode": "0644",
       "sha256": "5c7edd6850ca56bf68ab46bbdabf3f051cebe2ce253486d330b2245160b807d3",
-      "mode": "0644",
       "size": 137,
-      "install": true
+      "source": "home/notes/.obsidian/app.json"
     },
     {
-      "source": "home/notes/.obsidian/core-plugins.json",
       "destination": "home/notes/.obsidian/core-plugins.json",
+      "install": true,
+      "mode": "0644",
       "sha256": "9f8788007e7bb910a6507bc8325b4e75418a8a7b548354516eeecc33a0293007",
-      "mode": "0644",
       "size": 296,
-      "install": true
+      "source": "home/notes/.obsidian/core-plugins.json"
     },
     {
-      "source": "home/notes/.obsidian/templates.json",
       "destination": "home/notes/.obsidian/templates.json",
+      "install": true,
+      "mode": "0644",
       "sha256": "548ca3c1ac1e75b1f6a0e5839b7490c9ad04035761e5ddffbcd6380b734ecd00",
-      "mode": "0644",
       "size": 83,
-      "install": true
+      "source": "home/notes/.obsidian/templates.json"
     },
     {
-      "source": "home/notes/Cheatsheets/File transfer.md",
       "destination": "home/notes/Cheatsheets/File transfer.md",
+      "install": true,
+      "mode": "0644",
       "sha256": "11a4f65fc967045e7fc21845def8a3a7b85ef50b50a0ab73542337238d766219",
-      "mode": "0644",
       "size": 770,
-      "install": true
+      "source": "home/notes/Cheatsheets/File transfer.md"
     },
     {
-      "source": "home/notes/Cheatsheets/Reverse shells.md",
       "destination": "home/notes/Cheatsheets/Reverse shells.md",
+      "install": true,
+      "mode": "0644",
       "sha256": "c3da1bc315eaccba50233ba9628fee1f4069b15a53974653ab62a1afe3d3c3f7",
-      "mode": "0644",
       "size": 631,
-      "install": true
+      "source": "home/notes/Cheatsheets/Reverse shells.md"
     },
     {
-      "source": "home/notes/Cheatsheets/Tools on this account.md",
       "destination": "home/notes/Cheatsheets/Tools on this account.md",
+      "install": true,
+      "mode": "0644",
       "sha256": "b21707fc89b9accbfb4511c9d5b011a53fb285fb413c6d87e4a58bed0c02873d",
-      "mode": "0644",
       "size": 1021,
-      "install": true
+      "source": "home/notes/Cheatsheets/Tools on this account.md"
     },
     {
-      "source": "home/notes/Cheatsheets/Wordlists on this account.md",
       "destination": "home/notes/Cheatsheets/Wordlists on this account.md",
+      "install": true,
+      "mode": "0644",
       "sha256": "fc7e167e556cd5ea90befd63a8d91a3995dff87c796d05523c24904ef5ced22c",
-      "mode": "0644",
       "size": 935,
-      "install": true
+      "source": "home/notes/Cheatsheets/Wordlists on this account.md"
     },
     {
-      "source": "home/notes/Methodology/Active Directory.md",
       "destination": "home/notes/Methodology/Active Directory.md",
+      "install": true,
+      "mode": "0644",
       "sha256": "b369ec02c671a4ead66a1b7a0ee8a2a8657d5ac03d14f773840aa3006f3b7558",
-      "mode": "0644",
       "size": 955,
-      "install": true
+      "source": "home/notes/Methodology/Active Directory.md"
     },
     {
-      "source": "home/notes/Methodology/Enumeration.md",
       "destination": "home/notes/Methodology/Enumeration.md",
+      "install": true,
+      "mode": "0644",
       "sha256": "83d22250d1f334ab315672845cc6ea00aaa6264d646fdb6c21fe35a2455ee2af",
-      "mode": "0644",
       "size": 1069,
-      "install": true
+      "source": "home/notes/Methodology/Enumeration.md"
     },
     {
-      "source": "home/notes/Methodology/Linux privilege escalation.md",
       "destination": "home/notes/Methodology/Linux privilege escalation.md",
+      "install": true,
+      "mode": "0644",
       "sha256": "075fcfa6ff85b80f69e4bf0432c1d941da5b9162e258b206188ef1ba6ee927c5",
-      "mode": "0644",
       "size": 726,
-      "install": true
+      "source": "home/notes/Methodology/Linux privilege escalation.md"
     },
     {
-      "source": "home/notes/Methodology/Web.md",
       "destination": "home/notes/Methodology/Web.md",
+      "install": true,
+      "mode": "0644",
       "sha256": "ce5d0f0b9bf47699b404b7a43c33edf419ae8c67ad614555e49f76f5013dd93b",
-      "mode": "0644",
       "size": 1109,
-      "install": true
+      "source": "home/notes/Methodology/Web.md"
     },
     {
-      "source": "home/notes/Methodology/Windows privilege escalation.md",
       "destination": "home/notes/Methodology/Windows privilege escalation.md",
+      "install": true,
+      "mode": "0644",
       "sha256": "a33f11e53246b8d4496b7e9596bb3cba7e2d121e53c60fe9860068022d7e221c",
-      "mode": "0644",
       "size": 768,
-      "install": true
+      "source": "home/notes/Methodology/Windows privilege escalation.md"
     },
     {
-      "source": "home/notes/Start here.md",
       "destination": "home/notes/Start here.md",
+      "install": true,
+      "mode": "0644",
       "sha256": "e2e249e12d48359bdb4cb753f0b5d24c404a81961dee2f208ec465ad57856d80",
-      "mode": "0644",
       "size": 1694,
-      "install": true
+      "source": "home/notes/Start here.md"
     },
     {
-      "source": "home/notes/Templates/Box.md",
       "destination": "home/notes/Templates/Box.md",
+      "install": true,
+      "mode": "0644",
       "sha256": "16e2e9b790228f2da685bfea3cd460b0d001d8f05c935745327bb4d96a91f535",
-      "mode": "0644",
       "size": 454,
-      "install": true
+      "source": "home/notes/Templates/Box.md"
     },
     {
-      "source": "home/notes/Templates/Level (OverTheWire).md",
       "destination": "home/notes/Templates/Level (OverTheWire).md",
+      "install": true,
+      "mode": "0644",
       "sha256": "25ea18872868d31a834311b5f63cf032f67a71985a84bb3cde5b3b1158b3cd58",
-      "mode": "0644",
       "size": 315,
-      "install": true
+      "source": "home/notes/Templates/Level (OverTheWire).md"
     },
     {
-      "source": "home/notes/Templates/Room (TryHackMe).md",
       "destination": "home/notes/Templates/Room (TryHackMe).md",
+      "install": true,
+      "mode": "0644",
       "sha256": "736a0a1fb726a7f54dadc0fb24c99658a568d190189a3a7d4df3d2833d7c0665",
-      "mode": "0644",
       "size": 348,
-      "install": true
+      "source": "home/notes/Templates/Room (TryHackMe).md"
     },
     {
-      "source": "home/vpn/README.md",
       "destination": "home/vpn/README.md",
-      "sha256": "63ab06ea9b0280e4d0f6264aec3565c9700494f1772b2f4eb6dcd403facd751c",
+      "install": true,
       "mode": "0644",
+      "sha256": "63ab06ea9b0280e4d0f6264aec3565c9700494f1772b2f4eb6dcd403facd751c",
       "size": 399,
-      "install": true
+      "source": "home/vpn/README.md"
     },
     {
-      "source": "profile.json",
-      "destination": "profile.json",
-      "sha256": "b7c02be5fcb93677c131c9c9172aa7edc700392328a513726b7448603c4439d1",
+      "destination": "item.toml",
+      "install": true,
       "mode": "0644",
-      "size": 15848,
-      "install": true
+      "sha256": "b729d098e5629028eb0ff9bcb0188a7493c62f4071ac48032e00c669eb1cf2ac",
+      "size": 931,
+      "source": "item.toml"
+    },
+    {
+      "destination": "preview.webp",
+      "install": true,
+      "mode": "0644",
+      "sha256": "a2e90cd62ca23c1b2a846711e30677df0aea6547bb2a4e086b5d44f45f42414f",
+      "size": 99256,
+      "source": "preview.webp"
+    },
+    {
+      "destination": "profile.json",
+      "install": true,
+      "mode": "0644",
+      "sha256": "5ee64fd60a186d420eeacb550ae1c892f53fbe3be6808b2c03b3310b45190370",
+      "size": 15934,
+      "source": "profile.json"
     }
-  ]
+  ],
+  "id": "hacker",
+  "schema": 1,
+  "version": "1.0.0"
 }

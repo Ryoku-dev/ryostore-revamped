@@ -607,6 +607,12 @@
     "vpn",
     ".BurpSuite"
   ],
+  "storeItems": [
+    {
+      "category": "barstyles",
+      "id": "qsbar"
+    }
+  ],
   "rice": "hacker",
   "firstRun": {
     "command": [

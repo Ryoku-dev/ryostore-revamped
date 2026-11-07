@@ -1,0 +1,53 @@
+name: Check catalogue
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Validate items and check generated files
+        run: python3 tools/build.py --check
+      - name: Test catalogue tooling
+        run: python3 -m unittest discover -s tests -p 'test_*.py'
+      - name: Test catalogue items
+        run: python3 tools/test.py
+      - name: Install QML parser
+        run: sudo apt-get update && sudo apt-get install -y qt6-declarative-dev-tools
+      - name: Check changed QML syntax
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          BASE_REF: ${{ github.base_ref }}
+          BEFORE: ${{ github.event.before }}
+        shell: bash
+        run: |
+          set -uo pipefail
+          if [[ "$EVENT_NAME" == "pull_request" ]]; then
+            range="origin/$BASE_REF...HEAD"
+          elif [[ -n "$BEFORE" && "$BEFORE" != "0000000000000000000000000000000000000000" ]]; then
+            range="$BEFORE...HEAD"
+          else
+            range="HEAD^...HEAD"
+          fi
+          mapfile -d '' files < <(git diff --name-only --diff-filter=ACMR -z "$range" -- '*.qml')
+          failed=0
+          for file in "${files[@]}"; do
+            [[ -f "$file" ]] || continue
+            output=$(/usr/lib/qt6/bin/qmllint "$file" 2>&1 || true)
+            printf '%s\n' "$output"
+            if grep -Eq 'Expected token|Unexpected token|Syntax error' <<<"$output"; then
+              failed=1
+            fi
+          done
+          exit "$failed"

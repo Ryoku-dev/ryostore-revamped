@@ -1,0 +1,18 @@
+#:schema ../../schema/item.schema.json
+
+id = "example-subshell"
+name = "Example Subshell"
+version = "0.1.0"
+summary = "A minimal Ryoku subshell"
+description = "A starting point for a complete shell look hosted by Ryoku."
+license = "GPL-3.0-or-later"
+authors = ["Your Name"]
+tags = ["subshell"]
+preview = "preview.webp"
+screenshots = []
+
+[shell]
+entry = "qml/Scene.qml"
+frameHost = "each"
+owns = []
+modules = []

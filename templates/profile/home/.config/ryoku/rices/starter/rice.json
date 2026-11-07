@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "slug": "starter",
+  "name": "Starter",
+  "author": "Your Name",
+  "blurb": "The desktop look this profile's account starts with.",
+  "color": {
+    "mode": "wallpaper"
+  },
+  "look": {
+    "shell": {
+      "barStyle": "orpheus"
+    }
+  }
+}

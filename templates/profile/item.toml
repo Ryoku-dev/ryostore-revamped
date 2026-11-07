@@ -1,0 +1,17 @@
+#:schema ../../schema/item.schema.json
+
+id = "example-profile"
+name = "Example Profile"
+version = "0.1.0"
+summary = "A minimal Ryoku account profile"
+description = "A starting point for a declarative account profile."
+license = "GPL-3.0-or-later"
+authors = ["Your Name"]
+tags = ["profile"]
+preview = "preview.webp"
+screenshots = []
+official = true
+
+[requires]
+packageManagers = ["pacman"]
+reason = "Profiles need Arch or CachyOS."

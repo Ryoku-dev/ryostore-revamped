@@ -233,6 +233,29 @@
         "$ref": "#/$defs/relativePath"
       }
     },
+    "storeItems": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "category",
+          "id"
+        ],
+        "properties": {
+          "category": {
+            "enum": [
+              "subshells",
+              "barstyles"
+            ]
+          },
+          "id": {
+            "$ref": "#/$defs/id"
+          }
+        }
+      }
+    },
     "rice": {
       "$ref": "#/$defs/id"
     },
