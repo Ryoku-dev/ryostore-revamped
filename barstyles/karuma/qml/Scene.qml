@@ -483,7 +483,7 @@ Item {
     onSheetChanged: { if (root.sheet === "quick") root.refreshQuick(); }
 
     function toggleBluetooth() {
-        Quickshell.execDetached(["bluetoothctl", "power", root.bluetoothPowered ? "off" : "on"]);
+        Quickshell.execDetached(["timeout", "5", "bluetoothctl", "power", root.bluetoothPowered ? "off" : "on"]);
         btRefresh.restart();
     }
 
@@ -750,15 +750,18 @@ Item {
     }
 
     // One line: powered <TAB> name of the first connected device. Silent when
-    // there is no adapter (the 双 reading then hides).
+    // there is no adapter (the 双 reading then hides). Every bluetoothctl call
+    // is bounded: without bluetoothd it waits for the service forever, and a
+    // hung call would outlive the shell once the style is switched away.
     Process {
         id: btProbe
         command: ["sh", "-c",
-            "p=$(bluetoothctl show 2>/dev/null | awk -F': ' '/Powered:/{print $2; exit}'); [ -n \"$p\" ] || exit 0; "
-            + "n=$(bluetoothctl devices Connected 2>/dev/null | head -n1 | cut -d' ' -f3-); "
+            "bt() { timeout 3 bluetoothctl \"$@\" 2>/dev/null </dev/null; }; "
+            + "p=$(bt show | awk -F': ' '/Powered:/{print $2; exit}'); [ -n \"$p\" ] || exit 0; "
+            + "n=$(bt devices Connected | head -n1 | cut -d' ' -f3-); "
             + "if [ -z \"$n\" ] && [ \"$p\" = yes ]; then "
-            + "n=$(bluetoothctl devices 2>/dev/null | while read -r _ mac name; do "
-            + "if bluetoothctl info \"$mac\" 2>/dev/null | grep -q 'Connected: yes'; then echo \"$name\"; break; fi; done); fi; "
+            + "n=$(bt devices | while read -r _ mac name; do "
+            + "if bt info \"$mac\" | grep -q 'Connected: yes'; then echo \"$name\"; break; fi; done); fi; "
             + "printf '%s\\t%s\\n' \"$p\" \"$n\""]
         stdout: StdioCollector {
             onStreamFinished: {

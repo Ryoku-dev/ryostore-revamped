@@ -129,14 +129,26 @@ Singleton {
         }
     }
 
+    // wl-paste --watch runs for the whole session; it exits only when the clipboard
+    // source goes away. Respawn after a pause, but give up after five exits in a row
+    // with no clipboard event in between (wl-paste missing or failing), so a broken
+    // setup cannot turn into a process launch every two seconds.
+    property int watchExits: 0
+
     Process {
         id: watchProc
         command: ["wl-paste", "--watch", "echo", "x"]
         running: true
         stdout: SplitParser {
-            onRead: debounce.restart()
+            onRead: {
+                root.watchExits = 0;
+                debounce.restart();
+            }
         }
-        onExited: respawn.restart()
+        onExited: {
+            if (++root.watchExits <= 5)
+                respawn.restart();
+        }
     }
 
     Timer {

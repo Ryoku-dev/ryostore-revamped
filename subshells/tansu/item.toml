@@ -1,6 +1,6 @@
 id = "tansu"
 name = "Tansu"
-version = "1.4.66"
+version = "1.4.67"
 summary = "Bar and phone"
 description = """A colorful shell with a cool phone, along with its own design and settings, and much more."""
 license = "GPL-3.0-only"
@@ -11,6 +11,10 @@ accent = "#a2c9fd"
 surface = "#111418"
 preview = "preview.webp"
 screenshots = []
+
+[requires]
+windowManager = "hyprland"
+reason = "Tansu drives Hyprland directly (hyprctl, Hyprland.dispatch and Quickshell.Hyprland) for keybinds, settings, popups and the scroll overview."
 
 [shell]
 entry = "qml/Scene.qml"

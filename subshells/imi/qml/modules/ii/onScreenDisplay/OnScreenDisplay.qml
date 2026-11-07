@@ -183,7 +183,8 @@ Scope {
         id: stateResetTimer
         interval: 150
         repeat: true
-        running: true
+        // Only a live OSD item can need the reset; no OSD, no 150 ms wakeups.
+        running: osdLoader.active && osdLoader.item !== null
         onTriggered: {
             // If the OSD Loader has a live item but the shell-level flags say it
             // should be fully closed, force-reset the expansion state. This catches

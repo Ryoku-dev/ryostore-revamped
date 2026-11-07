@@ -22,16 +22,16 @@
       "destination": "README.md",
       "install": true,
       "mode": "0644",
-      "sha256": "209be2330cdd6492881722cf64ca3834112faa14d6fda171a4d1c7e7e354e366",
-      "size": 2218,
+      "sha256": "f8ea56d7ae38a97e7bf1f9114c118711f98ffe9e00b2c2fd9a145c90ff801f58",
+      "size": 2403,
       "source": "README.md"
     },
     {
       "destination": "item.toml",
       "install": true,
       "mode": "0644",
-      "sha256": "97dd28312a84088d181b72e2767d5264f8b375e9033e7c118d8a01dd7dda098f",
-      "size": 852,
+      "sha256": "7a6b1d12ff3e56ec24f0f89a7c88b16c9ab88cb4a7f2c43ccccf11fcbc0fd843",
+      "size": 1008,
       "source": "item.toml"
     },
     {
@@ -78,7 +78,7 @@
       "destination": "qml/VERSION",
       "install": true,
       "mode": "0644",
-      "sha256": "fe840f52fb5578d3f77eb497115eb02c6036601c3a53e60df7995c7276baa77a",
+      "sha256": "b4b16faea52dc04ccfe32f7b342094855923ebf599a3cac1940470a2d6d7c261",
       "size": 6,
       "source": "qml/VERSION"
     },
@@ -11630,8 +11630,8 @@
       "destination": "qml/modules/ii/onScreenDisplay/OnScreenDisplay.qml",
       "install": true,
       "mode": "0644",
-      "sha256": "e36466abfc9ac9ccb0af72f9634d1b781940931f9ed08f5baf3f3d3fb198720b",
-      "size": 98662,
+      "sha256": "5e0082ff737119b97dce160f1720009e25d0f0e4c923500478a281fc1ab7b4ba",
+      "size": 98780,
       "source": "qml/modules/ii/onScreenDisplay/OnScreenDisplay.qml"
     },
     {
@@ -15749,5 +15749,5 @@
       "ipc": "imi"
     }
   },
-  "version": "2.0.1"
+  "version": "2.0.2"
 }

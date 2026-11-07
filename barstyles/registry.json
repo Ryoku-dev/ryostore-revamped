@@ -69,7 +69,7 @@
       "description": "A configurable Ryoku bar with a paper-and-ink surface, movable modules, kanji workspaces, media and tray integration, quick settings, profiles, and an adaptive side rail.",
       "id": "karuma",
       "manifest": "manifest.json",
-      "manifestSha256": "46bd82ce34a0bd085955940fe6467249eea928d141aec7827e8e04a7dc71bbc3",
+      "manifestSha256": "dd6744707ffeb562512cf8eadba9068a229f6c33fba096638ff2bef8afc117aa",
       "name": "Karuma",
       "path": "barstyles/karuma",
       "preview": "preview.webp",
@@ -86,7 +86,7 @@
         "media"
       ],
       "upstream": "https://github.com/Ryoku-dev/ryostore/tree/main/barstyles/karuma",
-      "version": "1.0.1"
+      "version": "1.0.2"
     },
     {
       "accent": "#68c7c1",
@@ -206,7 +206,7 @@
       "description": "Ricelin is a modern pill-style bar focused on clean visuals, smooth animations, dynamic theming, and extensive customization. It integrates with Ryoku and supports dynamic colors.",
       "id": "ricelin",
       "manifest": "manifest.json",
-      "manifestSha256": "13fec47a3f649f111db381c89a49a4fecb7b7fb714d1c2830a4402f385d2d25d",
+      "manifestSha256": "2144234fc5d6d7a4cdb7e20b5391f81a7da5b51a09c9b6f8a0999d4d0e194c95",
       "name": "Ricelin",
       "path": "barstyles/ricelin",
       "preview": "preview.webp",
@@ -222,7 +222,7 @@
         "customizable"
       ],
       "upstream": "https://github.com/ryoku-dev/ryostore/tree/main/barstyles/ricelin",
-      "version": "1.2.2"
+      "version": "1.2.3"
     },
     {
       "accent": "#d58b73",

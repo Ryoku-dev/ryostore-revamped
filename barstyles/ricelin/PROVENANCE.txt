@@ -79,3 +79,8 @@ menu is open instead of dropping back to the rest form; the tray folds away
 whenever the pill leaves its expanded form. The overlay's fullscreen hide is
 back to the original logic; only the reserve strip changed (see 1.2.0). Fullscreen
 changes are logged as "ricelin: output <name> fullscreen = <bool>".
+
+1.2.3 (2026-11-07): the clipboard watcher (`wl-paste --watch`) still respawns two
+seconds after it exits, but stops after five exits in a row with no clipboard
+event in between, so a missing or failing wl-paste no longer launches a process
+every two seconds for the whole session.

@@ -30,15 +30,15 @@
       "destination": "README.md",
       "install": true,
       "mode": "0644",
-      "sha256": "f1e58d68d077b28c7546b903a75d03ebe5efe0d197807e22857792f5999be26e",
-      "size": 13103,
+      "sha256": "2a7a8bd47cd8ccc2865be0ab859605b3535a7d5484e40099579ad897430acc60",
+      "size": 13652,
       "source": "README.md"
     },
     {
       "destination": "item.toml",
       "install": true,
       "mode": "0644",
-      "sha256": "e435daeceadaf80853ec04c412fe18f106146dedcd2c4962101629b19bea0177",
+      "sha256": "4de01a5cac538748e4df95730dfd64bffcc57be388682096b73153469b2a805a",
       "size": 629,
       "source": "item.toml"
     },
@@ -62,7 +62,7 @@
       "destination": "qml/VERSION",
       "install": true,
       "mode": "0644",
-      "sha256": "027a61167f091a427fa7844dcac0c5141bafbcbdcadc7e04a93578147ab956f2",
+      "sha256": "d5d1d767be9218f02ebda081a83a2b2fede85055e910e5a94a09329966486fcc",
       "size": 6,
       "source": "qml/VERSION"
     },
@@ -270,8 +270,8 @@
       "destination": "qml/upstream/MacBar.qml",
       "install": true,
       "mode": "0644",
-      "sha256": "ab3cfa3011d94fed2893e87d6572fbf2e55532fcea0c87c8a5b21f1afa116ca8",
-      "size": 587951,
+      "sha256": "78523e57e5c828a74a2938d1c5859905ac914aca1a33cfc6e74e8204e26c94d6",
+      "size": 588682,
       "source": "qml/upstream/MacBar.qml"
     },
     {
@@ -775,5 +775,5 @@
       "ipc": "macshell-settings"
     }
   },
-  "version": "0.3.4"
+  "version": "0.3.5"
 }

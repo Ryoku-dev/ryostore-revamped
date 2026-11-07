@@ -1,6 +1,6 @@
 id = "karuma"
 name = "Karuma"
-version = "1.0.1"
+version = "1.0.2"
 summary = "Paper-and-ink adaptive bar"
 description = "A configurable Ryoku bar with a paper-and-ink surface, movable modules, kanji workspaces, media and tray integration, quick settings, profiles, and an adaptive side rail."
 license = "MIT"

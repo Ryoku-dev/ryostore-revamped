@@ -14,8 +14,8 @@
       "destination": "PROVENANCE.txt",
       "install": true,
       "mode": "0644",
-      "sha256": "486e4bb08a40be8331cc10171a4e6abc6054dad609967244bcb04c218a7d15a9",
-      "size": 4913,
+      "sha256": "0e86aaff82db12b572d203cb6c57e44f4a3300fd75eeb42fb840977d663a0018",
+      "size": 5195,
       "source": "PROVENANCE.txt"
     },
     {
@@ -30,7 +30,7 @@
       "destination": "item.toml",
       "install": true,
       "mode": "0644",
-      "sha256": "e8eaf055e8e81a763fa41d61b05fce86ed477d32c9d655fa22d4f7a579f6abab",
+      "sha256": "205867af4aadd66debbdbfbc0fcd0850a1286d5167819abcaac0dab39c21ba37",
       "size": 658,
       "source": "item.toml"
     },
@@ -342,8 +342,8 @@
       "destination": "qml/Singletons/Cliphist.qml",
       "install": true,
       "mode": "0644",
-      "sha256": "d5a0fec8d8f071ed18682a0596f4a34b4993037189f72b43e8c3475b3f0cec66",
-      "size": 8137,
+      "sha256": "f15d7d1f8d89174a3d2e154c2ec2331e7e7ea0ade5867a7df632f01d16d5cdc9",
+      "size": 8630,
       "source": "qml/Singletons/Cliphist.qml"
     },
     {
@@ -626,5 +626,5 @@
       "ipc": ""
     }
   },
-  "version": "1.2.2"
+  "version": "1.2.3"
 }

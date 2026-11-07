@@ -39,7 +39,7 @@
       "description": "macOS-inspired Ryoku subshell with Control Center, Dock and desktop widgets.",
       "id": "gokko",
       "manifest": "manifest.json",
-      "manifestSha256": "16c61cb35192e680d8f12fd79729c971dabf8e864b76d2acc93957918342163d",
+      "manifestSha256": "1656c8c96c3f7c1f4a446b645825df430ff24c8384ecd359e7de6fc535d6a2c2",
       "name": "Gokko",
       "path": "subshells/gokko",
       "preview": "preview.webp",
@@ -55,7 +55,7 @@
         "widgets"
       ],
       "upstream": "https://github.com/0-ss/MacShell",
-      "version": "0.3.4"
+      "version": "0.3.5"
     },
     {
       "accent": "#9ecaff",
@@ -63,7 +63,7 @@
       "description": "A full-desktop Material 3 shell: island bar with edit mode, dynamic island, sidebars, on-screen display, notification banners, session screen and vertical bar. Colors from the shell matugen palette, compositor state through the host facade.",
       "id": "imi",
       "manifest": "manifest.json",
-      "manifestSha256": "ab18c0656c39c0a85ea9c42b3ceb04b70dab9d8a8868e949f8db72b5340856ea",
+      "manifestSha256": "5ea1dc6d75bfc023f8e5b86ced4f03728cb89b812bfc67ee2db0e8b904882167",
       "name": "Imi",
       "path": "subshells/imi",
       "preview": "preview.webp",
@@ -83,7 +83,9 @@
         "vertical"
       ],
       "upstream": "https://github.com/ryoku-dev/ryostore/tree/main/barstyles/imi",
-      "version": "2.0.1"
+      "version": "2.0.2",
+      "windowManager": "hyprland",
+      "windowManagerReason": "Imi drives Hyprland directly (hyprctl and Quickshell.Hyprland) for keyboard layouts, popups, workspaces and settings."
     },
     {
       "accent": "#cba6f7",
@@ -125,7 +127,7 @@
       "description": "A colorful shell with a cool phone, along with its own design and settings, and much more.",
       "id": "tansu",
       "manifest": "manifest.json",
-      "manifestSha256": "6d9db4b228596b63c0d3b9a0993a3409bde27ad0e263eea0cf93148eb6c78e7e",
+      "manifestSha256": "a0d74c41fbfb1dfefa7955e052e39b8fd5ae6228c6c1789dd79744e0ae7a0a56",
       "name": "Tansu",
       "path": "subshells/tansu",
       "preview": "preview.webp",
@@ -143,7 +145,9 @@
         "customizable"
       ],
       "upstream": "https://github.com/ryoku-dev/ryostore/tree/main/barstyles/tansu",
-      "version": "1.4.66"
+      "version": "1.4.67",
+      "windowManager": "hyprland",
+      "windowManagerReason": "Tansu drives Hyprland directly (hyprctl, Hyprland.dispatch and Quickshell.Hyprland) for keybinds, settings, popups and the scroll overview."
     }
   ]
 }

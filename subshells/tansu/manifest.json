@@ -22,16 +22,16 @@
       "destination": "README.md",
       "install": true,
       "mode": "0644",
-      "sha256": "a785fb6679ca3151d8c89cbdb408903e86ba3bd03a7e92cd57e5d89ceb4b7c0d",
-      "size": 4909,
+      "sha256": "4e200cd92559f2092075f4f829873917ed57891e26e82a0e01c877c12cacb130",
+      "size": 4948,
       "source": "README.md"
     },
     {
       "destination": "item.toml",
       "install": true,
       "mode": "0644",
-      "sha256": "5c5aff1f42496b4ed5901b3654b31f2aa85abd3547fc4a08f123c9b1800a70c1",
-      "size": 579,
+      "sha256": "36892f0c4b450ed74f546d8a0d786b08387d48c7f605e0d53addb240565fb854",
+      "size": 769,
       "source": "item.toml"
     },
     {
@@ -54,7 +54,7 @@
       "destination": "qml/VERSION",
       "install": true,
       "mode": "0644",
-      "sha256": "4da8c43a9d5691dac616d62f270613a18dfda0fc85ff8cf80c5f932035b8f625",
+      "sha256": "453411de287cb67a531254291f8d0db8d97fd1d913395cd37a2736cf297b8d14",
       "size": 7,
       "source": "qml/VERSION"
     },
@@ -7388,5 +7388,5 @@
       "ipc": ""
     }
   },
-  "version": "1.4.66"
+  "version": "1.4.67"
 }

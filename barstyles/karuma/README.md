@@ -7,7 +7,7 @@ Karuma is a configurable paper-and-ink bar style for Ryoku. It includes a horizo
 - Runs as a native Ryoku bar style through `qml/Scene.qml`; it uses Ryoku's own UI, singletons and plugin host rather than targeting a specific window manager.
 - Reads the Ryoku shell configuration, the current desktop and theme tokens, connected display, workspace, window, media and system state, and installed Ryoku plugin metadata.
 - Writes its bar-style settings and user-selected profiles to the Karuma and Ryoku configuration and state locations.
-- Can invoke system utilities for supported controls such as networking, Bluetooth, brightness, screen recording, and keep-awake. Those actions depend on the corresponding system utility or device being available.
+- Can invoke system utilities for supported controls such as networking, Bluetooth, brightness, screen recording, and keep-awake. Those actions depend on the corresponding system utility or device being available. Every `bluetoothctl` call runs under `timeout`, because without `bluetoothd` it waits for the service forever and would outlive the bar style after a switch.
 - Opens the project's linked GitHub pages from its settings UI. It contains no updater or separate network client.
 
 ## Packaging

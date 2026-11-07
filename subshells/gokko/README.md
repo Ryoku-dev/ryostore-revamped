@@ -232,3 +232,16 @@ Two long-running defects in the bar:
 - The app-menu label read its own `font.weight` while also writing it, which
   made a binding loop that re-evaluated every frame and kept the bar committing.
   The weight is now computed once and used by both properties.
+
+## Gokko 0.3.5: hyprctl only on Hyprland
+
+The last direct `hyprctl` calls that ran on every compositor now check the
+running one first:
+
+- The App Switcher focuses the chosen window through the Wm bridge outside
+  Hyprland instead of calling `hyprctl eval`.
+- Menu shortcuts skip `hyprctl dispatch focuswindow` and the `sendshortcut`
+  fallback outside Hyprland; `wtype` or `ydotool` sends the key to the focused
+  window.
+- The automatic Game Mode probe (`hyprctl -j activewindow`) runs only on
+  Hyprland, the only compositor Game Mode switches.

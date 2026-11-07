@@ -1,6 +1,6 @@
 id = "ricelin"
 name = "Ricelin"
-version = "1.2.2"
+version = "1.2.3"
 summary = "A sleek, customizable pill-style bar for Ryoku."
 description = "Ricelin is a modern pill-style bar focused on clean visuals, smooth animations, dynamic theming, and extensive customization. It integrates with Ryoku and supports dynamic colors."
 license = "MIT"

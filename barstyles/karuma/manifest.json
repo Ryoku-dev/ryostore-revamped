@@ -22,15 +22,15 @@
       "destination": "README.md",
       "install": true,
       "mode": "0644",
-      "sha256": "ecd24c59f38755a3d0bd38af92b18f31ed6dfec78dd4247b7266192f27e4d8b1",
-      "size": 1482,
+      "sha256": "a1ab3713fd5e1f8d92a2d143fdded631d2ebff97ac30d36e5577c2bddfba8db9",
+      "size": 1640,
       "source": "README.md"
     },
     {
       "destination": "item.toml",
       "install": true,
       "mode": "0644",
-      "sha256": "9f87dbbad3f40bad7cba770586282b0a6c52aefb88316ca13b2159e14a2f98ea",
+      "sha256": "4cfc3f874e0c9f0582482bdd601519c13f35e8356905f19fdef9fe0121011fe2",
       "size": 644,
       "source": "item.toml"
     },
@@ -222,8 +222,8 @@
       "destination": "qml/Scene.qml",
       "install": true,
       "mode": "0644",
-      "sha256": "a424533d1b632bad73a46b73be244734abaa0814ebfe1288ceac450a4d08de02",
-      "size": 89865,
+      "sha256": "adf6246142e5f92f7e79775d6c777184f2fac61d71a2221e71871f402f972de5",
+      "size": 90050,
       "source": "qml/Scene.qml"
     },
     {
@@ -386,5 +386,5 @@
       "ipc": ""
     }
   },
-  "version": "1.0.1"
+  "version": "1.0.2"
 }

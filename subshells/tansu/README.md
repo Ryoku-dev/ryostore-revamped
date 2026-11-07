@@ -55,15 +55,16 @@ switch off pills in **Modules**.
 
 ## Compositor support
 
-Window-manager state is read through the shell's compositor-neutral facade, so
-the bar runs on **Hyprland** and **niri** alike. A few popups still use
-Quickshell's `HyprlandFocusGrab` to dismiss on click-outside; on niri that logs a
-harmless warning and the popup closes on a second click instead.
+Workspaces and windows are read through the shell's compositor-neutral facade,
+but keybinds, the Hyprland settings page, edit mode, the scroll overview and
+several popups call `hyprctl`, `Hyprland.dispatch` and `Quickshell.Hyprland`
+directly. `item.toml` therefore declares `windowManager = "hyprland"`, and the
+Store offers Tansu only on Hyprland.
 
 ## Dependencies
 
 - **Ryoku Desktop Shell** (Quickshell-based)
-- **Hyprland** or **niri** compositor
+- **Hyprland** compositor
 - **`ryogami`** (for the wallpaper board)
 
 No external scripts or binaries are bundled beyond `ryogami` and the shell's own

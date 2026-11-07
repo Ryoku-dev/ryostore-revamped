@@ -5,8 +5,8 @@ brings the whole ii shell family: the bar with its widget set and edit
 mode, the dynamic island, both sidebars, on-screen display, notification
 banners, the session screen and the vertical bar.
 
-Ryoku provides the platform. Compositor state goes through the host's
-Wm facade (Hyprland and niri alike), colors come from the shell's
+Ryoku provides the platform. Most compositor state goes through the host's
+Wm facade, colors come from the shell's
 matugen palette, and audio, network, battery, brightness, weather,
 notifications, media and the rest are the shell's own services - the
 barstyle keeps no private copies of them.
@@ -34,7 +34,9 @@ imi/
 ## Dependencies
 
 - Ryoku Desktop Shell (Quickshell-based)
-- Hyprland or niri
+- Hyprland. Keyboard layouts, several popups, workspaces and the settings
+  pages call `hyprctl` and `Quickshell.Hyprland` directly, so `item.toml`
+  declares `windowManager = "hyprland"` and the Store offers Imi only there.
 - KDE syntax-highlighting QML module (`org.kde.syntaxhighlighting`) for code blocks in the AI chat sidebar
 
 ## Known gaps
