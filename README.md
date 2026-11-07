@@ -14,10 +14,13 @@ New here? Read [CONTRIBUTING.md](CONTRIBUTING.md), then [docs/items.md](docs/ite
 | `<category>/registry.json` | generated list of the category's listed items |
 | `templates/subshell/`, `templates/barstyle/`, `templates/profile/` | starters `tools/new.py` copies |
 | `schema/item.schema.json`, `schema/profile.schema.json` | schemas for `item.toml` and `profile.json` |
-| `tools/build.py` | validates items, writes manifests and registries; `--check` fails when stale |
+| `tools/build.py` | validates items, writes manifests and registries; `--check` fails when stale or when a measurement is missing |
 | `tools/new.py` | scaffolds an item from a template |
 | `tools/test.py` | runs every item's own tests |
+| `tools/measure.py` | measures each installed item against Orpheus inside a Ryoku desktop and writes `measurements/<id>.json` |
+| `tools/behaviour-allowlist.json` | reviewed exceptions to the compositor, Timer and Process checks ([review.md](docs/review.md#behaviour-checks)) |
 | `tools/platform.json` | the QML modules and `shell.services` names Ryoku provides to items |
+| `measurements/` | one resource record per subshell and bar style; its tier and delta go into the registry ([items.md](docs/items.md#resource-measurements)) |
 | `tests/` | tests for the tooling |
 | `docs/` | [items.md](docs/items.md) (`item.toml` and folder layout), [shells.md](docs/shells.md) (writing subshells and bar styles), [profiles.md](docs/profiles.md), [paths.md](docs/paths.md), [review.md](docs/review.md) |
 | `.github/workflows/check.yml` | the one CI check; item-owned workflows are named `<id>-*.yml` |

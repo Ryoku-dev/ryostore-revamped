@@ -51,7 +51,7 @@ Anything else fails the build. So do symlinks, special files, compiled executabl
 | Field | Meaning |
 |---|---|
 | `packageManagers` | editions the item runs on: `pacman`, `dnf`, `xbps`; omit for every edition |
-| `windowManager` | the window manager the item is written for; omit for any |
+| `windowManager` | the window manager the item is written for, by its Ryoku provider name (`hyprland`, `niri`, `wayfire`); omit for any. Required when the item calls that compositor directly ([review.md](review.md#behaviour-checks)) |
 | `reason` | shown when a gate blocks |
 | `qmlModules` | exact system QML module URIs imported beyond the platform list, for example `org.kde.syntaxhighlighting`; never `qs` |
 
@@ -168,4 +168,23 @@ Profiles cannot declare `[shell]`, `[provides]`, `[lifecycle]`, `[runtime]` or `
 
 `manifest.json` lists every file in the item except itself, with the same item-relative `source` and `destination`, `sha256`, `mode` (`0755` when executable, else `0644`), `size` and `install: true`, under destination `ryoku/<category>/<id>`. Shell manifests add a `shell` object with the `[shell]`, `[provides]`, `[lifecycle]` and `[runtime]` tables, every roster embedded as `rosterRecords`.
 
-`<category>/registry.json` is `{"schema": 1, "<category>": [...]}` with one row per listed item, sorted by id. A row carries the Store fields above, `path` (`<category>/<id>`), `manifestSha256`, `requiresQmlModules` when set, and for shell items `provides`, the ids of its contributions by kind. JSON is written with sorted keys, two-space indent and a final newline.
+`<category>/registry.json` is `{"schema": 1, "<category>": [...]}` with one row per listed item, sorted by id. A row carries the Store fields above, `path` (`<category>/<id>`), `manifestSha256`, `requiresQmlModules` when set, and for shell items `provides`, the ids of its contributions by kind, and `metadata` with `resourceTier` and `resourceDelta` copied from the item's current measurement (below). JSON is written with sorted keys, two-space indent and a final newline.
+
+## Resource measurements
+
+Every listed subshell and bar style whose downloads are not paused has a committed record `measurements/<id>.json`, measured for its current `version`. `tools/build.py --check` fails when a record is missing, was measured for an older version, names an item that does not exist, or lists processes the item left running; a plain build prints the same as warnings and leaves `metadata` out of the row until the record is current. Unlisted items need none.
+
+Records come from `tools/measure.py`, run inside a Ryoku desktop (a lab container, never a desktop someone is using) as the desktop user; [review.md](review.md#measuring-items) has the command. It selects Orpheus, then each installed item, with `ryoku-shell barstyle <id>`, waits until `shells.json` reports it active and in use, settles (90 s), and samples the `qs -c shell` process and its helper processes for a window (60 s): PSS from `smaps_rollup`, GPU memory (VRAM + GTT) from the DRM fdinfo, CPU from utime + stime, wakeups from context switches, and launches, the processes that appear under the shell or the daemon. Ten seconds after switching to the next item it lists every process the previous one started that is still running.
+
+| Field | Meaning |
+|---|---|
+| `id`, `version` | the item and the version that was measured |
+| `measuredAt`, `ryoku` | when, and the Ryoku build (`git describe`) |
+| `machine` | `gpu`, `outputs` and `scale` of the desktop |
+| `baseline` | always `orpheus` |
+| `delta` | item minus Orpheus: `pssMB`, `gpuMB`, `cpuPct`, `wakeupsPerSec`, `launchesPerMin` |
+| `leftoverProcesses` | command lines still running 10 s after switching away; must be empty |
+| `tier` | from the delta: `light` (PSS <= 30 MB, CPU <= 0.1 %, no launches), `standard` (PSS <= 80 MB, CPU <= 0.5 %, <= 10 launches a minute) or `heavy`; the build recomputes it |
+| `absolute`, `window` | the sampled item and baseline numbers, and the settle, sample and linger seconds |
+
+Never edit a record by hand; measure again after every version bump.

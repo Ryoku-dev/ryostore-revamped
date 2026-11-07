@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "entries": [
+    {"item": "barstyles/chroma", "check": "timer", "file": "qml/components/ClockModule.qml", "key": "Timer@1", "reason": "1 s tick of the clock the bar always shows; no process."},
+
+    {"item": "barstyles/iris", "check": "compositor", "file": "bin/runtime-wanted", "key": "niri", "reason": "Reads NIRI_SOCKET to decide whether the pinned upstream runtime applies; it calls nothing."},
+    {"item": "barstyles/iris", "check": "compositor", "file": "qml/inir/modules/iris/components/IrisMotionMeter.qml", "key": "niri", "reason": "Developer motion meter started only through the iris `motion` IPC call; it reads the refresh rate with `niri msg -j outputs` and keeps the default 60 Hz when that fails."},
+    {"item": "barstyles/iris", "check": "compositor", "file": "qml/inir/scripts/niri-config.py", "key": "niri", "reason": "Run only from IrisCompositorBlur.reload(), which is gated on CompositorService.compositorBlur (false in this port)."},
+    {"item": "barstyles/iris", "check": "compositor", "file": "qml/inir/services/brightnessPolicy.js", "key": "niri", "reason": "iNiR's display-sleep queue speaks `niri msg`; it runs only when the user puts displays to sleep, and outside niri the command exits with an error and the outputs stay on (kept as upstream)."},
+    {"item": "barstyles/iris", "check": "timer", "file": "qml/inir/services/DateTime.qml", "key": "Timer@1", "reason": "60 s uptime refresh from upstream iNiR; reads /proc/uptime, no process."},
+    {"item": "barstyles/iris", "check": "timer", "file": "qml/inir/services/Weather.qml", "key": "clockTickTimer", "reason": "60 s tick (_clockTick) that recomputes the time-dependent weather bindings; no process."},
+    {"item": "barstyles/iris", "check": "timer", "file": "qml/inir/services/WorldClock.qml", "key": "Timer@1", "reason": "1 s world-clock tick; runs only while the World Clock desktop widget is enabled."},
+    {"item": "barstyles/iris", "check": "timer", "file": "qml/inir/services/YtMusic.qml", "key": "Timer@3", "reason": "500 ms playback-position read from the in-process mpv player; runs only while a YouTube Music track is loaded."},
+
+    {"item": "barstyles/karuma", "check": "timer", "file": "qml/KarumaHub.qml", "key": "Timer@1", "reason": "1 s clock in the hub's Clock section; the hub exists only while it is open (Loader active: root.hubOpen)."},
+
+    {"item": "barstyles/lumania", "check": "timer", "file": "qml/island/Island.qml", "key": "Timer@1", "reason": "1 s tick of the island clock the bar always shows; no process."},
+
+    {"item": "barstyles/nomarchy", "check": "timer", "file": "qml/plugins/agents/Main.qml", "key": "Timer@2", "reason": "Agent usage refresh every refreshIntervalSec (default 900 s, at least 30 s; 180 s near a limit)."},
+    {"item": "barstyles/nomarchy", "check": "timer", "file": "qml/plugins/bar/widgets/SystemUpdate.qml", "key": "Timer@1", "reason": "Update check every 6 hours."},
+    {"item": "barstyles/nomarchy", "check": "timer", "file": "qml/plugins/notifications/Service.qml", "key": "Timer@2", "reason": "50 ms countdown of a notification card's lifetime; exists per shown card and runs only while that card is counting down and not hovered (ticking)."},
+    {"item": "barstyles/nomarchy", "check": "timer", "file": "qml/plugins/panels/audio/Panel.qml", "key": "Timer@2", "reason": "15 s re-resolve of the default sink for the audio panel."},
+    {"item": "barstyles/nomarchy", "check": "timer", "file": "qml/plugins/panels/dropbox/Service.qml", "key": "refreshTimer", "reason": "Dropbox status refresh every refreshIntervalSec (default 60 s, at least 10 s)."},
+    {"item": "barstyles/nomarchy", "check": "timer", "file": "qml/plugins/panels/dropbox/Service.qml", "key": "startupRamp", "reason": "2 s start-up ramp that stops itself once dropboxd answers or after about 30 s."},
+    {"item": "barstyles/nomarchy", "check": "timer", "file": "qml/plugins/panels/elsewhen/Globe.qml", "key": "Timer@1", "reason": "20 s repaint of the time-zone globe's day/night line; no process."},
+    {"item": "barstyles/nomarchy", "check": "timer", "file": "qml/plugins/panels/elsewhen/Globe.qml", "key": "Timer@2", "reason": "5 min time-zone probe for the globe."},
+    {"item": "barstyles/nomarchy", "check": "timer", "file": "qml/plugins/panels/tailscale/Service.qml", "key": "refreshTimer", "reason": "Tailscale status refresh every refreshIntervalSec."},
+    {"item": "barstyles/nomarchy", "check": "timer", "file": "qml/plugins/panels/tailscale/Service.qml", "key": "startupRamp", "reason": "2 s start-up ramp that stops itself once tailscaled answers or after about 30 s."},
+    {"item": "barstyles/nomarchy", "check": "timer", "file": "qml/plugins/panels/weather/Panel.qml", "key": "refreshTimer", "reason": "Weather refresh every refreshMinutes (default 15 min)."},
+
+    {"item": "barstyles/orbit", "check": "timer", "file": "qml/Scene.qml", "key": "Timer@1", "reason": "1 s tick of the clock the bar always shows; no process."},
+
+    {"item": "barstyles/qsbar", "check": "timer", "file": "qml/Theme.qml", "key": "Timer@1", "reason": "AI usage labels refresh: 5 s while the usage module is visible, 30 s otherwise, scaled by Ryoku.Perf.pollFactor."},
+    {"item": "barstyles/qsbar", "check": "timer", "file": "qml/Theme.qml", "key": "Timer@2", "reason": "System telemetry file reads (/proc stat, loadavg, meminfo): 2 s while a CPU or memory module is shown, 10 s otherwise, scaled by Ryoku.Perf.pollFactor; no process."},
+
+    {"item": "barstyles/ricelin", "check": "compositor", "file": "qml/Singletons/MediaShortcuts.qml", "key": "hyprland", "reason": "Imports Quickshell.Hyprland only for GlobalShortcut media keys, instantiated only when Wm.caps.globalShortcuts is true."},
+    {"item": "barstyles/ricelin", "check": "timer", "file": "qml/Singletons/Weather.qml", "key": "Timer@1", "reason": "Weather refresh every 20 minutes."},
+
+    {"item": "barstyles/sukunabikona", "check": "timer", "file": "qml/Scene.qml", "key": "Timer@1", "reason": "1 s tick of the clock the bar always shows; no process."},
+
+    {"item": "subshells/caelestia", "check": "process", "file": "qml/services/Nmcli.qml", "key": "monitorProc", "reason": "Upstream Caelestia restarts `nmcli monitor` 2 s after it exits; it exits when NetworkManager restarts, and without NetworkManager it is retried every 2 s (item downloads are paused)."},
+    {"item": "subshells/caelestia", "check": "timer", "file": "qml/components/controls/LoadingIndicator.qml", "key": "Timer@1", "reason": "650 ms shape morph of a loading indicator while its `animated` property is true; no process."},
+    {"item": "subshells/caelestia", "check": "timer", "file": "qml/services/Weather.qml", "key": "Timer@1", "reason": "Hourly weather refresh."},
+    {"item": "subshells/caelestia", "check": "timer", "file": "qml/utils/SysInfo.qml", "key": "Timer@1", "reason": "15 s uptime reload from /proc/uptime; no process."},
+
+    {"item": "subshells/gokko", "check": "compositor", "file": "qml/upstream/MacBar.qml", "key": "hyprland", "reason": "Every hyprctl call that runs checks macWm.provider === \"hyprland\" (the Wm bridge serves other compositors); the coverProbe Process is never started, and the hyprpaper step of the wallpaper fallback chain fails over to the next tool."},
+    {"item": "subshells/gokko", "check": "compositor", "file": "qml/upstream/MacDock.qml", "key": "hyprland", "reason": "Display-mode control runs only when modeControlSupported (provider hyprland); monProc/clientProc sit behind refreshBusy's Wm path, which always returns first."},
+    {"item": "subshells/gokko", "check": "compositor", "file": "qml/upstream/MacRoot.qml", "key": "hyprland", "reason": "geoProc is the hyprctl fallback poller, whose Timer is fixed at running: false because the Wm bridge supplies geometry."},
+    {"item": "subshells/gokko", "check": "timer", "file": "qml/upstream/CalendarWidget.qml", "key": "Timer@1", "reason": "30 s midnight rollover check of the calendar widget; no process."},
+    {"item": "subshells/gokko", "check": "timer", "file": "qml/upstream/ClockApp.qml", "key": "Timer@2", "reason": "Hourly time-zone offset refresh for the clock app."},
+    {"item": "subshells/gokko", "check": "timer", "file": "qml/upstream/ClockApp.qml", "key": "Timer@3", "reason": "Alarm and timer check: 1 s, 33 ms only while the stopwatch tab is shown; alarms must fire while the app is closed."},
+    {"item": "subshells/gokko", "check": "timer", "file": "qml/upstream/ClockWidget.qml", "key": "Timer@1", "reason": "33 ms tick for the desktop clock widget's sweeping second hand; stops in previews, no process. Counted in the measured tier."},
+    {"item": "subshells/gokko", "check": "timer", "file": "qml/upstream/MacBar.qml", "key": "Timer@6", "reason": "3 s gsettings color-scheme poll that follows the system light/dark mode; launches one process per tick. Counted in the measured tier."},
+    {"item": "subshells/gokko", "check": "timer", "file": "qml/upstream/MacBar.qml", "key": "Timer@15", "reason": "6 s Wi-Fi and Bluetooth state refresh for the menu bar (nmcli, bounded bluetoothctl). Counted in the measured tier."},
+    {"item": "subshells/gokko", "check": "timer", "file": "qml/upstream/MacBar.qml", "key": "Timer@17", "reason": "850 ms brightnessctl poll that shows the brightness OSD when hardware keys change it outside the shell. Counted in the measured tier."},
+    {"item": "subshells/gokko", "check": "timer", "file": "qml/upstream/MacBar.qml", "key": "Timer@22", "reason": "1 s recording-time counter; runs only while a recording is in progress (recRun)."},
+    {"item": "subshells/gokko", "check": "timer", "file": "qml/upstream/MacBar.qml", "key": "Timer@51", "reason": "250 ms freshness flag for the glass backdrop snapshot, per bar window; no process."},
+    {"item": "subshells/gokko", "check": "timer", "file": "qml/upstream/MacDock.qml", "key": "Timer@22", "reason": "Window-capture fallback for the Dock's live glass (33-200 ms); runs only while a capture source exists, live capture is unavailable and the dock can run."},
+
+    {"item": "subshells/imi", "check": "process", "file": "qml/services/TaskbarApps.qml", "key": "iconChangedWatch", "reason": "Session-long dbus-monitor for KIconLoader iconChanged, started with pdeath so it dies with the shell; restarted 5 s after it exits, which happens only when the session bus goes away."},
+    {"item": "subshells/imi", "check": "timer", "file": "qml/modules/ii/bar/widgets/resources/ExpressiveResources.qml", "key": "Timer@1", "reason": "700 ms warning pulse; runs only while a resource reading is in its warning range."},
+    {"item": "subshells/imi", "check": "timer", "file": "qml/modules/ii/dynamicIsland/styles/notch/NotchRestingFace.qml", "key": "Timer@1", "reason": "1 s call duration; runs only during a phone call."},
+    {"item": "subshells/imi", "check": "timer", "file": "qml/modules/ii/sidebarPolicies/phone/PhoneMirrorPage.qml", "key": "frameSampler", "reason": "60 ms frame sampling; runs only while the phone mirror page is visible (pageLive) and not yet settled."},
+    {"item": "subshells/imi", "check": "timer", "file": "qml/services/AlarmService.qml", "key": "alarmCheckTimer", "reason": "1 s alarm check; alarms must fire with every panel closed. No process."},
+    {"item": "subshells/imi", "check": "timer", "file": "qml/services/AlarmService.qml", "key": "Timer@5", "reason": "Hourly re-arm of the wake schedule."},
+    {"item": "subshells/imi", "check": "timer", "file": "qml/services/BluetoothStatus.qml", "key": "Timer@2", "reason": "Device list resort: 2 s, 500 ms while a Bluetooth panel is open or discovering; runs only while the adapter is on. No process."},
+    {"item": "subshells/imi", "check": "timer", "file": "qml/services/CalendarNotifier.qml", "key": "Timer@1", "reason": "60 s calendar reminder check."},
+    {"item": "subshells/imi", "check": "timer", "file": "qml/services/DateTime.qml", "key": "Timer@1", "reason": "10 s uptime reload from /proc/uptime; no process."},
+    {"item": "subshells/imi", "check": "timer", "file": "qml/services/Idle.qml", "key": "countdownTimer", "reason": "1 s countdown; runs only while a timed idle inhibit is active."},
+    {"item": "subshells/imi", "check": "timer", "file": "qml/services/MprisController.qml", "key": "playersRefreshTimer", "reason": "10 s MPRIS player list refresh."},
+    {"item": "subshells/imi", "check": "timer", "file": "qml/services/NetworkSpeed.qml", "key": "pollTimer", "reason": "1 s /proc/net/dev read; runs only while monitoring is on or a widget holds the service (polling = monitoring || holderCount > 0)."},
+    {"item": "subshells/imi", "check": "timer", "file": "qml/services/ResourceUsage.qml", "key": "cpuRamTimer", "reason": "CPU and memory file reads at effectiveResourceInterval, faster only while the resource popup monitors; no process."},
+
+    {"item": "subshells/python", "check": "timer", "file": "qml/singletons/environment/Weather.qml", "key": "refreshTimer", "reason": "Weather refresh every refreshInterval minutes."},
+    {"item": "subshells/python", "check": "timer", "file": "qml/singletons/system/DateTime.qml", "key": "clockTimer", "reason": "1 s tick of the clock the bar always shows; no process."},
+    {"item": "subshells/python", "check": "timer", "file": "qml/widgets/faces/notes/NotesFace.qml", "key": "Timer@1", "reason": "10 s relative-time ticker of the notes widget face; no process."},
+
+    {"item": "subshells/tansu", "check": "compositor", "file": "qml/services/NiriWorkspaces.qml", "key": "niri", "reason": "Connects only when NIRI_SOCKET is set; under the item's Hyprland gate it stays idle."}
+  ]
+}

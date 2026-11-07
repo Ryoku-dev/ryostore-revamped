@@ -104,7 +104,9 @@
           }
         },
         "windowManager": {
-          "type": "string"
+          "type": "string",
+          "description": "The Ryoku window-manager provider the item is written for (`ryoku wm use <name>`: hyprland, niri, wayfire). Required when the item calls that compositor directly (hyprctl, Quickshell.Hyprland, niri msg, Wayfire IPC), unless tools/behaviour-allowlist.json lists the call as gated.",
+          "examples": ["hyprland", "niri", "wayfire"]
         },
         "reason": {
           "type": "string"

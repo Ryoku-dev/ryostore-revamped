@@ -9,10 +9,13 @@ import re
 import tomllib
 from typing import Any
 
+from .behaviour import BehaviourError, behaviour_problems, compositor_findings, load_allowlist, scanned_files, timer_process_findings, unknown_allowlist_items
 from .images import preview_problem
 from .imports import reserved
 from .jsonschema import SchemaError, validate as validate_schema
 from .layout import layout_problems
+from . import measurements
+from .measurements import MeasurementError
 from .profiles import profile_problems
 from .security import SecurityError, payload_files, safe_relative, screen_item
 
@@ -53,6 +56,8 @@ class BuiltItem:
     listed: bool
     manifest_bytes: bytes
     registry_entry: dict[str, Any]
+    # Missing or stale resource measurements: warnings for a plain build, errors for --check.
+    measurement_notes: tuple[str, ...] = ()
 
 
 def json_bytes(value: object) -> bytes:
@@ -307,7 +312,7 @@ class _Item:
         )
         try:
             built, more = self._build()
-        except (CatalogueError, SecurityError) as error:
+        except (CatalogueError, SecurityError, BehaviourError, MeasurementError) as error:
             raise CatalogueError("\n".join([*problems, str(error)])) from error
         problems.extend(more)
         if problems:
@@ -393,6 +398,13 @@ class _Item:
         files = payload_files(self.directory, self.label)
         gate = (shell_block["modules"], qml_modules) if shell_block else None
         screen_item(self.directory, self.label, files, gate)
+        if shell_block is not None:
+            sources = scanned_files(self.directory, files)
+            problems.extend(behaviour_problems(
+                self.label, window_manager,
+                compositor_findings(sources) + timer_process_findings(sources),
+                load_allowlist(self.repo_root),
+            ))
         manifest: dict[str, Any] = {
             "schema": 1,
             "id": item_id,
@@ -454,7 +466,13 @@ class _Item:
             }
             if provided:
                 entry["provides"] = provided
-        return BuiltItem(self.category, item_id, self.directory, listed, manifest_raw, entry), problems
+        notes: list[str] = []
+        if shell_block is not None:
+            measured = measurements.load(self.repo_root, item_id)
+            notes = measurements.problems(self.label, version, measured, required=listed and not paused)
+            if measured is not None and measured["version"] == version and listed:
+                entry["metadata"] = measurements.registry_metadata(measured)
+        return BuiltItem(self.category, item_id, self.directory, listed, manifest_raw, entry, tuple(notes)), problems
 
 
 def load_item(repo_root: Path, category: str, item_dir: Path) -> BuiltItem:
@@ -471,7 +489,8 @@ def item_directories(repo_root: Path, category: str) -> list[Path]:
     )
 
 
-def generate_category(repo_root: Path, category: str) -> dict[Path, bytes]:
+def generate_category(repo_root: Path, category: str, notes: list[str] | None = None) -> dict[Path, bytes]:
+    """Generated files for one category. Measurement problems go to `notes` when given."""
     if category not in CATEGORIES:
         raise CatalogueError(f"unknown category {category!r}")
     built: list[BuiltItem] = []
@@ -483,6 +502,8 @@ def generate_category(repo_root: Path, category: str) -> dict[Path, bytes]:
             errors.append(str(error))
     if errors:
         raise CatalogueError("\n".join(errors))
+    if notes is not None:
+        notes.extend(note for item in built for note in item.measurement_notes)
     outputs = {item.directory / "manifest.json": item.manifest_bytes for item in built}
     registry = {"schema": 1, category: [item.registry_entry for item in built if item.listed]}
     outputs[repo_root / category / "registry.json"] = json_bytes(registry)
@@ -503,23 +524,36 @@ def selected_categories(repo_root: Path, selectors: list[str]) -> list[str]:
     return [category for category in CATEGORIES if category in categories]
 
 
-def build(repo_root: Path, selectors: list[str], *, check: bool) -> list[Path]:
+def build(repo_root: Path, selectors: list[str], *, check: bool, notes: list[str] | None = None) -> list[Path]:
+    """Validate and write generated files. Missing or stale measurements fail `check`; otherwise they
+    are appended to `notes` and the registry row goes without resource metadata."""
     outputs: dict[Path, bytes] = {}
     errors: list[str] = []
+    measurement_notes: list[str] = []
     for category in selected_categories(repo_root, selectors):
         try:
-            outputs.update(generate_category(repo_root, category))
+            outputs.update(generate_category(repo_root, category, measurement_notes))
         except CatalogueError as error:
+            errors.append(str(error))
+    if not selectors:
+        labels = {f"{category}/{path.name}" for category in SHELL_CATEGORIES for path in item_directories(repo_root, category)}
+        errors.extend(measurements.orphans(repo_root, {label.split("/", 1)[1] for label in labels}))
+        try:
+            errors.extend(unknown_allowlist_items(load_allowlist(repo_root), labels))
+        except BehaviourError as error:
             errors.append(str(error))
     if errors:
         raise CatalogueError("\n".join(errors))
     stale = sorted(path for path, expected in outputs.items() if not path.is_file() or path.read_bytes() != expected)
     if check:
-        if stale:
-            raise CatalogueError("\n".join(
-                f"{path.relative_to(repo_root)}: generated file is stale; run python3 tools/build.py" for path in stale
-            ))
+        problems = [
+            f"{path.relative_to(repo_root)}: generated file is stale; run python3 tools/build.py" for path in stale
+        ] + measurement_notes
+        if problems:
+            raise CatalogueError("\n".join(problems))
         return []
+    if notes is not None:
+        notes.extend(measurement_notes)
     for path in stale:
         path.write_bytes(outputs[path])
     return stale

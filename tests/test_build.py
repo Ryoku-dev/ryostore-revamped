@@ -13,6 +13,7 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(REPO_ROOT / "tools"))
 
 from ryostore_tools.catalogue import CatalogueError, build, generate_category
+from measurement_fixture import write_measurement
 
 
 TEMPLATE_IDS = {"subshell": "example-subshell", "barstyle": "example-barstyle", "profile": "example-profile"}
@@ -87,6 +88,12 @@ class TemplateTests(TreeTest):
             self.tree.add(category, f"sample-{category}")
         written = build(self.root, [], check=False)
         self.assertIn(self.root / "profiles/registry.json", written)
+        # A listed shell item needs a measurement before --check passes; profiles never do.
+        with self.assertRaisesRegex(CatalogueError, "measurements/sample-subshells.json: missing measurement"):
+            build(self.root, [], check=True)
+        for item_id in ("sample-subshells", "sample-barstyles"):
+            write_measurement(self.root, item_id, "0.1.0")
+        build(self.root, [], check=False)
         self.assertEqual(build(self.root, [], check=True), [])
 
     def test_manifest_and_registry_envelope(self) -> None:

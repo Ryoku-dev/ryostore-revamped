@@ -27,6 +27,7 @@ new_tool = load_tool("ryostore_new", "new.py")
 test_tool = load_tool("ryostore_test", "test.py")
 
 from ryostore_tools.catalogue import build
+from measurement_fixture import write_measurement
 
 
 class CommandTests(unittest.TestCase):
@@ -51,6 +52,9 @@ class CommandTests(unittest.TestCase):
     def test_scaffolded_items_pass_build(self) -> None:
         for category in ("subshell", "barstyle", "profile"):
             new_tool.scaffold(self.root, category, f"fresh-{category}")
+        build(self.root, [], check=False)
+        for item_id in ("fresh-subshell", "fresh-barstyle"):
+            write_measurement(self.root, item_id, "0.1.0")
         build(self.root, [], check=False)
         self.assertEqual(build(self.root, [], check=True), [])
 
