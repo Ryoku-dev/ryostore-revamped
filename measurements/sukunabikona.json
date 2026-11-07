@@ -1,0 +1,48 @@
+{
+  "absolute": {
+    "baseline": {
+      "cpuPct": 0.067,
+      "gpuMB": 237.5,
+      "launchesPerMin": 0.0,
+      "processes": 1,
+      "pssMB": 303.1,
+      "unseenPidsPerMin": 38.0,
+      "wakeupsPerSec": 8.3
+    },
+    "item": {
+      "cpuPct": 0.417,
+      "gpuMB": 251.8,
+      "launchesPerMin": 0.0,
+      "processes": 1,
+      "pssMB": 318.8,
+      "unseenPidsPerMin": 30.0,
+      "wakeupsPerSec": 24.8
+    }
+  },
+  "baseline": "orpheus",
+  "delta": {
+    "cpuPct": 0.35,
+    "gpuMB": 14.3,
+    "launchesPerMin": 0.0,
+    "pssMB": 15.7,
+    "wakeupsPerSec": 16.5
+  },
+  "id": "sukunabikona",
+  "leftoverProcesses": [],
+  "machine": {
+    "gpu": "amdgpu: Advanced Micro Devices, Inc. [AMD/ATI] Phoenix1 (rev c1)",
+    "outputs": [
+      "winit 1920x1080"
+    ],
+    "scale": 1.0
+  },
+  "measuredAt": "2026-11-07T16:10:29-05:00",
+  "ryoku": "v1.0.7-162-gad9146fd4",
+  "tier": "standard",
+  "version": "1.0.3",
+  "window": {
+    "lingerSeconds": 10,
+    "sampleSeconds": 60,
+    "settleSeconds": 90
+  }
+}

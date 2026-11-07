@@ -40,6 +40,16 @@
       "id": "gokko",
       "manifest": "manifest.json",
       "manifestSha256": "1656c8c96c3f7c1f4a446b645825df430ff24c8384ecd359e7de6fc535d6a2c2",
+      "metadata": {
+        "resourceDelta": {
+          "cpuPct": 0.33,
+          "gpuMB": 112.3,
+          "launchesPerMin": 556.0,
+          "pssMB": 46.2,
+          "wakeupsPerSec": 15.3
+        },
+        "resourceTier": "heavy"
+      },
       "name": "Gokko",
       "path": "subshells/gokko",
       "preview": "preview.webp",
@@ -64,6 +74,16 @@
       "id": "imi",
       "manifest": "manifest.json",
       "manifestSha256": "5ea1dc6d75bfc023f8e5b86ced4f03728cb89b812bfc67ee2db0e8b904882167",
+      "metadata": {
+        "resourceDelta": {
+          "cpuPct": 0.07,
+          "gpuMB": 5.8,
+          "launchesPerMin": 22.0,
+          "pssMB": 175.1,
+          "wakeupsPerSec": 6.6
+        },
+        "resourceTier": "heavy"
+      },
       "name": "Imi",
       "path": "subshells/imi",
       "preview": "preview.webp",
@@ -94,6 +114,16 @@
       "id": "python",
       "manifest": "manifest.json",
       "manifestSha256": "b5b860b08e5e977d7a8ec1fe70b0732f360c264092fc21987656f8f7e57e06d1",
+      "metadata": {
+        "resourceDelta": {
+          "cpuPct": 1.62,
+          "gpuMB": 4.3,
+          "launchesPerMin": 0.0,
+          "pssMB": 70.4,
+          "wakeupsPerSec": 250.7
+        },
+        "resourceTier": "heavy"
+      },
       "name": "Python",
       "path": "subshells/python",
       "preview": "preview.webp",
@@ -128,6 +158,16 @@
       "id": "tansu",
       "manifest": "manifest.json",
       "manifestSha256": "a0d74c41fbfb1dfefa7955e052e39b8fd5ae6228c6c1789dd79744e0ae7a0a56",
+      "metadata": {
+        "resourceDelta": {
+          "cpuPct": 0.22,
+          "gpuMB": 40.6,
+          "launchesPerMin": 0.0,
+          "pssMB": 93.4,
+          "wakeupsPerSec": 8.7
+        },
+        "resourceTier": "heavy"
+      },
       "name": "Tansu",
       "path": "subshells/tansu",
       "preview": "preview.webp",

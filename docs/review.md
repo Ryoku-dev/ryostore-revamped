@@ -52,6 +52,10 @@ python3 tools/build.py && python3 tools/build.py --check
 
 The lab copies this catalogue to `/srv/ryostore-revamped` and runs the real desktop (`lab-desktop --real tester`) in nested niri. `--install` installs or updates every listed, downloadable item first; name item ids to measure only those. One item takes about three minutes (`--settle 90 --window 60 --linger 10`). The script refuses to run outside a container unless given `--allow-host`, and restores the bar style that was active.
 
+An item whose `requires.windowManager` names one compositor is measured in a session of that compositor, against Orpheus in the same session: the Store does not install it anywhere else, so a niri session would keep measuring an older version. In the Hyperion lab, `/mnt/hyperion-lab-captures/bench/hyprmeasure.sh "<ryoku describe>" <id>...` (run with `lab-shell tester`) starts a Hyprland with a headless output on a wlroots host inside the container, runs the desktop on it and calls `measure.py` with the given ids; the records land in `measurements-hypr/`.
+
+PSS readings move by up to about 15 MB between identical runs, so an item measured near a tier boundary (30 or 80 MB) can change tier from one run to the next without changing.
+
 ## What reviewers check
 
 - One focused item with a maintainer who answers.

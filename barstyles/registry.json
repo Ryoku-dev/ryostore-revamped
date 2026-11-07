@@ -7,6 +7,16 @@
       "id": "chroma",
       "manifest": "manifest.json",
       "manifestSha256": "b90d1a35e3ebf9c106b2bbc61e7680ae8d4d9b19083744f7f4e5abe1104f31f5",
+      "metadata": {
+        "resourceDelta": {
+          "cpuPct": 0.05,
+          "gpuMB": -5.9,
+          "launchesPerMin": 0.0,
+          "pssMB": -5.1,
+          "wakeupsPerSec": 1.6
+        },
+        "resourceTier": "light"
+      },
       "name": "Chroma",
       "path": "barstyles/chroma",
       "preview": "preview.webp",
@@ -30,6 +40,16 @@
       "id": "iris",
       "manifest": "manifest.json",
       "manifestSha256": "331807fd0ee38468a91207ab7df041490f50ae1e41a3934f20190c2ae14f907f",
+      "metadata": {
+        "resourceDelta": {
+          "cpuPct": 0.05,
+          "gpuMB": 47.8,
+          "launchesPerMin": 91.0,
+          "pssMB": 87.7,
+          "wakeupsPerSec": 2.4
+        },
+        "resourceTier": "heavy"
+      },
       "name": "Shima",
       "path": "barstyles/iris",
       "preview": "preview.webp",
@@ -70,6 +90,16 @@
       "id": "karuma",
       "manifest": "manifest.json",
       "manifestSha256": "dd6744707ffeb562512cf8eadba9068a229f6c33fba096638ff2bef8afc117aa",
+      "metadata": {
+        "resourceDelta": {
+          "cpuPct": 0.28,
+          "gpuMB": -0.5,
+          "launchesPerMin": 193.0,
+          "pssMB": 10.8,
+          "wakeupsPerSec": 10.2
+        },
+        "resourceTier": "heavy"
+      },
       "name": "Karuma",
       "path": "barstyles/karuma",
       "preview": "preview.webp",
@@ -95,6 +125,16 @@
       "id": "nacre",
       "manifest": "manifest.json",
       "manifestSha256": "3a9aadd927f68cd18de136ab3548f7f343df7ba68813d51b2338823907e74163",
+      "metadata": {
+        "resourceDelta": {
+          "cpuPct": 0.25,
+          "gpuMB": 45.2,
+          "launchesPerMin": 0.0,
+          "pssMB": 12.2,
+          "wakeupsPerSec": 16.5
+        },
+        "resourceTier": "standard"
+      },
       "name": "Nacre",
       "path": "barstyles/nacre",
       "preview": "preview.webp",
@@ -116,6 +156,16 @@
       "id": "nomarchy",
       "manifest": "manifest.json",
       "manifestSha256": "8428ac602e0c0e82c7663d673526b11c6bc68856d2adf524b1594f6c6a1d5c1b",
+      "metadata": {
+        "resourceDelta": {
+          "cpuPct": 0.03,
+          "gpuMB": 0.8,
+          "launchesPerMin": 8.0,
+          "pssMB": 61.8,
+          "wakeupsPerSec": 1.7
+        },
+        "resourceTier": "standard"
+      },
       "name": "Nomarchy",
       "official": true,
       "path": "barstyles/nomarchy",
@@ -139,6 +189,16 @@
       "id": "obi",
       "manifest": "manifest.json",
       "manifestSha256": "ebc42bc4bf562a0f89532a51fb7763ab671a15fd584656ef731ad33c8aeb5d49",
+      "metadata": {
+        "resourceDelta": {
+          "cpuPct": 1.6,
+          "gpuMB": 8.6,
+          "launchesPerMin": 0.0,
+          "pssMB": 0.9,
+          "wakeupsPerSec": 271.9
+        },
+        "resourceTier": "heavy"
+      },
       "name": "Obi",
       "path": "barstyles/obi",
       "preview": "preview.webp",
@@ -160,6 +220,16 @@
       "id": "orbit",
       "manifest": "manifest.json",
       "manifestSha256": "0d66b846ca0668462bb45d811ce53d6fad45aa94cf7ddaf5535559748344cd38",
+      "metadata": {
+        "resourceDelta": {
+          "cpuPct": 4.15,
+          "gpuMB": 28.6,
+          "launchesPerMin": 0.0,
+          "pssMB": -0.3,
+          "wakeupsPerSec": 727.1
+        },
+        "resourceTier": "heavy"
+      },
       "name": "Orbit",
       "path": "barstyles/orbit",
       "preview": "preview.webp",
@@ -184,6 +254,16 @@
       "id": "qsbar",
       "manifest": "manifest.json",
       "manifestSha256": "7fb4d08f05bc6da7ae918ff5f134c715d5d006f17940ba5b1abc722184e955f5",
+      "metadata": {
+        "resourceDelta": {
+          "cpuPct": 0.75,
+          "gpuMB": 43.7,
+          "launchesPerMin": 555.9,
+          "pssMB": 39.2,
+          "wakeupsPerSec": 75.8
+        },
+        "resourceTier": "heavy"
+      },
       "name": "QS Bar",
       "official": true,
       "path": "barstyles/qsbar",
@@ -207,6 +287,16 @@
       "id": "ricelin",
       "manifest": "manifest.json",
       "manifestSha256": "2144234fc5d6d7a4cdb7e20b5391f81a7da5b51a09c9b6f8a0999d4d0e194c95",
+      "metadata": {
+        "resourceDelta": {
+          "cpuPct": 0.12,
+          "gpuMB": 40.2,
+          "launchesPerMin": 135.0,
+          "pssMB": 23.2,
+          "wakeupsPerSec": 5.6
+        },
+        "resourceTier": "heavy"
+      },
       "name": "Ricelin",
       "path": "barstyles/ricelin",
       "preview": "preview.webp",
@@ -231,6 +321,16 @@
       "id": "sukunabikona",
       "manifest": "manifest.json",
       "manifestSha256": "aecb363affbe5049bdc9a9221ca3498f0c9fb01c236d1a01fd4bbe88e28dc2ab",
+      "metadata": {
+        "resourceDelta": {
+          "cpuPct": 0.35,
+          "gpuMB": 14.3,
+          "launchesPerMin": 0.0,
+          "pssMB": 15.7,
+          "wakeupsPerSec": 16.5
+        },
+        "resourceTier": "standard"
+      },
       "name": "Sukunabikona",
       "path": "barstyles/sukunabikona",
       "preview": "preview.webp",
@@ -256,6 +356,16 @@
       "id": "sumi",
       "manifest": "manifest.json",
       "manifestSha256": "783d70b3f397355d327a0a15a5fbf306520634e3f699bba43479027140848b2c",
+      "metadata": {
+        "resourceDelta": {
+          "cpuPct": 0.02,
+          "gpuMB": 58.9,
+          "launchesPerMin": 0.0,
+          "pssMB": 20.8,
+          "wakeupsPerSec": 0.4
+        },
+        "resourceTier": "light"
+      },
       "name": "Sumi",
       "path": "barstyles/sumi",
       "preview": "preview.webp",
