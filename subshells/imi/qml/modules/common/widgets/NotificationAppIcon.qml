@@ -1,0 +1,97 @@
+import ".."
+import "../functions"
+import Qt5Compat.GraphicalEffects
+import QtQuick
+import Quickshell
+import Quickshell.Widgets
+import Quickshell.Services.Notifications
+
+MaterialShape { // App icon
+    id: root
+    property string appIcon: ""
+    property string summary: ""
+    property var urgency: NotificationUrgency.Normal
+    property bool isUrgent: urgency === NotificationUrgency.Critical
+    property string image: ""
+    property real materialIconScale: 0.57
+    property real appIconScale: 0.8
+    property real smallAppIconScale: 0.49
+    property real materialIconSize: implicitSize * materialIconScale
+    property real appIconSize: implicitSize * appIconScale
+    property real smallAppIconSize: implicitSize * smallAppIconScale
+    // `notify-send -i <name>` arrives as an image-path hint, which the server turns into
+    // image://icon/<name>. Shell senders pass Material Symbol names there, which no icon
+    // theme has, so draw those as a glyph instead of the missing-icon checkerboard.
+    readonly property string themedImageName: image.startsWith("image://icon/") ? image.slice(13).split("?")[0] : ""
+    readonly property bool imageIsGlyph: themedImageName !== "" && Quickshell.iconPath(themedImageName, true) === ""
+
+    implicitSize: 38 * scale
+    property list<var> urgentShapes: [MaterialShape.Shape.VerySunny, MaterialShape.Shape.SoftBurst,]
+    shape: isUrgent ? urgentShapes[Math.floor(Math.random() * urgentShapes.length)] : MaterialShape.Shape.Circle
+
+    color: isUrgent ? Appearance.colors.colPrimaryContainer : Appearance.colors.colSecondaryContainer
+    Loader {
+        id: materialSymbolLoader
+        active: (root.appIcon == "" && root.image == "") || root.imageIsGlyph
+        anchors.fill: parent
+        sourceComponent: MaterialSymbol {
+            text: {
+                if (root.imageIsGlyph)
+                    return root.themedImageName;
+                const defaultIcon = NotificationUtils.findSuitableMaterialSymbol("");
+                const guessedIcon = NotificationUtils.findSuitableMaterialSymbol(root.summary);
+                return (root.urgency == NotificationUrgency.Critical && guessedIcon === defaultIcon) ? "priority_high" : guessedIcon;
+            }
+            anchors.fill: parent
+            color: isUrgent ? Appearance.colors.colOnPrimaryContainer : Appearance.colors.colOnSecondaryContainer
+            iconSize: root.materialIconSize
+            horizontalAlignment: Text.AlignHCenter
+            verticalAlignment: Text.AlignVCenter
+        }
+    }
+    Loader {
+        id: appIconLoader
+        active: root.image == "" && root.appIcon != ""
+        anchors.centerIn: parent
+        sourceComponent: IconImage {
+            id: appIconImage
+            implicitSize: root.appIconSize
+            asynchronous: false
+            source: Quickshell.iconPath(root.appIcon, "image-missing")
+        }
+    }
+    Loader {
+        id: notifImageLoader
+        active: root.image != "" && !root.imageIsGlyph
+        anchors.fill: parent
+        sourceComponent: Item {
+            anchors.fill: parent
+            StyledImage {
+                id: notifImage
+                anchors.fill: parent
+                readonly property int size: parent.width
+
+                source: root.image
+                fillMode: Image.PreserveAspectCrop
+                // Notification images can be arbitrary screenshots or remote
+                // previews. Do not put every transient notification image in
+                // Qt's global image cache; sourceSize in StyledImage keeps the
+                // decoded surface bounded to this icon as well.
+                cache: false
+                antialiasing: true
+                asynchronous: !source.toString().startsWith("image://icon/")
+            }
+            Loader {
+                id: notifImageAppIconLoader
+                active: root.appIcon != ""
+                anchors.bottom: parent.bottom
+                anchors.right: parent.right
+                sourceComponent: IconImage {
+                    implicitSize: root.smallAppIconSize
+                    asynchronous: false
+                    source: Quickshell.iconPath(root.appIcon, "image-missing")
+                }
+            }
+        }
+    }
+}

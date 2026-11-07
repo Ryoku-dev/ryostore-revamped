@@ -1,0 +1,13 @@
+Imi 2.0.0 for the Ryoku desktop.
+
+Derived from the ii desktop shell family (pedrovfx's fork of end-4's
+dots-hyprland, GPL-3.0). Adapted to the Ryoku desktop: services run on
+the shell's own service facade, compositor state goes through the host
+Wm interface, and features the shell already provides (wallpapers, dock,
+launcher hosting, lockscreen, polkit dialogs) are left to the shell.
+
+Version 1.x of this barstyle was a stripped version of immaterial
+impulse; the 2.0.0 line is a fresh derivation and shares no code with it.
+Maintainer: dodo98 (https://github.com/dodo98).
+
+DockInputShield.qml is adapted from Ryoku's GPL-3.0 ii dock implementation.

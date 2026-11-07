@@ -1,0 +1,4 @@
+module tansu.modules.tansu.mediaControls
+MediaKey 1.0 MediaKey.qml
+MediaPopup 1.0 MediaPopup.qml
+MediaTab 1.0 MediaTab.qml

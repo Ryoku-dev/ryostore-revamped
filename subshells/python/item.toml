@@ -1,0 +1,45 @@
+id = "python"
+name = "Python"
+version = "1.0.0"
+summary = "Serpantinum's complete shell look, adapted for Ryoku"
+description = "Python brings Serpantinum's bars, panels, settings, launcher, dock and desktop faces to Ryoku while using Ryoku's compositor and system services."
+license = "AGPL-3.0-or-later"
+authors = ["ilyamiro", "Ryoku Team"]
+tags = ["subshell", "panels", "launcher", "dock", "desktop-widgets"]
+upstream = "https://github.com/ilyamiro/serpantinum"
+accent = "#cba6f7"
+surface = "#1e1e2e"
+
+[shell]
+entry = "qml/Scene.qml"
+frameHost = "primary"
+owns = ["notifications", "notificationSound", "osd", "polkit"]
+modules = []
+
+[shell.ownsSetting]
+notifications = "python.general.notifications"
+notificationSound = "python.general.notifications"
+osd = "python.general.osd"
+
+[shell.settings]
+ipc = "main"
+call = "handleCommand"
+args = ["toggle", "guide", ""]
+
+[[provides.dock]]
+id = "python"
+name = "Python"
+entry = "qml/dock/Dock.qml"
+
+[[provides.launcher]]
+id = "python"
+name = "Python"
+description = "The Python launcher: serpantinum's bar-attached search pill with usage ranking and a Files tab."
+entry = "qml/launcher/Main.qml"
+preview = "qml/launcher/Preview.qml"
+
+[[provides.desktopWidgets]]
+id = "python"
+roster = "qml/desktop/roster.json"
+widget = "qml/desktop/Widget.qml"
+options = "qml/desktop/options"

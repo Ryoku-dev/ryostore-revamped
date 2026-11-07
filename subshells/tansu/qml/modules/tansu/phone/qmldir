@@ -1,0 +1,5 @@
+module tansu.modules.tansu.phone
+singleton PanelActivity 1.0 PanelActivity.qml
+PhoneBody 1.0 PhoneBody.qml
+TansuKey 1.0 TansuKey.qml
+TansuNavKey 1.0 TansuNavKey.qml

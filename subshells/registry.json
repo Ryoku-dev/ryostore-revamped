@@ -1,0 +1,149 @@
+{
+  "schema": 1,
+  "subshells": [
+    {
+      "accent": "#b4befe",
+      "author": "lhen",
+      "description": "The Caelestia shell's framed bar, dock, dashboard, session menu, sidebar and OSD, in plain QML, with its own settings panel.",
+      "downloadPauseReason": "Delisted due to issues and bugs",
+      "downloadPaused": true,
+      "id": "caelestia",
+      "manifest": "manifest.json",
+      "manifestSha256": "e22dce4dbc1f2289daeee836584950a02c63b291471ff6645d52dc2304272f08",
+      "name": "Caelestia",
+      "path": "subshells/caelestia",
+      "preview": "preview.webp",
+      "screenshots": [
+        "screenshots/bar-bluetooth.webp",
+        "screenshots/performance.webp",
+        "screenshots/session.webp",
+        "screenshots/settings.webp"
+      ],
+      "summary": "Framed Material 3 shell",
+      "surface": "#2c2c3f",
+      "tags": [
+        "subshell",
+        "left",
+        "framed",
+        "material3",
+        "dashboard",
+        "dock",
+        "customizable"
+      ],
+      "upstream": "https://github.com/caelestia-dots/shell",
+      "version": "2.0.0"
+    },
+    {
+      "accent": "#9db4fd",
+      "author": "aethctl",
+      "description": "macOS-inspired Ryoku subshell with Control Center, Dock and desktop widgets.",
+      "id": "gokko",
+      "manifest": "manifest.json",
+      "manifestSha256": "16c61cb35192e680d8f12fd79729c971dabf8e864b76d2acc93957918342163d",
+      "name": "Gokko",
+      "path": "subshells/gokko",
+      "preview": "preview.webp",
+      "screenshots": [],
+      "summary": "macOS-inspired Liquid Glass subshell",
+      "surface": "#19171f",
+      "tags": [
+        "subshell",
+        "top",
+        "macos",
+        "liquid-glass",
+        "dock",
+        "widgets"
+      ],
+      "upstream": "https://github.com/0-ss/MacShell",
+      "version": "0.3.4"
+    },
+    {
+      "accent": "#9ecaff",
+      "author": "dodo986",
+      "description": "A full-desktop Material 3 shell: island bar with edit mode, dynamic island, sidebars, on-screen display, notification banners, session screen and vertical bar. Colors from the shell matugen palette, compositor state through the host facade.",
+      "id": "imi",
+      "manifest": "manifest.json",
+      "manifestSha256": "ab18c0656c39c0a85ea9c42b3ceb04b70dab9d8a8868e949f8db72b5340856ea",
+      "name": "Imi",
+      "path": "subshells/imi",
+      "preview": "preview.webp",
+      "requiresQmlModules": [
+        "org.kde.syntaxhighlighting"
+      ],
+      "screenshots": [],
+      "summary": "Imi: full-desktop shell style",
+      "surface": "#141318",
+      "tags": [
+        "top",
+        "material3",
+        "islands",
+        "subshell",
+        "island",
+        "customizable",
+        "vertical"
+      ],
+      "upstream": "https://github.com/ryoku-dev/ryostore/tree/main/barstyles/imi",
+      "version": "2.0.1"
+    },
+    {
+      "accent": "#cba6f7",
+      "author": "ilyamiro, Ryoku Team",
+      "description": "Python brings Serpantinum's bars, panels, settings, launcher, dock and desktop faces to Ryoku while using Ryoku's compositor and system services.",
+      "id": "python",
+      "manifest": "manifest.json",
+      "manifestSha256": "b5b860b08e5e977d7a8ec1fe70b0732f360c264092fc21987656f8f7e57e06d1",
+      "name": "Python",
+      "path": "subshells/python",
+      "preview": "preview.webp",
+      "provides": {
+        "desktopWidgets": [
+          "python"
+        ],
+        "dock": [
+          "python"
+        ],
+        "launcher": [
+          "python"
+        ]
+      },
+      "screenshots": [],
+      "summary": "Serpantinum's complete shell look, adapted for Ryoku",
+      "surface": "#1e1e2e",
+      "tags": [
+        "subshell",
+        "panels",
+        "launcher",
+        "dock",
+        "desktop-widgets"
+      ],
+      "upstream": "https://github.com/ilyamiro/serpantinum",
+      "version": "1.0.0"
+    },
+    {
+      "accent": "#a2c9fd",
+      "author": "dodo986",
+      "description": "A colorful shell with a cool phone, along with its own design and settings, and much more.",
+      "id": "tansu",
+      "manifest": "manifest.json",
+      "manifestSha256": "6d9db4b228596b63c0d3b9a0993a3409bde27ad0e263eea0cf93148eb6c78e7e",
+      "name": "Tansu",
+      "path": "subshells/tansu",
+      "preview": "preview.webp",
+      "screenshots": [],
+      "summary": "Bar and phone",
+      "surface": "#111418",
+      "tags": [
+        "subshell",
+        "top",
+        "phone",
+        "quickpanel",
+        "media",
+        "wallpapers",
+        "matugen",
+        "customizable"
+      ],
+      "upstream": "https://github.com/ryoku-dev/ryostore/tree/main/barstyles/tansu",
+      "version": "1.4.66"
+    }
+  ]
+}

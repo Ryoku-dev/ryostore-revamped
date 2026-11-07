@@ -1,0 +1,6 @@
+# Copies of Ryoku's desktop menu controls (shell/modules/desktop), GPL-3.0-or-later.
+singleton Theme 1.0 Theme.qml
+MenuRow 1.0 MenuRow.qml
+MenuSection 1.0 MenuSection.qml
+MenuSlider 1.0 MenuSlider.qml
+MenuTextField 1.0 MenuTextField.qml

@@ -1,0 +1,26 @@
+id = "caelestia"
+name = "Caelestia"
+version = "2.0.0"
+summary = "Framed Material 3 shell"
+description = """The Caelestia shell's framed bar, dock, dashboard, session menu, sidebar and OSD, in plain QML, with its own settings panel."""
+license = "GPL-3.0-only"
+authors = ["lhen"]
+tags = ["subshell", "left", "framed", "material3", "dashboard", "dock", "customizable"]
+upstream = "https://github.com/caelestia-dots/shell"
+accent = "#b4befe"
+surface = "#2c2c3f"
+preview = "preview.webp"
+screenshots = [
+  "screenshots/bar-bluetooth.webp",
+  "screenshots/performance.webp",
+  "screenshots/session.webp",
+  "screenshots/settings.webp",
+]
+downloadPaused = true
+downloadPauseReason = "Delisted due to issues and bugs"
+
+[shell]
+entry = "qml/Scene.qml"
+frameHost = "primary"
+owns = ["notifications", "osd"]
+modules = []

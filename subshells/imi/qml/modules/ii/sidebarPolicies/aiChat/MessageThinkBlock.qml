@@ -1,0 +1,173 @@
+pragma ComponentBehavior: Bound
+
+import "../../../../services"
+import "../../../common"
+import "../../../common/widgets"
+import "../../../common/functions"
+import QtQuick
+import QtQuick.Layouts
+import Qt5Compat.GraphicalEffects
+
+Item {
+    id: root
+    property bool editing: false
+    property bool renderMarkdown: true
+    property bool enableMouseSelection: false
+    property var segmentContent: ({})
+    property var messageData: {}
+    property bool done: true
+    property bool completed: false
+
+    property real thinkBlockBackgroundRounding: Appearance.rounding.small
+    property real thinkBlockHeaderPaddingVertical: Appearance.spacing.space50
+    property real thinkBlockHeaderPaddingHorizontal: Appearance.spacing.space125
+    property real thinkBlockComponentSpacing: Appearance.spacing.space25
+
+    property var collapseAnimation: messageTextBlock.implicitHeight > 40 ? Appearance.animation.elementMoveEnter : Appearance.animation.elementMoveFast
+    property bool collapsed: true
+
+    Layout.fillWidth: true
+    implicitHeight: collapsed ? header.implicitHeight : columnLayout.implicitHeight
+    layer.enabled: true
+    layer.effect: OpacityMask {
+        maskSource: Rectangle {
+            width: root.width
+            height: root.height
+            radius: thinkBlockBackgroundRounding
+        }
+    }
+
+    Behavior on implicitHeight {
+        enabled: root.completed ?? false
+        NumberAnimation {
+            duration: collapseAnimation.duration
+            easing.type: collapseAnimation.type
+            easing.bezierCurve: collapseAnimation.bezierCurve
+        }
+    }
+
+    ColumnLayout {
+        id: columnLayout
+        anchors.left: parent.left
+        anchors.right: parent.right
+        anchors.top: parent.top
+        spacing: 0
+
+        Rectangle {
+            id: header
+            color: Appearance.colors.colSurfaceContainerHighest
+            Layout.fillWidth: true
+            implicitHeight: thinkBlockTitleBarRowLayout.implicitHeight + thinkBlockHeaderPaddingVertical * 2
+
+            MouseArea {
+                id: headerMouseArea
+                enabled: root.completed
+                anchors.fill: parent
+                cursorShape: Qt.PointingHandCursor
+                hoverEnabled: true
+                onClicked: {
+                    root.collapsed = !root.collapsed
+                }
+            }
+
+            RowLayout {
+                id: thinkBlockTitleBarRowLayout
+                anchors.verticalCenter: parent.verticalCenter
+                anchors.left: parent.left
+                anchors.right: parent.right
+                anchors.leftMargin: thinkBlockHeaderPaddingHorizontal
+                anchors.rightMargin: thinkBlockHeaderPaddingHorizontal
+                spacing: Appearance.spacing.space150
+
+                MaterialSymbol {
+                    Layout.fillWidth: false
+                    Layout.topMargin: Appearance.spacing.space100
+                    Layout.bottomMargin: Appearance.spacing.space100
+                    Layout.leftMargin: Appearance.spacing.space50
+                    text: "linked_services"
+                }
+                ShimmerLabel {
+                    id: thinkBlockLanguage
+                    Layout.fillWidth: false
+                    Layout.alignment: Qt.AlignLeft
+                    running: !root.completed
+                    text: root.completed ? Translation.tr("Thought") : Translation.tr("Thinking")
+                    baseColor: Appearance.colors.colSubtext
+                    glowColor: Appearance.colors.colOnLayer1
+                }
+                Item { Layout.fillWidth: true }
+                RippleButton {
+                    id: expandButton
+                    visible: root.completed
+                    implicitWidth: 22
+                    implicitHeight: 22
+                    colBackground: headerMouseArea.containsMouse ? Appearance.colors.colLayer2Hover
+                        : ColorUtils.transparentize(Appearance.colors.colLayer2, 1)
+                    colBackgroundHover: Appearance.colors.colLayer2Hover
+                    colRipple: Appearance.colors.colLayer2Active
+
+                    onClicked: { root.collapsed = !root.collapsed }
+                    
+                    contentItem: MaterialSymbol {
+                        anchors.centerIn: parent
+                        text: "keyboard_arrow_down"
+                        horizontalAlignment: Text.AlignHCenter
+                        verticalAlignment: Text.AlignVCenter
+                        iconSize: Appearance.font.pixelSize.normal
+                        color: Appearance.colors.colOnLayer2
+                        rotation: root.collapsed ? 0 : 180
+                        Behavior on rotation {
+                            NumberAnimation {
+                                duration: Appearance.animation.elementMoveFast.duration
+                                easing.type: Appearance.animation.elementMoveFast.type
+                                easing.bezierCurve: Appearance.animation.elementMoveFast.bezierCurve
+                            }
+                        }
+                    }
+
+                }
+                
+            }
+
+        }
+
+        Item {
+            id: content
+            Layout.fillWidth: true
+            implicitHeight: collapsed ? 0 : contentBackground.implicitHeight + thinkBlockComponentSpacing
+            clip: true
+
+            Behavior on implicitHeight {
+                enabled: root.completed ?? false
+                NumberAnimation {
+                    duration: collapseAnimation.duration
+                    easing.type: collapseAnimation.type
+                    easing.bezierCurve: collapseAnimation.bezierCurve
+                }
+            }
+
+            Rectangle {
+                id: contentBackground
+                anchors.left: parent.left
+                anchors.right: parent.right
+                anchors.bottom: parent.bottom
+                implicitHeight: messageTextBlock.implicitHeight
+                color: Appearance.colors.colLayer2
+
+                property bool editing: root.editing
+                property bool renderMarkdown: root.renderMarkdown
+                property bool enableMouseSelection: root.enableMouseSelection
+                property var messageData: root.messageData
+                property bool done: root.done
+
+                MessageTextBlock {
+                    id: messageTextBlock
+                    anchors.left: parent.left
+                    anchors.right: parent.right
+                    anchors.bottom: parent.bottom
+                    segmentContent: root.segmentContent
+                }
+            }
+        }
+    }
+}

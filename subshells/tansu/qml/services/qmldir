@@ -1,0 +1,45 @@
+module tansu.services
+singleton BarLayoutService 1.0 BarLayoutService.qml
+singleton BarPositionService 1.0 BarPositionService.qml
+singleton BarStyleService 1.0 BarStyleService.qml
+BatterySource 1.0 BatterySource.qml
+singleton CalendarCardService 1.0 CalendarCardService.qml
+singleton ClockService 1.0 ClockService.qml
+singleton DesktopPresetService 1.0 DesktopPresetService.qml
+singleton DiscordVoiceService 1.0 DiscordVoiceService.qml
+singleton EditMode 1.0 EditMode.qml
+singleton GameModeService 1.0 GameModeService.qml
+singleton HyprlandSettings 1.0 HyprlandSettings.qml
+singleton IconCursorService 1.0 IconCursorService.qml
+singleton ImageService 1.0 ImageService.qml
+singleton KeybindService 1.0 KeybindService.qml
+singleton KeyboardService 1.0 KeyboardService.qml
+singleton LockState 1.0 LockState.qml
+singleton LyricsService 1.0 LyricsService.qml
+MediaSource 1.0 MediaSource.qml
+singleton NiriWorkspaces 1.0 NiriWorkspaces.qml
+singleton NotesService 1.0 NotesService.qml
+NotificationSource 1.0 NotificationSource.qml
+singleton PackageUpdatesService 1.0 PackageUpdatesService.qml
+singleton PaletteService 1.0 PaletteService.qml
+singleton PcCavaService 1.0 PcCavaService.qml
+singleton PinnedAppsService 1.0 PinnedAppsService.qml
+singleton PopupHandoff 1.0 PopupHandoff.qml
+singleton PowerBusyService 1.0 PowerBusyService.qml
+singleton PresetWidgets 1.0 PresetWidgets.qml
+singleton PrivacyService 1.0 PrivacyService.qml
+QuickSource 1.0 QuickSource.qml
+ResourceSource 1.0 ResourceSource.qml
+singleton ScrollOverviewService 1.0 ScrollOverviewService.qml
+singleton SettingsService 1.0 SettingsService.qml
+singleton ShellScale 1.0 ShellScale.qml
+singleton StatusIconsService 1.0 StatusIconsService.qml
+singleton ThemeService 1.0 ThemeService.qml
+singleton TodoService 1.0 TodoService.qml
+TraySource 1.0 TraySource.qml
+singleton UserCardService 1.0 UserCardService.qml
+singleton VisualizerService 1.0 VisualizerService.qml
+singleton WallpaperService 1.0 WallpaperService.qml
+singleton WeatherCardService 1.0 WeatherCardService.qml
+WeatherSource 1.0 WeatherSource.qml
+singleton PhoneLink 1.0 PhoneLink.qml

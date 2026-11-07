@@ -1,0 +1,8 @@
+module tansu.modules.tansu.wallpaperSelector
+MagnetButton 1.0 MagnetButton.qml
+SortChip 1.0 SortChip.qml
+WallpaperActionKey 1.0 WallpaperActionKey.qml
+WallpaperFace 1.0 WallpaperFace.qml
+WallpaperTargetSwitch 1.0 WallpaperTargetSwitch.qml
+WallpaperWheel 1.0 WallpaperWheel.qml
+GallerySortCard 1.0 GallerySortCard.qml

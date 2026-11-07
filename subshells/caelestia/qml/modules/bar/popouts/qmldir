@@ -1,0 +1,12 @@
+ActiveWindow 1.0 ActiveWindow.qml
+AudioPopout 1.0 AudioPopout.qml
+Battery 1.0 Battery.qml
+Bluetooth 1.0 Bluetooth.qml
+ClipWrapper 1.0 ClipWrapper.qml
+Content 1.0 Content.qml
+LockStatus 1.0 LockStatus.qml
+Network 1.0 Network.qml
+PopoutState 1.0 PopoutState.qml
+TrayMenu 1.0 TrayMenu.qml
+WirelessPassword 1.0 WirelessPassword.qml
+Wrapper 1.0 Wrapper.qml

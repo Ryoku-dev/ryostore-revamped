@@ -1,0 +1,16 @@
+module tansu.modules.tansu.quickPanel
+BluetoothDialog 1.0 BluetoothDialog.qml
+GammaBrightnessSlider 1.0 GammaBrightnessSlider.qml
+NetworkDialog 1.0 NetworkDialog.qml
+NightLightDialog 1.0 NightLightDialog.qml
+NotificationCard 1.0 NotificationCard.qml
+PowerMenu 1.0 PowerMenu.qml
+PowerMenuScrim 1.0 PowerMenuScrim.qml
+QuickPanel 1.0 QuickPanel.qml
+QuickPanelFace 1.0 QuickPanelFace.qml
+QuickToggle 1.0 QuickToggle.qml
+ScreenGlyph 1.0 ScreenGlyph.qml
+TansuHubTile 1.0 TansuHubTile.qml
+TansuTile 1.0 TansuTile.qml
+VolumeMixerDialog 1.0 VolumeMixerDialog.qml
+VolumeSlider 1.0 VolumeSlider.qml

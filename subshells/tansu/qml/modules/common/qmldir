@@ -1,0 +1,7 @@
+module tansu.modules.common
+singleton Directories 1.0 Directories.qml
+singleton LockPalette 1.0 LockPalette.qml
+singleton PanelImages 1.0 PanelImages.qml
+singleton PresetMotion 1.0 PresetMotion.qml
+singleton ScrapbookTheme 1.0 ScrapbookTheme.qml
+singleton Theme 1.0 Theme.qml

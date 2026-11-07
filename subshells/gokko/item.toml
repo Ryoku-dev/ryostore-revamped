@@ -1,0 +1,24 @@
+id = "gokko"
+name = "Gokko"
+version = "0.3.4"
+summary = "macOS-inspired Liquid Glass subshell"
+description = """macOS-inspired Ryoku subshell with Control Center, Dock and desktop widgets."""
+license = "MIT"
+authors = ["aethctl"]
+tags = ["subshell", "top", "macos", "liquid-glass", "dock", "widgets"]
+upstream = "https://github.com/0-ss/MacShell"
+accent = "#9db4fd"
+surface = "#19171f"
+preview = "preview.webp"
+screenshots = []
+
+[shell]
+entry = "qml/Scene.qml"
+frameHost = "primary"
+owns = ["notifications", "notificationSound", "dock", "widgets"]
+modules = []
+
+[shell.settings]
+ipc = "macshell-settings"
+call = "open"
+args = []

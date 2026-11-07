@@ -1,0 +1,19 @@
+id = "tansu"
+name = "Tansu"
+version = "1.4.66"
+summary = "Bar and phone"
+description = """A colorful shell with a cool phone, along with its own design and settings, and much more."""
+license = "GPL-3.0-only"
+authors = ["dodo986"]
+tags = ["subshell", "top", "phone", "quickpanel", "media", "wallpapers", "matugen", "customizable"]
+upstream = "https://github.com/ryoku-dev/ryostore/tree/main/barstyles/tansu"
+accent = "#a2c9fd"
+surface = "#111418"
+preview = "preview.webp"
+screenshots = []
+
+[shell]
+entry = "qml/Scene.qml"
+frameHost = "each"
+owns = ["notifications"]
+modules = []

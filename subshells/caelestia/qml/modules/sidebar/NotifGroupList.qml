@@ -1,0 +1,166 @@
+pragma ComponentBehavior: Bound
+
+import QtQuick
+import Quickshell
+import "../../port/core"
+import "../../port/components"
+import "../../config"
+import "../../components"
+import "../../services"
+
+LazyListView {
+    id: root
+
+    required property Props props
+    required property list<var> notifs
+    required property bool expanded
+    required property Flickable container
+    required property ScreenState screenState
+
+    signal requestToggleExpand(expand: bool)
+
+    anchors.left: parent.left
+    anchors.right: parent.right
+    implicitHeight: contentHeight
+
+    spacing: Math.round(Tokens.spacing.extraSmall)
+    asynchronous: true
+
+    readyDelay: 1
+    cacheBuffer: 400
+    removeDuration: Tokens.anim.durations.normal
+
+    useCustomViewport: true
+    viewport: {
+        CUtils.dependency(tWatcher.transform); // mapToItem is not reactive so use this to trigger updates
+        return Qt.rect(0, container.contentY - mapToItem(container.contentItem, 0, 0).y, width, container.height);
+    }
+
+    model: ScriptModel {
+        values: {
+            if (root.expanded)
+                return root.notifs as Array;
+
+            let count = 0;
+            let i = 0;
+            const previewNum = Config.notifs.groupPreviewNum;
+            while (i < root.notifs.length && count < previewNum) {
+                if (!(root.notifs[i]?.closed ?? true))
+                    count++;
+                i++;
+            }
+
+            return root.notifs.slice(0, i) as Array;
+        }
+    }
+
+    delegate: Component {
+        MouseArea {
+            id: notif
+
+            required property int index
+            required property NotifData modelData
+
+            property int startY
+            property bool adding: false
+            property bool removing: false
+            property bool animationsEnabled: true
+            property bool trackViewport: false
+            property bool ready: true
+            property real preferredHeight: modelData?.closed || removing ? 0 : notifInner.nonAnimHeight
+            property real visibleHeight: modelData?.closed || removing ? 0 : notifInner.implicitHeight
+
+            Component.onCompleted: modelData?.lock(this)
+            Component.onDestruction: modelData?.unlock(this)
+
+            implicitHeight: notifInner.implicitHeight
+
+            opacity: removing || adding ? 0 : 1
+            scale: removing || adding ? 0.7 : 1
+
+            hoverEnabled: true
+            cursorShape: notifInner.body?.hoveredLink ? Qt.PointingHandCursor : pressed ? Qt.ClosedHandCursor : undefined
+            acceptedButtons: Qt.LeftButton | Qt.RightButton | Qt.MiddleButton
+            preventStealing: !root.expanded
+            enabled: !(modelData?.closed ?? true)
+
+            drag.target: this
+            drag.axis: Drag.XAxis
+
+            onPressed: event => {
+                startY = event.y;
+                if (event.button === Qt.RightButton)
+                    root.requestToggleExpand(!root.expanded);
+                else if (event.button === Qt.MiddleButton)
+                    modelData?.close();
+            }
+            onPositionChanged: event => {
+                if (pressed && !root.expanded) {
+                    const diffY = event.y - startY;
+                    if (Math.abs(diffY) > Config.notifs.expandThreshold)
+                        root.requestToggleExpand(diffY > 0);
+                }
+            }
+            onReleased: event => {
+                if (Math.abs(x) < width * Config.notifs.clearThreshold)
+                    x = 0;
+                else
+                    modelData?.close();
+            }
+
+            ParallelAnimation {
+                running: notif.modelData?.closed ?? false
+                onFinished: notif.modelData?.unlock(notif)
+
+                Anim {
+                    type: Anim.DefaultEffects
+                    target: notif
+                    property: "opacity"
+                    to: 0
+                }
+                Anim {
+                    target: notif
+                    property: "x"
+                    to: notif.x >= 0 ? notif.width : -notif.width
+                }
+            }
+
+            Notif {
+                id: notifInner
+
+                anchors.fill: parent
+                modelData: notif.modelData
+                props: root.props
+                expanded: root.expanded
+                screenState: root.screenState
+            }
+
+            Behavior on y {
+                enabled: notif.ready
+
+                Anim {}
+            }
+
+            Behavior on opacity {
+                Anim {
+                    type: Anim.DefaultEffects
+                }
+            }
+
+            Behavior on scale {
+                Anim {}
+            }
+
+            Behavior on x {
+                Anim {}
+            }
+        }
+    }
+
+    TransformWatcher {
+        id: tWatcher
+
+        a: root.container.contentItem
+        b: root
+    }
+}

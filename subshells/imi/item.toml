@@ -1,0 +1,27 @@
+id = "imi"
+name = "Imi"
+version = "2.0.1"
+summary = "Imi: full-desktop shell style"
+description = """A full-desktop Material 3 shell: island bar with edit mode, dynamic island, sidebars, on-screen display, notification banners, session screen and vertical bar. Colors from the shell matugen palette, compositor state through the host facade."""
+license = "GPL-3.0-only"
+authors = ["dodo986"]
+tags = ["top", "material3", "islands", "subshell", "island", "customizable", "vertical"]
+upstream = "https://github.com/ryoku-dev/ryostore/tree/main/barstyles/imi"
+accent = "#9ecaff"
+surface = "#141318"
+preview = "preview.webp"
+screenshots = []
+
+[requires]
+qmlModules = ["org.kde.syntaxhighlighting"]
+
+[shell]
+entry = "qml/Scene.qml"
+frameHost = "each"
+owns = ["notifications", "osd"]
+modules = []
+
+[shell.settings]
+ipc = "imi"
+call = "openSettings"
+args = []

@@ -1,0 +1,53 @@
+import "../../../services"
+import ".."
+import "../functions"
+import QtQuick
+import QtQuick.Layouts
+
+RippleButton { // Expand button
+    id: root
+    required property int count
+    required property bool expanded
+    property real zoom: 1.0
+    property real fontSize: Appearance?.font.pixelSize.small ?? 12
+    property real iconSize: Appearance?.font.pixelSize.normal ?? 16
+    property var animationSpec: Appearance.animation.elementMoveFast
+    implicitHeight: fontSize + 4 * 2 * zoom
+    implicitWidth: Math.max(contentItem.implicitWidth + 5 * 2 * zoom, 30 * zoom)
+    Layout.alignment: Qt.AlignVCenter
+    Layout.fillHeight: false
+
+    buttonRadius: Appearance.rounding.full
+    colBackground: ColorUtils.mix(Appearance?.colors.colLayer2, Appearance?.colors.colLayer2Hover, 0.5)
+    colBackgroundHover: Appearance?.colors.colLayer2Hover ?? "#E5DFED"
+    colRipple: Appearance?.colors.colLayer2Active ?? "#D6CEE2"
+
+    contentItem: Item {
+        anchors.centerIn: parent
+        implicitWidth: contentRow.implicitWidth
+        RowLayout {
+            id: contentRow
+            anchors.centerIn: parent
+            spacing: 3 * root.zoom
+            StyledText {
+                Layout.leftMargin: 4 * root.zoom
+                visible: root.count > 1
+                text: root.count
+                font.pixelSize: root.fontSize
+            }
+            MaterialSymbol {
+                text: "keyboard_arrow_down"
+                iconSize: root.iconSize
+                color: Appearance.colors.colOnLayer2
+                rotation: expanded ? 180 : 0
+                Behavior on rotation {
+                    NumberAnimation {
+                        duration: root.animationSpec.duration
+                        easing.type: root.animationSpec.type
+                        easing.bezierCurve: root.animationSpec.bezierCurve
+                    }
+                }
+            }
+        }
+    }
+}

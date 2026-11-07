@@ -1,0 +1,20 @@
+module tansu.modules.common.widgets
+Burst 1.0 Burst.qml
+DiamondDot 1.0 DiamondDot.qml
+DotField 1.0 DotField.qml
+MaterialIcon 1.0 MaterialIcon.qml
+Pill 1.0 Pill.qml
+ScaleHost 1.0 ScaleHost.qml
+SearchPill 1.0 SearchPill.qml
+SegmentSwitch 1.0 SegmentSwitch.qml
+TansuBackdrop 1.0 TansuBackdrop.qml
+TansuPlate 1.0 TansuPlate.qml
+TansuScrollBar 1.0 TansuScrollBar.qml
+SettingRoundButton 1.0 SettingRoundButton.qml
+ShellBadge 1.0 ShellBadge.qml
+Slant 1.0 Slant.qml
+StickerText 1.0 StickerText.qml
+TrayMenuRow 1.0 TrayMenuRow.qml
+WashiTape 1.0 WashiTape.qml
+WeatherGlyph 1.0 WeatherGlyph.qml
+WheelScroll 1.0 WheelScroll.qml

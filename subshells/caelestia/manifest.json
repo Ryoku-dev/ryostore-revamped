@@ -1,0 +1,3201 @@
+{
+  "category": "subshells",
+  "destination": "ryoku/subshells/caelestia",
+  "files": [
+    {
+      "destination": "LICENSE",
+      "install": true,
+      "mode": "0644",
+      "sha256": "3652c5bc8729a4dadbb07da96afc0f0c4cf436943eda040cbded105b94978952",
+      "size": 35439,
+      "source": "LICENSE"
+    },
+    {
+      "destination": "PROVENANCE.txt",
+      "install": true,
+      "mode": "0644",
+      "sha256": "0947c475a7a339f0d6cfbfa13adcf027d1902d4c9d04dfd1920c3653f6e81668",
+      "size": 1844,
+      "source": "PROVENANCE.txt"
+    },
+    {
+      "destination": "README.md",
+      "install": true,
+      "mode": "0644",
+      "sha256": "dccd6cd800210d41b80711f61d606a606fc04fb2bc9f3ecbf1e64685f9b77ad8",
+      "size": 1768,
+      "source": "README.md"
+    },
+    {
+      "destination": "item.toml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "e34b5c6dbf35d833b72298c59321d5d20cf1e5f19711b6ed3e7ac7ecfcb01ff5",
+      "size": 811,
+      "source": "item.toml"
+    },
+    {
+      "destination": "preview.webp",
+      "install": true,
+      "mode": "0644",
+      "sha256": "64e83ad424d0732ace1e6283f9e3e40d952ed2f6986b2e201011c021056d1cd8",
+      "size": 76354,
+      "source": "preview.webp"
+    },
+    {
+      "destination": "qml/Scene.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "572904d2c394e0ac4401023a326ac93d859b8d499eb971e0f8b75ec42de8a65d",
+      "size": 3679,
+      "source": "qml/Scene.qml"
+    },
+    {
+      "destination": "qml/assets/bongocat.gif",
+      "install": true,
+      "mode": "0644",
+      "sha256": "1fba455dbbf57507f8021fa49ce7ebb1d4a6973f0f1b5a760ad60e473befddf4",
+      "size": 7350,
+      "source": "qml/assets/bongocat.gif"
+    },
+    {
+      "destination": "qml/assets/kurukuru.gif",
+      "install": true,
+      "mode": "0644",
+      "sha256": "750d6115bb86008ffbeb09dccd2a8b1e20a466da26295fc724a2170be70f8be8",
+      "size": 99006,
+      "source": "qml/assets/kurukuru.gif"
+    },
+    {
+      "destination": "qml/assets/logo.svg",
+      "install": true,
+      "mode": "0644",
+      "sha256": "a699a549e370a68ce2eeb390c209b1dac13cd7df62bcfb44d2b95202754c286e",
+      "size": 4379,
+      "source": "qml/assets/logo.svg"
+    },
+    {
+      "destination": "qml/assets/preview.webp",
+      "install": true,
+      "mode": "0644",
+      "sha256": "4f8478b3857d123febd740376cee91c67628433d45428307b2ed8ce6dd3b451c",
+      "size": 86738,
+      "source": "qml/assets/preview.webp"
+    },
+    {
+      "destination": "qml/components/AnchorAnim.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "ca5f0933e7f39aacc90123e6ec89849a44a14cd65707a948c651f1462e5d5abf",
+      "size": 1703,
+      "source": "qml/components/AnchorAnim.qml"
+    },
+    {
+      "destination": "qml/components/Anim.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "75aa14e61804dba22d7b63ee8b40c764c27b910f6ae2d5af5efd39ee260c213f",
+      "size": 2146,
+      "source": "qml/components/Anim.qml"
+    },
+    {
+      "destination": "qml/components/AnimLoader.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "5621670b4f2d97711571d842ae09da861f871e644b9afe5941b05384c8ae5c8f",
+      "size": 845,
+      "source": "qml/components/AnimLoader.qml"
+    },
+    {
+      "destination": "qml/components/CAnim.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "cd0f16f4e9bf887d4a165c938f2504220ca518cfd5f7e39cffd806451626fa37",
+      "size": 158,
+      "source": "qml/components/CAnim.qml"
+    },
+    {
+      "destination": "qml/components/ClipRect.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "65bc26b85606ad1363e207b299e654387b096d27812daf21d9d8477da87e038a",
+      "size": 902,
+      "source": "qml/components/ClipRect.qml"
+    },
+    {
+      "destination": "qml/components/Logo.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "4ef56936ec7324aba5b3c4e399a4118d27188416ecc7c28920f5c7440dbb7554",
+      "size": 3244,
+      "source": "qml/components/Logo.qml"
+    },
+    {
+      "destination": "qml/components/MaterialIcon.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "52dd6ab67d75b0d382d7b9d2a6c54b2f254a86753061c077498b3af001f7d1b1",
+      "size": 346,
+      "source": "qml/components/MaterialIcon.qml"
+    },
+    {
+      "destination": "qml/components/ScreenState.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "19098aca8f4b357cfcd3eb3a919fca231bc6ac0a07b1d392bb113352ebf0aff5",
+      "size": 393,
+      "source": "qml/components/ScreenState.qml"
+    },
+    {
+      "destination": "qml/components/StateLayer.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "97bdb0a22eaa647394630a87a83b870f78214beeaca7f62dfdc28b38cf90307e",
+      "size": 6084,
+      "source": "qml/components/StateLayer.qml"
+    },
+    {
+      "destination": "qml/components/StyledRect.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "e0b161e3a5876dd276a26de9c93e7a0335b74e759399f03d1bd78f712179286e",
+      "size": 117,
+      "source": "qml/components/StyledRect.qml"
+    },
+    {
+      "destination": "qml/components/StyledText.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "0e00154285c330d5bb1264434154345fed9f2672ed7553e28cd06dfb6f9bcb49",
+      "size": 786,
+      "source": "qml/components/StyledText.qml"
+    },
+    {
+      "destination": "qml/components/containers/StyledFlickable.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "35e5b5538bc5495c8c455652c05ab57425d2492db8a1a84c742ff10fcfcb0786",
+      "size": 605,
+      "source": "qml/components/containers/StyledFlickable.qml"
+    },
+    {
+      "destination": "qml/components/containers/StyledListView.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "478aa817e77aee1dfe81fd4bd5ef9bb8a32ca48a1deccf0f8b4e090266b1070c",
+      "size": 604,
+      "source": "qml/components/containers/StyledListView.qml"
+    },
+    {
+      "destination": "qml/components/containers/StyledWindow.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "539eb3eb175620ae12d8a8928d5c3e1933d3d5a7332ed0e0c6bdbea241f86a65",
+      "size": 268,
+      "source": "qml/components/containers/StyledWindow.qml"
+    },
+    {
+      "destination": "qml/components/containers/VerticalFadeFlickable.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "ece32a6cc51852437c59f71fd9be2cbe821e577a09c35a7aa616ee24b029c975",
+      "size": 1900,
+      "source": "qml/components/containers/VerticalFadeFlickable.qml"
+    },
+    {
+      "destination": "qml/components/containers/VerticalFadeListView.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "fd0d0a308723d646bbc4eaafd2728f3b898f34283f15e086a328c85652366725",
+      "size": 1934,
+      "source": "qml/components/containers/VerticalFadeListView.qml"
+    },
+    {
+      "destination": "qml/components/containers/qmldir",
+      "install": true,
+      "mode": "0644",
+      "sha256": "ff25699f8ae350735aa07bca68f10eeb89271ee40ba2ca9780e59428135b466d",
+      "size": 214,
+      "source": "qml/components/containers/qmldir"
+    },
+    {
+      "destination": "qml/components/controls/ButtonBase.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "91e7bd9c2d6045e7b8c9555e5b63f0e79656cda910e4d8ebdaee7138c52b4a59",
+      "size": 2762,
+      "source": "qml/components/controls/ButtonBase.qml"
+    },
+    {
+      "destination": "qml/components/controls/CircularIndicator.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "fdd4f920147d5fb0762e45fb0c1239f8f530c5bcba1b895c6cd67eb64dae9601",
+      "size": 2822,
+      "source": "qml/components/controls/CircularIndicator.qml"
+    },
+    {
+      "destination": "qml/components/controls/CircularProgress.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "61003f54811e27ea8c1ab062eb4f9ed9d45d066d153708be0c4f9ef99b92698a",
+      "size": 3906,
+      "source": "qml/components/controls/CircularProgress.qml"
+    },
+    {
+      "destination": "qml/components/controls/CustomMouseArea.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "76fb4fd1f8924acc82294fa5606f84bbf919f3fa79c7732d52ad7df5115aca7b",
+      "size": 537,
+      "source": "qml/components/controls/CustomMouseArea.qml"
+    },
+    {
+      "destination": "qml/components/controls/FilledSlider.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "eac7128685aa259dc77f687a27d89948052e7d9b990e58a3f2f2be5bfc912dae",
+      "size": 3262,
+      "source": "qml/components/controls/FilledSlider.qml"
+    },
+    {
+      "destination": "qml/components/controls/IconButton.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "31f722270fc86ac9f1621ae73419fac709c91e930d0c84a208f412ddde736f3e",
+      "size": 1704,
+      "source": "qml/components/controls/IconButton.qml"
+    },
+    {
+      "destination": "qml/components/controls/IconTextButton.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "3599fc52779ba609da367f5021638dfd2b44eb1eea6ea76b38724ae0474173b3",
+      "size": 2246,
+      "source": "qml/components/controls/IconTextButton.qml"
+    },
+    {
+      "destination": "qml/components/controls/LoadingIndicator.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "ffa5351bf6ec307a0f5743218eed81e6378b7ec1b517baa74cd9d3f8fb5ab46f",
+      "size": 3593,
+      "source": "qml/components/controls/LoadingIndicator.qml"
+    },
+    {
+      "destination": "qml/components/controls/Menu.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "eb78e5f1d4a2c68c3c212095b3763baf4e72da2f4a37e70c2345b67f5c47dde7",
+      "size": 6940,
+      "source": "qml/components/controls/Menu.qml"
+    },
+    {
+      "destination": "qml/components/controls/MenuItem.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "22641d916d45a07dae3433b7286de037f04d586dadf8fe66e778f6bf86a9b397",
+      "size": 238,
+      "source": "qml/components/controls/MenuItem.qml"
+    },
+    {
+      "destination": "qml/components/controls/SearchBar.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "e6a4d1d1b76e06656d0e0715299b795d16b22d32b6e765f2cebbd85b84207228",
+      "size": 2397,
+      "source": "qml/components/controls/SearchBar.qml"
+    },
+    {
+      "destination": "qml/components/controls/SplitButton.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "5cbfc18f29a50bde264471ff1facfa9d36328ec6d2e3a4d3bb7ae333b8df32b7",
+      "size": 4754,
+      "source": "qml/components/controls/SplitButton.qml"
+    },
+    {
+      "destination": "qml/components/controls/StyledProgressBar.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "d65cdaa721aaaad588c6fc3c63f237c8cf3866e9dbfc0a335a7e340b5a071c6c",
+      "size": 7523,
+      "source": "qml/components/controls/StyledProgressBar.qml"
+    },
+    {
+      "destination": "qml/components/controls/StyledRadioButton.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "c5ed7e2e16d784bb0e9428fb712398dab3b9cb88260c371b19ffc3ca39774ebb",
+      "size": 1531,
+      "source": "qml/components/controls/StyledRadioButton.qml"
+    },
+    {
+      "destination": "qml/components/controls/StyledScrollBar.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "91a569a9cfb1d4e48e1662b1fbd847ff24682335ced7a34a7f93eeea16321814",
+      "size": 6380,
+      "source": "qml/components/controls/StyledScrollBar.qml"
+    },
+    {
+      "destination": "qml/components/controls/StyledSlider.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "ac00d0fbfd53d3447c66e38fb6451e042a47d0e3918b7caa58490ab89768e3d4",
+      "size": 5530,
+      "source": "qml/components/controls/StyledSlider.qml"
+    },
+    {
+      "destination": "qml/components/controls/StyledSpinBox.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "032f628cf1560da7f996948a80a32f69c529d47c0be650a370964d8d2e7f84eb",
+      "size": 4719,
+      "source": "qml/components/controls/StyledSpinBox.qml"
+    },
+    {
+      "destination": "qml/components/controls/StyledSwitch.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "669127b2857095ada38664e40e58c606856f4f38c32a699a643bd3cd63b6a977",
+      "size": 6057,
+      "source": "qml/components/controls/StyledSwitch.qml"
+    },
+    {
+      "destination": "qml/components/controls/StyledTextField.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "1717dc6fa70c6632b9f449e17fc81c0a11acc31258169cbdd43bf0673efdb583",
+      "size": 10580,
+      "source": "qml/components/controls/StyledTextField.qml"
+    },
+    {
+      "destination": "qml/components/controls/TextButton.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "edd48cce1339c29b1b0328f516664905c3fcb2d75ed9a5d39ccbcfec0aabddce",
+      "size": 1421,
+      "source": "qml/components/controls/TextButton.qml"
+    },
+    {
+      "destination": "qml/components/controls/TextFieldBase.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "aaee62d9ca0d12c16e89c7e169d1630c7acd95b84b3142414db8fb58ec749ca4",
+      "size": 2344,
+      "source": "qml/components/controls/TextFieldBase.qml"
+    },
+    {
+      "destination": "qml/components/controls/qmldir",
+      "install": true,
+      "mode": "0644",
+      "sha256": "0f5934e5e0d71caae28fcf6c3d9f45e5abd06c8edb0f3248908778a58a240c20",
+      "size": 742,
+      "source": "qml/components/controls/qmldir"
+    },
+    {
+      "destination": "qml/components/effects/ColouredIcon.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "634bcf8886a4fe7ec0afc5f90a190603c9ab26221f477ad6222c408777a29a27",
+      "size": 658,
+      "source": "qml/components/effects/ColouredIcon.qml"
+    },
+    {
+      "destination": "qml/components/effects/Colouriser.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "36b926269543ebcb0b1da742d17f80c8134ceb9b4eb79174a6ba1a3fd4276ccd",
+      "size": 233,
+      "source": "qml/components/effects/Colouriser.qml"
+    },
+    {
+      "destination": "qml/components/effects/Elevation.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "0f41efce848c6cf407d2fa34bb2e94e6543290b48cfb0719f711950975db19b2",
+      "size": 396,
+      "source": "qml/components/effects/Elevation.qml"
+    },
+    {
+      "destination": "qml/components/effects/Mask.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "3b3c61882775eaf6b1d79d054b0d81da0fcb8f9a280f35fa43b28886070d1624",
+      "size": 111,
+      "source": "qml/components/effects/Mask.qml"
+    },
+    {
+      "destination": "qml/components/effects/qmldir",
+      "install": true,
+      "mode": "0644",
+      "sha256": "4714943bdae000dc2ee383716a161793227330f79375222018e884259d68b6ee",
+      "size": 110,
+      "source": "qml/components/effects/qmldir"
+    },
+    {
+      "destination": "qml/components/filedialog/CurrentItem.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "1bbac6c735e685019bd8ed6810653d661d27d636d076b739d1fd7721c0ffce11",
+      "size": 3104,
+      "source": "qml/components/filedialog/CurrentItem.qml"
+    },
+    {
+      "destination": "qml/components/filedialog/DialogButtons.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "8358b6f824bf64a3ca1a3178b091a1fa62b454ca6324edb6e4a7b0538e53cc08",
+      "size": 2783,
+      "source": "qml/components/filedialog/DialogButtons.qml"
+    },
+    {
+      "destination": "qml/components/filedialog/FileDialog.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "386f3339e611f472b02017ba950907ee2c8d18b6d18d8e9f402cda5965678899",
+      "size": 2493,
+      "source": "qml/components/filedialog/FileDialog.qml"
+    },
+    {
+      "destination": "qml/components/filedialog/FolderContents.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "d849be081299a1ebcae7979f259d9ad5f6b245de0e6fe8a8dae6b1d3b5bdfdf1",
+      "size": 6553,
+      "source": "qml/components/filedialog/FolderContents.qml"
+    },
+    {
+      "destination": "qml/components/filedialog/HeaderBar.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "b020c3175c79a5e0df769b2d6f59f6b7f6e1302272cd561a1fab490d59e69cb3",
+      "size": 5011,
+      "source": "qml/components/filedialog/HeaderBar.qml"
+    },
+    {
+      "destination": "qml/components/filedialog/Sidebar.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "8f7c2dc53efb2b3fc13039b61d2ab583c512deebd3dbbc1ae7b729bf385e3f9c",
+      "size": 4121,
+      "source": "qml/components/filedialog/Sidebar.qml"
+    },
+    {
+      "destination": "qml/components/filedialog/Sizes.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "fd3637d2c748ba04d4e119df7d054d96fe2a7b54d59c9f2c9f45d4cc0d0b0663",
+      "size": 118,
+      "source": "qml/components/filedialog/Sizes.qml"
+    },
+    {
+      "destination": "qml/components/filedialog/qmldir",
+      "install": true,
+      "mode": "0644",
+      "sha256": "5e7fedcf3a99a70c9d5aa5dbff6d8327d3cf4cf46c7334e8c2d1670359306e12",
+      "size": 218,
+      "source": "qml/components/filedialog/qmldir"
+    },
+    {
+      "destination": "qml/components/images/FadeImage.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "63f4aba8f34193ee3ae4b722c266ba9aca3dc91347bd2bd9e1195182ad84310c",
+      "size": 1853,
+      "source": "qml/components/images/FadeImage.qml"
+    },
+    {
+      "destination": "qml/components/images/qmldir",
+      "install": true,
+      "mode": "0644",
+      "sha256": "6c0555ee2ced1f71f190e0985c12e1be8236811d4ad65dd1067b9ee9464418b2",
+      "size": 28,
+      "source": "qml/components/images/qmldir"
+    },
+    {
+      "destination": "qml/components/misc/CustomShortcut.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "106f72dee800c53fb9064bc5678dd278438861d6ee1547b4c1bf3e40bc13a5f9",
+      "size": 133,
+      "source": "qml/components/misc/CustomShortcut.qml"
+    },
+    {
+      "destination": "qml/components/misc/FocusGrab.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "ddf0dc4d6b9892d4b4b4d7f3198d1a2de0c527ea0e6f14ea92ec0dc485fec6ad",
+      "size": 105,
+      "source": "qml/components/misc/FocusGrab.qml"
+    },
+    {
+      "destination": "qml/components/misc/Ref.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "9d00330ddda0749f754260f0340dc59532051243a419a0e507e0f4a103104cd5",
+      "size": 158,
+      "source": "qml/components/misc/Ref.qml"
+    },
+    {
+      "destination": "qml/components/misc/qmldir",
+      "install": true,
+      "mode": "0644",
+      "sha256": "e11fb0ed305db38c7fedc9bac401230fc9212deb798fff4b9f10890f1608ac9a",
+      "size": 82,
+      "source": "qml/components/misc/qmldir"
+    },
+    {
+      "destination": "qml/components/qmldir",
+      "install": true,
+      "mode": "0644",
+      "sha256": "7a86499cd1401178c24b33c77ba8e3212b45fc2e094119c226f79db41919a8ba",
+      "size": 298,
+      "source": "qml/components/qmldir"
+    },
+    {
+      "destination": "qml/components/widgets/CoverArt.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "2258680186504259b74b2681478114311ecab4d78e76771aea697cf0d053c193",
+      "size": 2475,
+      "source": "qml/components/widgets/CoverArt.qml"
+    },
+    {
+      "destination": "qml/components/widgets/ExtraIndicator.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "8977689b100da7542010b42b7e6a5e995cf5437fa83311b58477631fe7d15264",
+      "size": 1073,
+      "source": "qml/components/widgets/ExtraIndicator.qml"
+    },
+    {
+      "destination": "qml/components/widgets/WallpaperImpl.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "e3cbaede4352ddea4c0496c446c354859da39a3527db4b23d208b202e2a19d76",
+      "size": 2733,
+      "source": "qml/components/widgets/WallpaperImpl.qml"
+    },
+    {
+      "destination": "qml/components/widgets/WavyTopRect.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "9e258c11a4776e3dcff82370e01873c5c7f4dbd835f0f6ab50126895021a4251",
+      "size": 1181,
+      "source": "qml/components/widgets/WavyTopRect.qml"
+    },
+    {
+      "destination": "qml/components/widgets/qmldir",
+      "install": true,
+      "mode": "0644",
+      "sha256": "a0f8d87b114e34e6a749aacb7ca2d4fda7ed0a0370dc5cf3f4f2de5d60e07b8a",
+      "size": 132,
+      "source": "qml/components/widgets/qmldir"
+    },
+    {
+      "destination": "qml/config/BarWorkspaceCapitalisation.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "aaae545fe3635247f223db4e6d3eb72d9be1bdbd3d74f2ecf95e87573b878002",
+      "size": 162,
+      "source": "qml/config/BarWorkspaceCapitalisation.qml"
+    },
+    {
+      "destination": "qml/config/BarWorkspaceDisplay.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "5db97fb00a4e476c23a143b27c0824635e0c7532a0c266348a6b6ce0c1eb56eb",
+      "size": 159,
+      "source": "qml/config/BarWorkspaceDisplay.qml"
+    },
+    {
+      "destination": "qml/config/ClockFormat.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "83897d782ec66a2c4bf282a09968f4575fe4c7a96bb24f217e768e52f5c33f33",
+      "size": 172,
+      "source": "qml/config/ClockFormat.qml"
+    },
+    {
+      "destination": "qml/config/Config.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "7118de370442b8f1d0c201f123e1d9613ab2378fc675a846ab9dbf2c551b4c8e",
+      "size": 1213,
+      "source": "qml/config/Config.qml"
+    },
+    {
+      "destination": "qml/config/ConfigList.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "72e346f43dfbf1d13d4cd7671fdb2ef121776a7b5868dbaa364b11945da9ae30",
+      "size": 1290,
+      "source": "qml/config/ConfigList.qml"
+    },
+    {
+      "destination": "qml/config/DataUnit.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "d19afdb374c377ef75745ee536a81318ea9107091f58a515e9ec7c60e906bfb5",
+      "size": 155,
+      "source": "qml/config/DataUnit.qml"
+    },
+    {
+      "destination": "qml/config/DockWindowGrouping.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "fe1efdd4bf84abe1724070918f61229a57972c7ad1b8535fe0276f05cb299b75",
+      "size": 178,
+      "source": "qml/config/DockWindowGrouping.qml"
+    },
+    {
+      "destination": "qml/config/FontBuilder.js",
+      "install": true,
+      "mode": "0644",
+      "sha256": "5d60c66dc9706ba90c498f7db80c0ccfdabe1b5588f3ec01ab34d82051f7473f",
+      "size": 2169,
+      "source": "qml/config/FontBuilder.js"
+    },
+    {
+      "destination": "qml/config/FontStyle.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "7bf8618e9131fa3ed65e5b5ce821f1c0f379d0570b9f3294b8b6242e235d4c42",
+      "size": 1237,
+      "source": "qml/config/FontStyle.qml"
+    },
+    {
+      "destination": "qml/config/GlobalConfig.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "1c968bf39c02a5acfd1625dca2362bb10a75dee6522d051359c34b859c1a9630",
+      "size": 78100,
+      "source": "qml/config/GlobalConfig.qml"
+    },
+    {
+      "destination": "qml/config/GpuType.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "6ce3a865d5fa154c0e44f06bfa1024f26dc890e8e4bef9e8048ccafc2f6c0817",
+      "size": 167,
+      "source": "qml/config/GpuType.qml"
+    },
+    {
+      "destination": "qml/config/LyricsBackend.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "3523510ce33bb2dce85cf2bcd1880524f488c2aaf2e010284107d28c5bde4e85",
+      "size": 168,
+      "source": "qml/config/LyricsBackend.qml"
+    },
+    {
+      "destination": "qml/config/Name.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "e2cfc5869f795c43ef6450d5418e4f4f47796c6d25144284342beba7a0928ce5",
+      "size": 143,
+      "source": "qml/config/Name.qml"
+    },
+    {
+      "destination": "qml/config/NotifsFullscreen.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "8e7fc03271e82ccd39a1775b2e8960fb9899d7c636bebb078d2d766e63763236",
+      "size": 147,
+      "source": "qml/config/NotifsFullscreen.qml"
+    },
+    {
+      "destination": "qml/config/TemperatureUnit.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "575d645a0fc2dd9b9a980defe936c7648970bcc842659348d3ed76fdf14f7d32",
+      "size": 173,
+      "source": "qml/config/TemperatureUnit.qml"
+    },
+    {
+      "destination": "qml/config/TokenConfig.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "fe5d6c2e99d8964fac74c75a9877cf889de29216ebc2701ace90f0cee809e9fe",
+      "size": 31186,
+      "source": "qml/config/TokenConfig.qml"
+    },
+    {
+      "destination": "qml/config/Tokens.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "2d76d64eddcde48c22e61c6a4a532429d7bcdfa3aa31fedd35e515b1dcca0cd3",
+      "size": 3545,
+      "source": "qml/config/Tokens.qml"
+    },
+    {
+      "destination": "qml/config/WallpaperTransition.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "86ce589151c68e0b3898f9b25145d12b675056689232020646c1a98701d79e2f",
+      "size": 477,
+      "source": "qml/config/WallpaperTransition.qml"
+    },
+    {
+      "destination": "qml/config/qmldir",
+      "install": true,
+      "mode": "0644",
+      "sha256": "041021c8ea68a2cfbc4b155a4a67d3b7cb9b6ea56f321000372babd5afde76d6",
+      "size": 584,
+      "source": "qml/config/qmldir"
+    },
+    {
+      "destination": "qml/modules/bar/Bar.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "ca02ffffe4ba32e3ccce281aa47216924d5b7726a0d124a2f3500cf210fab860",
+      "size": 7283,
+      "source": "qml/modules/bar/Bar.qml"
+    },
+    {
+      "destination": "qml/modules/bar/BarWrapper.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "3fce6eefcae701dd190d25c31cdb55015280ed8ee70874f619b1a04e03293193",
+      "size": 2469,
+      "source": "qml/modules/bar/BarWrapper.qml"
+    },
+    {
+      "destination": "qml/modules/bar/components/ActiveWindow.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "b0480dfa135c7a700d705639b6decc966125d531d3fee93f953ec8e6124de7e3",
+      "size": 4129,
+      "source": "qml/modules/bar/components/ActiveWindow.qml"
+    },
+    {
+      "destination": "qml/modules/bar/components/Clock.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "280d612c1f876d05487031edc9bdd80458428b6ea66c88d6a5d9202a471e8a75",
+      "size": 4509,
+      "source": "qml/modules/bar/components/Clock.qml"
+    },
+    {
+      "destination": "qml/modules/bar/components/OsIcon.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "b94d7e0d71b6928498b2dd3c854fbf374cc355dfcd603692186bc993b5101a62",
+      "size": 1189,
+      "source": "qml/modules/bar/components/OsIcon.qml"
+    },
+    {
+      "destination": "qml/modules/bar/components/Power.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "74e8a110bcb05c989b18a17b4aaaf772135aa9e7dada4548250a2aa9879fa39b",
+      "size": 872,
+      "source": "qml/modules/bar/components/Power.qml"
+    },
+    {
+      "destination": "qml/modules/bar/components/StatusIcons.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "da4d3b96262a3056aa172660e3c9aec9f68971e645906bf2186642df59652a7c",
+      "size": 5773,
+      "source": "qml/modules/bar/components/StatusIcons.qml"
+    },
+    {
+      "destination": "qml/modules/bar/components/Tray.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "adff7fb0e7c00375dfea4a346db61b2fc6a853781ecc2a5341fe95020fdbd46f",
+      "size": 3616,
+      "source": "qml/modules/bar/components/Tray.qml"
+    },
+    {
+      "destination": "qml/modules/bar/components/TrayItem.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "24ebfc3f2cf146a4ed2e6df85537b19dbaf72b1f9238c2506b13fd1c923e3e6b",
+      "size": 847,
+      "source": "qml/modules/bar/components/TrayItem.qml"
+    },
+    {
+      "destination": "qml/modules/bar/components/qmldir",
+      "install": true,
+      "mode": "0644",
+      "sha256": "3115ef12641b5a1f55a315bb412bd3deb169936429ae839d2a926e638610dd08",
+      "size": 172,
+      "source": "qml/modules/bar/components/qmldir"
+    },
+    {
+      "destination": "qml/modules/bar/components/status/BatteryStatus.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "6ddf42a31fee4b96f8b1ed87f7958e36b11baa8198458c8426624d2d4c61806b",
+      "size": 861,
+      "source": "qml/modules/bar/components/status/BatteryStatus.qml"
+    },
+    {
+      "destination": "qml/modules/bar/components/status/BluetoothStatus.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "83e95c805a5b3e8b0346f49e88a7d33e639868337969336a306c53ae903c15ef",
+      "size": 2161,
+      "source": "qml/modules/bar/components/status/BluetoothStatus.qml"
+    },
+    {
+      "destination": "qml/modules/bar/components/status/LockStatus.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "5a70f790d0c71e055f4d20e3817cc8eb35383993eb099bdf7544134f0332b1c7",
+      "size": 1991,
+      "source": "qml/modules/bar/components/status/LockStatus.qml"
+    },
+    {
+      "destination": "qml/modules/bar/components/status/qmldir",
+      "install": true,
+      "mode": "0644",
+      "sha256": "84474913912c11fdeb4ac21446082faa58f90a9ac0078d8faf37ce481decb30e",
+      "size": 106,
+      "source": "qml/modules/bar/components/status/qmldir"
+    },
+    {
+      "destination": "qml/modules/bar/components/workspaces/ActiveIndicator.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "6fcbb6fef2d0a604fa65bd5deacece016448b86e656bc861b6c8d1bb511c36b1",
+      "size": 2027,
+      "source": "qml/modules/bar/components/workspaces/ActiveIndicator.qml"
+    },
+    {
+      "destination": "qml/modules/bar/components/workspaces/GapMarkers.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "d69e480a6415ae5b8734cb8183fb2329fbbd819337f554d50e10fffe9796a168",
+      "size": 1575,
+      "source": "qml/modules/bar/components/workspaces/GapMarkers.qml"
+    },
+    {
+      "destination": "qml/modules/bar/components/workspaces/OccupiedBg.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "ca6da9318504a31e27bdb784f700ae1038eb67123371ad85b69f654db0cf7a60",
+      "size": 3032,
+      "source": "qml/modules/bar/components/workspaces/OccupiedBg.qml"
+    },
+    {
+      "destination": "qml/modules/bar/components/workspaces/SpecialWorkspaces.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "343cf36fd724da877d53f2c454d529a5d218e0325a445512f0bd84e4553e5638",
+      "size": 6405,
+      "source": "qml/modules/bar/components/workspaces/SpecialWorkspaces.qml"
+    },
+    {
+      "destination": "qml/modules/bar/components/workspaces/Workspace.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "c0b21917ab5a96efb3d8063d3ad25fe9347075400a6e1989fcd4fd8f9dd3f09d",
+      "size": 8975,
+      "source": "qml/modules/bar/components/workspaces/Workspace.qml"
+    },
+    {
+      "destination": "qml/modules/bar/components/workspaces/Workspaces.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "10691e8a5bb0129597f8121963e3dab2e34f80e7efc7c7f9f4b108995600e28a",
+      "size": 7112,
+      "source": "qml/modules/bar/components/workspaces/Workspaces.qml"
+    },
+    {
+      "destination": "qml/modules/bar/components/workspaces/qmldir",
+      "install": true,
+      "mode": "0644",
+      "sha256": "e9fde49849a172fc6dfe01d566a86598bd0b7504440bdc80534b4ce10e771140",
+      "size": 202,
+      "source": "qml/modules/bar/components/workspaces/qmldir"
+    },
+    {
+      "destination": "qml/modules/bar/popouts/ActiveWindow.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "256170cf1ff9fa13b0893410ce7559390404d922d8c3806ff355c0556e0580a1",
+      "size": 2808,
+      "source": "qml/modules/bar/popouts/ActiveWindow.qml"
+    },
+    {
+      "destination": "qml/modules/bar/popouts/AudioPopout.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "468541e953c9eb77d19c88ed5f058c4030152b80202db9f6a7d30c2af06c2758",
+      "size": 3355,
+      "source": "qml/modules/bar/popouts/AudioPopout.qml"
+    },
+    {
+      "destination": "qml/modules/bar/popouts/Battery.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "d5f500fed2526026d8db15116a7e024d4ed9dd371738a05865b1653519b8cf2e",
+      "size": 8249,
+      "source": "qml/modules/bar/popouts/Battery.qml"
+    },
+    {
+      "destination": "qml/modules/bar/popouts/Bluetooth.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "3a0ec77b007320acdbb451edcebf4a5ee728d86c47a30f5214439c06b82d060a",
+      "size": 6724,
+      "source": "qml/modules/bar/popouts/Bluetooth.qml"
+    },
+    {
+      "destination": "qml/modules/bar/popouts/ClipWrapper.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "38a8522720b46d1e7998d9aedbbdbf4496233fd83f964fc0c60a904472eeead9",
+      "size": 1616,
+      "source": "qml/modules/bar/popouts/ClipWrapper.qml"
+    },
+    {
+      "destination": "qml/modules/bar/popouts/Content.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "47fdc5f7f984257cf843e1d5e23eaf878c7fcffb96440fd4fd14edbfa77de0f9",
+      "size": 6627,
+      "source": "qml/modules/bar/popouts/Content.qml"
+    },
+    {
+      "destination": "qml/modules/bar/popouts/LockStatus.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "87b59250652c11539a97dd31a57e81d7e36b449b0482b33d0d7326d8552db67e",
+      "size": 403,
+      "source": "qml/modules/bar/popouts/LockStatus.qml"
+    },
+    {
+      "destination": "qml/modules/bar/popouts/Network.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "fa92cd32c2c60e51a91e2a29ecb0849cf206452639ba94e73fe1f5b04b810ea8",
+      "size": 13819,
+      "source": "qml/modules/bar/popouts/Network.qml"
+    },
+    {
+      "destination": "qml/modules/bar/popouts/PopoutState.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "7e202ed323c64a5e8b9e01062bc130ec72df52f57647dacf35234872a930b47a",
+      "size": 132,
+      "source": "qml/modules/bar/popouts/PopoutState.qml"
+    },
+    {
+      "destination": "qml/modules/bar/popouts/TrayMenu.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "eb6b7ca7b595cb8f91c901954b75dbc4f8cd06d7fcbe261a153c472712d84e56",
+      "size": 7494,
+      "source": "qml/modules/bar/popouts/TrayMenu.qml"
+    },
+    {
+      "destination": "qml/modules/bar/popouts/WirelessPassword.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "0c01c0ded7503ad831aa8c86c141658993cf1b31498de32871776444a57c97f6",
+      "size": 22692,
+      "source": "qml/modules/bar/popouts/WirelessPassword.qml"
+    },
+    {
+      "destination": "qml/modules/bar/popouts/Wrapper.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "9aa3a5f54a36c3a9bb60aab4a57766ed5036a9148b8206b4a92cf198b658b833",
+      "size": 5973,
+      "source": "qml/modules/bar/popouts/Wrapper.qml"
+    },
+    {
+      "destination": "qml/modules/bar/popouts/kblayout/KbLayout.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "b822882e26742e97ea520bd667324a6e4f765801aa7ab260611b7a93bc0b13ae",
+      "size": 5665,
+      "source": "qml/modules/bar/popouts/kblayout/KbLayout.qml"
+    },
+    {
+      "destination": "qml/modules/bar/popouts/kblayout/KbLayoutModel.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "68ee0729f4ff9ab86f4ac3d1eba9cdfcdc8f3301e098fd02d76f0c0cc965a556",
+      "size": 1566,
+      "source": "qml/modules/bar/popouts/kblayout/KbLayoutModel.qml"
+    },
+    {
+      "destination": "qml/modules/bar/popouts/kblayout/qmldir",
+      "install": true,
+      "mode": "0644",
+      "sha256": "fd9e8e4bfc5bcbe82cce3bb198c93e57bbf928e6647328d999db5c3fcd9df91c",
+      "size": 62,
+      "source": "qml/modules/bar/popouts/kblayout/qmldir"
+    },
+    {
+      "destination": "qml/modules/bar/popouts/qmldir",
+      "install": true,
+      "mode": "0644",
+      "sha256": "fdbd980c215283b4c8e0b27f7bfea121ca3a88dd5179060af19744a483249260",
+      "size": 352,
+      "source": "qml/modules/bar/popouts/qmldir"
+    },
+    {
+      "destination": "qml/modules/bar/qmldir",
+      "install": true,
+      "mode": "0644",
+      "sha256": "18a4543339c9731d3090dea6f3b3989b8bf37808c4a40f69a3ced99c9699109e",
+      "size": 46,
+      "source": "qml/modules/bar/qmldir"
+    },
+    {
+      "destination": "qml/modules/dashboard/Content.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "b1ba2cfd3a8cbcfd97bcce46212ddc5f544fa145bc15311e4537e7b50829abfd",
+      "size": 5600,
+      "source": "qml/modules/dashboard/Content.qml"
+    },
+    {
+      "destination": "qml/modules/dashboard/Dash.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "12c0f6ad1bc617d81c8ee2db30228921837f6d40e61d021d1cd9de383c233f38",
+      "size": 2140,
+      "source": "qml/modules/dashboard/Dash.qml"
+    },
+    {
+      "destination": "qml/modules/dashboard/Media.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "683185579ca8564abe1d3aebdbf54a630eec84b147530f0934c55ba2a27b907b",
+      "size": 4643,
+      "source": "qml/modules/dashboard/Media.qml"
+    },
+    {
+      "destination": "qml/modules/dashboard/Performance.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "2c44a6a74163f62b11ba21e391f1e22181d5b6d16ced5312c4ac72932e267262",
+      "size": 4793,
+      "source": "qml/modules/dashboard/Performance.qml"
+    },
+    {
+      "destination": "qml/modules/dashboard/Tabs.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "e6319b451f686361a2002acf987d095864656227a11ad04f69a34d856149d71b",
+      "size": 5258,
+      "source": "qml/modules/dashboard/Tabs.qml"
+    },
+    {
+      "destination": "qml/modules/dashboard/WeatherTab.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "889b86ce1496f251a4ba630b2945d345e5e5ab0bd97184638cbc385c0f42fbeb",
+      "size": 9392,
+      "source": "qml/modules/dashboard/WeatherTab.qml"
+    },
+    {
+      "destination": "qml/modules/dashboard/Wrapper.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "b35642caefe1dfa2e75e2ed1d1d1c09a40b2da7815f6ed6384c0b0502cba2c4e",
+      "size": 2051,
+      "source": "qml/modules/dashboard/Wrapper.qml"
+    },
+    {
+      "destination": "qml/modules/dashboard/dash/Calendar.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "61b98f3c5988727ca8c4ab513349864225fe4836f3221ff52939e8049933dd7f",
+      "size": 8471,
+      "source": "qml/modules/dashboard/dash/Calendar.qml"
+    },
+    {
+      "destination": "qml/modules/dashboard/dash/DateTime.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "2ea671f65cf0ed7ee3c8f8388551bddd00d4cc59c7611a43a751234c0d7c962c",
+      "size": 2643,
+      "source": "qml/modules/dashboard/dash/DateTime.qml"
+    },
+    {
+      "destination": "qml/modules/dashboard/dash/Media.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "419b6dfa5c631053a1f4e710944f8c43aa2f388baf6f2f92fef68a422101ea46",
+      "size": 5184,
+      "source": "qml/modules/dashboard/dash/Media.qml"
+    },
+    {
+      "destination": "qml/modules/dashboard/dash/Resources.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "06368997f32f8856e840425b081c779d5d2f1a3bd875b26b91a6bb75aa6b901a",
+      "size": 1603,
+      "source": "qml/modules/dashboard/dash/Resources.qml"
+    },
+    {
+      "destination": "qml/modules/dashboard/dash/SmallWeather.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "3c67a53aa90619f20406a74082cbe5a5d11b0754de822007d248289bcb6eefa4",
+      "size": 1708,
+      "source": "qml/modules/dashboard/dash/SmallWeather.qml"
+    },
+    {
+      "destination": "qml/modules/dashboard/dash/User.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "f320ce8fa58926c5a365cecdeceaa3c6f64d3325a94451f8923bc11bc8bb90b7",
+      "size": 8352,
+      "source": "qml/modules/dashboard/dash/User.qml"
+    },
+    {
+      "destination": "qml/modules/dashboard/dash/qmldir",
+      "install": true,
+      "mode": "0644",
+      "sha256": "d34a066b2e091fa4bd0fec3ca59fd6ac97c8714785e97c7de77feb6576a45cf2",
+      "size": 152,
+      "source": "qml/modules/dashboard/dash/qmldir"
+    },
+    {
+      "destination": "qml/modules/dashboard/media/BackgroundShapes.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "8e1ff8f6f3954761845422017a21c5563a1062f4960b6726e0e55fa8f3fcc9a5",
+      "size": 3330,
+      "source": "qml/modules/dashboard/media/BackgroundShapes.qml"
+    },
+    {
+      "destination": "qml/modules/dashboard/media/CoverVisualiser.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "53e05cd57c3af53cf60ba9f11cae17d51e2e2836fd7f15dcb4e94f807cc67d6f",
+      "size": 2616,
+      "source": "qml/modules/dashboard/media/CoverVisualiser.qml"
+    },
+    {
+      "destination": "qml/modules/dashboard/media/Details.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "8b03229706827b13f17736e3ef85c0b7cc96bb28af3f26933a1d0f2978e65c9b",
+      "size": 6442,
+      "source": "qml/modules/dashboard/media/Details.qml"
+    },
+    {
+      "destination": "qml/modules/dashboard/media/LyricList.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "774c244bcbd44e01b1c0b21d1d295f3d751e4f47c7ceb08000b27af41baffd93",
+      "size": 8907,
+      "source": "qml/modules/dashboard/media/LyricList.qml"
+    },
+    {
+      "destination": "qml/modules/dashboard/media/LyricsAndSelector.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "8da8b027c635a2777a5708694f1a84ae03b3344a280a8d08a9463a65eec19631",
+      "size": 2274,
+      "source": "qml/modules/dashboard/media/LyricsAndSelector.qml"
+    },
+    {
+      "destination": "qml/modules/dashboard/media/LyricsInfo.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "8c953efc4789dbec078726ac57ef0a799dd2a74b5171854c4c4263add5e345bb",
+      "size": 6225,
+      "source": "qml/modules/dashboard/media/LyricsInfo.qml"
+    },
+    {
+      "destination": "qml/modules/dashboard/media/qmldir",
+      "install": true,
+      "mode": "0644",
+      "sha256": "6a3c282c57fb51e0e7bb4bd259d7b560554db56e6e438deb9873f07b56934bf6",
+      "size": 208,
+      "source": "qml/modules/dashboard/media/qmldir"
+    },
+    {
+      "destination": "qml/modules/dashboard/performance/BatteryTank.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "78df6922dfa3b2ca7ad245b2b48ed91b3234c6b1a10b3df6ca543e6f0a61ea81",
+      "size": 4746,
+      "source": "qml/modules/dashboard/performance/BatteryTank.qml"
+    },
+    {
+      "destination": "qml/modules/dashboard/performance/HeroCard.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "3027d98f578ce7e71bb1bf76e19def5f72fbb077894c57b8fd546b26091cdb1d",
+      "size": 4451,
+      "source": "qml/modules/dashboard/performance/HeroCard.qml"
+    },
+    {
+      "destination": "qml/modules/dashboard/performance/MemoryCard.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "5c6c7267308efa7dd354482e370fe86b7aa9b2e26cef27d8894648f415867be1",
+      "size": 2646,
+      "source": "qml/modules/dashboard/performance/MemoryCard.qml"
+    },
+    {
+      "destination": "qml/modules/dashboard/performance/NetworkCard.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "f62723bb301683fd7939b00ce7ee1c5f07ef704c657edbd83ca55c862bdba34b",
+      "size": 5823,
+      "source": "qml/modules/dashboard/performance/NetworkCard.qml"
+    },
+    {
+      "destination": "qml/modules/dashboard/performance/StorageCard.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "175ba1285cd974cb6bf96881cfb083403332a46d21550ccdfb925dcd3d979556",
+      "size": 3976,
+      "source": "qml/modules/dashboard/performance/StorageCard.qml"
+    },
+    {
+      "destination": "qml/modules/dashboard/performance/qmldir",
+      "install": true,
+      "mode": "0644",
+      "sha256": "c9fd4f9be60ea2469aed013c4f856339833c3fb1410ef50bf18a6650304c92d9",
+      "size": 152,
+      "source": "qml/modules/dashboard/performance/qmldir"
+    },
+    {
+      "destination": "qml/modules/dashboard/qmldir",
+      "install": true,
+      "mode": "0644",
+      "sha256": "f3a7307d6d083066f2d23426d22dbc047a138a62e3984b8e1194a1d15ec20c90",
+      "size": 166,
+      "source": "qml/modules/dashboard/qmldir"
+    },
+    {
+      "destination": "qml/modules/drawers/ContentWindow.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "df63bc864fd27ac13ea83e321c00b710f1d2678618848c468f791d32b31a19ca",
+      "size": 10878,
+      "source": "qml/modules/drawers/ContentWindow.qml"
+    },
+    {
+      "destination": "qml/modules/drawers/Drawers.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "21e40715bb5ba3d828bc17cdd99a63be7d7152fd24501350530f4a644138f861",
+      "size": 410,
+      "source": "qml/modules/drawers/Drawers.qml"
+    },
+    {
+      "destination": "qml/modules/drawers/Exclusions.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "1a3aa814b51b7215d88c82b6c63d7ea6c38e20e6aa686724718419cb50973e44",
+      "size": 753,
+      "source": "qml/modules/drawers/Exclusions.qml"
+    },
+    {
+      "destination": "qml/modules/drawers/Interactions.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "2cacbabdbc8a8bf9b6d8be3789fada0269d0ca67b8ea31e2029ed5a43c5b0ca8",
+      "size": 14590,
+      "source": "qml/modules/drawers/Interactions.qml"
+    },
+    {
+      "destination": "qml/modules/drawers/Panels.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "ecda7e6877c1badf819676b6f46c25b04dc0b5363fcf8c20265b46fc98168353",
+      "size": 4171,
+      "source": "qml/modules/drawers/Panels.qml"
+    },
+    {
+      "destination": "qml/modules/drawers/Regions.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "04e52f5f082237c4cfd6ef3941afce89c75048f138133526bc72f79f7d8fcc63",
+      "size": 2344,
+      "source": "qml/modules/drawers/Regions.qml"
+    },
+    {
+      "destination": "qml/modules/drawers/qmldir",
+      "install": true,
+      "mode": "0644",
+      "sha256": "3ba8bec9a61c62f936f9325c3bfb414bef8ef3b6f424c79094c84277043a7066",
+      "size": 170,
+      "source": "qml/modules/drawers/qmldir"
+    },
+    {
+      "destination": "qml/modules/launcher/AppList.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "ec7c154472aaf485e8e2b5e1adeb43b8d904d1c2cd62a5f98d103cb3980c29b7",
+      "size": 5778,
+      "source": "qml/modules/launcher/AppList.qml"
+    },
+    {
+      "destination": "qml/modules/launcher/Content.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "ca09e13f04ee9f9c975fe581e15da630b5654b03816ecb2899229a91e990fb4c",
+      "size": 4361,
+      "source": "qml/modules/launcher/Content.qml"
+    },
+    {
+      "destination": "qml/modules/launcher/ContentList.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "2f7c6abb2eed7a5c0b0155b5159b2aac4dc422a8a08ecdcba71838c2a45ebbf4",
+      "size": 4701,
+      "source": "qml/modules/launcher/ContentList.qml"
+    },
+    {
+      "destination": "qml/modules/launcher/WallpaperList.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "9fe1876a11e3c3798f2ec4f87857d89fddba7faeaf246a59a65f1b888c8ae34b",
+      "size": 3297,
+      "source": "qml/modules/launcher/WallpaperList.qml"
+    },
+    {
+      "destination": "qml/modules/launcher/Wrapper.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "4d7f1d59ee130e68ffcc31ec682bbf2e0d8dc873599eaf4aa7fc4ee21c225f7f",
+      "size": 1616,
+      "source": "qml/modules/launcher/Wrapper.qml"
+    },
+    {
+      "destination": "qml/modules/launcher/items/ActionItem.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "bc50ab75cf9325ba731d6f03a11f2523f923ccfda0fc32642af91bb3822770d0",
+      "size": 1739,
+      "source": "qml/modules/launcher/items/ActionItem.qml"
+    },
+    {
+      "destination": "qml/modules/launcher/items/AppItem.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "9328a071a06212abc9985fa3801ae881640bb8c9250fd05da419866112ce13b7",
+      "size": 2475,
+      "source": "qml/modules/launcher/items/AppItem.qml"
+    },
+    {
+      "destination": "qml/modules/launcher/items/CalcItem.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "79792baf6c3d3114345029da36977de960d5772e5a556ab661587891d0d3eb5e",
+      "size": 3784,
+      "source": "qml/modules/launcher/items/CalcItem.qml"
+    },
+    {
+      "destination": "qml/modules/launcher/items/SchemeItem.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "ee279f8b5ec7dcb94472bb1ef05f7a3cb048e4dc92f2af663e219fc622ab7769",
+      "size": 2942,
+      "source": "qml/modules/launcher/items/SchemeItem.qml"
+    },
+    {
+      "destination": "qml/modules/launcher/items/VariantItem.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "38db90b3726fc5bfa139daed83459b9c69d67bb3804211656097efe62d6691cb",
+      "size": 2094,
+      "source": "qml/modules/launcher/items/VariantItem.qml"
+    },
+    {
+      "destination": "qml/modules/launcher/items/WallpaperItem.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "cf0963ef7988fe66c9d790f748c8114fde81127c08b02c6f8892e1184af19015",
+      "size": 2649,
+      "source": "qml/modules/launcher/items/WallpaperItem.qml"
+    },
+    {
+      "destination": "qml/modules/launcher/items/qmldir",
+      "install": true,
+      "mode": "0644",
+      "sha256": "7d420cb29e699c95275594c1cf17a03284280a26916b1b7dfd39fe8481aeeea6",
+      "size": 178,
+      "source": "qml/modules/launcher/items/qmldir"
+    },
+    {
+      "destination": "qml/modules/launcher/qmldir",
+      "install": true,
+      "mode": "0644",
+      "sha256": "7ac395eafa110b074b49983c246ff3288b48d4f31997fb4d90e2c0eac71f7bf8",
+      "size": 140,
+      "source": "qml/modules/launcher/qmldir"
+    },
+    {
+      "destination": "qml/modules/launcher/services/Actions.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "4aaf77592ffd4987f2e145032ccd2be57423943ed46d1b15e022027d8cbda58b",
+      "size": 2063,
+      "source": "qml/modules/launcher/services/Actions.qml"
+    },
+    {
+      "destination": "qml/modules/launcher/services/Apps.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "b2221fbcb5776f6c7c9b3c64f545c280dd50fd357e604d3566ac0a9d825ce138",
+      "size": 2385,
+      "source": "qml/modules/launcher/services/Apps.qml"
+    },
+    {
+      "destination": "qml/modules/launcher/services/M3Variants.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "3f62e9433dff539ec1465021edd27d1e95d7bbf8a1ea9ba7ecc9670baac41dc6",
+      "size": 3317,
+      "source": "qml/modules/launcher/services/M3Variants.qml"
+    },
+    {
+      "destination": "qml/modules/launcher/services/Schemes.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "94c21d141f3d383133795ddc7e42fddd453f7ffb889d59687d17de0a500d90c3",
+      "size": 2068,
+      "source": "qml/modules/launcher/services/Schemes.qml"
+    },
+    {
+      "destination": "qml/modules/launcher/services/qmldir",
+      "install": true,
+      "mode": "0644",
+      "sha256": "7bd33219343dea1b7b627a4d449d2f63fe146c638c0ef58b5656f16aa95f6787",
+      "size": 136,
+      "source": "qml/modules/launcher/services/qmldir"
+    },
+    {
+      "destination": "qml/modules/nexus/NavPane.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "530f3f54f34fecd98730c76f9f141598556da8b6273a33120fc930101001cead",
+      "size": 1225,
+      "source": "qml/modules/nexus/NavPane.qml"
+    },
+    {
+      "destination": "qml/modules/nexus/Nexus.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "026cef1fcf7d18e4b681522f0123f2f4c47f894afecb3d16a6732d8133fa9c35",
+      "size": 2941,
+      "source": "qml/modules/nexus/Nexus.qml"
+    },
+    {
+      "destination": "qml/modules/nexus/NexusState.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "47f45e67f005e62fb2dd9f4742c01cddb1b4c6ee6fa262d2c363520896b79029",
+      "size": 914,
+      "source": "qml/modules/nexus/NexusState.qml"
+    },
+    {
+      "destination": "qml/modules/nexus/PageCompRegistry.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "f4b6848a2e0b9160b2902a0bfb9ceb286d6b08a1c2b474dc90545d8c8720fd25",
+      "size": 5323,
+      "source": "qml/modules/nexus/PageCompRegistry.qml"
+    },
+    {
+      "destination": "qml/modules/nexus/PageRegistry.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "eb948d3498290cc6e55847787ff7d8233f33c28d4e71cbbdc88c7c2d72e63c07",
+      "size": 2148,
+      "source": "qml/modules/nexus/PageRegistry.qml"
+    },
+    {
+      "destination": "qml/modules/nexus/Pages.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "4829ae09192dfc9201f14d5d3509fecc0fa0ae6b86ed605b32920690d2cb0a2b",
+      "size": 2444,
+      "source": "qml/modules/nexus/Pages.qml"
+    },
+    {
+      "destination": "qml/modules/nexus/WindowFactory.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "813bd7d481fb3a232f4694bf131d003d68c534ed12e23c2162090394c5186d00",
+      "size": 1250,
+      "source": "qml/modules/nexus/WindowFactory.qml"
+    },
+    {
+      "destination": "qml/modules/nexus/common/AnimatedLogo.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "5ca91302907f2e4407ba93ff66412bd0147792be4f35fed38e8c5be86377af1a",
+      "size": 16485,
+      "source": "qml/modules/nexus/common/AnimatedLogo.qml"
+    },
+    {
+      "destination": "qml/modules/nexus/common/AudioDeviceList.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "f479b4d7e1958bc63a7745f854ff114b8b79cf06e6fb2cf1a9c6d7586c8b877c",
+      "size": 3109,
+      "source": "qml/modules/nexus/common/AudioDeviceList.qml"
+    },
+    {
+      "destination": "qml/modules/nexus/common/BlobPopup.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "64f76d2703b6a77cb62aa20976b1e56e86c197706c3d58dbdd448577950a4ab2",
+      "size": 3268,
+      "source": "qml/modules/nexus/common/BlobPopup.qml"
+    },
+    {
+      "destination": "qml/modules/nexus/common/ConnectedRect.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "ceddd6fea9933c7653c8ca955eba2aa368bdfecd5b28835ea44172ff9bbe2ec0",
+      "size": 545,
+      "source": "qml/modules/nexus/common/ConnectedRect.qml"
+    },
+    {
+      "destination": "qml/modules/nexus/common/DialogRowButton.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "c1bce771c1656b963fe415235ff320185c62ecc888e29044b66b8284cc8361ba",
+      "size": 7741,
+      "source": "qml/modules/nexus/common/DialogRowButton.qml"
+    },
+    {
+      "destination": "qml/modules/nexus/common/DialogSelectButton.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "3579ca0a6a88920fa8de5432508a573e702383125ceaf352c7854644462a5634",
+      "size": 3157,
+      "source": "qml/modules/nexus/common/DialogSelectButton.qml"
+    },
+    {
+      "destination": "qml/modules/nexus/common/EthernetSection.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "cd423124077beac482e15344e5512fed99ce28a64fe7d3070484e05378ca31eb",
+      "size": 9287,
+      "source": "qml/modules/nexus/common/EthernetSection.qml"
+    },
+    {
+      "destination": "qml/modules/nexus/common/InfoRow.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "c3fa5a8a1b5ac634fa7678b32d96b0712f74a217bdceb5580b4f2e4d417b167b",
+      "size": 2037,
+      "source": "qml/modules/nexus/common/InfoRow.qml"
+    },
+    {
+      "destination": "qml/modules/nexus/common/ItemList.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "63f936a466a8b1420379b91e24cc188d8a148b31ba87695a84bdd89f67ebb64c",
+      "size": 2844,
+      "source": "qml/modules/nexus/common/ItemList.qml"
+    },
+    {
+      "destination": "qml/modules/nexus/common/ListEditor.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "fdad1133f7acf872a64a6442fef5ae2bd90f3cc4b66484981fe55f6a368415ad",
+      "size": 9561,
+      "source": "qml/modules/nexus/common/ListEditor.qml"
+    },
+    {
+      "destination": "qml/modules/nexus/common/NavRow.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "fb376b72b7f6db45681986d703879154ed39f861ddab251f6870c5876208980b",
+      "size": 91,
+      "source": "qml/modules/nexus/common/NavRow.qml"
+    },
+    {
+      "destination": "qml/modules/nexus/common/NetworkList.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "af3e40fb6fcf49c0a587ed4d967366f08b1601a17d10b035b0c96a6e96679e80",
+      "size": 6560,
+      "source": "qml/modules/nexus/common/NetworkList.qml"
+    },
+    {
+      "destination": "qml/modules/nexus/common/PageBase.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "24157ca234fbbbf33ebce8a7fafe61a401f48a0cf7c611e74f5fdb3b2e1d3e45",
+      "size": 2253,
+      "source": "qml/modules/nexus/common/PageBase.qml"
+    },
+    {
+      "destination": "qml/modules/nexus/common/PopupRow.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "f7c9f7b8a5d36f737edc76a8b82f213d127fc2e2be87bf39e0bc830454aa0652",
+      "size": 3610,
+      "source": "qml/modules/nexus/common/PopupRow.qml"
+    },
+    {
+      "destination": "qml/modules/nexus/common/RowButton.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "1e2ce367a12485b5d19bae4d875dc63498f2904fad9c6c8a9669d2a8a6ce11cd",
+      "size": 2290,
+      "source": "qml/modules/nexus/common/RowButton.qml"
+    },
+    {
+      "destination": "qml/modules/nexus/common/SectionHeader.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "2243f6a28f3875c6ff8097727802d1559f65569fe9251cc928a7cb1a912308c4",
+      "size": 497,
+      "source": "qml/modules/nexus/common/SectionHeader.qml"
+    },
+    {
+      "destination": "qml/modules/nexus/common/SelectRow.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "44de7e1d99203b2daabf850cbb46bd31423e0158607985b5e92a92718ffe7421",
+      "size": 1810,
+      "source": "qml/modules/nexus/common/SelectRow.qml"
+    },
+    {
+      "destination": "qml/modules/nexus/common/SliderRow.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "874e31a6f9f25621f1fdc0b6e5c97bb12201f8fb91f2dc25c56793cc3c442f6c",
+      "size": 2531,
+      "source": "qml/modules/nexus/common/SliderRow.qml"
+    },
+    {
+      "destination": "qml/modules/nexus/common/StackPage.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "b7d56254b6c28a29b6cf72c53270b371da6660d13201810d4196a2194244adc6",
+      "size": 3070,
+      "source": "qml/modules/nexus/common/StackPage.qml"
+    },
+    {
+      "destination": "qml/modules/nexus/common/StepperRow.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "8ef5f9e8db5ab06e7cde2e8f2a7987ca4ffcad440f8e2efb67ed692edb3bccd5",
+      "size": 1608,
+      "source": "qml/modules/nexus/common/StepperRow.qml"
+    },
+    {
+      "destination": "qml/modules/nexus/common/TextFieldRow.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "f48dc3b8b9c26edc7576c7abe96dcd03e71b9f8123aa01dd683601bdd6fe1503",
+      "size": 2556,
+      "source": "qml/modules/nexus/common/TextFieldRow.qml"
+    },
+    {
+      "destination": "qml/modules/nexus/common/ToggleRow.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "14259d4ad8b7f2693450081fa4eba9ef3e08624d1d9cda478974df4ff27a6e1d",
+      "size": 2198,
+      "source": "qml/modules/nexus/common/ToggleRow.qml"
+    },
+    {
+      "destination": "qml/modules/nexus/common/WallItem.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "a15740f5cc5cb47a9e4829411c33f9ced74d95c0452ab9416f46df9fef53d14e",
+      "size": 2552,
+      "source": "qml/modules/nexus/common/WallItem.qml"
+    },
+    {
+      "destination": "qml/modules/nexus/common/qmldir",
+      "install": true,
+      "mode": "0644",
+      "sha256": "dfbc44a8f2d96e56fb37d457d70395eb44c96ff006ae490e15a1aa18aaee1fa8",
+      "size": 716,
+      "source": "qml/modules/nexus/common/qmldir"
+    },
+    {
+      "destination": "qml/modules/nexus/navpane/NavLocations.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "de12e58393458941ba16b56e00b790f15c775577e9cb0aa2e752fb136c6526fd",
+      "size": 5266,
+      "source": "qml/modules/nexus/navpane/NavLocations.qml"
+    },
+    {
+      "destination": "qml/modules/nexus/navpane/qmldir",
+      "install": true,
+      "mode": "0644",
+      "sha256": "578c258ddf5fb7c127217b257dc8cfd60ffab29ac892a9b3e07a9789d06be622",
+      "size": 34,
+      "source": "qml/modules/nexus/navpane/qmldir"
+    },
+    {
+      "destination": "qml/modules/nexus/pages/AboutPage.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "cc79217997e3f67c339a828c6dc6fde83b89b827dc0a272d9ff09670f14ccbf5",
+      "size": 4131,
+      "source": "qml/modules/nexus/pages/AboutPage.qml"
+    },
+    {
+      "destination": "qml/modules/nexus/pages/AppsPage.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "9ed39bcfd1998be524d9c36efff66755f23e87b96bb6749c558abfc4539c1a22",
+      "size": 6170,
+      "source": "qml/modules/nexus/pages/AppsPage.qml"
+    },
+    {
+      "destination": "qml/modules/nexus/pages/AudioPage.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "49256bba4620313870552796549260dbe564b805390b298881620c408c6b77f2",
+      "size": 2712,
+      "source": "qml/modules/nexus/pages/AudioPage.qml"
+    },
+    {
+      "destination": "qml/modules/nexus/pages/BluetoothPage.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "20e3ffa1c0c6359d5e470d65d2593acdebc6f9f240e8ca11155db4e58caba742",
+      "size": 8601,
+      "source": "qml/modules/nexus/pages/BluetoothPage.qml"
+    },
+    {
+      "destination": "qml/modules/nexus/pages/LanguageAndRegion.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "88fc28f965c46913a951d4f1d25242e51c48f360b14e45b7c9810e6657d73568",
+      "size": 6175,
+      "source": "qml/modules/nexus/pages/LanguageAndRegion.qml"
+    },
+    {
+      "destination": "qml/modules/nexus/pages/NetworkPage.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "db3a11df31b58a3d62cb84925e7d8ee8b52f6e8f5a4d1d40316e828b144f2840",
+      "size": 14283,
+      "source": "qml/modules/nexus/pages/NetworkPage.qml"
+    },
+    {
+      "destination": "qml/modules/nexus/pages/PanelsPage.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "06c97fdbd15db1f622f969261c5de131c4717f17281ea41a9cb7e41f230fa9db",
+      "size": 1755,
+      "source": "qml/modules/nexus/pages/PanelsPage.qml"
+    },
+    {
+      "destination": "qml/modules/nexus/pages/ServicesPage.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "53937ced52caca60e4474e05ff2d66eba7aaaa22a05920c9209621ba8c6e6ee9",
+      "size": 7084,
+      "source": "qml/modules/nexus/pages/ServicesPage.qml"
+    },
+    {
+      "destination": "qml/modules/nexus/pages/WallpaperAndStyle.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "a5481423af98eccae02d5f818c7bb85370a638ef8786e1126594462409ee373d",
+      "size": 4595,
+      "source": "qml/modules/nexus/pages/WallpaperAndStyle.qml"
+    },
+    {
+      "destination": "qml/modules/nexus/pages/apps/AllApps.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "4d065a6653a2c632148dfc9ceb05c6bcf240fe152a21a4b347530657619abd6f",
+      "size": 3403,
+      "source": "qml/modules/nexus/pages/apps/AllApps.qml"
+    },
+    {
+      "destination": "qml/modules/nexus/pages/apps/AppInfo.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "5a67f4b33fed13ec5da1b043ad635bd2cfdea9792b1e28d4df400053ead886eb",
+      "size": 5535,
+      "source": "qml/modules/nexus/pages/apps/AppInfo.qml"
+    },
+    {
+      "destination": "qml/modules/nexus/pages/apps/qmldir",
+      "install": true,
+      "mode": "0644",
+      "sha256": "209be6ab0896ee157c8bf9fcc64d05ace70fd6483a8da2c414002ef422d808ab",
+      "size": 48,
+      "source": "qml/modules/nexus/pages/apps/qmldir"
+    },
+    {
+      "destination": "qml/modules/nexus/pages/audio/AppVolumes.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "689dad531a8e3c33557c34e65444eee6cf02922d897cf8f24dd2a3dce2483495",
+      "size": 2246,
+      "source": "qml/modules/nexus/pages/audio/AppVolumes.qml"
+    },
+    {
+      "destination": "qml/modules/nexus/pages/audio/qmldir",
+      "install": true,
+      "mode": "0644",
+      "sha256": "cd6e52a9f830e652454469729719020dd42e85cb816a6327afa18c09da85142b",
+      "size": 30,
+      "source": "qml/modules/nexus/pages/audio/qmldir"
+    },
+    {
+      "destination": "qml/modules/nexus/pages/bluetooth/BluetoothPairing.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "45d1f8da6c8f79d3510e10f7102d0ab4ab96ca3717f836b57e94bde69031f0bf",
+      "size": 6658,
+      "source": "qml/modules/nexus/pages/bluetooth/BluetoothPairing.qml"
+    },
+    {
+      "destination": "qml/modules/nexus/pages/bluetooth/BtDeviceInfo.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "b41fca7fa7dde9f621753f3abc6f48c29b3b763b50d879bc80b2b4fa5d2ab628",
+      "size": 8959,
+      "source": "qml/modules/nexus/pages/bluetooth/BtDeviceInfo.qml"
+    },
+    {
+      "destination": "qml/modules/nexus/pages/bluetooth/qmldir",
+      "install": true,
+      "mode": "0644",
+      "sha256": "7ade54e24f6205d6557e83415aea2befcd6950d736a31e1d572a39e9ac3df431",
+      "size": 76,
+      "source": "qml/modules/nexus/pages/bluetooth/qmldir"
+    },
+    {
+      "destination": "qml/modules/nexus/pages/network/AddNetworkPage.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "8886ad1ecd34d97021f6af1ec2d07445bbcf84a585a215462d9a443ce84390c7",
+      "size": 8448,
+      "source": "qml/modules/nexus/pages/network/AddNetworkPage.qml"
+    },
+    {
+      "destination": "qml/modules/nexus/pages/network/AddVpnPage.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "6209d38d49fc0f113617741e935f34941b92a179330ebad3bd631a894a249a4c",
+      "size": 8070,
+      "source": "qml/modules/nexus/pages/network/AddVpnPage.qml"
+    },
+    {
+      "destination": "qml/modules/nexus/pages/network/AllNetworksPage.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "11f6dbcba795fac6b44140bae32ca7eee5fa9cac29ec32a310d15c3c01d2fd37",
+      "size": 5529,
+      "source": "qml/modules/nexus/pages/network/AllNetworksPage.qml"
+    },
+    {
+      "destination": "qml/modules/nexus/pages/network/EthernetDetailPage.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "fff9101d568cdd956325007c3b98d1eb6148452ca1834d578c55d3326126da8c",
+      "size": 12306,
+      "source": "qml/modules/nexus/pages/network/EthernetDetailPage.qml"
+    },
+    {
+      "destination": "qml/modules/nexus/pages/network/NetworkDetailPage.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "64949bcf4a1fabd9cc166b3dfb52f62635078fca8c331344828cf4fc393ad09f",
+      "size": 17075,
+      "source": "qml/modules/nexus/pages/network/NetworkDetailPage.qml"
+    },
+    {
+      "destination": "qml/modules/nexus/pages/network/SavedNetworksPage.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "57d73daeb4b33ee3951852363245ec6708dade7e709693d7fa19b5ba6e04589d",
+      "size": 4756,
+      "source": "qml/modules/nexus/pages/network/SavedNetworksPage.qml"
+    },
+    {
+      "destination": "qml/modules/nexus/pages/network/qmldir",
+      "install": true,
+      "mode": "0644",
+      "sha256": "4502cfa20974f9a980d6d48da4168ee0079c349abae957bf09a9c4baa65c0985",
+      "size": 242,
+      "source": "qml/modules/nexus/pages/network/qmldir"
+    },
+    {
+      "destination": "qml/modules/nexus/pages/panels/DashboardPanel.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "4f6fc5308e6066166886feae800d89cb8133d4feba505fbc84db6777a8bcb3d8",
+      "size": 4057,
+      "source": "qml/modules/nexus/pages/panels/DashboardPanel.qml"
+    },
+    {
+      "destination": "qml/modules/nexus/pages/panels/LauncherPanel.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "1dd821c8426ac12c1326971fb72236384bb582a9c11839b9042104f921825b6c",
+      "size": 4788,
+      "source": "qml/modules/nexus/pages/panels/LauncherPanel.qml"
+    },
+    {
+      "destination": "qml/modules/nexus/pages/panels/SidebarPanel.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "0ef7579c8a1a9fdfe01148b08a0a8814806d964ba3cb6f9e326dff3e371786ff",
+      "size": 1340,
+      "source": "qml/modules/nexus/pages/panels/SidebarPanel.qml"
+    },
+    {
+      "destination": "qml/modules/nexus/pages/panels/TaskbarPanel.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "e2e0cf4359f564fe91b9282aabd77c9633feb9ad2a0a7d54d7390760d5e2efeb",
+      "size": 3513,
+      "source": "qml/modules/nexus/pages/panels/TaskbarPanel.qml"
+    },
+    {
+      "destination": "qml/modules/nexus/pages/panels/UtilitiesPanel.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "5b9792a86f47d729590bb1452143243a9d9c9e4017760bbe8876e4efa345fa3f",
+      "size": 4453,
+      "source": "qml/modules/nexus/pages/panels/UtilitiesPanel.qml"
+    },
+    {
+      "destination": "qml/modules/nexus/pages/panels/qmldir",
+      "install": true,
+      "mode": "0644",
+      "sha256": "4bb5f4ea3a1ef2a77a47c8d82b16c239629e076bf65659ab8983a4caaeac6b43",
+      "size": 180,
+      "source": "qml/modules/nexus/pages/panels/qmldir"
+    },
+    {
+      "destination": "qml/modules/nexus/pages/panels/taskbar/BarActiveWindow.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "15e280a505e75c87f1e3a1318fe08d84fb00616f9e96d6946d00ceac488d816f",
+      "size": 1502,
+      "source": "qml/modules/nexus/pages/panels/taskbar/BarActiveWindow.qml"
+    },
+    {
+      "destination": "qml/modules/nexus/pages/panels/taskbar/BarClock.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "2cea46326016f20e4081be21445bdbe7901fd159ebdb3974863dc53c7ed63145",
+      "size": 1252,
+      "source": "qml/modules/nexus/pages/panels/taskbar/BarClock.qml"
+    },
+    {
+      "destination": "qml/modules/nexus/pages/panels/taskbar/BarStatusIcons.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "fa78aa5ef1f79738a650022861440552efe0eedd2f7a4be16ba13f43312ea752",
+      "size": 2984,
+      "source": "qml/modules/nexus/pages/panels/taskbar/BarStatusIcons.qml"
+    },
+    {
+      "destination": "qml/modules/nexus/pages/panels/taskbar/BarTray.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "0c0d15f2e102f881b89f63e5064df74517f56181a461a7876fb878830f2d31c8",
+      "size": 1413,
+      "source": "qml/modules/nexus/pages/panels/taskbar/BarTray.qml"
+    },
+    {
+      "destination": "qml/modules/nexus/pages/panels/taskbar/BarWorkspaces.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "7caa0e35d104b0c87009271646452aed0cfa65a0698805b4247174e8c197cfe9",
+      "size": 3068,
+      "source": "qml/modules/nexus/pages/panels/taskbar/BarWorkspaces.qml"
+    },
+    {
+      "destination": "qml/modules/nexus/pages/panels/taskbar/qmldir",
+      "install": true,
+      "mode": "0644",
+      "sha256": "2a187ec2ab3448695b324c716c81dffe0276ef5a4cfca1a98433b883f8c013af",
+      "size": 164,
+      "source": "qml/modules/nexus/pages/panels/taskbar/qmldir"
+    },
+    {
+      "destination": "qml/modules/nexus/pages/qmldir",
+      "install": true,
+      "mode": "0644",
+      "sha256": "d06a68f913010297cd85a93e10561913b83916adbf1db65e9a3778602f612f2c",
+      "size": 302,
+      "source": "qml/modules/nexus/pages/qmldir"
+    },
+    {
+      "destination": "qml/modules/nexus/pages/services/NotificationsPage.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "89fee08d54d00af3f8859eeff03b6b01ff9dbead3face1d4025017b592ff2f51",
+      "size": 6726,
+      "source": "qml/modules/nexus/pages/services/NotificationsPage.qml"
+    },
+    {
+      "destination": "qml/modules/nexus/pages/services/qmldir",
+      "install": true,
+      "mode": "0644",
+      "sha256": "6b3ef8ee8f0090f235a42620164c0a239ec89db535ede3efe368ac0fdf94a8d6",
+      "size": 44,
+      "source": "qml/modules/nexus/pages/services/qmldir"
+    },
+    {
+      "destination": "qml/modules/nexus/pages/wallandstyle/ColourSelect.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "5394b5318ff88759ffa8b1d894e5fe5f8b2e2b0df0de63c3bc946ef6c91b5a45",
+      "size": 1350,
+      "source": "qml/modules/nexus/pages/wallandstyle/ColourSelect.qml"
+    },
+    {
+      "destination": "qml/modules/nexus/pages/wallandstyle/WallpaperCategory.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "393280e42381dc70c8af854f7302cc6e6085543ab6d2d8c247b5c01a7e3b807d",
+      "size": 1535,
+      "source": "qml/modules/nexus/pages/wallandstyle/WallpaperCategory.qml"
+    },
+    {
+      "destination": "qml/modules/nexus/pages/wallandstyle/WallpaperSelect.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "8de65d6fdc7505376ffd1e1803696fb44e5bbd442cd3c8ecc6f40ca3e7e6989a",
+      "size": 6529,
+      "source": "qml/modules/nexus/pages/wallandstyle/WallpaperSelect.qml"
+    },
+    {
+      "destination": "qml/modules/nexus/pages/wallandstyle/qmldir",
+      "install": true,
+      "mode": "0644",
+      "sha256": "1631a0514fab2116e8c3d8c145e5d6349262146a510b4aa136a45ebfb8c8b034",
+      "size": 118,
+      "source": "qml/modules/nexus/pages/wallandstyle/qmldir"
+    },
+    {
+      "destination": "qml/modules/nexus/qmldir",
+      "install": true,
+      "mode": "0644",
+      "sha256": "09a6e4a37d9026f0a3f0601d9cffa9d1f7df6ef9e832add07879ea01c75729fa",
+      "size": 236,
+      "source": "qml/modules/nexus/qmldir"
+    },
+    {
+      "destination": "qml/modules/notifications/Content.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "57dfe958dc78ed114ada706a648296f832c08fec40eef90b371ed7b9d9ac7dda",
+      "size": 6448,
+      "source": "qml/modules/notifications/Content.qml"
+    },
+    {
+      "destination": "qml/modules/notifications/Notification.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "64c9511735f34847ecd2e28ee2a0095063c7626da0a9a2dd3404e9b8ddd288c3",
+      "size": 19207,
+      "source": "qml/modules/notifications/Notification.qml"
+    },
+    {
+      "destination": "qml/modules/notifications/Wrapper.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "c71ec2557dff6acde55e7dae8f39a142e8dadf4eecd5fa7b4587476b1b12c6e9",
+      "size": 605,
+      "source": "qml/modules/notifications/Wrapper.qml"
+    },
+    {
+      "destination": "qml/modules/notifications/qmldir",
+      "install": true,
+      "mode": "0644",
+      "sha256": "10571bb47bfb3cd0639fadd71a99cfa066ff08330f30a1387ff13c8c4d1e7419",
+      "size": 82,
+      "source": "qml/modules/notifications/qmldir"
+    },
+    {
+      "destination": "qml/modules/osd/Content.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "6c9e59a838879f41ea9d2913fdfc10a94692ee46bc748b1073e8e5bc83032be4",
+      "size": 4245,
+      "source": "qml/modules/osd/Content.qml"
+    },
+    {
+      "destination": "qml/modules/osd/Wrapper.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "d957f9c738522039e17f17036c4b93c77f39caa04c25d4e7997ba607ad9df32e",
+      "size": 2871,
+      "source": "qml/modules/osd/Wrapper.qml"
+    },
+    {
+      "destination": "qml/modules/osd/qmldir",
+      "install": true,
+      "mode": "0644",
+      "sha256": "af54e17ce7673432026a6df7d2b3e918230dd4ec4cf891e04af6fdf6d56b9f08",
+      "size": 48,
+      "source": "qml/modules/osd/qmldir"
+    },
+    {
+      "destination": "qml/modules/session/Content.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "442ca246c81ff71189dc430d1a3e617556752a167e060be3bdf80b5c5c655c79",
+      "size": 4091,
+      "source": "qml/modules/session/Content.qml"
+    },
+    {
+      "destination": "qml/modules/session/Wrapper.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "b475724ffee3d2718fb98b86435b7729d1e1be70d9d4372bc59ea8950400f76c",
+      "size": 1059,
+      "source": "qml/modules/session/Wrapper.qml"
+    },
+    {
+      "destination": "qml/modules/session/qmldir",
+      "install": true,
+      "mode": "0644",
+      "sha256": "af54e17ce7673432026a6df7d2b3e918230dd4ec4cf891e04af6fdf6d56b9f08",
+      "size": 48,
+      "source": "qml/modules/session/qmldir"
+    },
+    {
+      "destination": "qml/modules/sidebar/Content.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "a9ed2b8ffa82f1a313b3431b51f5a229590dabbcec092dec948b18bec53f07de",
+      "size": 922,
+      "source": "qml/modules/sidebar/Content.qml"
+    },
+    {
+      "destination": "qml/modules/sidebar/Notif.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "51dadee4089d3998a5b14407522b30b7280d7f4cd169e6c73fb798d92839bee7",
+      "size": 5731,
+      "source": "qml/modules/sidebar/Notif.qml"
+    },
+    {
+      "destination": "qml/modules/sidebar/NotifActionList.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "7ab4f997d745adbd23824e62a56b1fe8df6fbcd8f27ab9df4369f3ea5d127868",
+      "size": 6088,
+      "source": "qml/modules/sidebar/NotifActionList.qml"
+    },
+    {
+      "destination": "qml/modules/sidebar/NotifDock.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "452e097b7d2307d40441faaf8b84e7a3911c33c1fe663b5096f5f7114b2e5565",
+      "size": 5932,
+      "source": "qml/modules/sidebar/NotifDock.qml"
+    },
+    {
+      "destination": "qml/modules/sidebar/NotifDockList.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "f43a00dcb40193a0929c4225901ac000a1f1bfc5b1f58e64db93ee017ed810c8",
+      "size": 4500,
+      "source": "qml/modules/sidebar/NotifDockList.qml"
+    },
+    {
+      "destination": "qml/modules/sidebar/NotifGroup.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "2813c3ab0c95e7f18a244fea178cf0382e844ea4e58d8b570c53e89ad2789a7a",
+      "size": 9806,
+      "source": "qml/modules/sidebar/NotifGroup.qml"
+    },
+    {
+      "destination": "qml/modules/sidebar/NotifGroupList.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "413a6ac01761e47383ff204cc40947468b16f312be76bcb7daf50b3c49274533",
+      "size": 4881,
+      "source": "qml/modules/sidebar/NotifGroupList.qml"
+    },
+    {
+      "destination": "qml/modules/sidebar/Props.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "2689cf71454c14625afd7270f6e4aa36f150c1bafe8937a957b072881d487b14",
+      "size": 118,
+      "source": "qml/modules/sidebar/Props.qml"
+    },
+    {
+      "destination": "qml/modules/sidebar/Wrapper.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "be4c0c4834c653edefd29c8f7536d20d09d3906ca8dba2b1acc28c28400464bc",
+      "size": 1210,
+      "source": "qml/modules/sidebar/Wrapper.qml"
+    },
+    {
+      "destination": "qml/modules/sidebar/qmldir",
+      "install": true,
+      "mode": "0644",
+      "sha256": "d93af4460f6134af67d57f47cd7cbb21e7dd035bd645599283f44bf991fcd1f3",
+      "size": 260,
+      "source": "qml/modules/sidebar/qmldir"
+    },
+    {
+      "destination": "qml/modules/utilities/Background.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "ea3a3aa174fcf31641b1c38878e59d35a3d38ac6032565c9575247e3cf1c93e8",
+      "size": 1487,
+      "source": "qml/modules/utilities/Background.qml"
+    },
+    {
+      "destination": "qml/modules/utilities/Content.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "ef03ee35cae79b55fbead8472f9cff56612bc0a96171e20a4b994153eec40d75",
+      "size": 2049,
+      "source": "qml/modules/utilities/Content.qml"
+    },
+    {
+      "destination": "qml/modules/utilities/RecordingDeleteModal.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "04204d2c79ce15529e82cdba479c592ee66a0f3fa662126119eafcf7646f2086",
+      "size": 7638,
+      "source": "qml/modules/utilities/RecordingDeleteModal.qml"
+    },
+    {
+      "destination": "qml/modules/utilities/Wrapper.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "11d06b99e4cce683a958b85b38120096cf1556548275bad0ff6ba65fc6d25985",
+      "size": 2787,
+      "source": "qml/modules/utilities/Wrapper.qml"
+    },
+    {
+      "destination": "qml/modules/utilities/cards/IdleInhibit.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "9e6c8d6ecfea5bf057e8c04f47610b7c8ca8597d2ffb409cbfefffb31af0fae8",
+      "size": 3854,
+      "source": "qml/modules/utilities/cards/IdleInhibit.qml"
+    },
+    {
+      "destination": "qml/modules/utilities/cards/Record.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "19786c629bce36652bc7cf9460d258e145c810a4b47c3d1ebff794e8df44f95e",
+      "size": 10247,
+      "source": "qml/modules/utilities/cards/Record.qml"
+    },
+    {
+      "destination": "qml/modules/utilities/cards/RecordingList.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "7bd30c7080ddf7dd07648574833ff8012ad3ad535f0e53167e7a4d5a6b20d4d4",
+      "size": 7569,
+      "source": "qml/modules/utilities/cards/RecordingList.qml"
+    },
+    {
+      "destination": "qml/modules/utilities/cards/Toggles.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "b082d9fb27951889c1d730da77dff378992fa0a7f0b508fc7243024d6b0d93bf",
+      "size": 5818,
+      "source": "qml/modules/utilities/cards/Toggles.qml"
+    },
+    {
+      "destination": "qml/modules/utilities/cards/qmldir",
+      "install": true,
+      "mode": "0644",
+      "sha256": "e6c14eed324c4fb3bced3397de2ea3bc236e48801a32c89797a7e124929e6b37",
+      "size": 114,
+      "source": "qml/modules/utilities/cards/qmldir"
+    },
+    {
+      "destination": "qml/modules/utilities/qmldir",
+      "install": true,
+      "mode": "0644",
+      "sha256": "6934307cd6cebe1ee636e1bcdd89824511f41e8528cf0f898e3f7e008b3ab4e3",
+      "size": 128,
+      "source": "qml/modules/utilities/qmldir"
+    },
+    {
+      "destination": "qml/modules/utilities/toasts/ToastItem.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "e88a349fde43062d9b55ac646df5939683513feef2f0a1dfd5f924d6dec9cc53",
+      "size": 4612,
+      "source": "qml/modules/utilities/toasts/ToastItem.qml"
+    },
+    {
+      "destination": "qml/modules/utilities/toasts/Toasts.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "824c9a9895ff86bf9a6689fef89d56ff63c664e768568df70e209ad7b04f70d1",
+      "size": 4195,
+      "source": "qml/modules/utilities/toasts/Toasts.qml"
+    },
+    {
+      "destination": "qml/modules/utilities/toasts/qmldir",
+      "install": true,
+      "mode": "0644",
+      "sha256": "f292309427b8303b1764bb3376f8b359e219f215f24a487db535be8227ab89c8",
+      "size": 50,
+      "source": "qml/modules/utilities/toasts/qmldir"
+    },
+    {
+      "destination": "qml/modules/windowinfo/Buttons.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "b9daa1cdd3ae6c26dccc54c60e69e89c5d5ebdcfa7b48add865b4f1b64ad8b33",
+      "size": 4639,
+      "source": "qml/modules/windowinfo/Buttons.qml"
+    },
+    {
+      "destination": "qml/modules/windowinfo/Details.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "b37508d02edf884da4bf32468de517b1eb0dde6ba0dcc12d548ae67e6b240095",
+      "size": 5459,
+      "source": "qml/modules/windowinfo/Details.qml"
+    },
+    {
+      "destination": "qml/modules/windowinfo/Preview.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "66f0d5c1ba70560f21627214f3ae58fe82d54614544bd37503ed79832b1979be",
+      "size": 2963,
+      "source": "qml/modules/windowinfo/Preview.qml"
+    },
+    {
+      "destination": "qml/modules/windowinfo/WindowInfo.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "0b4771d2d39ef4ab36119f64093c36d07831c4f6c28907f0980ceae44166a4d0",
+      "size": 1466,
+      "source": "qml/modules/windowinfo/WindowInfo.qml"
+    },
+    {
+      "destination": "qml/modules/windowinfo/qmldir",
+      "install": true,
+      "mode": "0644",
+      "sha256": "74bf4bb949023f904c8c7f6ce603e6558113bd2e2536302f786e3960547881dd",
+      "size": 102,
+      "source": "qml/modules/windowinfo/qmldir"
+    },
+    {
+      "destination": "qml/port/components/AnimatedRepeater.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "4ef04234a01b61f26c83598a48d90b200ec13e5262e628bff20e7ca450e25de2",
+      "size": 9391,
+      "source": "qml/port/components/AnimatedRepeater.qml"
+    },
+    {
+      "destination": "qml/port/components/ButtonRow.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "6604d542127d18b0b8c81851e4368c9cd551e33d42b5e630cd5c6e569edc7dc1",
+      "size": 4136,
+      "source": "qml/port/components/ButtonRow.qml"
+    },
+    {
+      "destination": "qml/port/components/CircularIndicatorManager.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "ea5e6acfc7e1be6122420e9079be8c372ca0ac85293f1492145935994a595553",
+      "size": 3477,
+      "source": "qml/port/components/CircularIndicatorManager.qml"
+    },
+    {
+      "destination": "qml/port/components/LazyListView.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "f8bfa9ec599a2337a944ac509bf0a4c32be9823a21cddb0bbd98233d40781386",
+      "size": 6435,
+      "source": "qml/port/components/LazyListView.qml"
+    },
+    {
+      "destination": "qml/port/components/LinearIndicatorManager.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "d3cfcde989a61ec454e9f1a0e0537a3315fd8870e37b8acb4c2e296835f0b763",
+      "size": 2496,
+      "source": "qml/port/components/LinearIndicatorManager.qml"
+    },
+    {
+      "destination": "qml/port/components/LinearIndicatorSegment.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "378076cc55074ac2e84dfc17bc257856370932fc4f5d2103c7a2c1bb1530e44c",
+      "size": 147,
+      "source": "qml/port/components/LinearIndicatorSegment.qml"
+    },
+    {
+      "destination": "qml/port/components/RoundedMask.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "e5c2300e4d7a679ea81a0beeee02f8df5ef86f3314e54b35087319412e708044",
+      "size": 626,
+      "source": "qml/port/components/RoundedMask.qml"
+    },
+    {
+      "destination": "qml/port/components/SparklineItem.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "c909e8556b424f4f87bc3d85ad44950dabd4f250dd3714196ca327eef5d02451",
+      "size": 3366,
+      "source": "qml/port/components/SparklineItem.qml"
+    },
+    {
+      "destination": "qml/port/components/VisualiserBars.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "80c8bcb1aa16a72559f71b5ff8e70d8ea1ab127f6ef0d19e638cbb108dbaf1fd",
+      "size": 960,
+      "source": "qml/port/components/VisualiserBars.qml"
+    },
+    {
+      "destination": "qml/port/components/WavyLine.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "ad8214450f81205699b43d5afee4d100468e9718b55d06fea0c48218f5dc1728",
+      "size": 4303,
+      "source": "qml/port/components/WavyLine.qml"
+    },
+    {
+      "destination": "qml/port/components/qmldir",
+      "install": true,
+      "mode": "0644",
+      "sha256": "d073b0cf31ab3dfd9d6a6503a3502f000f5da9b9164117e2962b41a7254fe516",
+      "size": 402,
+      "source": "qml/port/components/qmldir"
+    },
+    {
+      "destination": "qml/port/core/CUtils.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "144abcb6aa05c506987d1520b1bdfb64cba4cd21d8db1df73665de987487fc3a",
+      "size": 3461,
+      "source": "qml/port/core/CUtils.qml"
+    },
+    {
+      "destination": "qml/port/core/Qalculator.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "ccd3deac1b2a470d125c56f4114d84f8d8c05cc36489f101821febcc4d81b2a0",
+      "size": 1201,
+      "source": "qml/port/core/Qalculator.qml"
+    },
+    {
+      "destination": "qml/port/core/Requests.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "8ec0183f0271ce35267ba7d9ea3ba49611f8db8cccdb453f0fb813bdfcf74432",
+      "size": 604,
+      "source": "qml/port/core/Requests.qml"
+    },
+    {
+      "destination": "qml/port/core/Toast.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "230e50609df61cdf51120960e3a98064e5f7bba3cad62e3421e63d60333db08b",
+      "size": 1335,
+      "source": "qml/port/core/Toast.qml"
+    },
+    {
+      "destination": "qml/port/core/Toaster.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "04a42eb0c1a207e0abf52f9945771c86423959a6290fad121d0e4a4e9dee72a1",
+      "size": 754,
+      "source": "qml/port/core/Toaster.qml"
+    },
+    {
+      "destination": "qml/port/core/qmldir",
+      "install": true,
+      "mode": "0644",
+      "sha256": "f99874b30c3e21340ba408cb63412774d8d76f845572af7f8a6806a8a2dbb31f",
+      "size": 162,
+      "source": "qml/port/core/qmldir"
+    },
+    {
+      "destination": "qml/port/i18n/Tr.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "d2dac57534895b0138c834034bb8a2811ecb56b9c085dbdbca43a615a0292f37",
+      "size": 1257,
+      "source": "qml/port/i18n/Tr.qml"
+    },
+    {
+      "destination": "qml/port/i18n/Units.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "9258d6636afd227cda69a518008de93e4fd2576d702c3effcd44f41144e5f525",
+      "size": 4503,
+      "source": "qml/port/i18n/Units.qml"
+    },
+    {
+      "destination": "qml/port/i18n/qmldir",
+      "install": true,
+      "mode": "0644",
+      "sha256": "08199810a56abb9a2cb6fdd951f7a185c55cf057bac476c4a87d52f9d21d569e",
+      "size": 54,
+      "source": "qml/port/i18n/qmldir"
+    },
+    {
+      "destination": "qml/port/images/IUtils.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "7c7bd905d781c453cdad78eab721ab0d8324aced7f06e81eaf7241f04602a388",
+      "size": 556,
+      "source": "qml/port/images/IUtils.qml"
+    },
+    {
+      "destination": "qml/port/images/ImageAnalyser.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "7918345eeb2368f8156e72fc7ec0d4f95020bd5e628fea58997c8e3f3318e780",
+      "size": 2620,
+      "source": "qml/port/images/ImageAnalyser.qml"
+    },
+    {
+      "destination": "qml/port/images/qmldir",
+      "install": true,
+      "mode": "0644",
+      "sha256": "5e2a0f8cec137008d3dbe301a6bf52baf780651ae81c98395f1880644280fae4",
+      "size": 68,
+      "source": "qml/port/images/qmldir"
+    },
+    {
+      "destination": "qml/port/models/AppDb.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "ee8a08941636cf5387e613c2c55f08fcfd8da26ac37fa0f2f83c2facb3224e23",
+      "size": 1435,
+      "source": "qml/port/models/AppDb.qml"
+    },
+    {
+      "destination": "qml/port/models/FileSystemModel.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "e7af3289a820bab634db06ea1153eeb40a79a2e33fd7e1ecd67b9f9dc9fb502e",
+      "size": 3784,
+      "source": "qml/port/models/FileSystemModel.qml"
+    },
+    {
+      "destination": "qml/port/models/qmldir",
+      "install": true,
+      "mode": "0644",
+      "sha256": "7cfe0ece53cb81defed6620638383a52e5ac789dfc1eb3dd31bd226f9c5f8c3c",
+      "size": 60,
+      "source": "qml/port/models/qmldir"
+    },
+    {
+      "destination": "qml/port/multimedia/Visual.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "c63394d3fb23ea41c9f887d2b65557b51957a0f7ddeaf44173f682fe5375da80",
+      "size": 1661,
+      "source": "qml/port/multimedia/Visual.qml"
+    },
+    {
+      "destination": "qml/port/multimedia/qmldir",
+      "install": true,
+      "mode": "0644",
+      "sha256": "fc42da1d43a5773835fc9a1250da1cedd2bdc336bd5605f725d3f832bbc712e2",
+      "size": 22,
+      "source": "qml/port/multimedia/qmldir"
+    },
+    {
+      "destination": "qml/port/services/AudioCollector.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "8f59ba507a77f942b40fa008771ce79413ca889439848604392e7c004330cfc8",
+      "size": 758,
+      "source": "qml/port/services/AudioCollector.qml"
+    },
+    {
+      "destination": "qml/port/services/BeatTracker.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "d4fe7419102bac94d9b1c7d654ff9cd3b11c93a2394961b4f7d840a8e34ca83d",
+      "size": 2106,
+      "source": "qml/port/services/BeatTracker.qml"
+    },
+    {
+      "destination": "qml/port/services/CavaProvider.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "7ee71a9c264f6e30fac0cf681f7918cc882d721823cbac5a1180e78141ec0cf1",
+      "size": 2630,
+      "source": "qml/port/services/CavaProvider.qml"
+    },
+    {
+      "destination": "qml/port/services/Cpu.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "9aeb3ad13fa2128fde3f348721955cc788cab98b57d2355dd9e76d1d6599ebcf",
+      "size": 467,
+      "source": "qml/port/services/Cpu.qml"
+    },
+    {
+      "destination": "qml/port/services/DiskInfo.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "a8ea3f682a151074327818b70b2da32ffe4f0b773b6e53f34a6a6897c2e0a3ba",
+      "size": 264,
+      "source": "qml/port/services/DiskInfo.qml"
+    },
+    {
+      "destination": "qml/port/services/Gpu.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "7c6246b6bfe5d30f4865f6c0c7271502d6c3bf5f3b56a5fcac4f5a975031150b",
+      "size": 1561,
+      "source": "qml/port/services/Gpu.qml"
+    },
+    {
+      "destination": "qml/port/services/Lyrics.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "c6b3b6e7afb872746a2f2df9431c4b949c433c1d4e522156f4dac978fe3f3599",
+      "size": 3034,
+      "source": "qml/port/services/Lyrics.qml"
+    },
+    {
+      "destination": "qml/port/services/Memory.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "559f608eb3e3d92577782ec50fa3387a20606858dd21a4b395350de04edd13b6",
+      "size": 707,
+      "source": "qml/port/services/Memory.qml"
+    },
+    {
+      "destination": "qml/port/services/NetworkUsage.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "68ab8683278e73907a48ffe925366dac923d0c40848bcac8e36a317b26bbb574",
+      "size": 1856,
+      "source": "qml/port/services/NetworkUsage.qml"
+    },
+    {
+      "destination": "qml/port/services/ServiceRef.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "412fe1750e3140771fa362da27122d82a829ee6ed57d9a728a7f508d85901391",
+      "size": 1072,
+      "source": "qml/port/services/ServiceRef.qml"
+    },
+    {
+      "destination": "qml/port/services/SessionManager.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "3737e2a29d9d8692d921824320189145297775ab63e046476cd9c20d21d73871",
+      "size": 1387,
+      "source": "qml/port/services/SessionManager.qml"
+    },
+    {
+      "destination": "qml/port/services/Storage.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "172c111ba1ebb80200a5b2642d38dfd8473ccc33898ddc782d3b7373142a0baa",
+      "size": 1007,
+      "source": "qml/port/services/Storage.qml"
+    },
+    {
+      "destination": "qml/port/services/SystemMonitor.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "c9044b5a341b9d63d22ec1bf597d5e393b4a40dfdd36cccf26e54944a2841add",
+      "size": 4251,
+      "source": "qml/port/services/SystemMonitor.qml"
+    },
+    {
+      "destination": "qml/port/services/Weather.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "159d71c969e345fb10775cb54536e8c69020797a6400a0469f51c15b3610a926",
+      "size": 10209,
+      "source": "qml/port/services/Weather.qml"
+    },
+    {
+      "destination": "qml/port/services/qmldir",
+      "install": true,
+      "mode": "0644",
+      "sha256": "342ac01d646a56e1749b6611b5fc51bf895eff0a94e3d3707ff8b4d3225403e0",
+      "size": 482,
+      "source": "qml/port/services/qmldir"
+    },
+    {
+      "destination": "qml/port/shaders/Shaders.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "37301e74a8240116a77f085223f211c34eb887af529442b05d7ccf586d2e299f",
+      "size": 1653,
+      "source": "qml/port/shaders/Shaders.qml"
+    },
+    {
+      "destination": "qml/port/shaders/crossfade.frag",
+      "install": true,
+      "mode": "0644",
+      "sha256": "2fe37b7f6d713bfcf4a99d12cffe21e9331c66b0d62fd2ef89139563255aabe6",
+      "size": 442,
+      "source": "qml/port/shaders/crossfade.frag"
+    },
+    {
+      "destination": "qml/port/shaders/crossfade.frag.qsb",
+      "install": true,
+      "mode": "0644",
+      "sha256": "5cf8d430e9f7bc59cd3e73c82a4c619fcd2116dbac77ea6b1fb8f2dbe757d03b",
+      "size": 1455,
+      "source": "qml/port/shaders/crossfade.frag.qsb"
+    },
+    {
+      "destination": "qml/port/shaders/qmldir",
+      "install": true,
+      "mode": "0644",
+      "sha256": "782a533e092e303bb129549c9439bee0fff266bcff02ee77c9087386500550a3",
+      "size": 34,
+      "source": "qml/port/shaders/qmldir"
+    },
+    {
+      "destination": "qml/port/shapes/LICENSE",
+      "install": true,
+      "mode": "0644",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "size": 11357,
+      "source": "qml/port/shapes/LICENSE"
+    },
+    {
+      "destination": "qml/port/shapes/MaterialShape.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "bcc830feb6847c2a11adca2236cf2a45190e26304c513ffcbc706c4bc2ad42ae",
+      "size": 6235,
+      "source": "qml/port/shapes/MaterialShape.qml"
+    },
+    {
+      "destination": "qml/port/shapes/geometry/offset.js",
+      "install": true,
+      "mode": "0644",
+      "sha256": "259067e8f54a9bec48c36b27ea9ec1fa8193978747bf66521af90356a38fbd75",
+      "size": 2287,
+      "source": "qml/port/shapes/geometry/offset.js"
+    },
+    {
+      "destination": "qml/port/shapes/graphics/matrix.js",
+      "install": true,
+      "mode": "0644",
+      "sha256": "ee9c4567162a0572975973f3d174cebf8435cc8444b06ce24ea53113b234189c",
+      "size": 5592,
+      "source": "qml/port/shapes/graphics/matrix.js"
+    },
+    {
+      "destination": "qml/port/shapes/material-shapes.js",
+      "install": true,
+      "mode": "0644",
+      "sha256": "ec022ddb9e2286b2f30c050398505bd430a08ea32b9cce6fd9064f525aada1f0",
+      "size": 26153,
+      "source": "qml/port/shapes/material-shapes.js"
+    },
+    {
+      "destination": "qml/port/shapes/qmldir",
+      "install": true,
+      "mode": "0644",
+      "sha256": "e13ea69968bcbb7c02ec88c24c33745118f21fb5cf2246754e2939ca01c6acf7",
+      "size": 36,
+      "source": "qml/port/shapes/qmldir"
+    },
+    {
+      "destination": "qml/port/shapes/shapes/corner-rounding.js",
+      "install": true,
+      "mode": "0644",
+      "sha256": "9db5ac91e15698caa9da33dc28c3fe24cce1b6117b0bd7b8bbbd846855895ec3",
+      "size": 209,
+      "source": "qml/port/shapes/shapes/corner-rounding.js"
+    },
+    {
+      "destination": "qml/port/shapes/shapes/cubic.js",
+      "install": true,
+      "mode": "0644",
+      "sha256": "a88a30b9cce9d3ace409abda8503b7cdd2975bbc9015c658ffee9bbb0c20db53",
+      "size": 9101,
+      "source": "qml/port/shapes/shapes/cubic.js"
+    },
+    {
+      "destination": "qml/port/shapes/shapes/feature-mapping.js",
+      "install": true,
+      "mode": "0644",
+      "sha256": "09cc0fe97989926f5a12cf8ecc1ae2b4636689c3e29be63dc48e9805656790ec",
+      "size": 3988,
+      "source": "qml/port/shapes/shapes/feature-mapping.js"
+    },
+    {
+      "destination": "qml/port/shapes/shapes/feature.js",
+      "install": true,
+      "mode": "0644",
+      "sha256": "afe9ef7da02339cb64f88d04b6aedf09ead307025a80faa0cf4356647f5fe04c",
+      "size": 1355,
+      "source": "qml/port/shapes/shapes/feature.js"
+    },
+    {
+      "destination": "qml/port/shapes/shapes/float-mapping.js",
+      "install": true,
+      "mode": "0644",
+      "sha256": "9f8befa360abf37a4760394acf5ef7937aa9e0f014849944fa288e8fbd174975",
+      "size": 1868,
+      "source": "qml/port/shapes/shapes/float-mapping.js"
+    },
+    {
+      "destination": "qml/port/shapes/shapes/morph.js",
+      "install": true,
+      "mode": "0644",
+      "sha256": "f56dff37b1245556dabfad943c778dee506ef11de3b6ab78e8f3dc0af03448fb",
+      "size": 3190,
+      "source": "qml/port/shapes/shapes/morph.js"
+    },
+    {
+      "destination": "qml/port/shapes/shapes/point.js",
+      "install": true,
+      "mode": "0644",
+      "sha256": "737dd22c19898fc797ab55be72d2af602dcc4e28e9e3c8eb84e95c35164c9aa6",
+      "size": 1655,
+      "source": "qml/port/shapes/shapes/point.js"
+    },
+    {
+      "destination": "qml/port/shapes/shapes/polygon-measure.js",
+      "install": true,
+      "mode": "0644",
+      "sha256": "e2c197fefaa2adbbf2af88190d92cb29382febda4c84982d58c303daf809c39e",
+      "size": 6508,
+      "source": "qml/port/shapes/shapes/polygon-measure.js"
+    },
+    {
+      "destination": "qml/port/shapes/shapes/rounded-corner.js",
+      "install": true,
+      "mode": "0644",
+      "sha256": "f7df9dbc931143f7dbde42a3685bd40c0b99dd569d76d1e638591328483db40f",
+      "size": 5620,
+      "source": "qml/port/shapes/shapes/rounded-corner.js"
+    },
+    {
+      "destination": "qml/port/shapes/shapes/rounded-polygon.js",
+      "install": true,
+      "mode": "0644",
+      "sha256": "11356f492d19146ef49b3c4c4ad05b50986edcc009f9dbc9d204fdc50b4d01b3",
+      "size": 12582,
+      "source": "qml/port/shapes/shapes/rounded-polygon.js"
+    },
+    {
+      "destination": "qml/port/shapes/shapes/utils.js",
+      "install": true,
+      "mode": "0644",
+      "sha256": "a01dc3ba171f98d0da91eb2401b7ec526a5bf31782c963fa3c8a851897370672",
+      "size": 1293,
+      "source": "qml/port/shapes/shapes/utils.js"
+    },
+    {
+      "destination": "qml/port/state/PersistentState.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "5985516e3c6909d45de910fea5f312566ad403d794e1a1d3652ad35649baae8d",
+      "size": 1256,
+      "source": "qml/port/state/PersistentState.qml"
+    },
+    {
+      "destination": "qml/port/state/RuntimeState.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "b5e417c1a1865cc35c2d032cdc632ac17e9a14b989383018e1085711b562ea73",
+      "size": 1005,
+      "source": "qml/port/state/RuntimeState.qml"
+    },
+    {
+      "destination": "qml/port/state/qmldir",
+      "install": true,
+      "mode": "0644",
+      "sha256": "0c7a2330cabd031582ee861d6dfc47ca5f8acb14d479064bc458b75174314423",
+      "size": 94,
+      "source": "qml/port/state/qmldir"
+    },
+    {
+      "destination": "qml/services/Audio.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "25d0f60eaec4a12b917ddef6e84f721e9e5870e025559f56ad6e53f546893582",
+      "size": 6169,
+      "source": "qml/services/Audio.qml"
+    },
+    {
+      "destination": "qml/services/Brightness.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "d80794d31ffbfc725b67634b7e0ebb24a5c9c792431561181270c4b9176a33a0",
+      "size": 8062,
+      "source": "qml/services/Brightness.qml"
+    },
+    {
+      "destination": "qml/services/Colours.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "eb7817c7847abe96143f7248852f73748adc9c50e8e44cf424e10dcb60d9dbdd",
+      "size": 15336,
+      "source": "qml/services/Colours.qml"
+    },
+    {
+      "destination": "qml/services/Hypr.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "e2883eebde5c24d26b1e60aaa189029821ebffbb18d786e4cbc5d6299e2e72b9",
+      "size": 7622,
+      "source": "qml/services/Hypr.qml"
+    },
+    {
+      "destination": "qml/services/Nmcli.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "f78f09ccfbef8d0b61e371c35663e0f2a1163b51c3b932c83e60a7ed906b4d25",
+      "size": 69830,
+      "source": "qml/services/Nmcli.qml"
+    },
+    {
+      "destination": "qml/services/NotifData.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "fcb3fc7177dd28296d8160a4c695d98e7c0f747dc5740d3f13fff5ab7bbe642e",
+      "size": 8242,
+      "source": "qml/services/NotifData.qml"
+    },
+    {
+      "destination": "qml/services/Notifs.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "ceacd13755dc7800c57647a982f70abcbe3f353efd9c1868987485de26b24fe1",
+      "size": 5053,
+      "source": "qml/services/Notifs.qml"
+    },
+    {
+      "destination": "qml/services/Players.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "52b991c8219b9122623a258aa24a4bcec3edf817fa3d9e51b9e2e20e3deb0778",
+      "size": 5220,
+      "source": "qml/services/Players.qml"
+    },
+    {
+      "destination": "qml/services/Recorder.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "637814c03b8cab1c587c60d91f6cadfdca0da03d869ae7ee1f24a2cc2e358eff",
+      "size": 2853,
+      "source": "qml/services/Recorder.qml"
+    },
+    {
+      "destination": "qml/services/Screens.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "05ab4e0a9450fa9e49314689d10ebcc6091d6056582d6991d1eba99b342cebdc",
+      "size": 325,
+      "source": "qml/services/Screens.qml"
+    },
+    {
+      "destination": "qml/services/ShellState.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "e4c52226c5afc2e49d2811f87ac0d3143c0b1d5ee2a6f619235ff9e353849a1c",
+      "size": 2540,
+      "source": "qml/services/ShellState.qml"
+    },
+    {
+      "destination": "qml/services/Time.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "72c2963f214ef738bb86ace140811628228623628d9c1f7023e4c3a27ab1ad46",
+      "size": 850,
+      "source": "qml/services/Time.qml"
+    },
+    {
+      "destination": "qml/services/VPN.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "3e577d705e7321da67e5486141408d4ba842ea1a7987ad7a0b5ae1601d68d10b",
+      "size": 30902,
+      "source": "qml/services/VPN.qml"
+    },
+    {
+      "destination": "qml/services/Wallpapers.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "8855b2857c014632b4ec6798b5caaad4c465b5d8c2a8324ace42b45e150f19e7",
+      "size": 2346,
+      "source": "qml/services/Wallpapers.qml"
+    },
+    {
+      "destination": "qml/services/Weather.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "1c9d494025ffedc1b88b76df39a0a4a8620d0476668b228c67aa9cecd7217a50",
+      "size": 14524,
+      "source": "qml/services/Weather.qml"
+    },
+    {
+      "destination": "qml/services/qmldir",
+      "install": true,
+      "mode": "0644",
+      "sha256": "0df8f082e45fcd882eb1c4acc0e74bc19c4240e22bbe9e8bf80bf0ab694dbd65",
+      "size": 494,
+      "source": "qml/services/qmldir"
+    },
+    {
+      "destination": "qml/utils/Icons.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "f2dc58a2e83356d5503939aaf9c08317f8b5503b57e131416da0a924e2817459",
+      "size": 7467,
+      "source": "qml/utils/Icons.qml"
+    },
+    {
+      "destination": "qml/utils/Images.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "02b6f2e8bed87d801cbe1ebc53a3cfb2d8a5d914132fbe183955a55304ee2861",
+      "size": 384,
+      "source": "qml/utils/Images.qml"
+    },
+    {
+      "destination": "qml/utils/NetworkConnection.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "8d7a22d76ae2a9a2721af1992e7046cd9743eed0db4668f190cace79667e9df3",
+      "size": 4503,
+      "source": "qml/utils/NetworkConnection.qml"
+    },
+    {
+      "destination": "qml/utils/Paths.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "8a63779a7d2ea856f43b6130be3e72a2805769e1f98e03b2d4dfb4bdd7ea4cc9",
+      "size": 1665,
+      "source": "qml/utils/Paths.qml"
+    },
+    {
+      "destination": "qml/utils/Searcher.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "fd221562cbc9451be36fe64e45d2ce56788da28f62635de8b437a5000c93d148",
+      "size": 1787,
+      "source": "qml/utils/Searcher.qml"
+    },
+    {
+      "destination": "qml/utils/Strings.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "21fbd8d966a648974488abc4f6f39085e397d46195b334c632b8a82b1c87be6b",
+      "size": 943,
+      "source": "qml/utils/Strings.qml"
+    },
+    {
+      "destination": "qml/utils/SysInfo.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "9c273d3ce7fcc008ba32e63eebc83e36ea4005e2c715e010c3eaf4b960b0ed7d",
+      "size": 4571,
+      "source": "qml/utils/SysInfo.qml"
+    },
+    {
+      "destination": "qml/utils/qmldir",
+      "install": true,
+      "mode": "0644",
+      "sha256": "9bbd853f0467200bee7f10bed0c31926405b4f477b792201fc47a709359b0917",
+      "size": 240,
+      "source": "qml/utils/qmldir"
+    },
+    {
+      "destination": "qml/utils/scripts/fuzzysort.js",
+      "install": true,
+      "mode": "0644",
+      "sha256": "19fdf028c3135674e346aedaa26b44b054437dc93b7d65a78fed14ec929184ba",
+      "size": 27426,
+      "source": "qml/utils/scripts/fuzzysort.js"
+    },
+    {
+      "destination": "qml/utils/scripts/fzf.js",
+      "install": true,
+      "mode": "0644",
+      "sha256": "ce06080572d93af0465a74d114ab3ca034b7e51ce7cfe5b4769ca9e6fd084e6d",
+      "size": 34869,
+      "source": "qml/utils/scripts/fzf.js"
+    },
+    {
+      "destination": "screenshots/bar-bluetooth.webp",
+      "install": true,
+      "mode": "0644",
+      "sha256": "eb53340084c94fc4ed9696d26c0080f5cc9cb7d3220a1d2ae6fba623f2833089",
+      "size": 80908,
+      "source": "screenshots/bar-bluetooth.webp"
+    },
+    {
+      "destination": "screenshots/performance.webp",
+      "install": true,
+      "mode": "0644",
+      "sha256": "19b860f1b3c955efed42978963391c39982e37a8f1d1f75076255e52eddcbcb7",
+      "size": 88134,
+      "source": "screenshots/performance.webp"
+    },
+    {
+      "destination": "screenshots/session.webp",
+      "install": true,
+      "mode": "0644",
+      "sha256": "859962fee5079bba93723e075fe1ebe4aae1dfee23d89188e69992b3ec18585d",
+      "size": 56400,
+      "source": "screenshots/session.webp"
+    },
+    {
+      "destination": "screenshots/settings.webp",
+      "install": true,
+      "mode": "0644",
+      "sha256": "151b4a6bae5e0fa8852a2faa18326ff3322f89fcac3ae3ee39fb9f2b6549580d",
+      "size": 82488,
+      "source": "screenshots/settings.webp"
+    }
+  ],
+  "id": "caelestia",
+  "schema": 1,
+  "shell": {
+    "entry": "qml/Scene.qml",
+    "env": {},
+    "frameHost": "primary",
+    "lifecycle": {},
+    "modules": [],
+    "owns": [
+      "notifications",
+      "osd"
+    ],
+    "ownsSetting": {},
+    "provides": {
+      "desktopWidgets": [],
+      "dock": [],
+      "launcher": []
+    },
+    "runtime": {},
+    "settings": {
+      "args": [],
+      "call": "",
+      "hubEditor": "",
+      "ipc": ""
+    }
+  },
+  "version": "2.0.0"
+}

@@ -1,0 +1,15 @@
+module tansu.modules.tansu.settings
+SectionCard 1.0 SectionCard.qml
+SettingAction 1.0 SettingAction.qml
+SettingChip 1.0 SettingChip.qml
+SettingChoice 1.0 SettingChoice.qml
+SettingsFace 1.0 SettingsFace.qml
+SettingsPage 1.0 SettingsPage.qml
+SettingSlider 1.0 SettingSlider.qml
+SettingsPageAbout 1.0 SettingsPageAbout.qml
+SettingsPageBar 1.0 SettingsPageBar.qml
+SettingsPageGeneral 1.0 SettingsPageGeneral.qml
+SettingsPageQuick 1.0 SettingsPageQuick.qml
+SettingsStage 1.0 SettingsStage.qml
+SettingStepper 1.0 SettingStepper.qml
+SettingToggle 1.0 SettingToggle.qml

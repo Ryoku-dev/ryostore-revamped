@@ -1,0 +1,16 @@
+Tansu Ryoku Bar Style
+
+Source: Ported from SekaiPop
+Upstream: https://github.com/Blapples/SekaiPop
+Commit: da96f04b96ef698bc69b5c3acac9f8252caf6303
+Author: dodo986 (port)
+Description: The top bar and its phone (Quick Panel), ported one-to-one to Ryoku
+License: GNU General Public License version 3; see LICENSE
+
+This bar style contains the ported top bar and its phone-shaped Quick Panel
+(quick tiles, notifications, the power menu, and the wallpaper board), adapted
+for native Ryoku integration: workspace, active-window and keyboard state come
+from Ryoku's Wm facade; system state and actions from shell.services; Bluetooth
+from Quickshell.Bluetooth; wallpapers from ryogami; and the palette from Ryoku's
+Matugen theme. Its settings screen edits only what the barstyle owns and stores
+them in ~/.config/ryoku/barstyle-tansu.json.
