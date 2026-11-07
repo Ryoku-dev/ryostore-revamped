@@ -1,0 +1,10 @@
+Sukunabikona was designed and authored by aethctl in 2026 for the Ryoku
+showcase/ricing competition.
+
+The Ryostore edition is derived from the author's standalone v19 prototype. The
+store port keeps that approved visual composition while replacing its prototype
+Hyprland, MPRIS, PipeWire and palette polling seams with Ryoku's public Wm,
+Media, Audio, AudioBars, Sysinfo, StatsFeed, Network, Session and Theme services.
+
+No third-party artwork, code, or remote assets are bundled. The store preview is
+made from a real capture of the author's running Ryoku desktop.

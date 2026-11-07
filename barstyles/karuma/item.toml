@@ -1,0 +1,19 @@
+id = "karuma"
+name = "Karuma"
+version = "1.0.1"
+summary = "Paper-and-ink adaptive bar"
+description = "A configurable Ryoku bar with a paper-and-ink surface, movable modules, kanji workspaces, media and tray integration, quick settings, profiles, and an adaptive side rail."
+license = "MIT"
+authors = ["feelyourwarmth"]
+tags = ["bar", "barstyle", "paper-and-ink", "configurable", "rail", "workspaces", "media"]
+upstream = "https://github.com/Ryoku-dev/ryostore/tree/main/barstyles/karuma"
+accent = "#c74637"
+surface = "#1c1713"
+preview = "preview.webp"
+official = false
+
+[shell]
+entry = "qml/Scene.qml"
+frameHost = "each"
+owns = []
+modules = []

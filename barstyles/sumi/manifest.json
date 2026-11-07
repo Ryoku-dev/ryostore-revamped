@@ -1,0 +1,70 @@
+{
+  "category": "barstyles",
+  "destination": "ryoku/barstyles/sumi",
+  "files": [
+    {
+      "destination": "LICENSE",
+      "install": true,
+      "mode": "0644",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "size": 35149,
+      "source": "LICENSE"
+    },
+    {
+      "destination": "README.md",
+      "install": true,
+      "mode": "0644",
+      "sha256": "5566219a8206fb5fe1eb994f8d4871d48f3314b2f5ed8522d6507fe9cd9cf2e6",
+      "size": 681,
+      "source": "README.md"
+    },
+    {
+      "destination": "item.toml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "0288a5024fdc6d95a123de24e5f8520fe10685577d83693ef1105119b0fc8f55",
+      "size": 364,
+      "source": "item.toml"
+    },
+    {
+      "destination": "preview.webp",
+      "install": true,
+      "mode": "0644",
+      "sha256": "e0026c53092bbd7817d44f578ef0e3985f62a5b0701e2809da6059e56f93f70b",
+      "size": 18752,
+      "source": "preview.webp"
+    },
+    {
+      "destination": "qml/Scene.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "db8657a6d9955db37a0f935cdebf9f9696200a919f8ccef5cbfe444c3886a77b",
+      "size": 22646,
+      "source": "qml/Scene.qml"
+    }
+  ],
+  "id": "sumi",
+  "schema": 1,
+  "shell": {
+    "entry": "qml/Scene.qml",
+    "env": {},
+    "frameHost": "each",
+    "lifecycle": {},
+    "modules": [],
+    "owns": [],
+    "ownsSetting": {},
+    "provides": {
+      "desktopWidgets": [],
+      "dock": [],
+      "launcher": []
+    },
+    "runtime": {},
+    "settings": {
+      "args": [],
+      "call": "",
+      "hubEditor": "frame-rails",
+      "ipc": ""
+    }
+  },
+  "version": "1.0.0"
+}

@@ -1,0 +1,390 @@
+{
+  "category": "barstyles",
+  "destination": "ryoku/barstyles/karuma",
+  "files": [
+    {
+      "destination": "LICENSE",
+      "install": true,
+      "mode": "0644",
+      "sha256": "da314ddcceb60a2dedefda45dfd879561eca9a3dea2789b5920a4a7be3d1ff9b",
+      "size": 1071,
+      "source": "LICENSE"
+    },
+    {
+      "destination": "PROVENANCE.txt",
+      "install": true,
+      "mode": "0644",
+      "sha256": "d994fda640b7450ceafbc1e1d53406623a57dc7130c41d755a84916778b6baf3",
+      "size": 307,
+      "source": "PROVENANCE.txt"
+    },
+    {
+      "destination": "README.md",
+      "install": true,
+      "mode": "0644",
+      "sha256": "ecd24c59f38755a3d0bd38af92b18f31ed6dfec78dd4247b7266192f27e4d8b1",
+      "size": 1482,
+      "source": "README.md"
+    },
+    {
+      "destination": "item.toml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "9f87dbbad3f40bad7cba770586282b0a6c52aefb88316ca13b2159e14a2f98ea",
+      "size": 644,
+      "source": "item.toml"
+    },
+    {
+      "destination": "preview.webp",
+      "install": true,
+      "mode": "0644",
+      "sha256": "3122fbbf9e867d337cb7e5c611787735b43e5055c0e27ddfb7e4987a1d3b626d",
+      "size": 54642,
+      "source": "preview.webp"
+    },
+    {
+      "destination": "qml/ActionButton.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "98dcb1a2ab2818b5d4d005e62b3e35d417bdad56462d607e3355c5106e942ae4",
+      "size": 2200,
+      "source": "qml/ActionButton.qml"
+    },
+    {
+      "destination": "qml/BarSurface.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "f31c579c0adefa7d6a829f78335e6d37fa9ab7adcfe847a408b810332512f4e7",
+      "size": 74239,
+      "source": "qml/BarSurface.qml"
+    },
+    {
+      "destination": "qml/Calendar.js",
+      "install": true,
+      "mode": "0644",
+      "sha256": "aa6c3ebe4aa54a641811fa18e03f9a4d326ec36fab13de929887d4c7fc804058",
+      "size": 1841,
+      "source": "qml/Calendar.js"
+    },
+    {
+      "destination": "qml/Eyebrow.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "7e29675c6466804144d8c899572eeacafd8f31159e880ae4eb7c763638a65f73",
+      "size": 389,
+      "source": "qml/Eyebrow.qml"
+    },
+    {
+      "destination": "qml/InkMath.js",
+      "install": true,
+      "mode": "0644",
+      "sha256": "2fc1184bb0491dba59e05add49a040ba728167c590234c6a095c873c80f539df",
+      "size": 2860,
+      "source": "qml/InkMath.js"
+    },
+    {
+      "destination": "qml/KarumaConfig.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "333efb29bb210917b75cb00d7f71edf889ca5e4f03327e9ef4e5a78ade72c3a1",
+      "size": 4193,
+      "source": "qml/KarumaConfig.qml"
+    },
+    {
+      "destination": "qml/KarumaData.js",
+      "install": true,
+      "mode": "0644",
+      "sha256": "735b66152903b02c40895c08c48ddc3a69dbae9a3e166d509cec527746fc7ca2",
+      "size": 2895,
+      "source": "qml/KarumaData.js"
+    },
+    {
+      "destination": "qml/KarumaHub.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "ac94408815cad37115881b70c0b67ed23bd687bf7886322d885d470d13a1d695",
+      "size": 105106,
+      "source": "qml/KarumaHub.qml"
+    },
+    {
+      "destination": "qml/KarumaNowPlaying.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "6db0b484806ce03af50427151730cb986f55e38e26a8fcd226877805d72d0683",
+      "size": 16633,
+      "source": "qml/KarumaNowPlaying.qml"
+    },
+    {
+      "destination": "qml/KarumaPalette.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "7e2ee6ce011ad610c974415262c95dea4802e543898e72a5078dad8e7533ef08",
+      "size": 16163,
+      "source": "qml/KarumaPalette.qml"
+    },
+    {
+      "destination": "qml/KarumaPlugins.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "eb6f4917d58456ccc2a947419b9b822048a1e6ccb9a11e9dd295e7818921eb30",
+      "size": 4113,
+      "source": "qml/KarumaPlugins.qml"
+    },
+    {
+      "destination": "qml/KarumaProfiles.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "8cbb03d24e62a7c7b60139e2d87c713dc98e56f60e8be3c26857caaee8ba379e",
+      "size": 2990,
+      "source": "qml/KarumaProfiles.qml"
+    },
+    {
+      "destination": "qml/KarumaSchema.js",
+      "install": true,
+      "mode": "0644",
+      "sha256": "73155679b184f95d7ce77ecdc9b5d524cd3d9cfe4dff915e8031b1e15aaa7d98",
+      "size": 30996,
+      "source": "qml/KarumaSchema.js"
+    },
+    {
+      "destination": "qml/KarumaTray.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "5b56fcdd5cff0ada157315159f694a103ef7b5f383a8e3837b4fd7c681a7167f",
+      "size": 8626,
+      "source": "qml/KarumaTray.qml"
+    },
+    {
+      "destination": "qml/KarumaTrayMenu.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "28e4fc5f52f5f75080bae988c47003f3b169cb3d699c2fd91adb23e36600c084",
+      "size": 10392,
+      "source": "qml/KarumaTrayMenu.qml"
+    },
+    {
+      "destination": "qml/LevelRow.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "659d4f86ffb31edbcebbc827a2fe434ea878f009ef066aeeccd47f573a4350cd",
+      "size": 4486,
+      "source": "qml/LevelRow.qml"
+    },
+    {
+      "destination": "qml/PaperButton.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "8c1bc6c5e9a31fb73ee2fe7fc8405b6cbb4488efd148f1426c3ca87809953c94",
+      "size": 3869,
+      "source": "qml/PaperButton.qml"
+    },
+    {
+      "destination": "qml/PopupFrame.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "502c6471dcef553f3fd8b98c2d646d8f6d54ad658b776788136801fcbde64a11",
+      "size": 1299,
+      "source": "qml/PopupFrame.qml"
+    },
+    {
+      "destination": "qml/PopupHeader.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "323cb0697d25159bcee97cebc3c18df7fbdce66c0464056eb8bf7bb974c6f990",
+      "size": 2581,
+      "source": "qml/PopupHeader.qml"
+    },
+    {
+      "destination": "qml/QuickSettings.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "967843eee87a6147f3898b101e7c8b504b743f491c5502f4af232c110e7505dd",
+      "size": 6884,
+      "source": "qml/QuickSettings.qml"
+    },
+    {
+      "destination": "qml/RailSurface.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "d70a3146f4ef2df39336daa71cd0e341e23cd82c3e2a31346cffb70d718db51b",
+      "size": 35690,
+      "source": "qml/RailSurface.qml"
+    },
+    {
+      "destination": "qml/RollText.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "c232f0c31e18eb3542cd6816067fc35a60cbbfe46b561a8c9f4b47d13c5634a6",
+      "size": 1533,
+      "source": "qml/RollText.qml"
+    },
+    {
+      "destination": "qml/Scene.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "a424533d1b632bad73a46b73be244734abaa0814ebfe1288ceac450a4d08de02",
+      "size": 89865,
+      "source": "qml/Scene.qml"
+    },
+    {
+      "destination": "qml/SpaceTile.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "5777898a7bd5c54298efd6011d2e2d5ef43317d798f9fd3d6f5522c73a1a59b7",
+      "size": 2023,
+      "source": "qml/SpaceTile.qml"
+    },
+    {
+      "destination": "qml/Title.js",
+      "install": true,
+      "mode": "0644",
+      "sha256": "02611cc1ee7b4d2e9569ba1c0075d315f2e536490895ab828d17c1744c773f3a",
+      "size": 2462,
+      "source": "qml/Title.js"
+    },
+    {
+      "destination": "qml/TrayMenuGroup.js",
+      "install": true,
+      "mode": "0644",
+      "sha256": "4981eb20e7d81f4154f59a96e656adc099f7f49b235f31b1c5223441ba8fd6d6",
+      "size": 680,
+      "source": "qml/TrayMenuGroup.js"
+    },
+    {
+      "destination": "qml/assets/fonts/Fraunces-Italic.ttf",
+      "install": true,
+      "mode": "0644",
+      "sha256": "b24448c43702fac4ee856781d461a0dfba8d8e594b6e8e190234b75fed2c0e01",
+      "size": 414904,
+      "source": "qml/assets/fonts/Fraunces-Italic.ttf"
+    },
+    {
+      "destination": "qml/assets/fonts/Fraunces-OFL.txt",
+      "install": true,
+      "mode": "0644",
+      "sha256": "bdf4c22802eaf804f998195871c6b8938aac2ac14b2d78a8bd66a6f1eced833b",
+      "size": 4391,
+      "source": "qml/assets/fonts/Fraunces-OFL.txt"
+    },
+    {
+      "destination": "qml/assets/fonts/Fraunces.ttf",
+      "install": true,
+      "mode": "0644",
+      "sha256": "177ff6c0f14e5550a3c624247cd1189611d4eb65d000b14944c63d967958abbb",
+      "size": 360440,
+      "source": "qml/assets/fonts/Fraunces.ttf"
+    },
+    {
+      "destination": "qml/assets/fonts/SpaceGrotesk-OFL.txt",
+      "install": true,
+      "mode": "0644",
+      "sha256": "564ce565c371c5e5bbf286006565a7c9aa55a9f56e7ca58d56e05d649dd61a72",
+      "size": 4495,
+      "source": "qml/assets/fonts/SpaceGrotesk-OFL.txt"
+    },
+    {
+      "destination": "qml/assets/fonts/SpaceGrotesk.ttf",
+      "install": true,
+      "mode": "0644",
+      "sha256": "acad6de1fc93436f5c0f1f4137751ef04f1aea3063e7036535970ffcfbd79f72",
+      "size": 136676,
+      "source": "qml/assets/fonts/SpaceGrotesk.ttf"
+    },
+    {
+      "destination": "qml/assets/fonts/YujiBoku-OFL.txt",
+      "install": true,
+      "mode": "0644",
+      "sha256": "ef7c85c72ae94381c8bc4832ae4e6fbabdeafa2bb8a31313cd75dce95a690256",
+      "size": 4386,
+      "source": "qml/assets/fonts/YujiBoku-OFL.txt"
+    },
+    {
+      "destination": "qml/assets/fonts/YujiBoku.ttf",
+      "install": true,
+      "mode": "0644",
+      "sha256": "1a7ce6c7b2a5de5792ce6e84d960ad0df9eb4116f574ce6c152e4056387c97ad",
+      "size": 659404,
+      "source": "qml/assets/fonts/YujiBoku.ttf"
+    },
+    {
+      "destination": "qml/assets/ink/ash.png",
+      "install": true,
+      "mode": "0644",
+      "sha256": "ebb215bd336bf90b4b7fb75a3530030cdaef87a1db64dbe725c6c44ecb8fdfe2",
+      "size": 6328,
+      "source": "qml/assets/ink/ash.png"
+    },
+    {
+      "destination": "qml/assets/ink/charcoal.png",
+      "install": true,
+      "mode": "0644",
+      "sha256": "9ad1391a0c42723b846c2f1d4ef038b96e75a773abd593b348b6bb7a2b6d07a6",
+      "size": 6224,
+      "source": "qml/assets/ink/charcoal.png"
+    },
+    {
+      "destination": "qml/assets/ink/cinnabar.png",
+      "install": true,
+      "mode": "0644",
+      "sha256": "6be39c2386c84dba9d2851b66df91e119c0197c881367044e5ecade110486f6f",
+      "size": 6137,
+      "source": "qml/assets/ink/cinnabar.png"
+    },
+    {
+      "destination": "qml/assets/ink/ivory.png",
+      "install": true,
+      "mode": "0644",
+      "sha256": "565c69f502a3156c7b4f7fc88e7f4488998ae2e7385405dbdda59ef40882f201",
+      "size": 6114,
+      "source": "qml/assets/ink/ivory.png"
+    },
+    {
+      "destination": "qml/qmldir",
+      "install": true,
+      "mode": "0644",
+      "sha256": "18000137fd0c58bf840fd172c2bfe3d1d333d555f4d04d1c3a298c7faea2d679",
+      "size": 578,
+      "source": "qml/qmldir"
+    },
+    {
+      "destination": "tests/Calendar.test.mjs",
+      "install": true,
+      "mode": "0644",
+      "sha256": "3c5f12fc660317358fe976cb96d926cfa69d96584c329ebd66058c2a1fafcf68",
+      "size": 1624,
+      "source": "tests/Calendar.test.mjs"
+    },
+    {
+      "destination": "tests/KarumaSchema.test.mjs",
+      "install": true,
+      "mode": "0644",
+      "sha256": "fe242854f2dc95d46c89474fb72545f0a34a1f921138e55e81b6e942f99804b0",
+      "size": 12301,
+      "source": "tests/KarumaSchema.test.mjs"
+    }
+  ],
+  "id": "karuma",
+  "schema": 1,
+  "shell": {
+    "entry": "qml/Scene.qml",
+    "env": {},
+    "frameHost": "each",
+    "lifecycle": {},
+    "modules": [],
+    "owns": [],
+    "ownsSetting": {},
+    "provides": {
+      "desktopWidgets": [],
+      "dock": [],
+      "launcher": []
+    },
+    "runtime": {},
+    "settings": {
+      "args": [],
+      "call": "",
+      "hubEditor": "",
+      "ipc": ""
+    }
+  },
+  "version": "1.0.1"
+}

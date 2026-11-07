@@ -1,0 +1,126 @@
+{
+  "category": "barstyles",
+  "destination": "ryoku/barstyles/chroma",
+  "files": [
+    {
+      "destination": "LICENSE",
+      "install": true,
+      "mode": "0644",
+      "sha256": "f0eea7927d54e1b3349a8de3f63bae64d6562a234a88e6a9fceebb9091a20766",
+      "size": 1067,
+      "source": "LICENSE"
+    },
+    {
+      "destination": "PROVENANCE.txt",
+      "install": true,
+      "mode": "0644",
+      "sha256": "f70ee390865bc9fa48d1e9865c9d2386076cda6ac33d077c434e54cfebfb581c",
+      "size": 252,
+      "source": "PROVENANCE.txt"
+    },
+    {
+      "destination": "README.md",
+      "install": true,
+      "mode": "0644",
+      "sha256": "38ff996e0f5509235510aead26cafb6c3074416d4e780012020bd4b9fb63be21",
+      "size": 778,
+      "source": "README.md"
+    },
+    {
+      "destination": "item.toml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "bf5b434e7a15518e9f4a02267162dc6f18f66a87e600209ed1f988b704209b9f",
+      "size": 548,
+      "source": "item.toml"
+    },
+    {
+      "destination": "preview.webp",
+      "install": true,
+      "mode": "0644",
+      "sha256": "7054f8f9463eba8d2696a883cf238aacbb7476fd3f9bbff4ec97762b2d0c2210",
+      "size": 107470,
+      "source": "preview.webp"
+    },
+    {
+      "destination": "qml/Scene.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "5adfea079e084298b51d96612456c17e785a3debd0df016e06e64faee5075f92",
+      "size": 4050,
+      "source": "qml/Scene.qml"
+    },
+    {
+      "destination": "qml/components/ClockModule.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "7a2f3ae4b82902c579772511f71a7b4299d58427cae9a69c48d2bd74279ecd06",
+      "size": 1887,
+      "source": "qml/components/ClockModule.qml"
+    },
+    {
+      "destination": "qml/components/MediaModule.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "e60f6a6b28bef1fe8fc00a9b4fa356101a3a0b857979c331ca1cf21cc12ed255",
+      "size": 10492,
+      "source": "qml/components/MediaModule.qml"
+    },
+    {
+      "destination": "qml/components/Palette.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "d6ab86c55831424850684e5f2081f07b8a1c396b06a90d713586476aa08adf42",
+      "size": 1757,
+      "source": "qml/components/Palette.qml"
+    },
+    {
+      "destination": "qml/components/StatusCluster.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "3f8921f4a3ae376f1a7a180fa41e398981f5a3978d52e92125e81aed5592e6b0",
+      "size": 3276,
+      "source": "qml/components/StatusCluster.qml"
+    },
+    {
+      "destination": "qml/components/UtilityButton.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "a7dabd3a41dcf7d67c44880c3395380936ebf238db43bb34c3dad580923588f1",
+      "size": 1945,
+      "source": "qml/components/UtilityButton.qml"
+    },
+    {
+      "destination": "qml/components/WorkspaceRail.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "2fcb5914a0ff6fd320c2bd0c38456c2461060382d3a815db9223f607ba4ac05e",
+      "size": 5472,
+      "source": "qml/components/WorkspaceRail.qml"
+    }
+  ],
+  "id": "chroma",
+  "schema": 1,
+  "shell": {
+    "entry": "qml/Scene.qml",
+    "env": {},
+    "frameHost": "each",
+    "lifecycle": {},
+    "modules": [],
+    "owns": [],
+    "ownsSetting": {},
+    "provides": {
+      "desktopWidgets": [],
+      "dock": [],
+      "launcher": []
+    },
+    "runtime": {},
+    "settings": {
+      "args": [],
+      "call": "",
+      "hubEditor": "",
+      "ipc": ""
+    }
+  },
+  "version": "1.0.2"
+}

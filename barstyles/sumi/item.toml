@@ -1,0 +1,17 @@
+id = "sumi"
+name = "Sumi"
+version = "1.0.0"
+summary = "Ink spine"
+description = """The built-in left rail: paper, ink, and a vertical working edge."""
+license = "GPL-3.0-or-later"
+authors = ["Ryoku Team"]
+tags = ["rail", "vertical", "built-in"]
+
+[shell]
+entry = "qml/Scene.qml"
+frameHost = "each"
+owns = []
+modules = []
+
+[shell.settings]
+hubEditor = "frame-rails"

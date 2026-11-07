@@ -1,0 +1,7 @@
+Nacre Ryoku bar style
+
+Source: Ryoku main repository
+Author: Ryoku Team
+License: GNU General Public License version 3; see LICENSE
+
+This product contains the complete Nacre scene, widgets, popouts, and helpers previously shipped in the Ryoku desktop configuration.

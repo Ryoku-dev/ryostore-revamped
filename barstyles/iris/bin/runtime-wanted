@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+[[ "${RYOKU_SHIMA_UPSTREAM:-}" == "1" && -n "${NIRI_SOCKET:-}" ]]

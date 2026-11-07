@@ -1,0 +1,36 @@
+id = "nomarchy"
+name = "Nomarchy"
+version = "1.0.0"
+summary = "Omarchy's plugin-driven bar and panels adapted to Ryoku"
+description = "Nomarchy brings Omarchy's configurable bar, panels, menus, themes, notifications, OSD and plugin host to Ryoku's compositor-neutral shell platform."
+license = "MIT"
+authors = ["37signals LLC and Omarchy contributors", "Noctalia contributors", "Ryoku Team"]
+tags = ["bar", "panels", "plugins", "themes"]
+upstream = "https://github.com/basecamp/omarchy"
+accent = "#b6a0ff"
+surface = "#111118"
+screenshots = []
+official = true
+
+[shell]
+entry = "qml/Scene.qml"
+frameHost = "primary"
+owns = ["notifications", "osd"]
+modules = ["nomarchy"]
+
+[shell.ownsSetting]
+notifications = "nomarchy.notifications"
+osd = "nomarchy.osd"
+
+[shell.env]
+OMARCHY_PATH = "$XDG_DATA_HOME/ryoku/nomarchy"
+
+[shell.settings]
+ipc = "nomarchy"
+call = "summon"
+args = ["omarchy.menu"]
+
+[lifecycle]
+activate = "bin/activate"
+deactivate = "bin/deactivate"
+palette = "bin/palette"

@@ -1,0 +1,21 @@
+id = "obi"
+name = "Obi"
+version = "1.0.1"
+summary = "Floating sash"
+description = "A compact floating top bar with kanji workspaces, paper groups, and live popouts."
+license = "GPL-3.0-only"
+authors = ["Ryoku Team"]
+tags = ["top", "floating", "compact"]
+upstream = "https://github.com/ryoku-dev/ryostore/tree/main/barstyles/obi"
+accent = "#b86b5f"
+surface = "#11100f"
+preview = "preview.webp"
+
+[shell]
+entry = "qml/Scene.qml"
+frameHost = "each"
+owns = []
+modules = []
+
+[shell.settings]
+hubEditor = "obi"

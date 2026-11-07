@@ -1,0 +1,8 @@
+Karuma Ryoku bar style
+
+Source: https://github.com/Ryoku-dev/ryostore/tree/main/barstyles/karuma
+Author: feelyourwarmth
+License: MIT; see LICENSE
+
+Karuma's source describes its paper-and-ink layout as inspired by the original
+Ma layout. Bundled fonts retain their own OFL licence texts in qml/assets/fonts.

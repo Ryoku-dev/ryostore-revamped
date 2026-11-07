@@ -1,0 +1,21 @@
+id = "nacre"
+name = "Nacre"
+version = "1.0.3"
+summary = "Instrument archipelago"
+description = "Configurable islands whose widgets and spacing compose into a technical top bar."
+license = "GPL-3.0-only"
+authors = ["Ryoku Team"]
+tags = ["top", "islands", "configurable"]
+upstream = "https://github.com/ryoku-dev/ryostore/tree/main/barstyles/nacre"
+accent = "#68c7c1"
+surface = "#0b1115"
+preview = "preview.webp"
+
+[shell]
+entry = "qml/Scene.qml"
+frameHost = "each"
+owns = ["notifications"]
+modules = []
+
+[shell.settings]
+hubEditor = "nacre"

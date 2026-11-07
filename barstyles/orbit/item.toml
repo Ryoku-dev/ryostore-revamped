@@ -1,0 +1,19 @@
+id = "orbit"
+name = "Orbit"
+version = "1.0.1"
+summary = "Animated trajectory bar"
+description = "A motion-led top bar built around a live trajectory, adaptive media core, workspace satellites, native tray, and docked system popouts."
+license = "GPL-3.0-only"
+authors = ["aethctl"]
+tags = ["top", "trajectory", "animated", "media", "popouts", "minimal"]
+upstream = "https://github.com/ryoku-dev/ryostore/tree/main/barstyles/orbit"
+accent = "#9aa7e8"
+surface = "#11131b"
+preview = "preview.webp"
+official = false
+
+[shell]
+entry = "qml/Scene.qml"
+frameHost = "each"
+owns = []
+modules = []

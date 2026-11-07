@@ -1,0 +1,40 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+: "${RYOKU_ITEM_DIR:?RYOKU_ITEM_DIR is required}"
+[[ ${RYOKU_ITEM_ID:-nomarchy} == nomarchy ]] || {
+  printf 'nomarchy deactivate: unexpected item id %s\n' "${RYOKU_ITEM_ID:-}" >&2
+  exit 1
+}
+
+data_home=${XDG_DATA_HOME:-$HOME/.local/share}
+local_bin=${XDG_BIN_HOME:-$HOME/.local/bin}
+root=$data_home/ryoku/nomarchy
+check=0
+[[ ${1:-} == --check ]] && check=1
+
+home_real=$(realpath -m -- "$HOME")
+within_home() {
+  local path_real
+  path_real=$(realpath -m -- "$1")
+  [[ $path_real == "$home_real" || $path_real == "$home_real"/* ]]
+}
+
+for path in "$data_home" "$local_bin"; do
+  within_home "$path" || {
+    printf 'nomarchy deactivate: refusing to write outside HOME: %s\n' "$path" >&2
+    exit 1
+  }
+done
+
+for link in "$local_bin"/omarchy "$local_bin"/omarchy-*; do
+  [[ -L $link ]] || continue
+  target=$(readlink -- "$link")
+  [[ $target == "$root/bin/"* ]] || continue
+  if (( check )); then
+    exit 1
+  fi
+  rm -f -- "$link"
+done
+
+exit 0

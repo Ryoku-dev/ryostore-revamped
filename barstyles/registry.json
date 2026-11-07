@@ -1,0 +1,275 @@
+{
+  "barstyles": [
+    {
+      "accent": "#9bd8f5",
+      "author": "aethctl",
+      "description": "A colourful modular Ryoku top bar with wallpaper-driven theming, workspace controls, media integration, utilities, and playback visualisation.",
+      "id": "chroma",
+      "manifest": "manifest.json",
+      "manifestSha256": "b90d1a35e3ebf9c106b2bbc61e7680ae8d4d9b19083744f7f4e5abe1104f31f5",
+      "name": "Chroma",
+      "path": "barstyles/chroma",
+      "preview": "preview.webp",
+      "screenshots": [],
+      "summary": "Matugen signal bar",
+      "surface": "#10191f",
+      "tags": [
+        "top",
+        "horizontal",
+        "matugen",
+        "media",
+        "workspaces"
+      ],
+      "upstream": "https://github.com/aethctl/chroma-shell",
+      "version": "1.0.2"
+    },
+    {
+      "accent": "#91b4df",
+      "author": "snowarch and iNiR contributors, Ryoku Team",
+      "description": "Shima brings the iRiS, Material ii and Waffle panel families, widgets, panels and visual effects into Ryoku.",
+      "id": "iris",
+      "manifest": "manifest.json",
+      "manifestSha256": "331807fd0ee38468a91207ab7df041490f50ae1e41a3934f20190c2ae14f907f",
+      "name": "Shima",
+      "path": "barstyles/iris",
+      "preview": "preview.webp",
+      "provides": {
+        "desktopWidgets": [
+          "inir"
+        ],
+        "dock": [
+          "shima"
+        ],
+        "launcher": [
+          "spotlight"
+        ]
+      },
+      "requiresQmlModules": [
+        "QtCore",
+        "QtMultimedia",
+        "QtQml",
+        "Qt.labs.folderlistmodel",
+        "Qt5Compat.GraphicalEffects"
+      ],
+      "screenshots": [],
+      "summary": "iNiR's three panel families integrated with Ryoku",
+      "surface": "#17191f",
+      "tags": [
+        "panels",
+        "widgets",
+        "music",
+        "visualizer"
+      ],
+      "upstream": "https://github.com/snowarch/iNiR",
+      "version": "2.33.0"
+    },
+    {
+      "accent": "#c74637",
+      "author": "feelyourwarmth",
+      "description": "A configurable Ryoku bar with a paper-and-ink surface, movable modules, kanji workspaces, media and tray integration, quick settings, profiles, and an adaptive side rail.",
+      "id": "karuma",
+      "manifest": "manifest.json",
+      "manifestSha256": "46bd82ce34a0bd085955940fe6467249eea928d141aec7827e8e04a7dc71bbc3",
+      "name": "Karuma",
+      "path": "barstyles/karuma",
+      "preview": "preview.webp",
+      "screenshots": [],
+      "summary": "Paper-and-ink adaptive bar",
+      "surface": "#1c1713",
+      "tags": [
+        "bar",
+        "barstyle",
+        "paper-and-ink",
+        "configurable",
+        "rail",
+        "workspaces",
+        "media"
+      ],
+      "upstream": "https://github.com/Ryoku-dev/ryostore/tree/main/barstyles/karuma",
+      "version": "1.0.1"
+    },
+    {
+      "accent": "#68c7c1",
+      "author": "Ryoku Team",
+      "description": "Configurable islands whose widgets and spacing compose into a technical top bar.",
+      "id": "nacre",
+      "manifest": "manifest.json",
+      "manifestSha256": "3a9aadd927f68cd18de136ab3548f7f343df7ba68813d51b2338823907e74163",
+      "name": "Nacre",
+      "path": "barstyles/nacre",
+      "preview": "preview.webp",
+      "screenshots": [],
+      "summary": "Instrument archipelago",
+      "surface": "#0b1115",
+      "tags": [
+        "top",
+        "islands",
+        "configurable"
+      ],
+      "upstream": "https://github.com/ryoku-dev/ryostore/tree/main/barstyles/nacre",
+      "version": "1.0.3"
+    },
+    {
+      "accent": "#b6a0ff",
+      "author": "37signals LLC and Omarchy contributors, Noctalia contributors, Ryoku Team",
+      "description": "Nomarchy brings Omarchy's configurable bar, panels, menus, themes, notifications, OSD and plugin host to Ryoku's compositor-neutral shell platform.",
+      "id": "nomarchy",
+      "manifest": "manifest.json",
+      "manifestSha256": "8428ac602e0c0e82c7663d673526b11c6bc68856d2adf524b1594f6c6a1d5c1b",
+      "name": "Nomarchy",
+      "official": true,
+      "path": "barstyles/nomarchy",
+      "preview": "preview.webp",
+      "screenshots": [],
+      "summary": "Omarchy's plugin-driven bar and panels adapted to Ryoku",
+      "surface": "#111118",
+      "tags": [
+        "bar",
+        "panels",
+        "plugins",
+        "themes"
+      ],
+      "upstream": "https://github.com/basecamp/omarchy",
+      "version": "1.0.0"
+    },
+    {
+      "accent": "#b86b5f",
+      "author": "Ryoku Team",
+      "description": "A compact floating top bar with kanji workspaces, paper groups, and live popouts.",
+      "id": "obi",
+      "manifest": "manifest.json",
+      "manifestSha256": "ebc42bc4bf562a0f89532a51fb7763ab671a15fd584656ef731ad33c8aeb5d49",
+      "name": "Obi",
+      "path": "barstyles/obi",
+      "preview": "preview.webp",
+      "screenshots": [],
+      "summary": "Floating sash",
+      "surface": "#11100f",
+      "tags": [
+        "top",
+        "floating",
+        "compact"
+      ],
+      "upstream": "https://github.com/ryoku-dev/ryostore/tree/main/barstyles/obi",
+      "version": "1.0.1"
+    },
+    {
+      "accent": "#9aa7e8",
+      "author": "aethctl",
+      "description": "A motion-led top bar built around a live trajectory, adaptive media core, workspace satellites, native tray, and docked system popouts.",
+      "id": "orbit",
+      "manifest": "manifest.json",
+      "manifestSha256": "0d66b846ca0668462bb45d811ce53d6fad45aa94cf7ddaf5535559748344cd38",
+      "name": "Orbit",
+      "path": "barstyles/orbit",
+      "preview": "preview.webp",
+      "screenshots": [],
+      "summary": "Animated trajectory bar",
+      "surface": "#11131b",
+      "tags": [
+        "top",
+        "trajectory",
+        "animated",
+        "media",
+        "popouts",
+        "minimal"
+      ],
+      "upstream": "https://github.com/ryoku-dev/ryostore/tree/main/barstyles/orbit",
+      "version": "1.0.1"
+    },
+    {
+      "accent": "#c4746e",
+      "author": "HANCORE-linux, Ryoku Team",
+      "description": "Quickshell Rise's configurable horizontal bar, with five forms, draggable widgets, panels, plugin slots, and its own settings window on Ryoku's platform services.",
+      "id": "qsbar",
+      "manifest": "manifest.json",
+      "manifestSha256": "7fb4d08f05bc6da7ae918ff5f134c715d5d006f17940ba5b1abc722184e955f5",
+      "name": "QS Bar",
+      "official": true,
+      "path": "barstyles/qsbar",
+      "preview": "preview.webp",
+      "screenshots": [],
+      "summary": "Hancore's adaptable top bar",
+      "surface": "#181616",
+      "tags": [
+        "top",
+        "horizontal",
+        "widgets",
+        "panels"
+      ],
+      "upstream": "https://github.com/HANCORE-linux/quickshell-dots",
+      "version": "1.0.0"
+    },
+    {
+      "accent": "#5b9bff",
+      "author": "feelyourwarmth",
+      "description": "Ricelin is a modern pill-style bar focused on clean visuals, smooth animations, dynamic theming, and extensive customization. It integrates with Ryoku and supports dynamic colors.",
+      "id": "ricelin",
+      "manifest": "manifest.json",
+      "manifestSha256": "13fec47a3f649f111db381c89a49a4fecb7b7fb714d1c2830a4402f385d2d25d",
+      "name": "Ricelin",
+      "path": "barstyles/ricelin",
+      "preview": "preview.webp",
+      "screenshots": [],
+      "summary": "A sleek, customizable pill-style bar for Ryoku.",
+      "surface": "#181a20",
+      "tags": [
+        "bar",
+        "barstyle",
+        "pill",
+        "minimal",
+        "modern",
+        "customizable"
+      ],
+      "upstream": "https://github.com/ryoku-dev/ryostore/tree/main/barstyles/ricelin",
+      "version": "1.2.2"
+    },
+    {
+      "accent": "#d58b73",
+      "author": "aethctl",
+      "description": "A Matugen-aware Ryoku bar style that expands into a full left command rail on empty or floating-only workspaces and collapses into a three-pill top bar when tiled windows appear.",
+      "id": "sukunabikona",
+      "manifest": "manifest.json",
+      "manifestSha256": "aecb363affbe5049bdc9a9221ca3498f0c9fb01c236d1a01fd4bbe88e28dc2ab",
+      "name": "Sukunabikona",
+      "path": "barstyles/sukunabikona",
+      "preview": "preview.webp",
+      "screenshots": [],
+      "summary": "Adaptive rail-to-pill command surface",
+      "surface": "#120d0c",
+      "tags": [
+        "adaptive",
+        "rail",
+        "pills",
+        "matugen",
+        "media",
+        "workspaces",
+        "visualizer"
+      ],
+      "upstream": "https://github.com/Ryoku-dev/ryostore/tree/main/barstyles/sukunabikona",
+      "version": "1.0.3"
+    },
+    {
+      "accent": "#7aa2f7",
+      "author": "Ryoku Team",
+      "description": "The built-in left rail: paper, ink, and a vertical working edge.",
+      "id": "sumi",
+      "manifest": "manifest.json",
+      "manifestSha256": "783d70b3f397355d327a0a15a5fbf306520634e3f699bba43479027140848b2c",
+      "name": "Sumi",
+      "path": "barstyles/sumi",
+      "preview": "preview.webp",
+      "screenshots": [],
+      "summary": "Ink spine",
+      "surface": "#101010",
+      "tags": [
+        "rail",
+        "vertical",
+        "built-in"
+      ],
+      "upstream": "",
+      "version": "1.0.0"
+    }
+  ],
+  "schema": 1
+}

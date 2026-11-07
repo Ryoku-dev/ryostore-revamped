@@ -1,0 +1,86 @@
+{
+  "category": "barstyles",
+  "destination": "ryoku/barstyles/sukunabikona",
+  "files": [
+    {
+      "destination": "LICENSE",
+      "install": true,
+      "mode": "0644",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "size": 35149,
+      "source": "LICENSE"
+    },
+    {
+      "destination": "PROVENANCE.txt",
+      "install": true,
+      "mode": "0644",
+      "sha256": "d9813070ce3464fa0af05be89c1d5dba612f5d7ce95ecdfa6d673428cd83bc20",
+      "size": 566,
+      "source": "PROVENANCE.txt"
+    },
+    {
+      "destination": "README.md",
+      "install": true,
+      "mode": "0644",
+      "sha256": "75c63ce604ce7d9996c14c3b982ffc9d28affe0fbb96f8971221cacc140a44f9",
+      "size": 2154,
+      "source": "README.md"
+    },
+    {
+      "destination": "item.toml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "61c2d6b0a2abd2038d85143740c066fe835e9805e5ed989d10f3a8e6de87366b",
+      "size": 677,
+      "source": "item.toml"
+    },
+    {
+      "destination": "preview.webp",
+      "install": true,
+      "mode": "0644",
+      "sha256": "2e0bcd2481d71339eff2ebfd16af95e41e0c220fd693a4c05ac79c1410445aeb",
+      "size": 31302,
+      "source": "preview.webp"
+    },
+    {
+      "destination": "qml/Scene.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "e5c7e32bdac1516f2dbd9eef1fc97b1cfdcf44504d278adafede97e0ee4b4d4c",
+      "size": 27227,
+      "source": "qml/Scene.qml"
+    },
+    {
+      "destination": "qml/components/RyokuRail.qml",
+      "install": true,
+      "mode": "0644",
+      "sha256": "82fd79ab4f179ac352cb92807bc4282386198d0be598153fec8e332137ee7236",
+      "size": 28438,
+      "source": "qml/components/RyokuRail.qml"
+    }
+  ],
+  "id": "sukunabikona",
+  "schema": 1,
+  "shell": {
+    "entry": "qml/Scene.qml",
+    "env": {},
+    "frameHost": "each",
+    "lifecycle": {},
+    "modules": [],
+    "owns": [],
+    "ownsSetting": {},
+    "provides": {
+      "desktopWidgets": [],
+      "dock": [],
+      "launcher": []
+    },
+    "runtime": {},
+    "settings": {
+      "args": [],
+      "call": "",
+      "hubEditor": "",
+      "ipc": ""
+    }
+  },
+  "version": "1.0.3"
+}

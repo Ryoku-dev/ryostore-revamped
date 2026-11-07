@@ -1,0 +1,110 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+item_dir=${RYOKU_ITEM_DIR:?RYOKU_ITEM_DIR is required}
+[[ ${RYOKU_ITEM_ID:-nomarchy} == nomarchy ]] || {
+  printf 'nomarchy palette: unexpected item id %s\n' "${RYOKU_ITEM_ID:-}" >&2
+  exit 1
+}
+(( $# == 1 )) && [[ -f $1 ]] || {
+  printf 'Usage: palette <palette-json>\n' >&2
+  exit 2
+}
+command -v jq >/dev/null 2>&1 || {
+  printf 'nomarchy palette: jq is required\n' >&2
+  exit 1
+}
+
+palette=$1
+data_home=${XDG_DATA_HOME:-$HOME/.local/share}
+state_home=${XDG_STATE_HOME:-$HOME/.local/state}
+config_home=${XDG_CONFIG_HOME:-$HOME/.config}
+cache_home=${XDG_CACHE_HOME:-$HOME/.cache}
+root=$data_home/ryoku/nomarchy
+runtime_home=${XDG_RUNTIME_DIR:-$state_home/ryoku/runtime}
+output=$cache_home/ryoku/nomarchy-colors.toml
+
+home_real=$(realpath -m -- "$HOME")
+within_home() {
+  local path_real
+  path_real=$(realpath -m -- "$1")
+  [[ $path_real == "$home_real" || $path_real == "$home_real"/* ]]
+}
+
+for path in "$data_home" "$state_home" "$config_home" "$cache_home"; do
+  within_home "$path" || {
+    printf 'nomarchy palette: refusing to write outside HOME: %s\n' "$path" >&2
+    exit 1
+  }
+done
+
+mkdir -p "${output%/*}" "$runtime_home"
+tmp=$output.tmp.$$
+trap 'rm -f -- "$tmp"' EXIT
+jq -er '
+  def color($role; $base; $fallback):
+    (.[$role] // .[$base] // $fallback) as $value
+    | if ($value | type) == "string" and ($value | test("^#[0-9a-fA-F]{6}([0-9a-fA-F]{2})?$"))
+      then $value
+      else error("invalid colour for " + $role)
+      end;
+  def row($name; $value): $name + " = \"" + $value + "\"";
+  [
+    row("accent"; color("primary"; "color5"; "#a8c7fa")),
+    row("urgent"; color("error"; "color1"; "#ffb4ab")),
+    row("selection"; color("primaryContainer"; "color5"; "#a8c7fa")),
+    row("muted"; color("outline"; "color8"; "#8e918f")),
+    row("background"; color("surface"; "background"; "#121212")),
+    row("dark_background"; color("surfaceContainerLow"; "background"; "#121212")),
+    row("darker_background"; color("surfaceContainerLowest"; "background"; "#121212")),
+    row("lighter_background"; color("surfaceContainerHigh"; "background"; "#121212")),
+    row("foreground"; color("onSurface"; "foreground"; "#e6e6e6")),
+    row("dark_foreground"; color("onSurfaceVariant"; "foreground"; "#e6e6e6")),
+    row("light_foreground"; color("onSurface"; "foreground"; "#e6e6e6")),
+    row("bright_foreground"; color("onPrimaryContainer"; "color15"; "#e6e6e6")),
+    row("red"; color("color1"; "error"; "#ffb4ab")),
+    row("yellow"; color("color3"; "tertiary"; "#ffb4a9")),
+    row("orange"; color("tertiary"; "color3"; "#ffb4a9")),
+    row("green"; color("color2"; "primary"; "#a8c7fa")),
+    row("cyan"; color("color6"; "tertiary"; "#ffb4a9")),
+    row("blue"; color("color4"; "secondary"; "#7cacf8")),
+    row("magenta"; color("color5"; "primary"; "#a8c7fa")),
+    row("brown"; color("tertiaryContainer"; "color3"; "#ffb4a9")),
+    row("bright_red"; color("color9"; "error"; "#ffb4ab")),
+    row("bright_yellow"; color("color11"; "tertiary"; "#ffb4a9")),
+    row("bright_green"; color("color10"; "primary"; "#a8c7fa")),
+    row("bright_cyan"; color("color14"; "outline"; "#8e918f")),
+    row("bright_blue"; color("color12"; "secondary"; "#7cacf8")),
+    row("bright_magenta"; color("color13"; "primary"; "#a8c7fa")),
+    row("color0"; color("color0"; "background"; "#121212")),
+    row("color1"; color("color1"; "error"; "#ffb4ab")),
+    row("color2"; color("color2"; "primary"; "#a8c7fa")),
+    row("color3"; color("color3"; "tertiary"; "#ffb4a9")),
+    row("color4"; color("color4"; "secondary"; "#7cacf8")),
+    row("color5"; color("color5"; "primary"; "#a8c7fa")),
+    row("color6"; color("color6"; "tertiary"; "#ffb4a9")),
+    row("color7"; color("color7"; "foreground"; "#e6e6e6")),
+    row("color8"; color("color8"; "outline"; "#8e918f")),
+    row("color9"; color("color9"; "error"; "#ffb4ab")),
+    row("color10"; color("color10"; "primary"; "#a8c7fa")),
+    row("color11"; color("color11"; "tertiary"; "#ffb4a9")),
+    row("color12"; color("color12"; "secondary"; "#7cacf8")),
+    row("color13"; color("color13"; "primary"; "#a8c7fa")),
+    row("color14"; color("color14"; "outline"; "#8e918f")),
+    row("color15"; color("color15"; "onPrimaryContainer"; "#e6e6e6"))
+  ] | .[]
+' "$palette" >"$tmp"
+mv -f -- "$tmp" "$output"
+trap - EXIT
+
+choice=
+for path in "$config_home/omarchy/current-theme" "$state_home/omarchy/current/theme.name"; do
+  if [[ -f $path ]]; then
+    IFS= read -r choice <"$path" || true
+    [[ -z $choice ]] || break
+  fi
+done
+[[ -z $choice || $choice == ryoku ]] || exit 0
+
+# theme-set pushes the result to the running host through omarchy-shell on PATH.
+PATH=$item_dir/bin:$PATH OMARCHY_PATH=$root XDG_RUNTIME_DIR=$runtime_home "$item_dir/bin/omarchy-theme-set" ryoku

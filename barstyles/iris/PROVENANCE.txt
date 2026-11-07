@@ -1,0 +1,9 @@
+Upstream: iNiR by snowarch and contributors
+Upstream URL: https://github.com/snowarch/iNiR
+Pinned upstream revision: 48cdcecb0f6089cfbb7019054602eab28e154b3b
+Upstream version: 2.33.0
+Upstream licence: GPL-3.0
+Ryoku integration: Ryoku Team
+Storefront preview: integrated Shima desktop screenshot supplied by aethctl
+Packaging: vendored Ryoku integration plus an optional verified upstream runtime
+Runtime source metadata: runtime/upstream.json

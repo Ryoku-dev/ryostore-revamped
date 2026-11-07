@@ -1,0 +1,19 @@
+id = "chroma"
+name = "Chroma"
+version = "1.0.2"
+summary = "Matugen signal bar"
+description = "A colourful modular Ryoku top bar with wallpaper-driven theming, workspace controls, media integration, utilities, and playback visualisation."
+license = "MIT"
+authors = ["aethctl"]
+tags = ["top", "horizontal", "matugen", "media", "workspaces"]
+upstream = "https://github.com/aethctl/chroma-shell"
+accent = "#9bd8f5"
+surface = "#10191f"
+preview = "preview.webp"
+official = false
+
+[shell]
+entry = "qml/Scene.qml"
+frameHost = "each"
+owns = []
+modules = []

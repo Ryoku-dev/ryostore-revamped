@@ -1,0 +1,26 @@
+id = "qsbar"
+name = "QS Bar"
+version = "1.0.0"
+summary = "Hancore's adaptable top bar"
+description = "Quickshell Rise's configurable horizontal bar, with five forms, draggable widgets, panels, plugin slots, and its own settings window on Ryoku's platform services."
+license = "MIT"
+authors = ["HANCORE-linux", "Ryoku Team"]
+tags = ["top", "horizontal", "widgets", "panels"]
+upstream = "https://github.com/HANCORE-linux/quickshell-dots"
+accent = "#c4746e"
+surface = "#181616"
+preview = "preview.webp"
+screenshots = []
+official = true
+
+[shell]
+entry = "qml/Scene.qml"
+frameHost = "primary"
+owns = []
+modules = []
+
+[shell.settings]
+ipc = "qsbar"
+call = "settings"
+args = [""]
+hubEditor = ""

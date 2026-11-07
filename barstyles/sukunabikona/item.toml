@@ -1,0 +1,19 @@
+id = "sukunabikona"
+name = "Sukunabikona"
+version = "1.0.3"
+summary = "Adaptive rail-to-pill command surface"
+description = "A Matugen-aware Ryoku bar style that expands into a full left command rail on empty or floating-only workspaces and collapses into a three-pill top bar when tiled windows appear."
+license = "GPL-3.0-only"
+authors = ["aethctl"]
+tags = ["adaptive", "rail", "pills", "matugen", "media", "workspaces", "visualizer"]
+upstream = "https://github.com/Ryoku-dev/ryostore/tree/main/barstyles/sukunabikona"
+accent = "#d58b73"
+surface = "#120d0c"
+preview = "preview.webp"
+official = false
+
+[shell]
+entry = "qml/Scene.qml"
+frameHost = "each"
+owns = []
+modules = []

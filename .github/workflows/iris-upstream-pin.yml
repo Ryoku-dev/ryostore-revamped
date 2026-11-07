@@ -1,0 +1,27 @@
+name: Iris upstream pin
+
+on:
+  push:
+    paths:
+      - 'barstyles/iris/**'
+      - '.github/workflows/iris-upstream-pin.yml'
+  pull_request:
+    paths:
+      - 'barstyles/iris/**'
+      - '.github/workflows/iris-upstream-pin.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  runtime:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch pinned upstream source
+        run: |
+          curl -fsSL --retry 3 --max-time 150 "https://codeload.github.com/snowarch/iNiR/tar.gz/48cdcecb0f6089cfbb7019054602eab28e154b3b" -o "$RUNNER_TEMP/inir.tar.gz"
+      - name: Verify archive and assembled runtime
+        env:
+          SHIMA_TEST_ARCHIVE: ${{ runner.temp }}/inir.tar.gz
+        run: python3 -m unittest barstyles/iris/tests/test_shima_pinned_source.py

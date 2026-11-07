@@ -1,0 +1,7 @@
+Obi Ryoku bar style
+
+Source: Ryoku main repository
+Author: Ryoku Team
+License: GNU General Public License version 3; see LICENSE
+
+This product contains the complete Obi scene and widgets plus its product-local copies of the shared popout runtime required for standalone installation.

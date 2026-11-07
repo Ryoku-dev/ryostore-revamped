@@ -1,0 +1,18 @@
+id = "lumania"
+name = "Lumania"
+version = "1.0.0"
+summary = "Notches on a screen frame"
+description = "A thin desktop frame with dedicated notches for media, workspaces, tray, controls, wallpaper, search, and session actions."
+license = "MIT"
+authors = ["rover", "dodo986"]
+tags = ["frame", "notches", "workspaces", "media", "wallpaper"]
+upstream = "https://github.com/rover-001/lumania-shell"
+preview = "preview.webp"
+official = false
+listed = false
+
+[shell]
+entry = "qml/Scene.qml"
+frameHost = "each"
+owns = []
+modules = []

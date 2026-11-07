@@ -1,0 +1,53 @@
+id = "iris"
+name = "Shima"
+version = "2.33.0"
+summary = "iNiR's three panel families integrated with Ryoku"
+description = "Shima brings the iRiS, Material ii and Waffle panel families, widgets, panels and visual effects into Ryoku."
+license = "GPL-3.0-only"
+authors = ["snowarch and iNiR contributors", "Ryoku Team"]
+tags = ["panels", "widgets", "music", "visualizer"]
+upstream = "https://github.com/snowarch/iNiR"
+accent = "#91b4df"
+surface = "#17191f"
+preview = "preview.webp"
+
+[requires]
+qmlModules = ["QtCore", "QtMultimedia", "QtQml", "Qt.labs.folderlistmodel", "Qt5Compat.GraphicalEffects"]
+
+[shell]
+entry = "qml/Scene.qml"
+frameHost = "primary"
+owns = ["notifications", "osd", "polkit", "cheatsheet", "windowClose"]
+modules = ["inir"]
+
+[shell.ownsSetting]
+notifications = "inir.iris.modules.notificationPopup"
+osd = "inir.iris.modules.osd"
+
+[shell.settings]
+ipc = "iris"
+call = "settings"
+args = []
+
+[[provides.dock]]
+id = "shima"
+name = "Shima"
+entry = "qml/dock/Dock.qml"
+
+[[provides.launcher]]
+id = "spotlight"
+name = "Spotlight"
+description = "The Shima launcher: the frame's morphing-glass search, with apps, actions, commands and web in one row."
+entry = "qml/launcher/Main.qml"
+preview = "qml/launcher/Preview.qml"
+
+[[provides.desktopWidgets]]
+id = "inir"
+roster = "qml/desktop/roster.json"
+widget = "qml/desktop/Widget.qml"
+options = "qml/desktop/options"
+
+[runtime]
+check = "bin/runtime-wanted"
+install = "bin/runtime-install"
+start = "bin/runtime-start"
