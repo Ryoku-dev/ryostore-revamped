@@ -750,9 +750,8 @@ Item {
     }
 
     // One line: powered <TAB> name of the first connected device. Silent when
-    // there is no adapter (the 双 reading then hides). Every bluetoothctl call
-    // is bounded: without bluetoothd it waits for the service forever, and a
-    // hung call would outlive the shell once the style is switched away.
+    // there is no adapter (the 双 reading then hides).
+    // bluetoothctl hangs forever without bluetoothd so every call gets a timeout
     Process {
         id: btProbe
         command: ["sh", "-c",

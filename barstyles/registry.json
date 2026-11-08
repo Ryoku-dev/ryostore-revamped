@@ -89,7 +89,7 @@
       "description": "A configurable Ryoku bar with a paper-and-ink surface, movable modules, kanji workspaces, media and tray integration, quick settings, profiles, and an adaptive side rail.",
       "id": "karuma",
       "manifest": "manifest.json",
-      "manifestSha256": "dd6744707ffeb562512cf8eadba9068a229f6c33fba096638ff2bef8afc117aa",
+      "manifestSha256": "60fb6ddcbbc01b1bde1218a48537a3e2c97a8ac6b68bbe0992307d6e807a2d38",
       "metadata": {
         "resourceDelta": {
           "cpuPct": 0.28,
@@ -286,7 +286,7 @@
       "description": "Ricelin is a modern pill-style bar focused on clean visuals, smooth animations, dynamic theming, and extensive customization. It integrates with Ryoku and supports dynamic colors.",
       "id": "ricelin",
       "manifest": "manifest.json",
-      "manifestSha256": "2144234fc5d6d7a4cdb7e20b5391f81a7da5b51a09c9b6f8a0999d4d0e194c95",
+      "manifestSha256": "4378a7c921e03059cc79910fa331b81a470225a2eb7577118624fb034d13248e",
       "metadata": {
         "resourceDelta": {
           "cpuPct": 0.12,

@@ -39,7 +39,7 @@
       "description": "macOS-inspired Ryoku subshell with Control Center, Dock and desktop widgets.",
       "id": "gokko",
       "manifest": "manifest.json",
-      "manifestSha256": "1656c8c96c3f7c1f4a446b645825df430ff24c8384ecd359e7de6fc535d6a2c2",
+      "manifestSha256": "560dade43de980f8bf7c2b551c96557b490de4010ebec658310bf3e7ddb76d1f",
       "metadata": {
         "resourceDelta": {
           "cpuPct": 0.33,
@@ -73,7 +73,7 @@
       "description": "A full-desktop Material 3 shell: island bar with edit mode, dynamic island, sidebars, on-screen display, notification banners, session screen and vertical bar. Colors from the shell matugen palette, compositor state through the host facade.",
       "id": "imi",
       "manifest": "manifest.json",
-      "manifestSha256": "5ea1dc6d75bfc023f8e5b86ced4f03728cb89b812bfc67ee2db0e8b904882167",
+      "manifestSha256": "8a87be55473272d19642bc50c645dbe8750ce97c5ed933156eb3e7e45e82ebcc",
       "metadata": {
         "resourceDelta": {
           "cpuPct": 0.07,

@@ -2639,7 +2639,7 @@ Scope {
             wtypeCmd += " -k " + wtypeK;
             for (var j = wtypeMods.length - 1; j >= 0; j--) wtypeCmd += " -m " + wtypeMods[j];
 
-            // hyprctl only on Hyprland; elsewhere the key goes to whatever window has focus.
+            // off Hyprland the key goes to whatever window has focus
             var hypr = macWm.provider === "hyprland";
             var focusCmd = hypr && targetAddr !== "" ? "hyprctl dispatch focuswindow address:" + targetAddr + " >/dev/null 2>&1; sleep 0.04; " : "sleep 0.03; ";
             var sendArg = targetAddr !== "" ? (hyprMods !== "" ? hyprMods + ", " : "") + kNorm + ", address:" + targetAddr
@@ -3690,7 +3690,7 @@ Scope {
             }
         }
     }
-    // the probe asks hyprctl, and the Game Mode it drives is Hyprland's blur/animation switch
+    // Game Mode is Hyprland's blur and animation switch
     Timer { id: gameProbeDelay; interval: 250; onTriggered: if (macWm.provider === "hyprland" && !gameProbe.running) gameProbe.running = true }
     Connections {
         target: macWm
@@ -4539,7 +4539,6 @@ Scope {
             lua += "hl.dispatch(hl.dsp.focus({ window = \"" + (t.addr !== "" ? "address:" + t.addr : "class:^(" + t.cls + ")$") + "\" })); ";
             lua += "hl.dispatch(hl.dsp.window.bring_to_top())";
             if (macWm.provider !== "hyprland") {
-                // the Wm bridge focuses a window by ID, or else the workspace
                 if (t.addr !== "") macWm.dispatch("hl.dispatch(hl.dsp.focus({ window = \"address:" + t.addr + "\" }))");
                 else if (t.ws > 0) macWm.dispatch("hl.dispatch(hl.dsp.focus({ workspace = \"" + t.ws + "\" }))");
                 return;

@@ -23,8 +23,6 @@ MACHINE_KEYS = ("gpu", "outputs", "scale")
 REQUIRED_KEYS = {"id", "version", "measuredAt", "ryoku", "machine", "baseline", "delta", "leftoverProcesses", "tier"}
 OPTIONAL_KEYS = {"absolute", "window"}
 
-# Main's tier rule: Light = delta PSS <= 30 MB, delta CPU <= 0.1 % and no launches;
-# Standard = delta PSS <= 80 MB, delta CPU <= 0.5 % and <= 10 launches a minute; Heavy otherwise.
 LIGHT = {"pssMB": 30.0, "cpuPct": 0.1, "launchesPerMin": 0.0}
 STANDARD = {"pssMB": 80.0, "cpuPct": 0.5, "launchesPerMin": 10.0}
 
@@ -131,7 +129,7 @@ def _version_key(version: str) -> tuple[int, int, int, int, str]:
     if match is None:
         return (0, 0, 0, 0, version)
     major, minor, patch, pre = match.groups()
-    # A release sorts after its pre-releases.
+    # a release sorts after its pre-releases
     return (int(major), int(minor), int(patch), 0 if pre else 1, pre or "")
 
 

@@ -40,8 +40,6 @@ HZ = os.sysconf("SC_CLK_TCK")
 PROC = Path("/proc")
 
 
-# --- /proc readers --------------------------------------------------------------------------------
-
 def _read(path: Path | str) -> str:
     try:
         with open(path, errors="replace") as handle:
@@ -184,8 +182,6 @@ def descendants(table: dict[int, Stat], root: int) -> set[int]:
     return found
 
 
-# --- sampling -------------------------------------------------------------------------------------
-
 @dataclass
 class Snapshot:
     """Per-process counters for the shell and its helpers at one instant."""
@@ -307,8 +303,6 @@ class LaunchCounter:
             self._reaped()
         self.last = last
 
-
-# --- desktop control ------------------------------------------------------------------------------
 
 def state_home() -> Path:
     return Path(os.environ.get("XDG_STATE_HOME") or Path.home() / ".local" / "state")
@@ -471,8 +465,6 @@ def sample(desktop: Desktop, selection: Selection, seconds: float, poll: float, 
     desktop.track(selection, since)
     return summarize(start, end, elapsed, counter.launches, counter.unseen)
 
-
-# --- items ----------------------------------------------------------------------------------------
 
 def installed_items(index: dict[str, Any]) -> list[dict[str, Any]]:
     return [row for row in index.get("items", []) if row.get("source") != "shipped" and row.get("id") != measurements.BASELINE]

@@ -88,7 +88,7 @@ class TemplateTests(TreeTest):
             self.tree.add(category, f"sample-{category}")
         written = build(self.root, [], check=False)
         self.assertIn(self.root / "profiles/registry.json", written)
-        # A listed shell item needs a measurement before --check passes; profiles never do.
+        # shell items need a measurement before --check passes, profiles never do
         with self.assertRaisesRegex(CatalogueError, "measurements/sample-subshells.json: missing measurement"):
             build(self.root, [], check=True)
         for item_id in ("sample-subshells", "sample-barstyles"):

@@ -11630,8 +11630,8 @@
       "destination": "qml/modules/ii/onScreenDisplay/OnScreenDisplay.qml",
       "install": true,
       "mode": "0644",
-      "sha256": "5e0082ff737119b97dce160f1720009e25d0f0e4c923500478a281fc1ab7b4ba",
-      "size": 98780,
+      "sha256": "b590a00f96a215b24c3604346acbdfcc46a28db7d19d806edb23e528ee837e66",
+      "size": 98738,
       "source": "qml/modules/ii/onScreenDisplay/OnScreenDisplay.qml"
     },
     {

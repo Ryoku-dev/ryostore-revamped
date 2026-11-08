@@ -24,9 +24,8 @@ _C_LIKE = {".qml", ".js", ".mjs", ".cjs"}
 _HASH_COMMENT = {".sh", ".bash", ".zsh", ".py"}
 _SHEBANG = re.compile(r"^#!")
 
-# Each family is a Ryoku window-manager provider name (`ryoku wm use <name>`), except sway, which
-# Ryoku has no provider for: an item driving it can only declare it and stay unavailable.
-# Entries are (label, literal that must occur, pattern); the literal skips the regex on most files.
+# sway has no Ryoku provider so an item driving it can only declare it and stay unavailable
+# the literal is a cheap check that skips the regex on most files
 COMPOSITOR_PATTERNS: dict[str, tuple[tuple[str, str, re.Pattern[str]], ...]] = {
     "hyprland": (
         ("hyprctl", "hyprctl", re.compile(r"\bhyprctl\b")),
@@ -50,14 +49,12 @@ COMPOSITOR_PATTERNS: dict[str, tuple[tuple[str, str, re.Pattern[str]], ...]] = {
     ),
 }
 
-# An identifier containing one of these makes a Timer's `running` an activity gate: the timer runs
-# only while something is shown, open, hovered, playing or otherwise in use.
 GATE_WORDS = (
     "visible", "hidden", "open", "shown", "show", "active", "expand", "hover", "containsmouse",
     "playing", "focus", "pressed", "drag", "moving", "animating", "recording", "loading", "busy",
     "pending", "inuse", "running", "count", "length", "needed", "want", "users", "pop",
 )
-# A restart guarded only by these is a restart after failure: it loops while the command keeps failing.
+# a restart guarded only by these loops for as long as the command keeps failing
 EXIT_STATUS_WORDS = frozenset({
     "exitCode", "exitStatus", "code", "status", "Process", "NormalExit", "CrashExit", "QProcess",
     "undefined", "null", "true", "false",
@@ -87,13 +84,11 @@ class Finding:
     detail: str
 
 
-# --- lexing ---------------------------------------------------------------------------------------
-
 _C_TOKENS = re.compile(
     r"(?P<line>//[^\n]*)"
     r"|(?P<block>/\*.*?(?:\*/|\Z))"
     r"|(?P<string>\"(?:\\.|[^\"\\\n])*\"?|'(?:\\.|[^'\\\n])*'?|`(?:\\.|[^`\\])*`?)"
-    # A regex literal follows an operator or an opening bracket, never a value.
+    # a regex literal follows an operator or an opening bracket, never a value
     r"|(?<=[(,=:\[!&|?{};])(?P<regex>[ \t]*/(?![/*])(?:\\.|\[(?:\\.|[^\]\\\n])*\]|[^/\\\n\[])+/)",
     re.DOTALL,
 )
@@ -181,8 +176,6 @@ def scanned_files(item_dir: Path, files: list[tuple[str, Path]]) -> list[tuple[s
     return result
 
 
-# --- compositor calls -----------------------------------------------------------------------------
-
 def compositor_findings(sources: list[tuple[str, str, str, str]]) -> list[Finding]:
     findings: list[Finding] = []
     for relative, _kind, code, _masked in sources:
@@ -196,8 +189,6 @@ def compositor_findings(sources: list[tuple[str, str, str, str]]) -> list[Findin
                     break
     return findings
 
-
-# --- QML objects ----------------------------------------------------------------------------------
 
 @dataclass
 class _Object:
@@ -457,8 +448,6 @@ def _timer_problem(obj: _Object) -> str:
         return f"repeating {interval:g} ms Timer whose running ({running}) is not bound to visibility or activity"
     return ""
 
-
-# --- allowlist ------------------------------------------------------------------------------------
 
 def load_allowlist(repo_root: Path) -> list[dict[str, Any]]:
     path = repo_root / ALLOWLIST

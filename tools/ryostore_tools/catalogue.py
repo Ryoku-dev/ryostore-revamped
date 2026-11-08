@@ -56,7 +56,7 @@ class BuiltItem:
     listed: bool
     manifest_bytes: bytes
     registry_entry: dict[str, Any]
-    # Missing or stale resource measurements: warnings for a plain build, errors for --check.
+    # warnings for a plain build, errors with --check
     measurement_notes: tuple[str, ...] = ()
 
 

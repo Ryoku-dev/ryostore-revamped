@@ -222,8 +222,8 @@
       "destination": "qml/Scene.qml",
       "install": true,
       "mode": "0644",
-      "sha256": "adf6246142e5f92f7e79775d6c777184f2fac61d71a2221e71871f402f972de5",
-      "size": 90050,
+      "sha256": "e9e684c4e972781463f366a0c28d0101392707000a2911ba0102fe3f4ee1f9e0",
+      "size": 89956,
       "source": "qml/Scene.qml"
     },
     {

@@ -129,10 +129,7 @@ Singleton {
         }
     }
 
-    // wl-paste --watch runs for the whole session; it exits only when the clipboard
-    // source goes away. Respawn after a pause, but give up after five exits in a row
-    // with no clipboard event in between (wl-paste missing or failing), so a broken
-    // setup cannot turn into a process launch every two seconds.
+    // give up after five exits with no clipboard event so a broken wl-paste can't respawn forever
     property int watchExits: 0
 
     Process {
