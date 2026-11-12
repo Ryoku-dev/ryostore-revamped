@@ -2,7 +2,11 @@
 
 Python is the Serpantinum desktop shell by ilyamiro, adapted to run as a Ryoku subshell. It keeps Serpantinum's bars, panels, guide, launcher, dock and desktop faces while Ryoku supplies compositor state, settings storage, wallpaper, capture, lock, updates and the shared system services.
 
-The port tracks Serpantinum 2.3.1 at commit `3619689`. The copied code is AGPL-3.0-or-later; see `LICENSE` and `NOTICE`.
+The port tracks Serpantinum 2.3.1 at commit `3619689`, plus the media module's hide-when-idle option from commit `b4e470a`. The copied code is AGPL-3.0-or-later; see `LICENSE` and `NOTICE`.
+
+## Media and visualizer options
+
+The media module carries Serpantinum's later **Hide when nothing is playing** option (`python.bar.mediaHideWhenIdle`, upstream `b4e470a`). Ryoku adds two more under the same guide cards: **Fit to the track** (`mediaFitWidth`) sizes the title area to the longer of the title and second line, capped at the module's width, and the visualizer's **Hide when nothing is playing** (`visHideWhenIdle`) removes it from the bar and stops its audio feed while no player is active. All three default off. Album art for a player other than the active one comes only from a local file (`Music.coverFor`), never a web URL.
 
 ## Layout
 

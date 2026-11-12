@@ -14,16 +14,16 @@
       "destination": "NOTICE",
       "install": true,
       "mode": "0644",
-      "sha256": "8ae7b8b42a23feff202d86ea5fd68ba749e38c65b6ca607dd334dc745e3c502c",
-      "size": 2597,
+      "sha256": "878eda2c51288b09fe55ca12eaf00bd7d5f9937b2a1569d9af528b74e63f2581",
+      "size": 2664,
       "source": "NOTICE"
     },
     {
       "destination": "README.md",
       "install": true,
       "mode": "0644",
-      "sha256": "9237600b5ad2b98d4f52fe60cc6b11711d58a2765f0b0f3d38d8747a6b6d5120",
-      "size": 3091,
+      "sha256": "2c11135559b685f220b31be0df2589072df0845866b4c109297c12df4f042c13",
+      "size": 3803,
       "source": "README.md"
     },
     {
@@ -70,184 +70,184 @@
       "destination": "qml/assets/languages/ar.json",
       "install": true,
       "mode": "0644",
-      "sha256": "c15dba54fed95fc0e9ee572d2e4a2e38553bf0b5bcccdcda872ff324452aa97a",
-      "size": 81285,
+      "sha256": "dd42a4e4bad334db878663a817a10bde4c4cd407b0d554c48e34e409f13b76c2",
+      "size": 81501,
       "source": "qml/assets/languages/ar.json"
     },
     {
       "destination": "qml/assets/languages/az.json",
       "install": true,
       "mode": "0755",
-      "sha256": "c1c5247b25cbe41819ab663eedc56c4b574e88045a698e6e1851a6ef23b37051",
-      "size": 68611,
+      "sha256": "48341d72cc84844784b2e3e89149f2ad5da9618d6f7e35e47dced573bf54e10e",
+      "size": 68770,
       "source": "qml/assets/languages/az.json"
     },
     {
       "destination": "qml/assets/languages/bg.json",
       "install": true,
       "mode": "0644",
-      "sha256": "844204f73bcd243ad038a108a161a559013ee30540f7e3a7bb440dfc8231d4ed",
-      "size": 87887,
+      "sha256": "90161d691632e57b1a979522dff62b73f2fd4de6419f6f29b3e940424a6802c9",
+      "size": 88149,
       "source": "qml/assets/languages/bg.json"
     },
     {
       "destination": "qml/assets/languages/de.json",
       "install": true,
       "mode": "0755",
-      "sha256": "582d94794d74573f1e1d6a43554e07c949992be37c1485ee6f1a33edd2bf6185",
-      "size": 66890,
+      "sha256": "a9ff8e7e5cf260f0f2b357e12e96776b0c7a417009f402f96c521449640e156e",
+      "size": 67081,
       "source": "qml/assets/languages/de.json"
     },
     {
       "destination": "qml/assets/languages/en.json",
       "install": true,
       "mode": "0755",
-      "sha256": "5f7298d9e214e9a577e80065679606fe8b54986f40ca2caf315ec910c098c8ea",
-      "size": 62306,
+      "sha256": "6bb27ef34a6151982f24f3c8d79f29173291055e1d67f6273ae0c3912e59dba8",
+      "size": 62817,
       "source": "qml/assets/languages/en.json"
     },
     {
       "destination": "qml/assets/languages/es.json",
       "install": true,
       "mode": "0755",
-      "sha256": "08213e8fa164f80a43c99ad9204aa080f78ac3aac85cb79c8af1595206e0b04d",
-      "size": 67717,
+      "sha256": "c121599b2098d961d0cb91381b91b27bf3ae9939cceb5318cf8b4dd4c1d4fd99",
+      "size": 67897,
       "source": "qml/assets/languages/es.json"
     },
     {
       "destination": "qml/assets/languages/fa.json",
       "install": true,
       "mode": "0644",
-      "sha256": "ebcc1c9eee7c5064f65ec9fa1342f364a2d3890990f16d424cc9b1322cae22bc",
-      "size": 79462,
+      "sha256": "48198ccefc37213ebcc92f51caeca4831704199ad69396b01edd2a681ae473b3",
+      "size": 79712,
       "source": "qml/assets/languages/fa.json"
     },
     {
       "destination": "qml/assets/languages/fr.json",
       "install": true,
       "mode": "0644",
-      "sha256": "cbffc73366860a7fea68fcc9fcc1825d01179bcc0aef054b22a31800044ac50e",
-      "size": 67297,
+      "sha256": "0e4b945e39c64269bf8b2736b61e459927811d794fab008774ad16c35cde9e7f",
+      "size": 67477,
       "source": "qml/assets/languages/fr.json"
     },
     {
       "destination": "qml/assets/languages/hi.json",
       "install": true,
       "mode": "0644",
-      "sha256": "d19540e44e8c46581031ca083c7d067bbfce2e33a86a2bb0425991ad47a76f0e",
-      "size": 100274,
+      "sha256": "11e5a6b4b067490e48b06f65c6b02b2d956ad2811142a9b6c4eb7b001eca1e0a",
+      "size": 100539,
       "source": "qml/assets/languages/hi.json"
     },
     {
       "destination": "qml/assets/languages/hy.json",
       "install": true,
       "mode": "0755",
-      "sha256": "7dc9793694ca53529dfaa72c5066bfab23a05fa5a6064154e4d38aabbdf17e7f",
-      "size": 86799,
+      "sha256": "a0b12f5c48767050850a4b567b163ddb3b18e5aca89352e389014897d2450bff",
+      "size": 87035,
       "source": "qml/assets/languages/hy.json"
     },
     {
       "destination": "qml/assets/languages/id.json",
       "install": true,
       "mode": "0644",
-      "sha256": "29498cc806985400a05a3f16c70f1653665676a3846b38b42c6f448870485926",
-      "size": 62456,
+      "sha256": "e3f6aef2ade77f86862e3f43871a6ea25f131cd89362610eb92932213ac14cf3",
+      "size": 62634,
       "source": "qml/assets/languages/id.json"
     },
     {
       "destination": "qml/assets/languages/it.json",
       "install": true,
       "mode": "0755",
-      "sha256": "fa042f9b726a4dfb59e282cf5e866ca396d7ed2d872a978fc226d2ec6544f003",
-      "size": 64572,
+      "sha256": "18cd89ebb17eccda367a231dc41057d8c4e96ee806c04024f636f019ed68964a",
+      "size": 64763,
       "source": "qml/assets/languages/it.json"
     },
     {
       "destination": "qml/assets/languages/ja.json",
       "install": true,
       "mode": "0644",
-      "sha256": "09b04a9c75d0419b3db4f93a42144a6d304defa210137d630ab3f76d3d44cee1",
-      "size": 72428,
+      "sha256": "e5ecbb526b1dbd8ba5da26f0f987cf816fc2a0e2b16530d7923403839dd55516",
+      "size": 72640,
       "source": "qml/assets/languages/ja.json"
     },
     {
       "destination": "qml/assets/languages/ko.json",
       "install": true,
       "mode": "0755",
-      "sha256": "d8d9d4471f9288b8185fc5a1598e0abd134a7c92dd171c4cadb0247992d5b965",
-      "size": 66532,
+      "sha256": "df04a35960ef66299a8c9521a36c5cd9e270db40d762590fbb8e57e257a14227",
+      "size": 66715,
       "source": "qml/assets/languages/ko.json"
     },
     {
       "destination": "qml/assets/languages/nl.json",
       "install": true,
       "mode": "0644",
-      "sha256": "06186e25b11581a071f3b2bd58dacc53e63148523218856dea8f4bf6187902b4",
-      "size": 63747,
+      "sha256": "3eac9451959f0fa7c3d4e74febafcfa3507c18c57505c50dcb4e032102b9440a",
+      "size": 63918,
       "source": "qml/assets/languages/nl.json"
     },
     {
       "destination": "qml/assets/languages/pl.json",
       "install": true,
       "mode": "0644",
-      "sha256": "54e9cd02fe5954c89c72a53bece616d0d317dbe7d4fb861424b380a7b68344d3",
-      "size": 64895,
+      "sha256": "e10e031a33c7a4213f201829e52ca48fa5c4166681f7b1d392aa526250559ba8",
+      "size": 65075,
       "source": "qml/assets/languages/pl.json"
     },
     {
       "destination": "qml/assets/languages/pt.json",
       "install": true,
       "mode": "0755",
-      "sha256": "3e7c81ab8983d1fed2543eb1aaf524020b907c5c511b05941efecd4243250ef3",
-      "size": 63535,
+      "sha256": "350ed51a2f18afa06f9506d026af611772529a016d67b47e5d670dbf41a01131",
+      "size": 63715,
       "source": "qml/assets/languages/pt.json"
     },
     {
       "destination": "qml/assets/languages/ru.json",
       "install": true,
       "mode": "0755",
-      "sha256": "97d54271b07959084e9cc81073681d494c6516ef3b7c7060a4dfce4401dffc30",
-      "size": 88711,
+      "sha256": "74a6a734fe60d8435c01ca40f3c41ac11811a6fbca40d5a0c9b4649093c2ab76",
+      "size": 88965,
       "source": "qml/assets/languages/ru.json"
     },
     {
       "destination": "qml/assets/languages/tr.json",
       "install": true,
       "mode": "0644",
-      "sha256": "5e83231e29ecb8570ccb18b113531c5587438239064f87ceaa76665ed7bc3d68",
-      "size": 65370,
+      "sha256": "37ef48a5a2e945dea45e6514b446a2cd263747cd89ec6baf7086353243b2f069",
+      "size": 65529,
       "source": "qml/assets/languages/tr.json"
     },
     {
       "destination": "qml/assets/languages/ua.json",
       "install": true,
       "mode": "0644",
-      "sha256": "09dfca405212a01622bd76df8b496659e287b81655c34d9a48501b2c8d5bfc22",
-      "size": 87672,
+      "sha256": "457f1ece06359bcb79a4e1e114b06cc99434c29bceba409812391b4ae5b7e5ad",
+      "size": 87928,
       "source": "qml/assets/languages/ua.json"
     },
     {
       "destination": "qml/assets/languages/vi.json",
       "install": true,
       "mode": "0755",
-      "sha256": "abf40ab944ce1b669021a60dc5dc9b02f3aee601ede4d9f6a69d2284166eab0f",
-      "size": 70534,
+      "sha256": "09f9e41cefc023025bd2503cc8b98549bb0a07f33d25e1b996b05da66761e3d3",
+      "size": 70709,
       "source": "qml/assets/languages/vi.json"
     },
     {
       "destination": "qml/assets/languages/zh.json",
       "install": true,
       "mode": "0644",
-      "sha256": "311011ab875cb5ddf43e46778bdd4370fefde02dadc26114937f8865d137ee86",
-      "size": 59121,
+      "sha256": "2a300737a0eb46f143cb80be6cf21d77e69ba9b69e933863932bd1397f3f772a",
+      "size": 59267,
       "source": "qml/assets/languages/zh.json"
     },
     {
       "destination": "qml/assets/languages/zh_tw.json",
       "install": true,
       "mode": "0644",
-      "sha256": "b451dc780ca375ffac3c2c0c99d5f0b62f7f3eb74a1cda139fbbe3a4adf376de",
-      "size": 59774,
+      "sha256": "2ef9d3fa87cd0b62608690edb25f2b29de3aae9b91d247221a45b8c24f980603",
+      "size": 59920,
       "source": "qml/assets/languages/zh_tw.json"
     },
     {
@@ -1774,8 +1774,8 @@
       "destination": "qml/bar/faces/media/MediaFace.qml",
       "install": true,
       "mode": "0644",
-      "sha256": "2a9023ab901cef5f992c020905922aef95af1082acd787a84fba8f63cf46c147",
-      "size": 26485,
+      "sha256": "240bdddb6e0d78bb262cf5ac749e50c806fc5f7ce28c6b7572bbc9f3083cca61",
+      "size": 27931,
       "source": "qml/bar/faces/media/MediaFace.qml"
     },
     {
@@ -1830,8 +1830,8 @@
       "destination": "qml/bar/faces/vis/VisFace.qml",
       "install": true,
       "mode": "0644",
-      "sha256": "1370568c338beab365e8938d2ac3a8e9c5138a56d5cac13c2d2ceda1045ecf2f",
-      "size": 7479,
+      "sha256": "760cae289dcc90169141a4f8e138b9f6cfa420963df24e855b50a11ab7a8d94a",
+      "size": 8387,
       "source": "qml/bar/faces/vis/VisFace.qml"
     },
     {
@@ -2342,8 +2342,8 @@
       "destination": "qml/guide/bar/modules/BarMediaCard.qml",
       "install": true,
       "mode": "0644",
-      "sha256": "6de68f14fadfc9e5e86aeb6fcb805a351fffb43e97234ad6490b5061a16b87e6",
-      "size": 5101,
+      "sha256": "2e9970e1f52e450ca48ee3e7466ba019436a7c629d9d06ef82e76a842bd6e545",
+      "size": 7087,
       "source": "qml/guide/bar/modules/BarMediaCard.qml"
     },
     {
@@ -2382,8 +2382,8 @@
       "destination": "qml/guide/bar/modules/BarModulesSettings.qml",
       "install": true,
       "mode": "0644",
-      "sha256": "b35a5b574e82f49ef30576e86ba75bd3f9cdc8019aa3249b5e897ec88373d558",
-      "size": 23777,
+      "sha256": "3f34daff627145b6d3205226b78466b88376c0ba45f968b66ba7774416fb7d3f",
+      "size": 25423,
       "source": "qml/guide/bar/modules/BarModulesSettings.qml"
     },
     {
@@ -2422,8 +2422,8 @@
       "destination": "qml/guide/bar/modules/BarVisualizerCard.qml",
       "install": true,
       "mode": "0644",
-      "sha256": "5750536af21c51a9dd36c5a3cebd0f95b658b6e1ab34462f73e06b8fd062523f",
-      "size": 5860,
+      "sha256": "41c77fc73ca51b9a9cfe03d4e1b590dc29b10ed11f97ef0e40da8d02e2fce6d6",
+      "size": 6756,
       "source": "qml/guide/bar/modules/BarVisualizerCard.qml"
     },
     {
@@ -3030,8 +3030,8 @@
       "destination": "qml/network/NetworkPopup.qml",
       "install": true,
       "mode": "0644",
-      "sha256": "09cd8bd0c0a858e67b973a4793ec2de3f1b88aa7c22f8697c158fb4f4bdeaa30",
-      "size": 78064,
+      "sha256": "660f8d9e4846207af53660aed65eb4768a5da7dac8a00f9dbe10646954ba5107",
+      "size": 78568,
       "source": "qml/network/NetworkPopup.qml"
     },
     {
@@ -3486,8 +3486,8 @@
       "destination": "qml/reusables/display/WallpaperBlur.qml",
       "install": true,
       "mode": "0644",
-      "sha256": "a0d9a37d6c1e2e7f4cf0bba5f44d5831914dbc65deba16cdcdb1cd512d9d353c",
-      "size": 10799,
+      "sha256": "f86e65cec50a36314aa466eb780716526f99c1dc4df5de773ff8f458a9ba1057",
+      "size": 10393,
       "source": "qml/reusables/display/WallpaperBlur.qml"
     },
     {
