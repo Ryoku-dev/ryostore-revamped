@@ -54,88 +54,88 @@
       "destination": "bin/omarchy-agent",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-agent"
     },
     {
       "destination": "bin/omarchy-agent-account-add",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-agent-account-add"
     },
     {
       "destination": "bin/omarchy-agent-account-exec",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-agent-account-exec"
     },
     {
       "destination": "bin/omarchy-agent-account-home",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-agent-account-home"
     },
     {
       "destination": "bin/omarchy-agent-account-list",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-agent-account-list"
     },
     {
       "destination": "bin/omarchy-agent-account-mode",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-agent-account-mode"
     },
     {
       "destination": "bin/omarchy-agent-account-remove",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-agent-account-remove"
     },
     {
       "destination": "bin/omarchy-agent-account-rename",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-agent-account-rename"
     },
     {
       "destination": "bin/omarchy-agent-account-state",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-agent-account-state"
     },
     {
       "destination": "bin/omarchy-agent-account-use",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-agent-account-use"
     },
     {
       "destination": "bin/omarchy-agent-prompt",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-agent-prompt"
     },
     {
@@ -174,64 +174,64 @@
       "destination": "bin/omarchy-audio-input-mute",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-audio-input-mute"
     },
     {
       "destination": "bin/omarchy-audio-input-set-default",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-audio-input-set-default"
     },
     {
       "destination": "bin/omarchy-audio-output-set-default",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-audio-output-set-default"
     },
     {
       "destination": "bin/omarchy-audio-output-sink",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-audio-output-sink"
     },
     {
       "destination": "bin/omarchy-audio-output-switch",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-audio-output-switch"
     },
     {
       "destination": "bin/omarchy-audio-output-volume",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-audio-output-volume"
     },
     {
       "destination": "bin/omarchy-audio-sink-availability",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-audio-sink-availability"
     },
     {
       "destination": "bin/omarchy-audio-source-switch",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-audio-source-switch"
     },
     {
@@ -246,8 +246,8 @@
       "destination": "bin/omarchy-bar-text-color",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-bar-text-color"
     },
     {
@@ -286,32 +286,32 @@
       "destination": "bin/omarchy-brightness-display",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-brightness-display"
     },
     {
       "destination": "bin/omarchy-brightness-keyboard",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-brightness-keyboard"
     },
     {
       "destination": "bin/omarchy-capture-screenrecording",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-capture-screenrecording"
     },
     {
       "destination": "bin/omarchy-capture-screenshot",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-capture-screenshot"
     },
     {
@@ -342,48 +342,48 @@
       "destination": "bin/omarchy-cmd-missing",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-cmd-missing"
     },
     {
       "destination": "bin/omarchy-cmd-present",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-cmd-present"
     },
     {
       "destination": "bin/omarchy-default-agent",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-default-agent"
     },
     {
       "destination": "bin/omarchy-default-browser",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-default-browser"
     },
     {
       "destination": "bin/omarchy-default-editor",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-default-editor"
     },
     {
       "destination": "bin/omarchy-default-terminal",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-default-terminal"
     },
     {
@@ -398,8 +398,8 @@
       "destination": "bin/omarchy-display-text-size",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-display-text-size"
     },
     {
@@ -414,48 +414,48 @@
       "destination": "bin/omarchy-exec-argv",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-exec-argv"
     },
     {
       "destination": "bin/omarchy-file-select",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-file-select"
     },
     {
       "destination": "bin/omarchy-font-current",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-font-current"
     },
     {
       "destination": "bin/omarchy-font-list",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-font-list"
     },
     {
       "destination": "bin/omarchy-font-set",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-font-set"
     },
     {
       "destination": "bin/omarchy-glyph",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-glyph"
     },
     {
@@ -470,160 +470,160 @@
       "destination": "bin/omarchy-hw-laptop-closed",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-hw-laptop-closed"
     },
     {
       "destination": "bin/omarchy-image-selector",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-image-selector"
     },
     {
       "destination": "bin/omarchy-launch-browser",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-launch-browser"
     },
     {
       "destination": "bin/omarchy-launch-config-editor",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-launch-config-editor"
     },
     {
       "destination": "bin/omarchy-launch-editor",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-launch-editor"
     },
     {
       "destination": "bin/omarchy-launch-floating-terminal-with-presentation",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-launch-floating-terminal-with-presentation"
     },
     {
       "destination": "bin/omarchy-launch-or-focus",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-launch-or-focus"
     },
     {
       "destination": "bin/omarchy-launch-or-focus-tui",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-launch-or-focus-tui"
     },
     {
       "destination": "bin/omarchy-launch-or-focus-webapp",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-launch-or-focus-webapp"
     },
     {
       "destination": "bin/omarchy-launch-terminal",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-launch-terminal"
     },
     {
       "destination": "bin/omarchy-launch-tui",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-launch-tui"
     },
     {
       "destination": "bin/omarchy-launch-webapp",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-launch-webapp"
     },
     {
       "destination": "bin/omarchy-menu",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-menu"
     },
     {
       "destination": "bin/omarchy-menu-emoji",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-menu-emoji"
     },
     {
       "destination": "bin/omarchy-menu-emoji-insert",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-menu-emoji-insert"
     },
     {
       "destination": "bin/omarchy-menu-file",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-menu-file"
     },
     {
       "destination": "bin/omarchy-menu-images",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-menu-images"
     },
     {
       "destination": "bin/omarchy-menu-keybindings",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-menu-keybindings"
     },
     {
       "destination": "bin/omarchy-menu-plugin",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-menu-plugin"
     },
     {
       "destination": "bin/omarchy-menu-select",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-menu-select"
     },
     {
@@ -638,24 +638,24 @@
       "destination": "bin/omarchy-monitor-query",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-monitor-query"
     },
     {
       "destination": "bin/omarchy-monitor-scale",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-monitor-scale"
     },
     {
       "destination": "bin/omarchy-monitor-state",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-monitor-state"
     },
     {
@@ -702,32 +702,32 @@
       "destination": "bin/omarchy-notification-send",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-notification-send"
     },
     {
       "destination": "bin/omarchy-osd",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-osd"
     },
     {
       "destination": "bin/omarchy-pkg-missing",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-pkg-missing"
     },
     {
       "destination": "bin/omarchy-pkg-present",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-pkg-present"
     },
     {
@@ -814,24 +814,24 @@
       "destination": "bin/omarchy-powerprofiles-list",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-powerprofiles-list"
     },
     {
       "destination": "bin/omarchy-powerprofiles-set",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-powerprofiles-set"
     },
     {
       "destination": "bin/omarchy-refresh-shell",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-refresh-shell"
     },
     {
@@ -854,8 +854,8 @@
       "destination": "bin/omarchy-restart-shell",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-restart-shell"
     },
     {
@@ -870,56 +870,56 @@
       "destination": "bin/omarchy-shim",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-shim"
     },
     {
       "destination": "bin/omarchy-sudo-passwordless",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-sudo-passwordless"
     },
     {
       "destination": "bin/omarchy-system-lock",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-system-lock"
     },
     {
       "destination": "bin/omarchy-system-logout",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-system-logout"
     },
     {
       "destination": "bin/omarchy-system-reboot",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-system-reboot"
     },
     {
       "destination": "bin/omarchy-system-shutdown",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-system-shutdown"
     },
     {
       "destination": "bin/omarchy-system-sleep-lock",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-system-sleep-lock"
     },
     {
@@ -934,8 +934,8 @@
       "destination": "bin/omarchy-system-wake",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-system-wake"
     },
     {
@@ -998,88 +998,88 @@
       "destination": "bin/omarchy-toggle-bar",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-toggle-bar"
     },
     {
       "destination": "bin/omarchy-toggle-idle",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-toggle-idle"
     },
     {
       "destination": "bin/omarchy-toggle-nightlight",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-toggle-nightlight"
     },
     {
       "destination": "bin/omarchy-toggle-notification-silencing",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-toggle-notification-silencing"
     },
     {
       "destination": "bin/omarchy-toggle-screensaver",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-toggle-screensaver"
     },
     {
       "destination": "bin/omarchy-toggle-touchpad",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-toggle-touchpad"
     },
     {
       "destination": "bin/omarchy-update",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-update"
     },
     {
       "destination": "bin/omarchy-update-available",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-update-available"
     },
     {
       "destination": "bin/omarchy-voxtype-config",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-voxtype-config"
     },
     {
       "destination": "bin/omarchy-voxtype-status",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-voxtype-status"
     },
     {
       "destination": "bin/omarchy-weather-icon",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-weather-icon"
     },
     {
@@ -1094,8 +1094,8 @@
       "destination": "bin/omarchy-weather-status",
       "install": true,
       "mode": "0755",
-      "sha256": "47292f2a41590c11c9829a23a75e03dd6f5d5e7c9d8ad679a11ca820a662900a",
-      "size": 15447,
+      "sha256": "b4ea3dacbdb984b13db7def43b872a14bed3f20364aeb8afe720b30297e781fa",
+      "size": 15622,
       "source": "bin/omarchy-weather-status"
     },
     {
@@ -2702,8 +2702,8 @@
       "destination": "qml/plugins/panels/network/Model.js",
       "install": true,
       "mode": "0644",
-      "sha256": "97f3ec9046243f8634270cdaaba786e68977e3c742ceafac32d23e3529fec042",
-      "size": 14484,
+      "sha256": "c3760a5ce2b29849c82c3cae91e4a01e7fe30185766a63f35f9dd17b6588cd6e",
+      "size": 14683,
       "source": "qml/plugins/panels/network/Model.js"
     },
     {
