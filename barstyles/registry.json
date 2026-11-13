@@ -39,7 +39,7 @@
       "description": "Shima brings the iRiS, Material ii and Waffle panel families, widgets, panels and visual effects into Ryoku.",
       "id": "iris",
       "manifest": "manifest.json",
-      "manifestSha256": "331807fd0ee38468a91207ab7df041490f50ae1e41a3934f20190c2ae14f907f",
+      "manifestSha256": "ca9c253927b7abd6246d897414724d3393318537fcc2f5d3ef9bf1cf74cbbe20",
       "metadata": {
         "resourceDelta": {
           "cpuPct": 0.05,
@@ -155,7 +155,7 @@
       "description": "Nomarchy brings Omarchy's configurable bar, panels, menus, themes, notifications, OSD and plugin host to Ryoku's compositor-neutral shell platform.",
       "id": "nomarchy",
       "manifest": "manifest.json",
-      "manifestSha256": "8428ac602e0c0e82c7663d673526b11c6bc68856d2adf524b1594f6c6a1d5c1b",
+      "manifestSha256": "2c16653d6ceab1b624ff384bcf295edc64d17ffec52cec70650cde191e8ca281",
       "metadata": {
         "resourceDelta": {
           "cpuPct": 0.03,
@@ -253,7 +253,7 @@
       "description": "Quickshell Rise's configurable horizontal bar, with five forms, draggable widgets, panels, plugin slots, and its own settings window on Ryoku's platform services.",
       "id": "qsbar",
       "manifest": "manifest.json",
-      "manifestSha256": "7fb4d08f05bc6da7ae918ff5f134c715d5d006f17940ba5b1abc722184e955f5",
+      "manifestSha256": "26761e842663aeaf8dd002f43f3962c3d6534057ccebec7331b2480ea35e3b1c",
       "metadata": {
         "resourceDelta": {
           "cpuPct": 0.75,

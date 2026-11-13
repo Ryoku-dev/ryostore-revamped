@@ -14,8 +14,8 @@
       "destination": "README.md",
       "install": true,
       "mode": "0644",
-      "sha256": "22a17d953e6109b33c145db9777a4c4441a0c37b288bc18343123341fb15c42b",
-      "size": 5465,
+      "sha256": "7ee3c344401c6c24b195bee3ecfd796e9aad36e5de66aec8554adbad10946f9f",
+      "size": 5920,
       "source": "README.md"
     },
     {
@@ -46,8 +46,8 @@
       "destination": "qml/BarSlot.qml",
       "install": true,
       "mode": "0644",
-      "sha256": "cb8011510cf392d095c8002db5576abbdb434788f97abe040b2217d982403186",
-      "size": 121663,
+      "sha256": "80b8bbab7dbcd6a1451bba73584261f93968260c85b0f36dd8d2c3992c762186",
+      "size": 121706,
       "source": "qml/BarSlot.qml"
     },
     {
@@ -86,8 +86,8 @@
       "destination": "qml/Theme.qml",
       "install": true,
       "mode": "0644",
-      "sha256": "05172a29fc279c1ce1e26481857f639047a3650a99eeb767fd2ff47b0312c84c",
-      "size": 164661,
+      "sha256": "3360fe2002a34c6254a7023ec2bafd2b66aeb75c82f0d70d8d2258ff48f08f55",
+      "size": 164869,
       "source": "qml/Theme.qml"
     },
     {
@@ -366,8 +366,8 @@
       "destination": "qml/controlcenter/routes/IdentityRoute.qml",
       "install": true,
       "mode": "0644",
-      "sha256": "7ee7eefa83c290f299f1cec7200c1a915ebd78f4eaedf4f461e876ebcbc86c15",
-      "size": 16429,
+      "sha256": "65626655d94a76a3d4220993a8423f3c0454bd6392e10ce3ee25d0d421d725d6",
+      "size": 17505,
       "source": "qml/controlcenter/routes/IdentityRoute.qml"
     },
     {
@@ -438,8 +438,8 @@
       "destination": "qml/core/widgets.json",
       "install": true,
       "mode": "0644",
-      "sha256": "e06bc7d54ac0974dd4087f47cd94e77cbebd5976b5246c5d4dbcd58ea1d7d3ea",
-      "size": 2838,
+      "sha256": "d39e58d3a950beb7126b46b7d8156d8fb138e81424435d9cc52d43e2bbe48042",
+      "size": 3223,
       "source": "qml/core/widgets.json"
     },
     {
@@ -811,11 +811,19 @@
       "source": "qml/modules/WeatherWidget.qml"
     },
     {
+      "destination": "qml/modules/WorkspaceIsolation.js",
+      "install": true,
+      "mode": "0644",
+      "sha256": "2ca789d080ecda012bcce20141808a05640f6096f2a8fecc92cd96c5e9c48399",
+      "size": 3037,
+      "source": "qml/modules/WorkspaceIsolation.js"
+    },
+    {
       "destination": "qml/modules/WorkspaceWidget.qml",
       "install": true,
       "mode": "0644",
-      "sha256": "3f48d586f4f65b67bb88acb4de9b7ec79d718fd9c2d60f85da28820804cb5e0d",
-      "size": 27182,
+      "sha256": "0e183e1cc5524bf838880edc848b6339088944ec0fe10ecd6c42f499ee9da9b9",
+      "size": 28158,
       "source": "qml/modules/WorkspaceWidget.qml"
     },
     {
@@ -966,16 +974,16 @@
       "destination": "qml/panels/NetworkManagerAdapter.qml",
       "install": true,
       "mode": "0644",
-      "sha256": "ed9bb969f032fbc09d32b19f0c8f7c0c2a6756b0512005fccdf9bcfda8b24776",
-      "size": 13699,
+      "sha256": "9d9f3cc2c9a4167fa79716ab3c1870c95e777c50f14244b5409c14f23fcc7374",
+      "size": 14836,
       "source": "qml/panels/NetworkManagerAdapter.qml"
     },
     {
       "destination": "qml/panels/NetworkPanel.qml",
       "install": true,
       "mode": "0644",
-      "sha256": "a7ff723986d740bd97be2eff8e01da93b8b66e6f5f6db4ca0835da6d00549551",
-      "size": 76172,
+      "sha256": "1805358dd54f4069eed8542389bea0a8b8d595f851498a6942754ae823306e47",
+      "size": 80258,
       "source": "qml/panels/NetworkPanel.qml"
     },
     {
@@ -1054,8 +1062,8 @@
       "destination": "qml/panels/WorkspacePanel.qml",
       "install": true,
       "mode": "0644",
-      "sha256": "bb0f9eb1b678a04c0ba017e1326432cb56f8d67d6e9fb5f22c4bbef2e5362342",
-      "size": 6533,
+      "sha256": "dc2830277add3cc49b0f36abdc80ecaab63d9b9bc8f01d923d6abd4191e36512",
+      "size": 7160,
       "source": "qml/panels/WorkspacePanel.qml"
     },
     {
@@ -1105,6 +1113,14 @@
       "sha256": "7fecf255b0315aacc21c990218f0a1b65b94ad56577effa1a4daa502a02bdea3",
       "size": 50516,
       "source": "qml/shaders/stream.frag.qsb"
+    },
+    {
+      "destination": "tests/WorkspaceIsolation.test.mjs",
+      "install": true,
+      "mode": "0644",
+      "sha256": "dff2ee9f6985c06fa2b5d2379e32d729fe6751fec2e334f7aca411cab5dce8ef",
+      "size": 4194,
+      "source": "tests/WorkspaceIsolation.test.mjs"
     },
     {
       "destination": "tests/size-probe.qml",

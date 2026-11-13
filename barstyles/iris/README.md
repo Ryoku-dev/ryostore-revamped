@@ -15,6 +15,10 @@ The item includes the iRiS, Material ii and Waffle panel families, upstream widg
 
 The installed item remains packed while unused. Ryoku unpacks it only while Shima or one of its contributions is selected, links `qml/inir` into the active module root, and restarts the shell after a committed switch.
 
+## Built-in modules
+
+`qml/inir/defaults/widgets/` holds modules Shima ships. A manifest with `"iris": {"builtin": true}` shows under **Island > Desktop page > Your modules** without installing anything; a user copy in `~/.config/inir/widgets/<id>/` takes precedence. The AI usage dashboard (`ai-usage/`) is the first; [its README](qml/inir/defaults/widgets/ai-usage/README.md) covers the collectors, what they read and when they run.
+
 ## Runtime hooks
 
 `bin/runtime-wanted` exits successfully only when `RYOKU_SHIMA_UPSTREAM=1` and a niri session is available. Otherwise Ryoku loads the integrated `qml/Scene.qml` bar style.
