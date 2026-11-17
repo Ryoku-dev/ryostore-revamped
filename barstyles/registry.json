@@ -34,6 +34,40 @@
       "version": "1.0.2"
     },
     {
+      "accent": "#0a84ff",
+      "author": "Alan-Betty, eduardoaugustolb",
+      "description": "The quickshell-DynamicIsland shell ported to Ryoku: a glass island that grows for live activities (music, timer, recording), draws the notification banners and Notification Center over the shell's daemon, and morphs into a Spotlight-style app launcher. Full settings window included.",
+      "id": "dynamic-island",
+      "manifest": "manifest.json",
+      "manifestSha256": "05797924d57b1b33cafa1b83db92e9bd97bf339511770b4a28d74e44a6866478",
+      "metadata": {
+        "resourceDelta": {
+          "cpuPct": 0.22,
+          "gpuMB": 42.7,
+          "launchesPerMin": 78.1,
+          "pssMB": 24.4,
+          "wakeupsPerSec": 21.2
+        },
+        "resourceTier": "heavy"
+      },
+      "name": "Dynamic Island",
+      "path": "barstyles/dynamic-island",
+      "preview": "preview.webp",
+      "screenshots": [],
+      "summary": "Liquid-glass dynamic island",
+      "surface": "#0d0d10",
+      "tags": [
+        "top",
+        "island",
+        "glass",
+        "notifications",
+        "launcher",
+        "media"
+      ],
+      "upstream": "https://github.com/Alan-Betty/quickshell-DynamicIsland",
+      "version": "1.0.0"
+    },
+    {
       "accent": "#91b4df",
       "author": "snowarch and iNiR contributors, Ryoku Team",
       "description": "Shima brings the iRiS, Material ii and Waffle panel families, widgets, panels and visual effects into Ryoku.",
