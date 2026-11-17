@@ -58,6 +58,12 @@ to obtain a fresh account response: Claude OAuth reads are spaced five minutes
 apart (sooner only after a limit resets) and Codex account-limit reads two.
 Stale captures remain marked as last known.
 
+Codex session labels follow its saved names, including renames. Account-limit
+caches are tied to the current login, while local history remains available
+after an account switch. The collectors ignore future-dated usage and merge
+OpenCode's available stores without counting mirrored messages twice. Session
+activity expires when its cache is stale instead of keeping a running badge.
+
 ## API Value and storage
 
 API Value estimates the local workload at supported model rates; it is not a

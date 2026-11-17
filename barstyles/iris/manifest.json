@@ -102,7 +102,7 @@
       "destination": "item.toml",
       "install": true,
       "mode": "0644",
-      "sha256": "935921b8b7c4c8a1d342993c776fa45fcc0424071cdecf9291407c4a1e6f7182",
+      "sha256": "2e512390a96cd394f9a65a79fd657dc2ced89ed2b8d5e042e8953be19c7580ed",
       "size": 1471,
       "source": "item.toml"
     },
@@ -2894,16 +2894,16 @@
       "destination": "qml/inir/defaults/widgets/ai-usage/README.md",
       "install": true,
       "mode": "0644",
-      "sha256": "48ad964820a13d2b0a9c8978c328831506957d59166e7bac03bb5453d159eadd",
-      "size": 5119,
+      "sha256": "2663a3685d539e71348943e739848c410404b1fcd97dfc1e4ba3928a399c9a24",
+      "size": 5505,
       "source": "qml/inir/defaults/widgets/ai-usage/README.md"
     },
     {
       "destination": "qml/inir/defaults/widgets/ai-usage/UsageModel.qml",
       "install": true,
       "mode": "0644",
-      "sha256": "8cb1b516ea454e0c6ffbb6108d075752ce6c586994a95c58ac39510b0ea6f7a4",
-      "size": 16814,
+      "sha256": "af4331a78e1457b6b5f917045abfd36de7917b84618e7aa1eed485e8992e00a7",
+      "size": 17219,
       "source": "qml/inir/defaults/widgets/ai-usage/UsageModel.qml"
     },
     {
@@ -2926,24 +2926,24 @@
       "destination": "qml/inir/defaults/widgets/ai-usage/bin/claude-spending.py",
       "install": true,
       "mode": "0644",
-      "sha256": "fe499aa0b5504453bc8cc40cb5e211db6d551b829a319fba27c6ba68fe1663c8",
-      "size": 13450,
+      "sha256": "d4dc046e6b667021a62c356038ca90733d2829685e93c4d5984b92c02f968565",
+      "size": 13617,
       "source": "qml/inir/defaults/widgets/ai-usage/bin/claude-spending.py"
     },
     {
       "destination": "qml/inir/defaults/widgets/ai-usage/bin/claude-usage",
       "install": true,
       "mode": "0755",
-      "sha256": "db5429ea51ad0cca8150f6e0f912033a1f2685d0d2269181da9ac73b471b9f97",
-      "size": 11545,
+      "sha256": "27a0f3bed7693fd3809ad413d81090f35c3de3bb3c551cf9865463aa252218dd",
+      "size": 11560,
       "source": "qml/inir/defaults/widgets/ai-usage/bin/claude-usage"
     },
     {
       "destination": "qml/inir/defaults/widgets/ai-usage/bin/codex-usage",
       "install": true,
       "mode": "0755",
-      "sha256": "4f87bea4d7f85dc735ae210b1423b7f4a2647fd32bd1be548c934f6f986062d3",
-      "size": 67803,
+      "sha256": "d0f271e84b9f866df04e473f8a561ca4b860c620449f7594a7d8af0b9971b9f8",
+      "size": 70852,
       "source": "qml/inir/defaults/widgets/ai-usage/bin/codex-usage"
     },
     {
@@ -2974,8 +2974,8 @@
       "destination": "qml/inir/defaults/widgets/ai-usage/bin/opencode-usage",
       "install": true,
       "mode": "0755",
-      "sha256": "c20c5893e73ebc0f42cdd342e0e8536fcaf84e47b5229d5b63bfe5973a0571e8",
-      "size": 35470,
+      "sha256": "44b211f6c09ce89b28988aba139ca13334b6eac7ad14c6a06797d9c81b3e8133",
+      "size": 38551,
       "source": "qml/inir/defaults/widgets/ai-usage/bin/opencode-usage"
     },
     {
@@ -3070,8 +3070,8 @@
       "destination": "qml/inir/defaults/widgets/ai-usage/components/AiUsageNowCard.qml",
       "install": true,
       "mode": "0644",
-      "sha256": "58b6ec76fed6f5e96ce9db9258f07d24ab240042df58aab9e0c7daedc9604f91",
-      "size": 8367,
+      "sha256": "9b4668b9eeb855968cb23ca6d4a87e433649f38654cca26df6411eaf08c1dcb0",
+      "size": 8462,
       "source": "qml/inir/defaults/widgets/ai-usage/components/AiUsageNowCard.qml"
     },
     {
@@ -8659,6 +8659,14 @@
       "source": "qml/launcher/StandaloneSurface.qml"
     },
     {
+      "destination": "tests/test_ai_usage_accounting.py",
+      "install": true,
+      "mode": "0644",
+      "sha256": "1ec71ee0682f149679710e541018fdc2743485c4253e7df50884b6b4d64d5912",
+      "size": 3726,
+      "source": "tests/test_ai_usage_accounting.py"
+    },
+    {
       "destination": "tests/test_shima_pinned_source.py",
       "install": true,
       "mode": "0644",
@@ -8986,5 +8994,5 @@
       "ipc": "iris"
     }
   },
-  "version": "2.33.0"
+  "version": "2.33.1"
 }
