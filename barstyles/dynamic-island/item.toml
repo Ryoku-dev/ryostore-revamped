@@ -1,0 +1,21 @@
+#:schema ../../schema/item.schema.json
+
+id = "dynamic-island"
+name = "Dynamic Island"
+version = "1.0.0"
+summary = "Liquid-glass dynamic island"
+description = "The quickshell-DynamicIsland shell ported to Ryoku: a glass island that grows for live activities (music, timer, recording), draws the notification banners and Notification Center over the shell's daemon, and morphs into a Spotlight-style app launcher. Full settings window included."
+license = "MIT"
+authors = ["Alan-Betty", "eduardoaugustolb"]
+tags = ["top", "island", "glass", "notifications", "launcher", "media"]
+upstream = "https://github.com/Alan-Betty/quickshell-DynamicIsland"
+accent = "#0a84ff"
+surface = "#0d0d10"
+preview = "preview.webp"
+official = false
+
+[shell]
+entry = "qml/Scene.qml"
+frameHost = "each"
+owns = []
+modules = []
