@@ -22,15 +22,15 @@
       "destination": "README.md",
       "install": true,
       "mode": "0644",
-      "sha256": "f255dc6272347b6d74f1487cb74033b12c7756c926e552f55b66d4fb35402805",
-      "size": 4053,
+      "sha256": "a6fd6abd061ec2408f4dce025462807718bb5fb3b1f5f29feab8e75daff51f43",
+      "size": 4125,
       "source": "README.md"
     },
     {
       "destination": "item.toml",
       "install": true,
       "mode": "0644",
-      "sha256": "9ba58e0b9ee7dc2aba8e5d95bd2b8077ed9f17a7024d953e24729fc2100ecfc8",
+      "sha256": "9c1ff0f3bae6f93e399cd762ced6341073a0cc9798d4de0751addd4e5c1887da",
       "size": 1320,
       "source": "item.toml"
     },
@@ -3894,8 +3894,8 @@
       "destination": "qml/singletons/system/Updater.qml",
       "install": true,
       "mode": "0644",
-      "sha256": "c4e1750e2ee096418a3753ee10bb92a33c3d7508d03e40fe1ebb632361609776",
-      "size": 1327,
+      "sha256": "53becdc1ca2777bcefca33dcc7f2b5ef7d5437cf1ba77e7f127a67cf5a293cd1",
+      "size": 1330,
       "source": "qml/singletons/system/Updater.qml"
     },
     {
@@ -4504,5 +4504,5 @@
       "ipc": "main"
     }
   },
-  "version": "1.0.3"
+  "version": "1.0.4"
 }

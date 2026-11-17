@@ -1,6 +1,6 @@
 id = "qsbar"
 name = "QS Bar"
-version = "1.0.0"
+version = "1.0.1"
 summary = "Hancore's adaptable top bar"
 description = "Quickshell Rise's configurable horizontal bar, with five forms, draggable widgets, panels, plugin slots, and its own settings window on Ryoku's platform services."
 license = "MIT"

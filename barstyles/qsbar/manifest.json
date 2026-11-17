@@ -14,15 +14,15 @@
       "destination": "README.md",
       "install": true,
       "mode": "0644",
-      "sha256": "7ee3c344401c6c24b195bee3ecfd796e9aad36e5de66aec8554adbad10946f9f",
-      "size": 5920,
+      "sha256": "4356c7aa23b1725255bb9c829487e2d090942aa6a95b594a15c03063fb98a807",
+      "size": 6137,
       "source": "README.md"
     },
     {
       "destination": "item.toml",
       "install": true,
       "mode": "0644",
-      "sha256": "e319c1eed5d41e553f98d6c608dc33fb896a219061818632d095a010b6377743",
+      "sha256": "70a2a4236bca280f72c8965d431edfb179afeb4736320adbeffaba7aa6ca6aec",
       "size": 688,
       "source": "item.toml"
     },
@@ -782,8 +782,8 @@
       "destination": "qml/modules/UpdateWidget.qml",
       "install": true,
       "mode": "0644",
-      "sha256": "3b22cf764ac6d1f516e821e55fe1275ee6119ed4fa8e10a8d45d0ad241a339f4",
-      "size": 3988,
+      "sha256": "07a23d57077747f259b88dece7d09ed227bb89ced61659913e8852c0d6c21d01",
+      "size": 4161,
       "source": "qml/modules/UpdateWidget.qml"
     },
     {
@@ -1164,5 +1164,5 @@
       "ipc": "qsbar"
     }
   },
-  "version": "1.0.0"
+  "version": "1.0.1"
 }

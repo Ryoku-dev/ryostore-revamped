@@ -34,6 +34,8 @@ QS Bar reads its namespace from `shell.json` through `shell.services.Config`. Ev
 
 The bar reports its live `top` or `bottom` edge through `Shells.activeBarEdge`, so Ryoku's dock can take the other edge.
 
+The update widget follows the system's update notification choice. It labels Ryoku commits separately from system packages; clicking a system-package notification opens Updates for review without starting an update.
+
 With `qsbar.isolateMonitors` on (Settings > Identity > Isolate, or `qs -c shell ipc call qsbar set workspaces isolateMonitors true`), each bar shows only the workspaces on its own output, resolves a click to that output's workspace by id, and dims its active marker to 72% while another output holds focus; the workspace popup filters the same way. `qml/modules/WorkspaceIsolation.js` holds the rules and `tests/WorkspaceIsolation.test.mjs` covers them.
 
 ## IPC

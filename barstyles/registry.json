@@ -253,17 +253,7 @@
       "description": "Quickshell Rise's configurable horizontal bar, with five forms, draggable widgets, panels, plugin slots, and its own settings window on Ryoku's platform services.",
       "id": "qsbar",
       "manifest": "manifest.json",
-      "manifestSha256": "26761e842663aeaf8dd002f43f3962c3d6534057ccebec7331b2480ea35e3b1c",
-      "metadata": {
-        "resourceDelta": {
-          "cpuPct": 0.75,
-          "gpuMB": 43.7,
-          "launchesPerMin": 555.9,
-          "pssMB": 39.2,
-          "wakeupsPerSec": 75.8
-        },
-        "resourceTier": "heavy"
-      },
+      "manifestSha256": "04a574b9cb31bfe27086da13caffb8b05c8826106129d56b3931cdaa1003bff6",
       "name": "QS Bar",
       "official": true,
       "path": "barstyles/qsbar",
@@ -278,7 +268,7 @@
         "panels"
       ],
       "upstream": "https://github.com/HANCORE-linux/quickshell-dots",
-      "version": "1.0.0"
+      "version": "1.0.1"
     },
     {
       "accent": "#5b9bff",
