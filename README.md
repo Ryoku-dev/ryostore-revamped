@@ -2,7 +2,7 @@
 
 The catalogue Ryoku 2.0 installs subshells, bar styles and official account profiles from. Every item is one folder with its source, metadata, licence, preview, tests and a generated manifest. Ryoku itself ships only the Orpheus and Kairos subshells; everything else lives here.
 
-New here? Read [CONTRIBUTING.md](CONTRIBUTING.md), then [docs/items.md](docs/items.md).
+New here? Read [CONTRIBUTING.md](CONTRIBUTING.md), then [docs/items.md](docs/items.md). To run a store of your own that Ryoku users can add next to this one, read [docs/host-a-store.md](docs/host-a-store.md).
 
 ## Map
 
@@ -22,7 +22,7 @@ New here? Read [CONTRIBUTING.md](CONTRIBUTING.md), then [docs/items.md](docs/ite
 | `tools/platform.json` | the QML modules and `shell.services` names Ryoku provides to items |
 | `measurements/` | one resource record per subshell and bar style; its tier and delta go into the registry ([items.md](docs/items.md#resource-measurements)) |
 | `tests/` | tests for the tooling |
-| `docs/` | [items.md](docs/items.md) (`item.toml` and folder layout), [shells.md](docs/shells.md) (writing subshells and bar styles), [profiles.md](docs/profiles.md), [paths.md](docs/paths.md), [review.md](docs/review.md) |
+| `docs/` | [items.md](docs/items.md) (`item.toml` and folder layout), [shells.md](docs/shells.md) (writing subshells and bar styles), [profiles.md](docs/profiles.md), [paths.md](docs/paths.md), [review.md](docs/review.md), [host-a-store.md](docs/host-a-store.md) (hosting a store users can add) |
 | `.github/workflows/check.yml` | the one CI check; item-owned workflows are named `<id>-*.yml` |
 
 ## Paths
