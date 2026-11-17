@@ -19,6 +19,10 @@ The installed item remains packed while unused. Ryoku unpacks it only while Shim
 
 `qml/inir/defaults/widgets/` holds modules Shima ships. A manifest with `"iris": {"builtin": true}` shows under **Island > Desktop page > Your modules** without installing anything; a user copy in `~/.config/inir/widgets/<id>/` takes precedence. The AI usage dashboard (`ai-usage/`) is the first; [its README](qml/inir/defaults/widgets/ai-usage/README.md) covers the collectors, what they read and when they run.
 
+## Weather
+
+With coordinates available, the integrated Shima panel reads Open-Meteo first, like Ryoku's launcher. It uses wttr.in only without coordinates or after Open-Meteo fails. Temperatures round to whole degrees, visibility uses kilometres or miles, and hourly forecasts follow the location's clock.
+
 ## Runtime hooks
 
 `bin/runtime-wanted` exits successfully only when `RYOKU_SHIMA_UPSTREAM=1` and a niri session is available. Otherwise Ryoku loads the integrated `qml/Scene.qml` bar style.

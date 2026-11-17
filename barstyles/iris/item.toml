@@ -1,6 +1,6 @@
 id = "iris"
 name = "Shima"
-version = "2.33.1"
+version = "2.33.2"
 summary = "iNiR's three panel families integrated with Ryoku"
 description = "Shima brings the iRiS, Material ii and Waffle panel families, widgets, panels and visual effects into Ryoku."
 license = "GPL-3.0-only"

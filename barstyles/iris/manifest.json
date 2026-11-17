@@ -30,8 +30,8 @@
       "destination": "README.md",
       "install": true,
       "mode": "0644",
-      "sha256": "0dafb312ceffd97de3f26b0f01ef69650ce68e0d26e93e322b454de372cc0ffd",
-      "size": 5667,
+      "sha256": "8e4c4eee696860669cea52377586aa10581250cb8ba4e08bba2c1d368bb7f7b4",
+      "size": 5974,
       "source": "README.md"
     },
     {
@@ -102,7 +102,7 @@
       "destination": "item.toml",
       "install": true,
       "mode": "0644",
-      "sha256": "2e512390a96cd394f9a65a79fd657dc2ced89ed2b8d5e042e8953be19c7580ed",
+      "sha256": "e972c58c90eed080f6978f68fd669b9dc2e282debcde43c8bd8acdab0bf50985",
       "size": 1471,
       "source": "item.toml"
     },
@@ -8414,8 +8414,8 @@
       "destination": "qml/inir/services/Weather.qml",
       "install": true,
       "mode": "0644",
-      "sha256": "7f3feed83cc7b373894ada8f4c31250358f88d26effdaf8786c9a497be47cb80",
-      "size": 48995,
+      "sha256": "e36b335500d0dac197d863ec5de1402d9f1e156d6e5d1a85abbd5b5f5c1b95a8",
+      "size": 49196,
       "source": "qml/inir/services/Weather.qml"
     },
     {
@@ -8673,6 +8673,14 @@
       "sha256": "37ad225d55cd9f1a31bce017c4bdc1399fe5d8d8767b283b58cb0519bdaf1991",
       "size": 5389,
       "source": "tests/test_shima_pinned_source.py"
+    },
+    {
+      "destination": "tests/test_weather.py",
+      "install": true,
+      "mode": "0644",
+      "sha256": "53952d1e0fd795984f3ae6b8f22771b27471b1cf68cd73e85ca850ce47ddcd87",
+      "size": 7875,
+      "source": "tests/test_weather.py"
     }
   ],
   "id": "iris",
@@ -8994,5 +9002,5 @@
       "ipc": "iris"
     }
   },
-  "version": "2.33.1"
+  "version": "2.33.2"
 }

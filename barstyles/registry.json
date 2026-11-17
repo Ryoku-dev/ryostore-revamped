@@ -39,14 +39,14 @@
       "description": "Shima brings the iRiS, Material ii and Waffle panel families, widgets, panels and visual effects into Ryoku.",
       "id": "iris",
       "manifest": "manifest.json",
-      "manifestSha256": "de68127fad6010cfe2c1a0ffa2b73ce94fdd208e797386218f91f0b355f2f0e3",
+      "manifestSha256": "91ee7c7245102210b1dba10d53c3ccc50b34166f98b3ec608ee59a078451aeb3",
       "metadata": {
         "resourceDelta": {
           "cpuPct": 0.03,
-          "gpuMB": 37.2,
-          "launchesPerMin": 66.0,
-          "pssMB": 114.8,
-          "wakeupsPerSec": -0.6
+          "gpuMB": 40.8,
+          "launchesPerMin": 71.0,
+          "pssMB": 99.2,
+          "wakeupsPerSec": 2.8
         },
         "resourceTier": "heavy"
       },
@@ -81,7 +81,7 @@
         "visualizer"
       ],
       "upstream": "https://github.com/snowarch/iNiR",
-      "version": "2.33.1"
+      "version": "2.33.2"
     },
     {
       "accent": "#c74637",

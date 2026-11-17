@@ -2,30 +2,30 @@
   "absolute": {
     "baseline": {
       "cpuPct": 0.2,
-      "gpuMB": 145.9,
-      "launchesPerMin": 359.9,
+      "gpuMB": 144.3,
+      "launchesPerMin": 360.0,
       "processes": 1,
-      "pssMB": 209.8,
-      "unseenPidsPerMin": 25.0,
-      "wakeupsPerSec": 15.2
+      "pssMB": 232.3,
+      "unseenPidsPerMin": 16.0,
+      "wakeupsPerSec": 12.1
     },
     "item": {
       "cpuPct": 0.233,
-      "gpuMB": 183.1,
-      "launchesPerMin": 425.9,
+      "gpuMB": 185.1,
+      "launchesPerMin": 431.0,
       "processes": 3,
-      "pssMB": 324.6,
-      "unseenPidsPerMin": 67.0,
-      "wakeupsPerSec": 14.6
+      "pssMB": 331.5,
+      "unseenPidsPerMin": 55.0,
+      "wakeupsPerSec": 14.9
     }
   },
   "baseline": "orpheus",
   "delta": {
     "cpuPct": 0.03,
-    "gpuMB": 37.2,
-    "launchesPerMin": 66.0,
-    "pssMB": 114.8,
-    "wakeupsPerSec": -0.6
+    "gpuMB": 40.8,
+    "launchesPerMin": 71.0,
+    "pssMB": 99.2,
+    "wakeupsPerSec": 2.8
   },
   "id": "iris",
   "leftoverProcesses": [],
@@ -36,10 +36,10 @@
     ],
     "scale": 1.0
   },
-  "measuredAt": "2026-11-17T05:54:33-05:00",
+  "measuredAt": "2026-11-17T07:21:21-05:00",
   "ryoku": "0b942a151-qml+hyperion-dev-runtime-20261117",
   "tier": "heavy",
-  "version": "2.33.1",
+  "version": "2.33.2",
   "window": {
     "lingerSeconds": 10,
     "sampleSeconds": 60,
