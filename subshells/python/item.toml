@@ -1,6 +1,6 @@
 id = "python"
 name = "Python"
-version = "1.0.1"
+version = "1.0.2"
 summary = "Serpantinum's complete shell look, adapted for Ryoku"
 description = "Python brings Serpantinum's bars, panels, settings, launcher, dock and desktop faces to Ryoku while using Ryoku's compositor and system services."
 license = "AGPL-3.0-or-later"

@@ -58,7 +58,7 @@ PanelWindow {
         let candidates = [name];
         if (name.endsWith("-symbolic")) candidates.push(name.substring(0, name.length - "-symbolic".length));
         for (let i = 0; i < candidates.length; i++) {
-            let resolved = Quickshell.iconPath(candidates[i], true);
+            let resolved = Ryoku.Icons.path(candidates[i], true);
             if (resolved && resolved.length > 0) return resolved.startsWith("/") ? "file://" + resolved : resolved;
         }
         return "";

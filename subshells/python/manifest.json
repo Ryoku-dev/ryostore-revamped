@@ -22,15 +22,15 @@
       "destination": "README.md",
       "install": true,
       "mode": "0644",
-      "sha256": "69605f6db57277f212fa25ea25e6e35a373d5917081165264ac152f89afa4b6e",
-      "size": 3910,
+      "sha256": "4ed5aaa35455b8d83c653993dca242377959bc605519c373b9203e87a13d3147",
+      "size": 3977,
       "source": "README.md"
     },
     {
       "destination": "item.toml",
       "install": true,
       "mode": "0644",
-      "sha256": "6471b7b8237514fb779c569929e30e381c0138c3ed52a5e02bca4ffc3952c146",
+      "sha256": "53f806eb657c77bc56347e50f144203a3976ad4f8e5c1b121d9d02cd3bde33ac",
       "size": 1320,
       "source": "item.toml"
     },
@@ -2686,8 +2686,8 @@
       "destination": "qml/guide/wellbeing/WellbeingBottomPanel.qml",
       "install": true,
       "mode": "0644",
-      "sha256": "69b9332b33e91317cd4aabf20619740db6da2820254a123c3933691eb4f29208",
-      "size": 14541,
+      "sha256": "4cbddd2c6688e23c5c9513fd799ac18f81f8bac42c3b52b3796d7acbfc753598",
+      "size": 14540,
       "source": "qml/guide/wellbeing/WellbeingBottomPanel.qml"
     },
     {
@@ -2702,16 +2702,16 @@
       "destination": "qml/guide/wellbeing/WellbeingHeader.qml",
       "install": true,
       "mode": "0644",
-      "sha256": "7649299f539f4cbf3c2b37973a511eb8342b0381142ba324a790ce9ad5050823",
-      "size": 6547,
+      "sha256": "a86e35ff22bbe3ec31e17673fb6e078877196fa07ae7bffd15fa217deab0bfde",
+      "size": 6496,
       "source": "qml/guide/wellbeing/WellbeingHeader.qml"
     },
     {
       "destination": "qml/guide/wellbeing/WellbeingLimitOverlay.qml",
       "install": true,
       "mode": "0644",
-      "sha256": "ed9aab7fef8b5d044a8afc284cbeccf393f082de7bf07f9ed22635f073e12095",
-      "size": 7490,
+      "sha256": "a7a91b1767f6f2f2f2528bda78ac84eb4582b8838c5168c62605dac5cb018594",
+      "size": 7489,
       "source": "qml/guide/wellbeing/WellbeingLimitOverlay.qml"
     },
     {
@@ -2742,8 +2742,8 @@
       "destination": "qml/guide/wellbeing/WellbeingState.qml",
       "install": true,
       "mode": "0644",
-      "sha256": "0a4f527ce8e8a4a71c179cd30c376b5870d4bef02ed503ce5095a26a96777934",
-      "size": 22289,
+      "sha256": "2ae93fe50eb67f8cf0ae8d3a953952a4c9efea62036d8699bd724dc62e2bd1fd",
+      "size": 22288,
       "source": "qml/guide/wellbeing/WellbeingState.qml"
     },
     {
@@ -2766,8 +2766,8 @@
       "destination": "qml/guide/wellbeing/WellbeingWeekDetails.qml",
       "install": true,
       "mode": "0644",
-      "sha256": "4bbd6c813db1ba8294b22f057323d0ace90d1bca0465f4da2d30b9770c45467f",
-      "size": 8340,
+      "sha256": "c6009c1bd864c0c9038f98ca3710b045f7c2140b7b2184644ac582b18de53b7a",
+      "size": 8339,
       "source": "qml/guide/wellbeing/WellbeingWeekDetails.qml"
     },
     {
@@ -2814,8 +2814,8 @@
       "destination": "qml/launcher/Launcher.qml",
       "install": true,
       "mode": "0644",
-      "sha256": "82c20fa3386b9994735e9b4772aeb884ef4fb79419c4ac8bf3aef5dbbdeb3652",
-      "size": 79202,
+      "sha256": "8f651f8e4b576ff56a8052bf60342c7789657dabd25ae01788ee4c8fe179f513",
+      "size": 78604,
       "source": "qml/launcher/Launcher.qml"
     },
     {
@@ -3086,16 +3086,16 @@
       "destination": "qml/notifications/types/Default.qml",
       "install": true,
       "mode": "0644",
-      "sha256": "ca0375dff61442448bb6a7119dde4e393724b4c499963a4bff06b5481156e69d",
-      "size": 1810,
+      "sha256": "c8b03ec915448ac5cf88933b1f6e60d2d9ed55fd4aa6c4cf3f0f59fc993a0538",
+      "size": 1900,
       "source": "qml/notifications/types/Default.qml"
     },
     {
       "destination": "qml/notifications/types/Screenshot.qml",
       "install": true,
       "mode": "0644",
-      "sha256": "68bb59e244fbae990b0e20bffa1e3d4971c60bed31210ad275e71905af1bbdf5",
-      "size": 4309,
+      "sha256": "7d75d0a387432c69127a498cf896f5b659bd40c0ec91541cb03abeedb3bf8a18",
+      "size": 4435,
       "source": "qml/notifications/types/Screenshot.qml"
     },
     {
@@ -3134,8 +3134,8 @@
       "destination": "qml/popouts/DockAppMenu.qml",
       "install": true,
       "mode": "0644",
-      "sha256": "4a204c3c6428dcd82807b8329a9ecef7dabe903b7df1e74c16f712c638324ee6",
-      "size": 19739,
+      "sha256": "34a25a153f3ae59b41909b05c1aed5d1b06f32c04b1c3ff11f85b3e5118eee46",
+      "size": 19601,
       "source": "qml/popouts/DockAppMenu.qml"
     },
     {
@@ -3166,8 +3166,8 @@
       "destination": "qml/popouts/TrayBase.qml",
       "install": true,
       "mode": "0644",
-      "sha256": "7aa2a4650d479c9c050acd41e1a401ae1d9a44879a716d370b0f990a8c7912c3",
-      "size": 42000,
+      "sha256": "e31f0d6f5651c6642cd8f30e66918592da2bd7a9daf072d424919b3079fc7db3",
+      "size": 41997,
       "source": "qml/popouts/TrayBase.qml"
     },
     {
@@ -3462,8 +3462,8 @@
       "destination": "qml/reusables/display/NotificationBox.qml",
       "install": true,
       "mode": "0644",
-      "sha256": "6057bef7c6cf2219f550eb5e1282fbbcffde5ce71021ccd028df10ed3778a73f",
-      "size": 55457,
+      "sha256": "02d30119e9f803a7b176d711285e6f0e8153dddfca5a014888eb33872a7dcf5e",
+      "size": 55456,
       "source": "qml/reusables/display/NotificationBox.qml"
     },
     {
@@ -4504,5 +4504,5 @@
       "ipc": "main"
     }
   },
-  "version": "1.0.1"
+  "version": "1.0.2"
 }
