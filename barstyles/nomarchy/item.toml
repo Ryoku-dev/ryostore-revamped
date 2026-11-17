@@ -1,6 +1,6 @@
 id = "nomarchy"
 name = "Nomarchy"
-version = "1.0.0"
+version = "1.0.1"
 summary = "Omarchy's plugin-driven bar and panels adapted to Ryoku"
 description = "Nomarchy brings Omarchy's configurable bar, panels, menus, themes, notifications, OSD and plugin host to Ryoku's compositor-neutral shell platform."
 license = "MIT"

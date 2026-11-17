@@ -22,8 +22,8 @@
       "destination": "README.md",
       "install": true,
       "mode": "0644",
-      "sha256": "2e54ad1a9336d38946a393eb3e9d4eea5fe4960889187a28b72d8f3e9b32d5ed",
-      "size": 4200,
+      "sha256": "4d1ead659bb24d31c3bde620797c42e5b7848849b0f7f9c0bcf6a8c22d10ac6a",
+      "size": 4413,
       "source": "README.md"
     },
     {
@@ -1502,7 +1502,7 @@
       "destination": "item.toml",
       "install": true,
       "mode": "0644",
-      "sha256": "e4537f90bbf640d342b50b0552bb7cc78355aa42c97697b4431e6e848ef5c5b9",
+      "sha256": "17a5626908710be591360a058e7505228288d8be9e4d43ac7a67c3d378b751bf",
       "size": 980,
       "source": "item.toml"
     },
@@ -2342,8 +2342,8 @@
       "destination": "qml/plugins/notifications/components/NotificationCard.qml",
       "install": true,
       "mode": "0644",
-      "sha256": "188fcdec1b0ab72e2f6ca8ed0d3b7f63b1ab2c87513f31491cb67d20c937c966",
-      "size": 8373,
+      "sha256": "d001928daf8db4b5cc08d98b96edc19eba8c5c39b1963821ff22212dbe612c3e",
+      "size": 8401,
       "source": "qml/plugins/notifications/components/NotificationCard.qml"
     },
     {
@@ -2942,8 +2942,8 @@
       "destination": "qml/services/AppLibrary.qml",
       "install": true,
       "mode": "0644",
-      "sha256": "0777857b12f1c26ecb4730685910d72da00503abf8d8a3ccb86febda5dcfd08c",
-      "size": 9640,
+      "sha256": "1e3eb5e04c40ff5fc3df4ec5c0fb7d6d1b5decdc2317401a71ea104e70a74701",
+      "size": 9662,
       "source": "qml/services/AppLibrary.qml"
     },
     {
@@ -3114,5 +3114,5 @@
       "ipc": "nomarchy"
     }
   },
-  "version": "1.0.0"
+  "version": "1.0.1"
 }
