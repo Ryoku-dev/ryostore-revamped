@@ -22,15 +22,15 @@
       "destination": "README.md",
       "install": true,
       "mode": "0644",
-      "sha256": "4ed5aaa35455b8d83c653993dca242377959bc605519c373b9203e87a13d3147",
-      "size": 3977,
+      "sha256": "f255dc6272347b6d74f1487cb74033b12c7756c926e552f55b66d4fb35402805",
+      "size": 4053,
       "source": "README.md"
     },
     {
       "destination": "item.toml",
       "install": true,
       "mode": "0644",
-      "sha256": "53f806eb657c77bc56347e50f144203a3976ad4f8e5c1b121d9d02cd3bde33ac",
+      "sha256": "9ba58e0b9ee7dc2aba8e5d95bd2b8077ed9f17a7024d953e24729fc2100ecfc8",
       "size": 1320,
       "source": "item.toml"
     },
@@ -3030,8 +3030,8 @@
       "destination": "qml/network/NetworkPopup.qml",
       "install": true,
       "mode": "0644",
-      "sha256": "660f8d9e4846207af53660aed65eb4768a5da7dac8a00f9dbe10646954ba5107",
-      "size": 78568,
+      "sha256": "f0b5bbe65b8f4a088fa0488654852ccdc2eb1c6b04e5b8fe50f4297fb17a1edd",
+      "size": 78598,
       "source": "qml/network/NetworkPopup.qml"
     },
     {
@@ -4504,5 +4504,5 @@
       "ipc": "main"
     }
   },
-  "version": "1.0.2"
+  "version": "1.0.3"
 }

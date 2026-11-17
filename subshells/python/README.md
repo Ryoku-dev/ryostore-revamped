@@ -31,6 +31,7 @@ Keep these Ryoku seams during the merge:
 - selecting Matugen clears the previous preset's saved colours, and Matugen ignores stored preset colours;
 - payload paths come from `Caching.payloadDir` and `Caching.assetsPath`;
 - recording, updates, audio, network and other system data use Ryoku services;
+- Bluetooth discovery requests belong to the popup and stop when it closes;
 - theme icons resolve through the shell's file-based icon service;
 - launcher, dock and desktop faces keep the contribution contracts in `item.toml`;
 - wallpaper, capture, lock, idle, updates and global shell surfaces remain Ryoku-owned.

@@ -491,11 +491,11 @@ Item {
     }
 
     function startBtScan() {
-        if (Bluetooth.defaultAdapter) Bluetooth.defaultAdapter.discovering = true;
+        Ryoku.BluetoothDiscovery.setDiscovering(popupWindowRoot, Bluetooth.defaultAdapter, true);
     }
 
     function stopBtScan() {
-        if (Bluetooth.defaultAdapter) Bluetooth.defaultAdapter.discovering = false;
+        Ryoku.BluetoothDiscovery.setDiscovering(popupWindowRoot, Bluetooth.defaultAdapter, false);
     }
 
     function startWifiScan() {
