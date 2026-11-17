@@ -782,8 +782,8 @@
       "destination": "qml/modules/UpdateWidget.qml",
       "install": true,
       "mode": "0644",
-      "sha256": "07a23d57077747f259b88dece7d09ed227bb89ced61659913e8852c0d6c21d01",
-      "size": 4161,
+      "sha256": "8db098d39a705c02abbe8350caddcdb58bccc5c729e2d5dae8d5b026c4854608",
+      "size": 3679,
       "source": "qml/modules/UpdateWidget.qml"
     },
     {

@@ -1,31 +1,31 @@
 {
   "absolute": {
     "baseline": {
-      "cpuPct": 0.067,
-      "gpuMB": 237.5,
-      "launchesPerMin": 0.0,
+      "cpuPct": 0.2,
+      "gpuMB": 145.9,
+      "launchesPerMin": 359.9,
       "processes": 1,
-      "pssMB": 303.1,
-      "unseenPidsPerMin": 38.0,
-      "wakeupsPerSec": 8.3
+      "pssMB": 209.8,
+      "unseenPidsPerMin": 25.0,
+      "wakeupsPerSec": 15.2
     },
     "item": {
-      "cpuPct": 1.683,
-      "gpuMB": 241.8,
-      "launchesPerMin": 0.0,
+      "cpuPct": 1.35,
+      "gpuMB": 144.6,
+      "launchesPerMin": 353.9,
       "processes": 4,
-      "pssMB": 373.5,
-      "unseenPidsPerMin": 36.0,
-      "wakeupsPerSec": 259.0
+      "pssMB": 275.8,
+      "unseenPidsPerMin": 23.0,
+      "wakeupsPerSec": 178.4
     }
   },
   "baseline": "orpheus",
   "delta": {
-    "cpuPct": 1.62,
-    "gpuMB": 4.3,
-    "launchesPerMin": 0.0,
-    "pssMB": 70.4,
-    "wakeupsPerSec": 250.7
+    "cpuPct": 1.15,
+    "gpuMB": -1.3,
+    "launchesPerMin": -6.0,
+    "pssMB": 66.0,
+    "wakeupsPerSec": 163.2
   },
   "id": "python",
   "leftoverProcesses": [],
@@ -36,10 +36,10 @@
     ],
     "scale": 1.0
   },
-  "measuredAt": "2026-11-07T16:10:29-05:00",
-  "ryoku": "v1.0.7-162-gad9146fd4",
+  "measuredAt": "2026-11-17T05:54:33-05:00",
+  "ryoku": "0b942a151-qml+hyperion-dev-runtime-20261117",
   "tier": "heavy",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "window": {
     "lingerSeconds": 10,
     "sampleSeconds": 60,

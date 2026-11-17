@@ -14,7 +14,7 @@ Item {
     property bool isChecking: false
     property string localVersion: root.bare(Ryoku.Updates.installed) || "..."
     property string remoteVersion: root.bare(Ryoku.Updates.latest)
-    readonly property bool updateAvailable: Ryoku.Updates.ryokuAvailable
+    readonly property bool updateAvailable: Ryoku.Updates.notifyRyoku && Ryoku.Updates.ryokuAvailable
     property string lastNotifiedVersion: ""
 
     function bare(version) {

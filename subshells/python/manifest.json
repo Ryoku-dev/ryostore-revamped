@@ -3894,8 +3894,8 @@
       "destination": "qml/singletons/system/Updater.qml",
       "install": true,
       "mode": "0644",
-      "sha256": "53becdc1ca2777bcefca33dcc7f2b5ef7d5437cf1ba77e7f127a67cf5a293cd1",
-      "size": 1330,
+      "sha256": "07d381c7de9c753bf03ba46939393617589debfee196893f2bfca8abadd9dadf",
+      "size": 1359,
       "source": "qml/singletons/system/Updater.qml"
     },
     {

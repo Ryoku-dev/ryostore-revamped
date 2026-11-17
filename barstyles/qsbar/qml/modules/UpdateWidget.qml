@@ -4,10 +4,6 @@ import Quickshell.Io
 import Ryoku.Ui.Singletons
 import shell.services as Ryoku
 
-// One-click update glyph next to the clock. The daemon runs the background check
-// and streams it on the "updates" topic (via the Updates service), so this only
-// renders it: hovering shows the incoming commits and pending packages, clicking
-// starts the update and opens Ryoku Settings on it, right-click forces a re-check.
 Item {
     id: rootMod
     required property var root
@@ -65,8 +61,6 @@ Item {
         function onUpdateRefreshTickChanged() { Ryoku.Updates.check() }
     }
 
-    // The update runs in the background and reports to Ryoku Settings, which
-    // opens on its Updates page to show the run and ask for the password.
     function startUpdate() {
         if (!(Ryoku.Updates.notifySystem && Ryoku.Updates.systemPending > 0))
             Spawn.run(["ryoku", "update", "--gui"])

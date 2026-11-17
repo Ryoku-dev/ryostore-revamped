@@ -113,7 +113,17 @@
       "description": "Python brings Serpantinum's bars, panels, settings, launcher, dock and desktop faces to Ryoku while using Ryoku's compositor and system services.",
       "id": "python",
       "manifest": "manifest.json",
-      "manifestSha256": "1098e98d7693fcc0b5295c42a69b6098d323bb80f36de69b162e8f672cd18f30",
+      "manifestSha256": "d3ff36f4608b708a6f05ede709864bd410de835b2e84ddf3915f5914a7f171bc",
+      "metadata": {
+        "resourceDelta": {
+          "cpuPct": 1.15,
+          "gpuMB": -1.3,
+          "launchesPerMin": -6.0,
+          "pssMB": 66.0,
+          "wakeupsPerSec": 163.2
+        },
+        "resourceTier": "heavy"
+      },
       "name": "Python",
       "path": "subshells/python",
       "preview": "preview.webp",
