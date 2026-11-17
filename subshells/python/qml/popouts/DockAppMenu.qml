@@ -276,7 +276,7 @@ PanelWindow {
                             anchors.verticalCenter: parent.verticalCenter
                             width: dockAppMenuWindow.s(20)
                             height: dockAppMenuWindow.s(20)
-                            source: DockAppMenuController.appIcon ? (DockAppMenuController.appIcon.indexOf("/") !== -1 || DockAppMenuController.appIcon.startsWith("image://") ? DockAppMenuController.appIcon : ("image://icon/" + DockAppMenuController.appIcon)) : ""
+                            source: DockAppMenuController.appIcon ? Ryoku.Icons.path(DockAppMenuController.appIcon, true) : ""
                             sourceSize.width: width
                             sourceSize.height: height
                             fillMode: Image.PreserveAspectFit

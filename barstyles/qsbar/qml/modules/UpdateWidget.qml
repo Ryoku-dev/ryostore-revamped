@@ -4,19 +4,15 @@ import Quickshell.Io
 import Ryoku.Ui.Singletons
 import shell.services as Ryoku
 
-// One-click update glyph next to the clock. The daemon runs the background check
-// and streams it on the "updates" topic (via the Updates service), so this only
-// renders it: hovering shows the incoming commits and pending packages, clicking
-// starts the update and opens Ryoku Settings on it, right-click forces a re-check.
 Item {
     id: rootMod
     required property var root
     readonly property color contentColor: root.widgetContentColor("G8", root.seal)
 
     readonly property bool updateAvailable: Ryoku.Updates.available
-    readonly property int pending: Ryoku.Updates.pending
+    readonly property int pending: Ryoku.Updates.notifyRyoku ? Ryoku.Updates.ryokuPending : 0
     readonly property var commits: Ryoku.Updates.commits
-    readonly property var packages: Ryoku.Updates.packages
+    readonly property var packages: Ryoku.Updates.notifySystem ? Ryoku.Updates.packages : []
 
     readonly property int tooltipCommitLimit: 8
 
@@ -52,11 +48,11 @@ Item {
         }
         if (packages.length > 0) {
             if (lines.length > 0) lines.push("")
-            lines.push(packages.length === 1
-                ? I18n.tr("%1 package").arg(packages.length) : I18n.tr("%1 packages").arg(packages.length))
+            lines.push(I18n.tr("System packages: %1").arg(Ryoku.Updates.systemPending))
         }
         lines.push("")
-        lines.push(I18n.tr("Click to update"))
+        lines.push(Ryoku.Updates.notifySystem && Ryoku.Updates.systemPending > 0
+            ? I18n.tr("Click to review updates") : I18n.tr("Click to update"))
         return lines.join("\n")
     }
 
@@ -65,11 +61,10 @@ Item {
         function onUpdateRefreshTickChanged() { Ryoku.Updates.check() }
     }
 
-    // The update runs in the background and reports to Ryoku Settings, which
-    // opens on its Updates page to show the run and ask for the password.
     function startUpdate() {
-        Quickshell.execDetached(["ryoku", "update", "--gui"])
-        Quickshell.execDetached(["ryoku-shell", "hub", "open", "updates"])
+        if (!(Ryoku.Updates.notifySystem && Ryoku.Updates.systemPending > 0))
+            Spawn.run(["ryoku", "update", "--gui"])
+        Spawn.run(["ryoku-shell", "hub", "open", "updates"])
     }
 
     IconText {

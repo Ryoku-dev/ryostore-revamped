@@ -1769,14 +1769,7 @@ PanelWindow {
                                                     if (ic.startsWith("/")) return "file://" + ic;
 
                                                     let baseName = ic.replace(/\.(png|svg|xpm|ico)$/i, "");
-                                                    if (typeof Quickshell !== "undefined" && typeof Quickshell.iconPath === "function") {
-                                                        let resolved = Quickshell.iconPath(ic) || Quickshell.iconPath(baseName);
-                                                        if (resolved && resolved.length > 0) {
-                                                            return resolved.startsWith("/") ? ("file://" + resolved) : resolved;
-                                                        }
-                                                    }
-
-                                                    return "image://icon/" + baseName;
+                                                    return Ryoku.Icons.path(baseName, true);
                                                 }
 
                                                 sourceSize: Qt.size(64, 64)

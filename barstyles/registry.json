@@ -39,14 +39,14 @@
       "description": "Shima brings the iRiS, Material ii and Waffle panel families, widgets, panels and visual effects into Ryoku.",
       "id": "iris",
       "manifest": "manifest.json",
-      "manifestSha256": "ca9c253927b7abd6246d897414724d3393318537fcc2f5d3ef9bf1cf74cbbe20",
+      "manifestSha256": "de68127fad6010cfe2c1a0ffa2b73ce94fdd208e797386218f91f0b355f2f0e3",
       "metadata": {
         "resourceDelta": {
-          "cpuPct": 0.05,
-          "gpuMB": 47.8,
-          "launchesPerMin": 91.0,
-          "pssMB": 87.7,
-          "wakeupsPerSec": 2.4
+          "cpuPct": 0.03,
+          "gpuMB": 37.2,
+          "launchesPerMin": 66.0,
+          "pssMB": 114.8,
+          "wakeupsPerSec": -0.6
         },
         "resourceTier": "heavy"
       },
@@ -81,7 +81,7 @@
         "visualizer"
       ],
       "upstream": "https://github.com/snowarch/iNiR",
-      "version": "2.33.0"
+      "version": "2.33.1"
     },
     {
       "accent": "#c74637",
@@ -253,14 +253,14 @@
       "description": "Quickshell Rise's configurable horizontal bar, with five forms, draggable widgets, panels, plugin slots, and its own settings window on Ryoku's platform services.",
       "id": "qsbar",
       "manifest": "manifest.json",
-      "manifestSha256": "26761e842663aeaf8dd002f43f3962c3d6534057ccebec7331b2480ea35e3b1c",
+      "manifestSha256": "2f1452708d2a2716474ab0a5b83c3d6b02ffada79485716f129b69804399f925",
       "metadata": {
         "resourceDelta": {
-          "cpuPct": 0.75,
-          "gpuMB": 43.7,
-          "launchesPerMin": 555.9,
-          "pssMB": 39.2,
-          "wakeupsPerSec": 75.8
+          "cpuPct": 0.67,
+          "gpuMB": 17.7,
+          "launchesPerMin": 465.0,
+          "pssMB": 45.9,
+          "wakeupsPerSec": 62.7
         },
         "resourceTier": "heavy"
       },
@@ -278,7 +278,7 @@
         "panels"
       ],
       "upstream": "https://github.com/HANCORE-linux/quickshell-dots",
-      "version": "1.0.0"
+      "version": "1.0.1"
     },
     {
       "accent": "#5b9bff",

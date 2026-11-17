@@ -1,31 +1,31 @@
 {
   "absolute": {
     "baseline": {
-      "cpuPct": 0.067,
-      "gpuMB": 237.5,
-      "launchesPerMin": 0.0,
+      "cpuPct": 0.2,
+      "gpuMB": 145.9,
+      "launchesPerMin": 359.9,
       "processes": 1,
-      "pssMB": 303.1,
-      "unseenPidsPerMin": 38.0,
-      "wakeupsPerSec": 8.3
+      "pssMB": 209.8,
+      "unseenPidsPerMin": 25.0,
+      "wakeupsPerSec": 15.2
     },
     "item": {
-      "cpuPct": 0.117,
-      "gpuMB": 285.3,
-      "launchesPerMin": 91.0,
-      "processes": 2,
-      "pssMB": 390.8,
-      "unseenPidsPerMin": 188.0,
-      "wakeupsPerSec": 10.7
+      "cpuPct": 0.233,
+      "gpuMB": 183.1,
+      "launchesPerMin": 425.9,
+      "processes": 3,
+      "pssMB": 324.6,
+      "unseenPidsPerMin": 67.0,
+      "wakeupsPerSec": 14.6
     }
   },
   "baseline": "orpheus",
   "delta": {
-    "cpuPct": 0.05,
-    "gpuMB": 47.8,
-    "launchesPerMin": 91.0,
-    "pssMB": 87.7,
-    "wakeupsPerSec": 2.4
+    "cpuPct": 0.03,
+    "gpuMB": 37.2,
+    "launchesPerMin": 66.0,
+    "pssMB": 114.8,
+    "wakeupsPerSec": -0.6
   },
   "id": "iris",
   "leftoverProcesses": [],
@@ -36,10 +36,10 @@
     ],
     "scale": 1.0
   },
-  "measuredAt": "2026-11-07T16:10:29-05:00",
-  "ryoku": "v1.0.7-162-gad9146fd4",
+  "measuredAt": "2026-11-17T05:54:33-05:00",
+  "ryoku": "0b942a151-qml+hyperion-dev-runtime-20261117",
   "tier": "heavy",
-  "version": "2.33.0",
+  "version": "2.33.1",
   "window": {
     "lingerSeconds": 10,
     "sampleSeconds": 60,
