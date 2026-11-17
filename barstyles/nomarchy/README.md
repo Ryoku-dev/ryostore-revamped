@@ -32,6 +32,8 @@ The Ryoku shell loads `qml/Scene.qml` from the unpacked item and resolves `nomar
 
 Plugins written for upstream Omarchy import the kit as `qs.Commons` and `qs.Ui`. Inside Ryoku `qs` is the shell root, so `qml/services/PluginRegistry.qml` loads each third-party plugin from a staged copy under `${XDG_CACHE_HOME:-$HOME/.cache}/ryoku/nomarchy-plugins/` whose imports read `nomarchy.*`. The user's plugin folder is never changed.
 
+Notification and Apps submenu icons use the shell's file-backed icon service, not Qt's theme image provider. Apps still prefer their application/device index and keep the generic executable icon as the fallback.
+
 ## Lifecycle
 
 The daemon supplies `RYOKU_ITEM_DIR` as the unpacked item root and `RYOKU_ITEM_ID=nomarchy`.

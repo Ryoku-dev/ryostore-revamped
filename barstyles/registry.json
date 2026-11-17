@@ -155,14 +155,14 @@
       "description": "Nomarchy brings Omarchy's configurable bar, panels, menus, themes, notifications, OSD and plugin host to Ryoku's compositor-neutral shell platform.",
       "id": "nomarchy",
       "manifest": "manifest.json",
-      "manifestSha256": "2c16653d6ceab1b624ff384bcf295edc64d17ffec52cec70650cde191e8ca281",
+      "manifestSha256": "6258ee675ff8b205a7481de6282e4ef22e0264a5a677be7ab3081eef3b04ef7b",
       "metadata": {
         "resourceDelta": {
-          "cpuPct": 0.03,
-          "gpuMB": 0.8,
-          "launchesPerMin": 8.0,
-          "pssMB": 61.8,
-          "wakeupsPerSec": 1.7
+          "cpuPct": 0.0,
+          "gpuMB": -11.2,
+          "launchesPerMin": 1.1,
+          "pssMB": 52.3,
+          "wakeupsPerSec": 1.6
         },
         "resourceTier": "standard"
       },
@@ -180,7 +180,7 @@
         "themes"
       ],
       "upstream": "https://github.com/basecamp/omarchy",
-      "version": "1.0.0"
+      "version": "1.0.1"
     },
     {
       "accent": "#b86b5f",
