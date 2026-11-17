@@ -22,15 +22,15 @@
       "destination": "README.md",
       "install": true,
       "mode": "0644",
-      "sha256": "a6fd6abd061ec2408f4dce025462807718bb5fb3b1f5f29feab8e75daff51f43",
-      "size": 4125,
+      "sha256": "4346b07517ebbc429e74998ea0e942891afc674afe58461c35dfd4b44df4abb9",
+      "size": 4168,
       "source": "README.md"
     },
     {
       "destination": "item.toml",
       "install": true,
       "mode": "0644",
-      "sha256": "9c1ff0f3bae6f93e399cd762ced6341073a0cc9798d4de0751addd4e5c1887da",
+      "sha256": "d56e502865a28be07a3f37f99e842be40be0f162350ea8b508525c26fbb1afd0",
       "size": 1320,
       "source": "item.toml"
     },
@@ -2150,8 +2150,8 @@
       "destination": "qml/dock/PythonDock.qml",
       "install": true,
       "mode": "0644",
-      "sha256": "6596658113e721e976e6ae130592371fde3e8b2a7f309feb3a1d6d17d7f223ae",
-      "size": 176934,
+      "sha256": "736daff1df0e0071fe11e5c22b36c0ab855546172b158696116bdb2727813d5f",
+      "size": 176838,
       "source": "qml/dock/PythonDock.qml"
     },
     {
@@ -2830,8 +2830,8 @@
       "destination": "qml/launcher/LauncherSurface.qml",
       "install": true,
       "mode": "0644",
-      "sha256": "78d79dd14e0e77373a7747e0e5ebf0c8d512d1ccce08c4788e3db7570cfcb2d7",
-      "size": 75188,
+      "sha256": "3789cadfea27e4d342775fc71b63aa6a6e6f262e351ecaae0a2ea16f0e4ad31c",
+      "size": 74590,
       "source": "qml/launcher/LauncherSurface.qml"
     },
     {
@@ -4504,5 +4504,5 @@
       "ipc": "main"
     }
   },
-  "version": "1.0.4"
+  "version": "1.0.5"
 }

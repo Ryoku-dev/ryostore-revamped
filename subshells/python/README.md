@@ -33,7 +33,7 @@ Keep these Ryoku seams during the merge:
 - recording, updates, audio, network and other system data use Ryoku services;
 - the update badge follows the shared Ryoku update notification choice;
 - Bluetooth discovery requests belong to the popup and stop when it closes;
-- theme icons resolve through the shell's file-based icon service;
+- theme icons, including the dock and embedded launcher, resolve through the shell's file-based icon service;
 - launcher, dock and desktop faces keep the contribution contracts in `item.toml`;
 - wallpaper, capture, lock, idle, updates and global shell surfaces remain Ryoku-owned.
 
