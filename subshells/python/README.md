@@ -28,6 +28,7 @@ Keep these Ryoku seams during the merge:
 - compositor state and actions use `Wm` from `Ryoku.Ui.Singletons`;
 - settings read the `python` namespace and write through the Ryoku settings socket;
 - wallpaper and palette data come from Ryoku services;
+- selecting Matugen clears the previous preset's saved colours, and Matugen ignores stored preset colours;
 - payload paths come from `Caching.payloadDir` and `Caching.assetsPath`;
 - recording, updates, audio, network and other system data use Ryoku services;
 - launcher, dock and desktop faces keep the contribution contracts in `item.toml`;

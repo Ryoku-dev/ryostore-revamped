@@ -22,15 +22,15 @@
       "destination": "README.md",
       "install": true,
       "mode": "0644",
-      "sha256": "2c11135559b685f220b31be0df2589072df0845866b4c109297c12df4f042c13",
-      "size": 3803,
+      "sha256": "69605f6db57277f212fa25ea25e6e35a373d5917081165264ac152f89afa4b6e",
+      "size": 3910,
       "source": "README.md"
     },
     {
       "destination": "item.toml",
       "install": true,
       "mode": "0644",
-      "sha256": "0cbd4a804eb1f99f153166aa00384fe7b2d434a2faf82e3eca04b25449630682",
+      "sha256": "6471b7b8237514fb779c569929e30e381c0138c3ed52a5e02bca4ffc3952c146",
       "size": 1320,
       "source": "item.toml"
     },
@@ -2638,8 +2638,8 @@
       "destination": "qml/guide/theme/ThemeTabState.qml",
       "install": true,
       "mode": "0644",
-      "sha256": "5b2b17cb5276f27b222eb78913a6e1edeedef4b71776aa9bc06a9fce9adcde3b",
-      "size": 21836,
+      "sha256": "bb221cbdbb4c337721c2979fb17ecc039eab6e38a5119e0f9c79f0aae217d02a",
+      "size": 21044,
       "source": "qml/guide/theme/ThemeTabState.qml"
     },
     {
@@ -3910,8 +3910,8 @@
       "destination": "qml/singletons/theme/ThemeBackend.qml",
       "install": true,
       "mode": "0644",
-      "sha256": "97eda1362b492205abfb7cc389878b08bfe5b0f9999929c270e091bb4a715726",
-      "size": 7052,
+      "sha256": "a936b3dc8278375e7d4ea392e855de33494b32936ff48a2a9093aca50be84db1",
+      "size": 7082,
       "source": "qml/singletons/theme/ThemeBackend.qml"
     },
     {
@@ -4504,5 +4504,5 @@
       "ipc": "main"
     }
   },
-  "version": "1.0.0"
+  "version": "1.0.1"
 }
